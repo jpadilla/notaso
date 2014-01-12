@@ -2,21 +2,21 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib import auth
 
-from .forms import RegistrationForm 
+from users.admin import UserCreationForm 
 from .models import UserProfile
 # Create your views here.
 
 def index(request):
-	register_form = RegistrationForm()
+	register_form = UserCreationForm()
 	return render(request, 'index.html', {'registerform' : register_form})
 
 def register(request):
 	if request.method == 'POST':
-		form = RegistrationForm(request.POST)
+		form = UserCreationForm(request.POST)
 		if form.is_valid():
 			form.save()
 			return HttpResponse('thanks')
-	register_form = RegistrationForm()
+	register_form = UserCreationForm()
 	return render(request, 'index.html', {'registerform' : register_form})
 
 def login(request):

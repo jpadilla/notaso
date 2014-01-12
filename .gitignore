@@ -1,4 +1,5 @@
-*.log
-*.pot
+venv
 *.pyc
-local_settings.py
+.DS_Store
+*.sqlite3
+*.db

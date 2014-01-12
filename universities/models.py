@@ -1,9 +1,8 @@
 from django.db import models
-from time import time
 
 # Create your models here.
 def get_upload_file_name(intance, filename):
-	return "uploaded_files/%s_%s" % (str(time()).replace('.','_'), filename)
+	return "uploaded_files/%s" % (filename)
 
 class Universities(models.Model):
 	name = models.CharField(max_length=50)
@@ -12,4 +11,4 @@ class Universities(models.Model):
 	departments = models.ManyToManyField('departments.Departments')
 
 	def __unicode__(self):
-		return self.name
+		return u'%s %s' % (self.name, self.city)
