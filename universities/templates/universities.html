@@ -1,8 +1,10 @@
+{% load static %}
 <head>
 	
 </head>
 <body>
 	{% for universities in universitiesOnStorage %}
 		<h1>{{universities.name}} {{universities.city}}</h1>
+		<img src="/static/assets/{{universities.emblem}}" height = "200px">
 	{% endfor %}
 </body>
