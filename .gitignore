@@ -4,3 +4,5 @@ venv
 *.sqlite3
 *.db
 admin
+assets
+static
