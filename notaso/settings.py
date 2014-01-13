@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'users',
     'departments',
     'universities',
+    'professors',
 )
 
 MIDDLEWARE_CLASSES = (
