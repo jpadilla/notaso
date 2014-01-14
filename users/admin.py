@@ -14,8 +14,8 @@ class UserCreationForm(forms.ModelForm):
     password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)
 
     GENDER_CHOICES = (
-            ('MALE', 'M'),
-            ('FEMALE', 'F'),
+            ('M', 'M'),
+            ('F', 'F'),
     )
 
     gender = forms.ChoiceField(GENDER_CHOICES)
