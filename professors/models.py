@@ -1,6 +1,6 @@
 from django.db import models
 from django import forms
-from universities.models import Universities
+from django.conf import settings
 # Create your models here.
 class Professor(models.Model):
 	MALE = 'M'
@@ -15,7 +15,7 @@ class Professor(models.Model):
 	gender = models.CharField(max_length= 1, choices = GENDER_CHOICES)
 	university =  models.ForeignKey('universities.Universities')
 	department = models.ForeignKey('departments.Department', related_name='+', to_field = 'department_name')
-	created_by = models.ForeignKey('users.UserProfile')
+	created_by = models.ForeignKey(settings.AUTH_USER_MODEL)
 
 	def __unicode__(self):
 		return u'%s %s' % (self.name, self.lastname)
