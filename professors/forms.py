@@ -1,8 +1,14 @@
 from django import forms
 from models import Professor
+from users.models import UserProfile
+from django.shortcuts import get_object_or_404
 
 class AddProfessorForm(forms.ModelForm):
-	created_by = forms.CharField(max_length=35)
 	class Meta:
 		model = Professor
-		fields = ('name', 'lastname', 'gender', 'university', 'department')
+		fields = ['name', 'lastname', 'gender', 'university', 'department']
+
+	def save_form(self, user):
+		p = self.save(commit = False)
+		p.created_by = get_object_or_404(UserProfile, email=user)
+		p.save()

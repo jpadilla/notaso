@@ -6,6 +6,7 @@ from forms import AddProfessorForm
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
+from django.conf import settings
 # Create your views here.
 def specific_professor_view(request, professor_id = 1):
 	args ={}
@@ -18,18 +19,11 @@ def create_professor_view(request):
 		form = AddProfessorForm(request.POST)
 		if form.is_valid():
 			name = form.cleaned_data['name']
-			my_object = get_object_or_404(Professor, pk = 1)
 			lastname = form.cleaned_data['lastname']
-			my_object = get_object_or_404(Professor, pk = 1)
 			gender = form.cleaned_data['gender']
-			my_object = get_object_or_404(Professor, pk = 1)
 			university = form.cleaned_data['university']
-			my_object = get_object_or_404(Professor, pk = 1)
 			department = form.cleaned_data['department']
-			my_object = get_object_or_404(Professor, pk = 1)
-			created_by = form.cleaned_data['created_by']
-			my_object = get_object_or_404(Professor, pk = 1)
-			form.save()
+			form.save_form(request.user)
 			return HttpResponseRedirect('/universities')
 	else:
 		form = AddProfessorForm()
