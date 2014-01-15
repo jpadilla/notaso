@@ -4,4 +4,29 @@
 <body>
 	<h1>{{specifiedProfessor.name}}{{specifiedProfessor.lastname}}</h1>
 	<p>{{specifiedProfessor.gender}}<br>{{specifiedProfessor.university}}<br>{{specifiedProfessor.department}}</p>
+	
+	<br><br>
+	
+	<form action="{% url 'professors:comment' specifiedProfessor.id %}" method="post">
+		{% csrf_token %}
+		<ul>
+			{{commentForm.as_ul}}
+		</ul>
+	<input type="submit" name="submit" value="Submit">
+
+	<br><br>
+	<hr>
+	{% for c in comments %}
+		
+		<p>{{ c.body }}</p>
+		<p>{{ c.date }}</p>
+		<p>{{ c.created_by }}</p>
+		<p>{{ c.is_anonimo }}</p>
+		<p>{{ c.responsibility }}</p>
+		<p>{{ c.personality }}</p>
+		<p>{{ c.workload }}</p>
+		<p>{{ c.dificulty }}</p>
+		
+		<hr>
+	{% endfor %}
 </body>
