@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'departments',
     'universities',
     'professors',
+    'comments',
 )
 
 MIDDLEWARE_CLASSES = (

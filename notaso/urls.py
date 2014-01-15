@@ -8,7 +8,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'notaso.views.home', name='home'),
     url(r'^universities/', include('universities.urls')),
     url(r'^register/', include('users.urls', namespace = 'users')),
-    url(r'^professor/', include('professors.urls')),
+    url(r'^professor/', include('professors.urls', namespace='professors')),
 
     url(r'^admin/', include(admin.site.urls)),
 )
