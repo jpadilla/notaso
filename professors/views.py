@@ -14,35 +14,34 @@ from comments.models import Comments
 # Create your views here.
 
 def specific_professor_view(request, professor_id = 1):
-	args ={}
-	args.update(csrf(request))
-	args['specifiedProfessor'] = Professor.objects.get(id = professor_id)
-	args['commentForm'] = AddCommentForm()
-	args['comments'] = Comments.objects.filter(professor=professor_id)
-	return render_to_response('professor.html', args)
+    args ={}
+    args.update(csrf(request))
+    args['specifiedProfessor'] = Professor.objects.get(id = professor_id)
+    args['commentForm'] = AddCommentForm()
+    args['comments'] = Comments.objects.filter(professor=professor_id)
+    return render_to_response('professor.html', args)
 
 @login_required(login_url='/register/login/')
 def create_professor_view(request):
-	if request.POST:
-		form = AddProfessorForm(request.POST)
-		if form.is_valid():
-			form.save_form(request.user)
-			return HttpResponseRedirect('/universities')
-	else:
-		form = AddProfessorForm()
-   	args = {}
-  	args.update(csrf(request))
-   	
-   	args['form'] = form
-   	
-   	return render_to_response('create-professor.html', args)
+    if request.POST:
+        form = AddProfessorForm(request.POST)
+        if form.is_valid():
+            form.save_form(request.user)
+            return HttpResponseRedirect('/universities')
+    else:
+        form = AddProfessorForm()
+    args = {}
+    args.update(csrf(request))
+    
+    args['form'] = form
+    
+    return render_to_response('create-professor.html', args)
 
 @login_required(login_url='/register/login')
 def post_comment(request, professor_id):
-	if request.POST:
-		form = AddCommentForm(request.POST)
-		if form.is_valid():
-			form.save_form(request.user, professor_id)
-			return HttpResponseRedirect(reverse('professors:specified_professor', kwargs={'professor_id': professor_id}))
-
+    if request.POST:
+        form = AddCommentForm(request.POST)
+        if form.is_valid():
+            form.save_form(request.user, professor_id)
+            return HttpResponseRedirect(reverse('professors:specified_professor', kwargs={'professor_id': professor_id}))
 
