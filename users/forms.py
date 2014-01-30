@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 
-from .models import UserProfile
+from .models import User
 
 
 class UserCreationForm(forms.ModelForm):
@@ -10,16 +10,9 @@ class UserCreationForm(forms.ModelForm):
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)
 
-    GENDER_CHOICES = (
-            ('M', 'M'),
-            ('F', 'F'),
-    )
-
-    gender = forms.ChoiceField(GENDER_CHOICES)
-
     class Meta:
-        model = UserProfile
-        fields = ('email', 'firstname', 'lastname')
+        model = User
+        fields = ('email', 'first_name', 'last_name', 'gender')
 
     def clean_password2(self):
         # Check that the two password entries match
@@ -47,11 +40,15 @@ class UserChangeForm(forms.ModelForm):
     password = ReadOnlyPasswordHashField()
 
     class Meta:
-        model = UserProfile
-        fields = ['email', 'password', 'firstname', 'lastname', 'gender', 'is_active', 'is_admin']
+        model = User
+        fields = ['email', 'password', 'first_name', 'last_name', 'gender', 'is_active', 'is_admin']
 
     def clean_password(self):
         # Regardless of what the user provides, return the initial value.
         # This is done here, rather than on the field, because the
         # field does not have access to the initial value
         return self.initial["password"]
+
+class UserLoginForm(forms.Form):
+    email = forms.EmailField()
+    password = forms.CharField(widget=forms.PasswordInput)
