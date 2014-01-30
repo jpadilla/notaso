@@ -9,13 +9,13 @@ class Comments(models.Model):
     professor = models.ForeignKey(Professor)
 
     body = models.TextField()
-    date = models.DateField(auto_now=False, auto_now_add=False)
-    is_anonimo = models.BooleanField()
+    created_at = models.DateField(auto_now=False, auto_now_add=False)
+    is_anonymous = models.BooleanField()
 
-    responsibility = models.IntegerField()
-    personality = models.IntegerField()
-    workload = models.IntegerField()
-    dificulty = models.IntegerField()
+    responsibility = models.IntegerField(null=True)
+    personality = models.IntegerField(null=True)
+    workload = models.IntegerField(null=True)
+    dificulty = models.IntegerField(null=True)
 
     def __unicode__(self):
-        return self.id
+        return self.body

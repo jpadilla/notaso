@@ -1,9 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.contrib import auth
+from django.core.urlresolvers import reverse
 
 from users.admin import UserCreationForm
-from .models import UserProfile
+from .forms import UserLoginForm
+
 
 def register(request):
     form = UserCreationForm(request.POST or None)
@@ -18,14 +20,14 @@ def register(request):
     return render(request, 'users/index.html', {'form' : form})
 
 def login(request):
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = auth.authenticate(username=username, password=password)
+    form = UserLoginForm(request.POST or None)
+    if form.is_valid():
+        email = form.cleaned_data['email']
+        password = form.cleaned_data['password']
+        user = auth.authenticate(username=email, password=password)
 
         if user is not None:
             auth.login(request, user)
-            return HttpResponse("You're loged in.")
-        else:
-            return HttpResponse("Your username/password is incorrect.")
-    return render(request, 'users/login.html')
+            return HttpResponseRedirect(reverse('universities:universities'))
+
+    return render(request, 'users/login.html', {'form' : form})

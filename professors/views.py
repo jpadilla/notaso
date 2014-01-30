@@ -1,12 +1,9 @@
 from django.shortcuts import render_to_response
 from models import Professor
-from users.models import UserProfile
 from django.core.context_processors import csrf
 from forms import AddProfessorForm
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
-from django.shortcuts import get_object_or_404
-from django.conf import settings
 from django.core.urlresolvers import reverse
 
 from comments.forms import AddCommentForm
@@ -39,9 +36,10 @@ def create_professor_view(request):
 
 @login_required(login_url='/register/login')
 def post_comment(request, professor_id):
-    if request.POST:
-        form = AddCommentForm(request.POST)
-        if form.is_valid():
-            form.save_form(request.user, professor_id)
-            return HttpResponseRedirect(reverse('professors:specified_professor', kwargs={'professor_id': professor_id}))
+    form = AddCommentForm(request.POST or None)
 
+    if form.is_valid():
+        form.save_form(request, professor_id)
+    
+    return HttpResponseRedirect(reverse('professors:specified_professor', 
+                                kwargs={'professor_id': professor_id}))

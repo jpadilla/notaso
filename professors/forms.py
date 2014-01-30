@@ -1,6 +1,6 @@
 from django import forms
 from models import Professor
-from users.models import UserProfile
+from users.models import User
 from django.shortcuts import get_object_or_404
 
 class AddProfessorForm(forms.ModelForm):
@@ -10,5 +10,5 @@ class AddProfessorForm(forms.ModelForm):
 
 	def save_form(self, user):
 		p = self.save(commit = False)
-		p.created_by = get_object_or_404(UserProfile, email=user)
+		p.created_by = get_object_or_404(User, email=user)
 		p.save()
