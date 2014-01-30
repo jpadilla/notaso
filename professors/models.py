@@ -11,12 +11,12 @@ class Professor(models.Model):
         (FEMALE, 'Female'),
     )
 
-    name = models.CharField(max_length=25)
-    lastname = models.CharField(max_length=75)
+    first_name = models.CharField(max_length=25)
+    last_name = models.CharField(max_length=75)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
     university =  models.ForeignKey('universities.Universities')
-    department = models.ForeignKey('departments.Department', related_name='+', to_field='department_name')
+    department = models.ForeignKey('departments.Department')
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL)
 
     def __unicode__(self):
-        return u'%s %s' % (self.name, self.lastname)
+        return u'%s %s' % (self.first_name, self.last_name)

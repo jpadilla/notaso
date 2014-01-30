@@ -1,40 +1,37 @@
-from django.shortcuts import render_to_response
-from models import Professor
-from django.core.context_processors import csrf
-from forms import AddProfessorForm
+from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 
+from models import Professor
+from forms import AddProfessorForm
 from comments.forms import AddCommentForm
 from comments.models import Comments
-# Create your views here.
 
-def specific_professor_view(request, professor_id = 1):
-    args ={}
-    args.update(csrf(request))
-    args['specifiedProfessor'] = Professor.objects.get(id = professor_id)
-    args['commentForm'] = AddCommentForm()
-    args['comments'] = Comments.objects.filter(professor=professor_id)
-    return render_to_response('professor.html', args)
 
-@login_required(login_url='/register/login/')
+def specific_professor_view(request, professor_id=1):
+    data = {
+        'specified_professor': get_object_or_404(Professor, id=professor_id),
+        'comment_form': AddCommentForm(),
+        'comments': Comments.objects.filter(professor=professor_id)
+    }
+    return render(request, 'professor.html', data)
+    
+@login_required(login_url='/login/')
 def create_professor_view(request):
     if request.POST:
         form = AddProfessorForm(request.POST)
         if form.is_valid():
-            form.save_form(request.user)
-            return HttpResponseRedirect('/universities')
+            professor_information = form.save_form(request.user)
+            return HttpResponseRedirect('/professors/%s' % professor_information.id)
     else:
         form = AddProfessorForm()
-    args = {}
-    args.update(csrf(request))
-    
-    args['form'] = form
-    
-    return render_to_response('create-professor.html', args)
+    data = {
+        'form': form
+    }  
+    return render(request, 'create-professor.html', data)
 
-@login_required(login_url='/register/login')
+@login_required(login_url='/login/')
 def post_comment(request, professor_id):
     form = AddCommentForm(request.POST or None)
 

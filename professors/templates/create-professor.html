@@ -4,7 +4,7 @@
 <body>
 	<h2>Create Professor</h2>
 	<!--enctype hace saber que es un form que puede a~adir texto y data-->
-	<form action="/professor/create/" method="post" enctype="multipart/form-data">{% csrf_token %}
+	<form action="/professors/create/" method="post" enctype="multipart/form-data">{% csrf_token %}
 		<ul>
 			{{form.as_ul}}
 		</ul>

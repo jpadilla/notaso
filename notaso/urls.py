@@ -13,5 +13,5 @@ urlpatterns = patterns(
 
     url(r'^universities/', include('universities.urls', namespace='universities')),
     url(r'^', include('users.urls', namespace='users')),
-    url(r'^professor/', include('professors.urls', namespace='professors')),
+    url(r'^professors/', include('professors.urls', namespace='professors')),
 )
