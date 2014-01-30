@@ -1,9 +1,13 @@
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, get_object_or_404
+
+
 from universities.models import Universities
 from models import Department
-# Create your views here.
+
+
 def department_view(request, university_id, department_id):
-	args = {}
-	args['specificUniversity'] = Universities.objects.get(id = university_id)
-	args['specificDepartment'] = Department.objects.get(id = department_id)
-	return render_to_response('department.html', args)
+    data = {
+        "specified_university": get_object_or_404(Universities, id=university_id),
+        "specified_department": get_object_or_404(Department, id=department_id)
+    }
+    return render_to_response('department.html', data)

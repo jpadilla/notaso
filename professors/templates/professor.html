@@ -1,19 +1,19 @@
 <head>
-	<title>Notaso | {{specifiedProfessor.name}}{{specifiedProfessor.lastname}}</title>
+	<title>Notaso | {{specified_professor.first_name}}{{specified_professor.last_name}}</title>
 </head>
 <body>
-	<h1>{{specifiedProfessor.name}}{{specifiedProfessor.lastname}}</h1>
-	<p>{{specifiedProfessor.gender}}<br>{{specifiedProfessor.university}}<br>{{specifiedProfessor.department}}</p>
+	<h1>{{specified_professor.first_name}}{{specified_professor.last_name}}</h1>
+	<p>{{specified_professor.gender}}<br>{{specified_professor.university}}<br>{{specified_professor.department}}</p>
 	
 	<br><br>
 	
-	<form action="{% url 'professors:comment' specifiedProfessor.id %}" method="post">
+	<form action="{% url 'professors:comment' specified_professor.id %}" method="post">
 		{% csrf_token %}
 		<ul>
 			{{commentForm.as_ul}}
 		</ul>
 	<input type="submit" name="submit" value="Submit">
-
+	</form>
 	<br><br>
 	<hr>
 	{% for c in comments %}
