@@ -5,10 +5,10 @@
 	<title>Notaso</title>
 </head>
 <body>
-	
-<form method="POST" action="{% url 'users:register' %}">
+
+<form method="POST" action="">
 	{% csrf_token %}
-	{{ registerform.as_p }}
+	{{ form.as_p }}
 	<input type="submit" value="Submit">
 </form>
 

@@ -2,22 +2,20 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib import auth
 
-from users.admin import UserCreationForm 
+from users.admin import UserCreationForm
 from .models import UserProfile
-# Create your views here.
-
-def index(request):
-    register_form = UserCreationForm()
-    return render(request, 'index.html', {'registerform' : register_form})
 
 def register(request):
-    if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return HttpResponse('thanks')
-    register_form = UserCreationForm()
-    return render(request, 'index.html', {'registerform' : register_form})
+    form = UserCreationForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+
+        return HttpResponseRedirect(
+            reverse('users:login')
+        )
+
+    return render(request, 'users/index.html', {'form' : form})
 
 def login(request):
     if request.method == 'POST':
@@ -30,4 +28,4 @@ def login(request):
             return HttpResponse("You're loged in.")
         else:
             return HttpResponse("Your username/password is incorrect.")
-    return render(request, 'login.html')
+    return render(request, 'users/login.html')
