@@ -36,6 +36,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'debug_toolbar',
+
     'users',
     'departments',
     'universities',
@@ -87,11 +90,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
-
-STATICFILES_DIRS = (
-    ('assets', os.path.join(BASE_DIR, 'static')),
-)
 
 AUTH_USER_MODEL = 'users.UserProfile'
