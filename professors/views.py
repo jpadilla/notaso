@@ -16,19 +16,19 @@ def specific_professor_view(request, professor_id=1):
         'comments': Comments.objects.filter(professor=professor_id)
     }
     return render(request, 'professor.html', data)
-    
+
 @login_required(login_url='/login/')
 def create_professor_view(request):
     if request.POST:
         form = AddProfessorForm(request.POST)
         if form.is_valid():
-            professor_information = form.save_form(request.user)
+            professor_information = form.save_form(request)
             return HttpResponseRedirect('/professors/%s' % professor_information.id)
     else:
         form = AddProfessorForm()
     data = {
         'form': form
-    }  
+    }
     return render(request, 'create-professor.html', data)
 
 @login_required(login_url='/login/')
@@ -37,6 +37,6 @@ def post_comment(request, professor_id):
 
     if form.is_valid():
         form.save_form(request, professor_id)
-    
-    return HttpResponseRedirect(reverse('professors:specified_professor', 
+
+    return HttpResponseRedirect(reverse('professors:specified_professor',
                                 kwargs={'professor_id': professor_id}))
