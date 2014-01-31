@@ -5,6 +5,6 @@
 <body>
 	{% for universities in universities %}
 		<h1>{{universities.name}} {{universities.city}}</h1>
-		<img src="/static/assets/{{universities.emblem}}" height = "200px">
+		<img src="/{{universities.emblem}}" height = "200px">
 	{% endfor %}
 </body>
