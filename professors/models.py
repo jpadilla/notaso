@@ -3,7 +3,6 @@ from django.conf import settings
 from django.template.defaultfilters import slugify
 
 
-
 class Professor(models.Model):
     MALE = 'M'
     FEMALE = 'F'
@@ -24,7 +23,7 @@ class Professor(models.Model):
         return u'%s %s' % (self.first_name, self.last_name)
 
     def save(self, *args, **kwargs):
-        #self.slug = self.slug + "-" + self.last_name
+        self.slug = self.slug + "-" + self.last_name
         join = self.first_name + "-" + self.last_name
         self.slug = slugify(join).lower()
         super(Professor, self).save(*args, **kwargs)

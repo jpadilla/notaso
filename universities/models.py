@@ -9,7 +9,6 @@ class Universities(models.Model):
     name = models.CharField(max_length=50)
     city = models.CharField(max_length=25)
     emblem = models.FileField(upload_to=get_upload_file_name)
-    abbreviation = models.CharField(max_length=12)
     slug = models.SlugField(unique=True)
 
     def __unicode__(self):
