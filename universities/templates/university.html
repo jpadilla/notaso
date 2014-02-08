@@ -1,2 +1,5 @@
 <p>{{specified_university.name}} {{specified_university.city}}</p>
 <p><a href="/universities/{{specified_university.slug}}/{{professors.slug}}">Tony Huertas</a></p>
+{% for depart in departments %}
+	<a href="{{depart.slug}}"> hit me! </a>
+{% endfor %}

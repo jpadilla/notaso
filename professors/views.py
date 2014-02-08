@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from django.http import Http404
 
-from models import Professor
+from .models import Professor
 from forms import AddProfessorForm
 from comments.forms import AddCommentForm
 from comments.models import Comments
@@ -29,7 +29,7 @@ def create_professor_view(request):
         form = AddProfessorForm(request.POST)
         if form.is_valid():
             professor_information = form.save_form(request)
-            return HttpResponseRedirect('/professors/%s' % professor_information.id)
+            return HttpResponseRedirect('/professors/%s' % professor_information.slug)
     else:
         form = AddProfessorForm()
     data = {
