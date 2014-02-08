@@ -16,9 +16,9 @@ class AddCommentForm(forms.ModelForm):
         model = Comments
         fields = ['body', 'is_anonymous', 'responsibility', 'personality', 'workload', 'dificulty']
 
-    def save_form(self, request, prof_id):
+    def save_form(self, request, prof_slug):
         c = self.save(commit=False)
         c.created_by = request.user
-        c.professor = get_object_or_404(Professor, pk=prof_id)
+        c.professor = get_object_or_404(Professor, slug=prof_slug)
         c.created_at = datetime.datetime.today()
         c.save()

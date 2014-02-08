@@ -1,7 +1,5 @@
 from django.db import models
-from django import forms
 from django.conf import settings
-from autoslug import AutoSlugField
 from django.template.defaultfilters import slugify
 
 

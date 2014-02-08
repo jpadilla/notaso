@@ -7,7 +7,7 @@
 	
 	<br><br>
 	
-	<form action="{% url 'professors:comment' specified_professor.id %}" method="post">
+	<form action="{% url 'professors:comment' specified_professor.slug %}" method="post">
 		{% csrf_token %}
 		<ul>
 			{{comment_form.as_ul}}
