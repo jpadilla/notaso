@@ -38,11 +38,11 @@ def create_professor_view(request):
     return render(request, 'create-professor.html', data)
 
 @login_required(login_url='/login/')
-def post_comment(request, professor_id):
+def post_comment(request, professors_slug):
     form = AddCommentForm(request.POST or None)
 
     if form.is_valid():
-        form.save_form(request, professor_id)
+        form.save_form(request, professors_slug)
 
     return HttpResponseRedirect(reverse('professors:specified_professor',
-                                kwargs={'professor_id': professor_id}))
+                                kwargs={'professors_slug': professors_slug}))
