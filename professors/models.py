@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+
 from autoslug import AutoSlugField
 
 
@@ -17,7 +18,7 @@ class Professor(models.Model):
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=75)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
-    university =  models.ForeignKey('universities.Universities')
+    university =  models.ForeignKey('universities.University')
     department = models.ForeignKey('departments.Department')
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL)
     slug = AutoSlugField(populate_from=populate_professor_slug, unique=True)

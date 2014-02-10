@@ -1,17 +1,17 @@
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, get_object_or_404
 from django.http import Http404
 
-from universities.models import Universities
+from universities.models import University
 from .models import Department
 
 
 def department_view(request, slug, department_slug):
     university_hit = False
-    for university in Universities.objects.all():
+    for university in University.objects.all():
         if university.slug == slug:
             university_hit = True
             data = {
-                'specified_university': Universities.objects.get(id=university.id),
+                'specified_university': get_object_or_404(University, id=university.id),
             }
     if university_hit is False:
         raise Http404
@@ -19,7 +19,7 @@ def department_view(request, slug, department_slug):
     for department in Department.objects.all():
         if department.slug == department_slug:
             department_hit = True
-            data['specified_department'] = Department.objects.get(id=department.id)
+            data['specified_department'] = get_object_or_404(Department, id=department.id)
     if department_hit is False:
         raise Http404
     return render_to_response('department.html', data)

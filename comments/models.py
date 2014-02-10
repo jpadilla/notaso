@@ -4,7 +4,7 @@ from django.conf import settings
 from professors.models import Professor
 
 
-class Comments(models.Model):
+class Comment(models.Model):
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL)
     professor = models.ForeignKey(Professor)
 
