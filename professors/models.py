@@ -1,7 +1,10 @@
 from django.db import models
 from django.conf import settings
-from django.template.defaultfilters import slugify
+from autoslug import AutoSlugField
 
+
+def populate_professor_slug(instance):
+    return instance.get_full_name()
 
 class Professor(models.Model):
     MALE = 'M'
@@ -17,13 +20,14 @@ class Professor(models.Model):
     university =  models.ForeignKey('universities.Universities')
     department = models.ForeignKey('departments.Department')
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL)
-    slug = models.SlugField(editable=False, unique=True)
+    slug = AutoSlugField(populate_from=populate_professor_slug, unique=True)
 
     def __unicode__(self):
         return u'%s %s' % (self.first_name, self.last_name)
 
-    def save(self, *args, **kwargs):
-        self.slug = self.slug + "-" + self.last_name
-        join = self.first_name + "-" + self.last_name
-        self.slug = slugify(join).lower()
-        super(Professor, self).save(*args, **kwargs)
+    def get_full_name(self):
+        """
+        Returns the first_name plus the last_name, with a space in between.
+        """
+        full_name = '%s %s' % (self.first_name, self.last_name)
+        return full_name
