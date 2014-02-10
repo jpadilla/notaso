@@ -4,7 +4,7 @@ from django import forms
 from django.shortcuts import get_object_or_404
 
 from professors.models import Professor
-from .models import Comments
+from .models import Comment
 
 
 class AddCommentForm(forms.ModelForm):
@@ -13,7 +13,7 @@ class AddCommentForm(forms.ModelForm):
     workload = forms.IntegerField(required=False)
     dificulty = forms.IntegerField(required=False)
     class Meta:
-        model = Comments
+        model = Comment
         fields = ['body', 'is_anonymous', 'responsibility', 'personality', 'workload', 'dificulty']
 
     def save_form(self, request, prof_slug):
