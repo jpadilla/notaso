@@ -19,7 +19,7 @@ def department_view(request, slug, department_slug):
     for department in Department.objects.all():
         if department.slug == department_slug:
             department_hit = True
-            data['specified_department'] = get_object_or_404(Department, id=department.id)
+            data['specified_department'] = department
     if department_hit is False:
         raise Http404
     return render_to_response('department.html', data)

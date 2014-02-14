@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
-from django.http import Http404
 
 from .models import Professor
 from .forms import AddProfessorForm
@@ -12,17 +11,13 @@ from comments.models import Comment
 
 
 def specific_professor_view(request, professors_slug):
-    hit = False
-    for professor in Professor.objects.all():
-        if professor.slug == professors_slug:
-            data = {
-                'specified_professor': get_object_or_404(Professor, id=professor.id),
-                'comment_form': AddCommentForm(),
-                'comments': Comment.objects.filter(professor=professor.id)
-            }
-            return render(request, 'professor.html', data)
-    if hit is False:
-        raise Http404
+    professor = get_object_or_404(Professor, slug=professors_slug)
+    data = {
+        'specified_professor': professor,
+        'comment_form': AddCommentForm(),
+        'comments': Comment.objects.filter(professor=professor.id)
+    }
+    return render(request, 'professor.html', data)
 
 @login_required(login_url='/login/')
 def create_professor_view(request):

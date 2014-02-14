@@ -1,5 +1,4 @@
 from django.shortcuts import render_to_response, get_object_or_404
-from django.http import Http404
 
 from .models import University
 
@@ -15,14 +14,10 @@ def universities_view(request):
 
 
 def specific_university_view(request, slug):
-    hit = False
-    for university in University.objects.all():
-        if university.slug == slug:
-            data = {
-                'specified_university': get_object_or_404(University, id=university.id),
-                'departments': Department.objects.all(),
-                'professors': Professor.objects.all()
-            }
-            return render_to_response("university.html", data)
-    if hit is False:
-        raise Http404
+    university = get_object_or_404(University, slug=slug)
+    data = {
+        'specified_university': university,
+        'departments': Department.objects.all(),
+        'professors': Professor.objects.filter(university=university)
+    }
+    return render_to_response("university.html", data)
