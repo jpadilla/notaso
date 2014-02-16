@@ -28,6 +28,6 @@ def login(request):
 
         if user is not None:
             auth.login(request, user)
-            return HttpResponseRedirect(reverse('universities:universities'))
+            return HttpResponseRedirect('/home/')
 
     return render(request, 'users/login.html', {'form' : form})
