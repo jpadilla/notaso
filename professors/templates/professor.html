@@ -7,6 +7,12 @@
     <p>{{specified_professor.gender}}
         <br>{{specified_professor.university}}
         <br>{{specified_professor.department}}</p>
+        <p> professor's grade {{grade}} <br>
+            professor's responsability {{responsability}} {{specified_professor.responsibility}} <br>
+            professor's personality {{personality}} {{specified_professor.personality}} <br>
+            professor's workload {{workload}} {{specified_professor.workload}} <br>
+            professor's difficulty {{difficulty}} {{specified_professor.difficulty}} <br>
+        </p>
 
     <br>
     <br>
@@ -29,7 +35,7 @@
     <p>{{ c.responsibility }}</p>
     <p>{{ c.personality }}</p>
     <p>{{ c.workload }}</p>
-    <p>{{ c.dificulty }}</p>
+    <p>{{ c.difficulty }}</p>
 
     <hr>{% endfor %}
 </body>

@@ -15,7 +15,7 @@ class Comment(models.Model):
     responsibility = models.IntegerField(null=True)
     personality = models.IntegerField(null=True)
     workload = models.IntegerField(null=True)
-    dificulty = models.IntegerField(null=True)
+    difficulty = models.IntegerField(null=True)
 
     def __unicode__(self):
         return self.body
