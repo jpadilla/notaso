@@ -11,10 +11,10 @@ class AddCommentForm(forms.ModelForm):
     responsibility = forms.IntegerField(required=False)
     personality = forms.IntegerField(required=False)
     workload = forms.IntegerField(required=False)
-    dificulty = forms.IntegerField(required=False)
+    difficulty = forms.IntegerField(required=False)
     class Meta:
         model = Comment
-        fields = ['body', 'is_anonymous', 'responsibility', 'personality', 'workload', 'dificulty']
+        fields = ['body', 'is_anonymous', 'responsibility', 'personality', 'workload', 'difficulty']
 
     def save_form(self, request, prof_slug):
         c = self.save(commit=False)

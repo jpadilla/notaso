@@ -24,11 +24,11 @@ class Professor(models.Model):
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL)
     slug = AutoSlugField(populate_from=populate_professor_slug, unique=True)
 
-    score = models.FloatField(editable=False)
-    responsability = models.FloatField(editable=False)
-    personality = models.FloatField(editable=False)
-    workload = models.FloatField(editable=False)
-    difficulty = models.FloatField(editable=False)
+    score = models.FloatField(editable=False, default=0)
+    responsibility = models.FloatField(editable=False, default=0)
+    personality = models.FloatField(editable=False, default=0)
+    workload = models.FloatField(editable=False, default=0)
+    difficulty = models.FloatField(editable=False, default=0)
 
     def __unicode__(self):
         return u'%s %s' % (self.first_name, self.last_name)
@@ -39,6 +39,9 @@ class Professor(models.Model):
         """
         full_name = '%s %s' % (self.first_name, self.last_name)
         return full_name
+
+    def save(self, *args, **kwargs):
+        super(Professor, self).save(*args, **kwargs)
 
     def get_percent(self):
         return self.score*100
@@ -55,21 +58,21 @@ class Professor(models.Model):
         else:
             return 'F'
 
-    def get_responsability(self):
-        responsability_percent = self.responsability*100
-        if responsability_percent >= 90:
+    def get_responsibility(self):
+        responsibility_percent = self.responsibility*100
+        if responsibility_percent >= 90:
             return 'A'
-        elif responsability_percent >= 80:
+        elif responsibility_percent >= 80:
             return 'B'
-        elif responsability_percent >= 70:
+        elif responsibility_percent >= 70:
             return 'C'
-        elif responsability_percent >= 60:
+        elif responsibility_percent >= 60:
             return 'D'
         else:
             return 'F'
 
     def get_personality(self):
-        personality_percent = self.responsability*100
+        personality_percent = self.personality*100
         if personality_percent >= 90:
             return 'A'
         elif personality_percent >= 80:
@@ -94,15 +97,15 @@ class Professor(models.Model):
         else:
             return 5
 
-    def get_dificulty(self):
-        dificulty_percent = self.dificulty*100
-        if dificulty_percent >= 90:
+    def get_difficulty(self):
+        difficulty_percent = self.difficulty*100
+        if difficulty_percent >= 90:
             return 1
-        elif dificulty_percent >= 80:
+        elif difficulty_percent >= 80:
             return 2
-        elif dificulty_percent >= 70:
+        elif difficulty_percent >= 70:
             return 3
-        elif dificulty_percent >= 60:
+        elif difficulty_percent >= 60:
             return 4
         else:
             return 5
