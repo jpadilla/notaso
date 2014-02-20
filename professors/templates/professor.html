@@ -6,18 +6,38 @@
     <h1>{{specified_professor.first_name}}{{specified_professor.last_name}}</h1>
     <p>{{specified_professor.gender}}
         <br>{{specified_professor.university}}
-        <br>{{specified_professor.department}}</p>
-        <p> professor's grade {{grade}} <br>
-            professor's responsability {{responsability}} {{specified_professor.responsibility}} <br>
-            professor's personality {{personality}} {{specified_professor.personality}} <br>
-            professor's workload {{workload}} {{specified_professor.workload}} <br>
-            professor's difficulty {{difficulty}} {{specified_professor.difficulty}} <br>
-        </p>
-
+        <br>{{specified_professor.department}}
+    </p>
+    <table border = "1">
+        <tr>
+            <th>Grade</th>
+            <th>Responsability</th>
+            <th>Personality</th>
+            <th>Workload</th>
+            <th>Difficulty</th>
+        </tr>
+        <tr>
+            <td>
+                {{grade}}
+            </td>
+            <td>
+                {{responsability}}
+            </td>
+            <td>
+                {{personality}}
+            </td>
+            <td>
+                {{workload}}
+            </td>
+            <td>
+                {{difficulty}}
+            </td>
+        </tr>
+    </table>
     <br>
     <br>
 
-    <form action="{% url 'professors:comment' specified_professor.slug %}" method="post">
+    <form action="" method="post">
         {% csrf_token %}
         <ul>
             {{comment_form.as_ul}}
@@ -34,7 +54,7 @@
     <p>Anonymous</p>
     {% else %}
     <p>{{ c.created_by }}</p>
-     
+
     {% endif %}
     <p>{{ c.is_anonimo }}</p>
     <p>{{ c.responsibility }}</p>

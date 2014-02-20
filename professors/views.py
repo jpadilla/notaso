@@ -17,9 +17,16 @@ class ProfessorListView(ListView):
 
 def specific_professor_view(request, professors_slug):
     professor = get_object_or_404(Professor, slug=professors_slug)
+        
+    form = AddCommentForm(request.POST or None)
+
+    if request.user.is_authenticated and form.is_valid():
+        form.save_form(request, professors_slug)
+        return HttpResponseRedirect('/professors/%s' % professors_slug)
+
     data = {
         'specified_professor': professor,
-        'comment_form': AddCommentForm(),
+        'comment_form': form,
         'comments': Comment.objects.filter(professor=professor.id),
         'grade': professor.get_grade(),
         'responsability': professor.get_responsibility(),
@@ -27,6 +34,8 @@ def specific_professor_view(request, professors_slug):
         'workload': professor.get_workload(),
         'difficulty': professor.get_difficulty()
     }
+
+
     return render(request, 'professor.html', data)
 
 
@@ -43,15 +52,3 @@ def create_professor_view(request):
         'form': form
     }
     return render(request, 'create-professor.html', data)
-
-
-@login_required(login_url='/login/')
-def post_comment(request, professors_slug):
-    form = AddCommentForm(request.POST or None)
-
-    if form.is_valid():
-        form.save_form(request, professors_slug)
-
-    return HttpResponseRedirect(reverse('professors:specified_professor',
-                                kwargs={'professors_slug': professors_slug}))
-
