@@ -30,7 +30,12 @@
 
     <p>{{ c.body }}</p>
     <p>{{ c.date }}</p>
+    {% if c.is_anonymous %}
+    <p>Anonymous</p>
+    {% else %}
     <p>{{ c.created_by }}</p>
+     
+    {% endif %}
     <p>{{ c.is_anonimo }}</p>
     <p>{{ c.responsibility }}</p>
     <p>{{ c.personality }}</p>

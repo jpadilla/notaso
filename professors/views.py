@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
+from django.views.generic.list import ListView
 
 from .models import Professor
 from .forms import AddProfessorForm
@@ -9,6 +10,10 @@ from .forms import AddProfessorForm
 from comments.forms import AddCommentForm
 from comments.models import Comment
 
+
+class ProfessorListView(ListView):
+    model = Professor
+    template_name = 'professor_list.html'
 
 def specific_professor_view(request, professors_slug):
     professor = get_object_or_404(Professor, slug=professors_slug)
@@ -46,36 +51,7 @@ def post_comment(request, professors_slug):
 
     if form.is_valid():
         form.save_form(request, professors_slug)
-        professor = get_object_or_404(Professor, slug=professors_slug)
-        comments = Comment.objects.filter(professor=professor.id).count()
-        if form.cleaned_data.get('responsibility') != 0:
-            professor.responsibility = responsibility_score(form, professor, comments)
-            professor.save()
-        if form.cleaned_data.get('personality') != 0:
-            professor.personality = personality_score(form, professor, comments)
-            professor.save()
-        if form.cleaned_data.get('workload') != 0:
-            professor.workload = workload_score(form, professor, comments)
-            professor.save()
-        if form.cleaned_data.get('difficulty') != 0:
-            professor.difficulty = difficulty_score(form, professor, comments)
-            professor.save()
 
     return HttpResponseRedirect(reverse('professors:specified_professor',
                                 kwargs={'professors_slug': professors_slug}))
 
-
-def responsibility_score(form, professor, comments):
-    return (professor.responsibility + form.cleaned_data.get('responsibility'))/(comments*5)
-
-
-def personality_score(form, professor, comments):
-    return (professor.personality + form.cleaned_data.get('personality'))/(comments*5)
-
-
-def workload_score(form, professor, comments):
-    return (professor.workload + form.cleaned_data.get('workload'))/(comments*5)
-
-
-def difficulty_score(form, professor, comments):
-    return (professor.difficulty + form.cleaned_data.get('difficulty'))/(comments*5)
