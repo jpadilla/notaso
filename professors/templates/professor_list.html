@@ -1,0 +1,10 @@
+{% extends 'base.html' %} 
+{% block content %}
+<hr> 
+<ul>
+    {% for p in object_list %}
+    <li><a href="{% url 'professors:specified_professor' p.slug %}">{{ p.first_name }}, {{ p.last_name }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}

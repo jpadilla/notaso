@@ -20,6 +20,10 @@ def register(request):
     return render(request, 'users/index.html', {'form' : form})
 
 def login(request):
+    print request.user
+    if request.user.is_authenticated():
+        return HttpResponseRedirect('/')
+
     form = UserLoginForm(request.POST or None)
     if form.is_valid():
         email = form.cleaned_data['email']
@@ -28,6 +32,12 @@ def login(request):
 
         if user is not None:
             auth.login(request, user)
-            return HttpResponseRedirect('/home/')
+            return HttpResponseRedirect('/')
 
     return render(request, 'users/login.html', {'form' : form})
+
+def logout(request):
+    if request.user.is_authenticated():
+        auth.logout(request)
+
+    return HttpResponseRedirect('/')

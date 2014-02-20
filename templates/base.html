@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+{% load staticfiles %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Notaso {% block title %}{% endblock title %}</title>
+    <style>
+    	html {
+        	font-family: helvetica, sans-serif;
+    	}
+    	.wrapper {
+        	width:80%;
+        	margin: auto;
+    	}
+    </style>
+    {% block css %}{% endblock css %}
+</head>
+
+<body>
+
+    <header class="wrapper">
+
+        <h1>Notaso</h1>
+
+        {% block header %} {% endblock header %}
+    </header>
+
+	<div class="wrapper">
+    {% block content %}
+    {% endblock content %} 
+ 	</div>
+    {% block js %}{% endblock js %}
+</body>
+
+</html>

@@ -18,6 +18,7 @@ def specific_university_view(request, slug):
     data = {
         'specified_university': university,
         'departments': Department.objects.all(),
-        'professors': Professor.objects.filter(university=university)
+        'professors': Professor.objects.filter(university=university),
+        'grade' : university.get_grade()
     }
     return render_to_response("university.html", data)
