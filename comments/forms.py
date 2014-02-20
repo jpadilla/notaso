@@ -22,3 +22,19 @@ class AddCommentForm(forms.ModelForm):
         c.professor = get_object_or_404(Professor, slug=prof_slug) 
         c.created_at = datetime.datetime.today()
         c.save()
+
+    def __init__(self, data=None, *args, **kwargs):
+        super(AddCommentForm, self).__init__(data, *args, **kwargs)
+        
+        if data:
+            rating_set = False
+
+            fields =  ['responsibility', 'personality', 'workload', 'difficulty']
+            
+            for field in fields:
+                if data.get(field):
+                    rating_set = True
+
+                if rating_set:
+                    self.fields[field].required = True
+                    self.fields['body'].required = False

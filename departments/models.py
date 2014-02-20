@@ -12,16 +12,15 @@ class Department(models.Model):
         return self.name
 
     def get_grade(instance, university):
-    	count = Professor.objects.filter(university=university, department=instance).count()
     	professors = Professor.objects.filter(university=university, department=instance)
         
+        count = 0
         percent = 0;
         for p in professors:
-        	percent += p.get_percent()
+            percent += p.get_percent()
+            count += 1
 
         percent = percent/count
-
-        print percent
 
         if percent >= 90:
             return 'A'

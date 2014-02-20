@@ -1,9 +1,7 @@
 from django.db import models
-from django.db.models import Sum
 from django.conf import settings
 from django.db.models.signals import post_save
 from django.shortcuts import get_object_or_404
-
 
 from professors.models import Professor
 
@@ -26,21 +24,38 @@ class Comment(models.Model):
 
 def recalculate_score(sender, **kwargs):
     c = kwargs['instance']
-    comments = Comment.objects.filter(professor=c.professor.id).count()
 
-    sum_responsibility = Comment.objects.filter(professor=c.professor.id).aggregate(Sum('responsibility'))['responsibility__sum']
-    sum_personality = Comment.objects.filter(professor=c.professor.id).aggregate(Sum('personality'))['personality__sum']
-    sum_workload = Comment.objects.filter(professor=c.professor.id).aggregate(Sum('workload'))['workload__sum']
-    sum_difficulty = Comment.objects.filter(professor=c.professor.id).aggregate(Sum('difficulty'))['difficulty__sum']
+    if c.responsibility and c.personality and c.workload and c.difficulty:   
+        comments = Comment.objects.filter(
+            professor=c.professor.id, 
+            responsibility__isnull=False, 
+            personality__isnull=False,
+            workload__isnull=False,
+            difficulty__isnull=False)
 
-    score = float((sum_responsibility+sum_personality+sum_workload+sum_difficulty))/(comments*20)
+        comments_count = 0
+        sum_responsibility = 0
+        sum_personality = 0
+        sum_workload = 0
+        sum_difficulty = 0
 
-    p = get_object_or_404(Professor, pk=c.professor.id)
-    p.score = score
-    p.responsibility = float(sum_responsibility)/(comments*5)
-    p.personality = float(sum_personality)/(comments*5)
-    p.workload = float(sum_workload)/(comments*5)
-    p.difficulty = float(sum_difficulty)/(comments*5)
-    p.save()
+        for c in comments:
+            sum_responsibility += c.responsibility
+            sum_personality += c.personality
+            sum_workload += c.workload
+            sum_difficulty += c.difficulty
+            comments_count += 1
+
+        score = float((sum_responsibility+sum_personality+sum_workload+sum_difficulty))/(comments_count*20)
+
+        p = get_object_or_404(Professor, pk=c.professor.id)
+        p.score = score
+    
+        p.responsibility = float(sum_responsibility)/(comments_count*5)
+        p.personality = float(sum_personality)/(comments_count*5)
+        p.workload = float(sum_workload)/(comments_count*5)
+        p.difficulty = float(sum_difficulty)/(comments_count*5)
+
+        p.save()
 
 post_save.connect(recalculate_score, sender=Comment)
