@@ -1,0 +1,19 @@
+from users.models import User
+import json
+file = open('users.json')
+js = json.load(file)
+for i in js:
+    u = User(id=i['pk'], first_name=i['fields']['first_name'], last_name=i['fields']['last_name'], gender=i['fields']['gender'].upper(), facebook_user_id=i['fields']['facebook_id'], is_active=i['fields']['is_active'], is_admin=i['fields']['is_staff'], email=i['fields']['email'], password=i['fields']['password'])
+    u.save()
+
+
+from professors.models import Professor
+from universities.models import University
+from departments.models import Department
+from users.models import User
+import json
+file = open('professors.json')
+js = json.load(file)
+for i in js:
+    u = Professor(id=i['pk'], first_name=i['fields']['name'], gender=i['fields']['sex'], university=University.objects.get(id=i['fields']['university']), department=Department.objects.get(id=i['fields']['department']), created_by=User.objects.get(id=i['fields']['created_by']))
+    u.save()

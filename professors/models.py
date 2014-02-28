@@ -9,15 +9,15 @@ def populate_professor_slug(instance):
 
 
 class Professor(models.Model):
-    MALE = 'M'
-    FEMALE = 'F'
+    MALE = 'm'
+    FEMALE = 'f'
     GENDER_CHOICES = (
         (MALE, 'Male'),
         (FEMALE, 'Female'),
     )
 
     first_name = models.CharField(max_length=25)
-    last_name = models.CharField(max_length=75)
+    last_name = models.CharField(max_length=75, blank=True)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
     university = models.ForeignKey('universities.University')
     department = models.ForeignKey('departments.Department')
@@ -38,6 +38,8 @@ class Professor(models.Model):
         Returns the first_name plus the last_name, with a space in between.
         """
         full_name = '%s %s' % (self.first_name, self.last_name)
+        self.first_name = full_name.split(' ')[0]
+        self.last_name = full_name.split(' ')[1]
         return full_name
 
     def save(self, *args, **kwargs):

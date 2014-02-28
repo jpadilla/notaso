@@ -13,7 +13,6 @@ class Department(models.Model):
 
     def get_grade(instance, university):
     	professors = Professor.objects.filter(university=university, department=instance)
-        
         count = 0
         percent = 0;
         for p in professors:
