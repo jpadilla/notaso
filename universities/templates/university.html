@@ -2,7 +2,12 @@
 <p>
 	<h3>Grade: <strong>{{ grade }}</strong></h3>
 </p>
-{% for depart in departments %}
-	<a href="{{depart.slug}}"> hit me! </a>
-	<br/>
-{% endfor %}
+<table>
+	{% for depart in departments %}
+	<tr>
+		<td>
+			<a href="{{depart.slug}}"> {{depart.name}} </a>
+		</td>
+	</tr>
+	{% endfor %}
+</table>
