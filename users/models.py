@@ -41,7 +41,7 @@ class User(AbstractBaseUser):
 
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
-    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES, null=True)
     facebook_user_id = models.CharField(max_length=30, null=True)
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
