@@ -17,7 +17,7 @@ class Professor(models.Model):
     )
 
     first_name = models.CharField(max_length=25)
-    last_name = models.CharField(max_length=75, blank=True)
+    last_name = models.CharField(max_length=75)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
     university = models.ForeignKey('universities.University')
     department = models.ForeignKey('departments.Department')
