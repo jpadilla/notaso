@@ -9,8 +9,8 @@ def populate_professor_slug(instance):
 
 
 class Professor(models.Model):
-    MALE = 'm'
-    FEMALE = 'f'
+    MALE = 'M'
+    FEMALE = 'F'
     GENDER_CHOICES = (
         (MALE, 'Male'),
         (FEMALE, 'Female'),
