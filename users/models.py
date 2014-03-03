@@ -38,7 +38,7 @@ class MyUserManager(BaseUserManager):
 
 class User(AbstractBaseUser):
     email = models.EmailField(max_length=40, unique=True)
-    GENDER_CHOICES = (('m', 'Male'), ('f', 'Female'),)
+    GENDER_CHOICES = (('M', 'Male'), ('F', 'Female'),)
 
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
