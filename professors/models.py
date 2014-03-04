@@ -38,8 +38,6 @@ class Professor(models.Model):
         Returns the first_name plus the last_name, with a space in between.
         """
         full_name = '%s %s' % (self.first_name, self.last_name)
-        self.first_name = full_name.split(' ')[0]
-        self.last_name = full_name.split(' ')[1]
         return full_name
 
     def save(self, *args, **kwargs):

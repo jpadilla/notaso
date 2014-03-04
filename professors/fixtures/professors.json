@@ -20,7 +20,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Raul",
-        "last_name": "Cotto",
+        "last_name": "Cotto Serrano",
         "gender": "M",
         "university": 8,
         "created_by": 2362,
@@ -206,8 +206,8 @@
     "pk": 13,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Orlando",
-        "last_name": "de",
+        "first_name": "Orlando de",
+        "last_name": "la Rosa",
         "gender": "M",
         "university": 8,
         "created_by": 2367,
@@ -258,7 +258,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Hector",
-        "last_name": "Jose",
+        "last_name": "Jose Huyke",
         "gender": "M",
         "university": 1,
         "created_by": 2369,
@@ -292,7 +292,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Mayra",
-        "last_name": "Cadiz",
+        "last_name": "Cadiz Garcia",
         "gender": "F",
         "university": 1,
         "created_by": 2369,
@@ -326,7 +326,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Erika",
-        "last_name": "Zambrano",
+        "last_name": "Zambrano Moreno",
         "gender": "F",
         "university": 1,
         "created_by": 2369,
@@ -360,7 +360,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Hector",
-        "last_name": "Suni",
+        "last_name": "Suni Puma",
         "gender": "M",
         "university": 1,
         "created_by": 2369,
@@ -376,8 +376,8 @@
     "pk": 23,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Luis",
-        "last_name": "F.",
+        "first_name": "Luis F.",
+        "last_name": "Campos",
         "gender": "M",
         "university": 26,
         "created_by": 2370,
@@ -564,7 +564,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Maria",
-        "last_name": "Elisa",
+        "last_name": "Elisa Santana",
         "gender": "F",
         "university": 43,
         "created_by": 2376,
@@ -768,7 +768,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Luis",
-        "last_name": "Ortiz",
+        "last_name": "Ortiz Negron",
         "gender": "M",
         "university": 22,
         "created_by": 2372,
@@ -784,8 +784,8 @@
     "pk": 47,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Lilliam",
+        "first_name": "Dra. Lilliam",
+        "last_name": "Laboy",
         "gender": "F",
         "university": 22,
         "created_by": 2372,
@@ -835,8 +835,8 @@
     "pk": 50,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Luz",
+        "first_name": "Dra. Luz",
+        "last_name": "Rivera",
         "gender": "F",
         "university": 22,
         "created_by": 2372,
@@ -853,7 +853,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Herminio",
-        "last_name": "Rodriguez",
+        "last_name": "Rodriguez Pr\u00edncipe ",
         "gender": "M",
         "university": 22,
         "created_by": 2372,
@@ -869,8 +869,8 @@
     "pk": 52,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Jose",
-        "last_name": "E.",
+        "first_name": "Jose E.",
+        "last_name": "Moura",
         "gender": "M",
         "university": 22,
         "created_by": 2372,
@@ -887,7 +887,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Maria",
-        "last_name": "Elba",
+        "last_name": "Elba Torres",
         "gender": "F",
         "university": 8,
         "created_by": 2367,
@@ -937,8 +937,8 @@
     "pk": 56,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Mar\u00eda",
+        "first_name": "Dra. Mar\u00eda",
+        "last_name": "Galarza ",
         "gender": "F",
         "university": 22,
         "created_by": 2372,
@@ -988,8 +988,8 @@
     "pk": 59,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Gabriel",
+        "first_name": "Dr. Gabriel",
+        "last_name": "Martinez",
         "gender": "M",
         "university": 40,
         "created_by": 1,
@@ -1022,8 +1022,8 @@
     "pk": 61,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Carmen",
-        "last_name": "C.",
+        "first_name": "Carmen C.",
+        "last_name": "Umpierre",
         "gender": "F",
         "university": 12,
         "created_by": 2380,
@@ -1040,7 +1040,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Matanzo",
-        "last_name": "",
+        "last_name": "Umpierre",
         "gender": "F",
         "university": 43,
         "created_by": 2379,
@@ -1049,15 +1049,15 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 19,
-        "slug": "matanzo",
+        "slug": "matanzo-umpierre",
         "personality": 0.0
     }
 }, {
     "pk": 63,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Ramon",
-        "last_name": "A.",
+        "first_name": "Ramon A.",
+        "last_name": "Soltero",
         "gender": "M",
         "university": 21,
         "created_by": 2384,
@@ -1091,7 +1091,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Sarah",
-        "last_name": "Platt",
+        "last_name": "Platt ",
         "gender": "F",
         "university": 16,
         "created_by": 2384,
@@ -1108,7 +1108,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ives",
-        "last_name": "Paul",
+        "last_name": "Paul Corcelle",
         "gender": "M",
         "university": 12,
         "created_by": 2388,
@@ -1125,7 +1125,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Mar\u00eda",
-        "last_name": "del",
+        "last_name": "del Pilar Gonz\u00e1lez Ma\u00edz",
         "gender": "F",
         "university": 3,
         "created_by": 2364,
@@ -1176,7 +1176,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Walbert",
-        "last_name": "Marcano",
+        "last_name": "Marcano Aguayo",
         "gender": "M",
         "university": 10,
         "created_by": 2390,
@@ -1311,8 +1311,8 @@
     "pk": 78,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Irma",
+        "first_name": "Dra. Irma",
+        "last_name": "Santiago",
         "gender": "F",
         "university": 8,
         "created_by": 2398,
@@ -1430,8 +1430,8 @@
     "pk": 85,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Jos\u00e9",
-        "last_name": "R.",
+        "first_name": "Jos\u00e9 R.",
+        "last_name": "Silva",
         "gender": "M",
         "university": 8,
         "created_by": 2398,
@@ -1447,8 +1447,8 @@
     "pk": 86,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Arturo",
+        "first_name": "Dr. Arturo",
+        "last_name": "D\u00e1vila",
         "gender": "M",
         "university": 8,
         "created_by": 2398,
@@ -1516,7 +1516,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carmen",
-        "last_name": "Rita",
+        "last_name": "Rita Rabell",
         "gender": "F",
         "university": 8,
         "created_by": 2398,
@@ -1533,7 +1533,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Maria",
-        "last_name": "Elena",
+        "last_name": "Elena Rodr\u00edguez",
         "gender": "F",
         "university": 8,
         "created_by": 2398,
@@ -1550,7 +1550,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jos\u00e9",
-        "last_name": "Ram\u00f3n",
+        "last_name": "Ram\u00f3n Torres",
         "gender": "M",
         "university": 8,
         "created_by": 2398,
@@ -1652,7 +1652,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Pedro",
-        "last_name": "Juan",
+        "last_name": "Juan Rodriguez Esquerdo",
         "gender": "M",
         "university": 8,
         "created_by": 2367,
@@ -1788,7 +1788,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Alejandro",
-        "last_name": "Torres",
+        "last_name": "Torres Rivera",
         "gender": "M",
         "university": 8,
         "created_by": 2405,
@@ -1924,7 +1924,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ivonne",
-        "last_name": "Recinos",
+        "last_name": "Recinos Aquino",
         "gender": "M",
         "university": 1,
         "created_by": 2410,
@@ -1975,7 +1975,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Gerardo",
-        "last_name": "Muniz",
+        "last_name": "Muniz Villalon",
         "gender": "M",
         "university": 1,
         "created_by": 2410,
@@ -2043,7 +2043,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Pedro",
-        "last_name": "Vazquez",
+        "last_name": "Vazquez Baez",
         "gender": "M",
         "university": 11,
         "created_by": 2409,
@@ -2127,8 +2127,8 @@
     "pk": 126,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Fernando",
-        "last_name": "A.",
+        "first_name": "Fernando A.",
+        "last_name": "Souto Bachiller",
         "gender": "M",
         "university": 1,
         "created_by": 2410,
@@ -2145,7 +2145,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Emily",
-        "last_name": "Rose",
+        "last_name": "Rose Aguilo",
         "gender": "F",
         "university": 1,
         "created_by": 2410,
@@ -2264,7 +2264,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ana",
-        "last_name": "Del",
+        "last_name": "Del Llano",
         "gender": "F",
         "university": 11,
         "created_by": 2413,
@@ -2298,7 +2298,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Phaedra",
-        "last_name": "Gelipi",
+        "last_name": "Gelipi  Rodriguez",
         "gender": "F",
         "university": 42,
         "created_by": 2415,
@@ -2366,7 +2366,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Brunilda",
-        "last_name": "Cotto",
+        "last_name": "Cotto Ibarra",
         "gender": "F",
         "university": 8,
         "created_by": 2416,
@@ -2383,7 +2383,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jos\u00e9",
-        "last_name": "Perez",
+        "last_name": "Perez Llavona",
         "gender": "M",
         "university": 12,
         "created_by": 2417,
@@ -2536,7 +2536,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Doris",
-        "last_name": "Ramirez",
+        "last_name": "Ramirez Soto",
         "gender": "F",
         "university": 1,
         "created_by": 2428,
@@ -2552,8 +2552,8 @@
     "pk": 151,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Pablo",
-        "last_name": "J.",
+        "first_name": "Pablo J.",
+        "last_name": "Marrero",
         "gender": "M",
         "university": 1,
         "created_by": 2428,
@@ -2587,7 +2587,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carlos",
-        "last_name": "Rodriguez",
+        "last_name": "Rodriguez Minguela",
         "gender": "M",
         "university": 1,
         "created_by": 2428,
@@ -2655,7 +2655,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Morera",
-        "last_name": "",
+        "last_name": "Borges",
         "gender": "M",
         "university": 12,
         "created_by": 2417,
@@ -2664,7 +2664,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 34,
-        "slug": "morera",
+        "slug": "morera-borges",
         "personality": 0.0
     }
 }, {
@@ -2739,8 +2739,8 @@
     "pk": 162,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Maritza",
-        "last_name": "De",
+        "first_name": "Maritza De",
+        "last_name": "Jesus",
         "gender": "F",
         "university": 1,
         "created_by": 2435,
@@ -2757,7 +2757,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Marta",
-        "last_name": "Jimenez",
+        "last_name": "Jimenez Alicea",
         "gender": "F",
         "university": 11,
         "created_by": 2436,
@@ -2773,8 +2773,8 @@
     "pk": 164,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Eduardo",
+        "first_name": "Dr. Eduardo",
+        "last_name": "Su\u00e1rez",
         "gender": "M",
         "university": 8,
         "created_by": 2398,
@@ -2790,8 +2790,8 @@
     "pk": 165,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Juan",
+        "first_name": "Dr. Juan",
+        "last_name": "Hernandez",
         "gender": "M",
         "university": 8,
         "created_by": 2438,
@@ -2807,8 +2807,8 @@
     "pk": 166,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Mayra",
+        "first_name": "Dra. Mayra",
+        "last_name": "Rosario Urrutia",
         "gender": "F",
         "university": 8,
         "created_by": 2438,
@@ -2824,8 +2824,8 @@
     "pk": 167,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Carlos",
+        "first_name": "Dr. Carlos",
+        "last_name": "Mendoza",
         "gender": "M",
         "university": 7,
         "created_by": 2438,
@@ -2841,8 +2841,8 @@
     "pk": 168,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Hilda",
+        "first_name": "Dra. Hilda",
+        "last_name": "Vera",
         "gender": "F",
         "university": 7,
         "created_by": 2438,
@@ -2892,8 +2892,8 @@
     "pk": 171,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Mae",
+        "first_name": "Dra. Mae",
+        "last_name": "Lynn Reyes",
         "gender": "F",
         "university": 8,
         "created_by": 2398,
@@ -2944,7 +2944,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jos\u00e9",
-        "last_name": "Felix",
+        "last_name": "Felix G\u00f3mez",
         "gender": "M",
         "university": 8,
         "created_by": 2398,
@@ -2961,7 +2961,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jos\u00e9",
-        "last_name": "Rafael",
+        "last_name": "Rafael Iguina",
         "gender": "M",
         "university": 8,
         "created_by": 2398,
@@ -2994,8 +2994,8 @@
     "pk": 177,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Maria",
-        "last_name": "de",
+        "first_name": "Maria de",
+        "last_name": "los A. Gomez",
         "gender": "F",
         "university": 8,
         "created_by": 2398,
@@ -3012,7 +3012,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carlos",
-        "last_name": "del",
+        "last_name": "del Toro",
         "gender": "M",
         "university": 8,
         "created_by": 2398,
@@ -3113,8 +3113,8 @@
     "pk": 184,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Cruz",
-        "last_name": "M",
+        "first_name": "Cruz M",
+        "last_name": "Ortiz Cuadra",
         "gender": "M",
         "university": 11,
         "created_by": 2448,
@@ -3165,7 +3165,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Nilda",
-        "last_name": "Seda",
+        "last_name": "Seda Cuevas",
         "gender": "F",
         "university": 34,
         "created_by": 2453,
@@ -3181,8 +3181,8 @@
     "pk": 188,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Lesbia",
-        "last_name": "M.",
+        "first_name": "Lesbia M.",
+        "last_name": "Cruz",
         "gender": "F",
         "university": 34,
         "created_by": 2453,
@@ -3216,7 +3216,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carmen",
-        "last_name": "Ana",
+        "last_name": "Ana Miranda",
         "gender": "F",
         "university": 11,
         "created_by": 2452,
@@ -3249,8 +3249,8 @@
     "pk": 192,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Luz",
-        "last_name": "M.",
+        "first_name": "Luz M.",
+        "last_name": "Cordero",
         "gender": "F",
         "university": 11,
         "created_by": 2455,
@@ -3267,7 +3267,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Maximiliano",
-        "last_name": "Due\u00f1as",
+        "last_name": "Due\u00f1as Guzman",
         "gender": "M",
         "university": 11,
         "created_by": 2452,
@@ -3556,7 +3556,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Dennis",
-        "last_name": "Vald\u00e9s",
+        "last_name": "Vald\u00e9s Brito",
         "gender": "M",
         "university": 22,
         "created_by": 2475,
@@ -3573,7 +3573,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carmen",
-        "last_name": "Fuentes",
+        "last_name": "Fuentes ",
         "gender": "F",
         "university": 29,
         "created_by": 2477,
@@ -3624,7 +3624,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Federico",
-        "last_name": "Mejia",
+        "last_name": "Mejia ",
         "gender": "M",
         "university": 21,
         "created_by": 2479,
@@ -3641,7 +3641,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carlos",
-        "last_name": "Velez",
+        "last_name": "Velez Granell",
         "gender": "M",
         "university": 22,
         "created_by": 2479,
@@ -3657,8 +3657,8 @@
     "pk": 216,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Jos\u00e9",
-        "last_name": "L.",
+        "first_name": "Jos\u00e9 L.",
+        "last_name": "Garrido",
         "gender": "M",
         "university": 8,
         "created_by": 2480,
@@ -3709,7 +3709,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Pedro",
-        "last_name": "San",
+        "last_name": "San Miguel",
         "gender": "M",
         "university": 8,
         "created_by": 2489,
@@ -3726,7 +3726,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jos\u00e9",
-        "last_name": "Cruz",
+        "last_name": "Cruz Arrigoita",
         "gender": "M",
         "university": 8,
         "created_by": 2489,
@@ -3759,8 +3759,8 @@
     "pk": 222,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Prof.",
-        "last_name": "Luis",
+        "first_name": "Prof. Luis A.",
+        "last_name": "Vel\u00e1zquez Vera",
         "gender": "M",
         "university": 9,
         "created_by": 2493,
@@ -3776,8 +3776,8 @@
     "pk": 223,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Jose",
-        "last_name": "L",
+        "first_name": "Jose L",
+        "last_name": "Pacheco Roman",
         "gender": "M",
         "university": 28,
         "created_by": 2495,
@@ -3793,8 +3793,8 @@
     "pk": 224,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Jose",
-        "last_name": "A",
+        "first_name": "Jose A",
+        "last_name": "Franco Santiago",
         "gender": "M",
         "university": 28,
         "created_by": 2495,
@@ -3811,7 +3811,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Gilberto",
-        "last_name": "Rodriguez",
+        "last_name": "Rodriguez Zayas",
         "gender": "M",
         "university": 28,
         "created_by": 2495,
@@ -3828,7 +3828,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Gary",
-        "last_name": "Gutierrez",
+        "last_name": "Gutierrez Rentas",
         "gender": "M",
         "university": 28,
         "created_by": 2495,
@@ -3845,7 +3845,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Nydia",
-        "last_name": "Guilbe",
+        "last_name": "Guilbe Vargas",
         "gender": "M",
         "university": 28,
         "created_by": 2495,
@@ -3878,8 +3878,8 @@
     "pk": 229,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Lic.",
-        "last_name": "Hern\u00e1n",
+        "first_name": "Lic. Hern\u00e1n",
+        "last_name": "Cort\u00e9s",
         "gender": "M",
         "university": 38,
         "created_by": 2498,
@@ -3929,8 +3929,8 @@
     "pk": 232,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Cristina",
+        "first_name": "Dra. Cristina",
+        "last_name": "Torres Velazquez",
         "gender": "F",
         "university": 28,
         "created_by": 2495,
@@ -4032,7 +4032,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Rosario",
-        "last_name": "Ventura",
+        "last_name": "Ventura Miguel",
         "gender": "F",
         "university": 11,
         "created_by": 2503,
@@ -4048,8 +4048,8 @@
     "pk": 239,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Ileana",
-        "last_name": "N.",
+        "first_name": "Ileana N.",
+        "last_name": "Lugo",
         "gender": "F",
         "university": 17,
         "created_by": 2505,
@@ -4099,8 +4099,8 @@
     "pk": 242,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Raquel",
+        "first_name": "Dra. Raquel",
+        "last_name": "Rosario",
         "gender": "F",
         "university": 3,
         "created_by": 2509,
@@ -4117,7 +4117,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Nilsa",
-        "last_name": "Medina",
+        "last_name": "Medina Pi\u00f1a",
         "gender": "F",
         "university": 8,
         "created_by": 2510,
@@ -4134,7 +4134,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Dra",
-        "last_name": "Elizabeth",
+        "last_name": "Elizabeth Crespo",
         "gender": "F",
         "university": 3,
         "created_by": 2509,
@@ -4151,7 +4151,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Martha",
-        "last_name": "Qui\u00f1ones",
+        "last_name": "Qui\u00f1ones Dom\u00ednguez",
         "gender": "F",
         "university": 9,
         "created_by": 2518,
@@ -4202,7 +4202,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Luis",
-        "last_name": "Sanchez",
+        "last_name": "Sanchez Longo",
         "gender": "M",
         "university": 11,
         "created_by": 2531,
@@ -4253,7 +4253,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "\u00c1ngel",
-        "last_name": "Morera",
+        "last_name": "Morera Gonz\u00e1lez",
         "gender": "M",
         "university": 3,
         "created_by": 2364,
@@ -4270,7 +4270,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Clemencia",
-        "last_name": "Delgado",
+        "last_name": "Delgado Figueroa",
         "gender": "F",
         "university": 3,
         "created_by": 2364,
@@ -4287,7 +4287,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Etnairis",
-        "last_name": "Rivera",
+        "last_name": "Rivera Santos",
         "gender": "F",
         "university": 3,
         "created_by": 2364,
@@ -4304,7 +4304,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Nancy",
-        "last_name": "Villanueva",
+        "last_name": "Villanueva Col\u00f3n",
         "gender": "F",
         "university": 3,
         "created_by": 2364,
@@ -4321,7 +4321,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Antonio",
-        "last_name": "Huertas",
+        "last_name": "Huertas Berm\u00fadez",
         "gender": "M",
         "university": 3,
         "created_by": 2364,
@@ -4440,7 +4440,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Mariajose",
-        "last_name": "Moreno",
+        "last_name": "Moreno Viqueira",
         "gender": "F",
         "university": 8,
         "created_by": 2546,
@@ -4491,7 +4491,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jos\u00e9",
-        "last_name": "Efra\u00edn",
+        "last_name": "Efra\u00edn Hern\u00e1ndez Acevedo",
         "gender": "M",
         "university": 4,
         "created_by": 2547,
@@ -4507,8 +4507,8 @@
     "pk": 266,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Hayme\u00e9",
+        "first_name": "Dra. Hayme\u00e9",
+        "last_name": "Nazario",
         "gender": "F",
         "university": 17,
         "created_by": 2471,
@@ -4678,7 +4678,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Luis",
-        "last_name": "Hernandez",
+        "last_name": "Hernandez Roldan",
         "gender": "M",
         "university": 9,
         "created_by": 2556,
@@ -4712,7 +4712,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carlos",
-        "last_name": "Figueroa",
+        "last_name": "Figueroa Quintana",
         "gender": "M",
         "university": 25,
         "created_by": 2545,
@@ -4813,8 +4813,8 @@
     "pk": 284,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Miguel",
-        "last_name": "P.",
+        "first_name": "Miguel P.",
+        "last_name": "Sastre",
         "gender": "M",
         "university": 11,
         "created_by": 2561,
@@ -4865,7 +4865,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Bruckman",
-        "last_name": "",
+        "last_name": "Vega",
         "gender": "M",
         "university": 11,
         "created_by": 2561,
@@ -4874,7 +4874,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 21,
-        "slug": "bruckman",
+        "slug": "bruckman-vega",
         "personality": 0.0
     }
 }, {
@@ -4898,8 +4898,8 @@
     "pk": 289,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Manuel",
-        "last_name": "A.",
+        "first_name": "Manuel A.",
+        "last_name": "Saponara",
         "gender": "M",
         "university": 9,
         "created_by": 2562,
@@ -4916,7 +4916,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Roberto",
-        "last_name": "Rodriguez",
+        "last_name": "Rodriguez Rodriguez",
         "gender": "M",
         "university": 9,
         "created_by": 2562,
@@ -4932,8 +4932,8 @@
     "pk": 291,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Herminio",
-        "last_name": "De",
+        "first_name": "Herminio De",
+        "last_name": "Jesus Viera",
         "gender": "M",
         "university": 34,
         "created_by": 2453,
@@ -4949,8 +4949,8 @@
     "pk": 292,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Adela",
-        "last_name": "de",
+        "first_name": "Adela de",
+        "last_name": "Coro",
         "gender": "F",
         "university": 34,
         "created_by": 2453,
@@ -4967,7 +4967,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Lourdes",
-        "last_name": "Pe\u00f1a",
+        "last_name": "Pe\u00f1a Santiago",
         "gender": "F",
         "university": 34,
         "created_by": 2453,
@@ -4983,8 +4983,8 @@
     "pk": 294,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Migdalia",
-        "last_name": "De",
+        "first_name": "Migdalia De",
+        "last_name": "Jesus",
         "gender": "F",
         "university": 34,
         "created_by": 2453,
@@ -5001,7 +5001,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Vivian",
-        "last_name": "Olivera",
+        "last_name": "Olivera ",
         "gender": "F",
         "university": 8,
         "created_by": 2566,
@@ -5018,7 +5018,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carmen",
-        "last_name": "Irma",
+        "last_name": "Irma Gonzalez",
         "gender": "F",
         "university": 8,
         "created_by": 2566,
@@ -5035,7 +5035,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jose",
-        "last_name": "Longo",
+        "last_name": "Longo Mullet",
         "gender": "M",
         "university": 8,
         "created_by": 2566,
@@ -5051,8 +5051,8 @@
     "pk": 298,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Gabriel",
-        "last_name": "de",
+        "first_name": "Gabriel de",
+        "last_name": "la Luz",
         "gender": "M",
         "university": 8,
         "created_by": 2566,
@@ -5069,7 +5069,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Eliezer",
-        "last_name": "Nieves",
+        "last_name": "Nieves Rodriguez",
         "gender": "M",
         "university": 8,
         "created_by": 2566,
@@ -5273,7 +5273,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Profesora",
-        "last_name": "Eva",
+        "last_name": "Eva Lopez",
         "gender": "F",
         "university": 9,
         "created_by": 2574,
@@ -5290,7 +5290,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Zoe",
-        "last_name": "Santigao",
+        "last_name": "Santigao ",
         "gender": "F",
         "university": 38,
         "created_by": 2576,
@@ -5323,8 +5323,8 @@
     "pk": 314,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Aimee",
-        "last_name": "M.",
+        "first_name": "Aimee M.",
+        "last_name": "Montero",
         "gender": "F",
         "university": 1,
         "created_by": 2570,
@@ -5375,7 +5375,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Humberto",
-        "last_name": "Rodr\u00edguez",
+        "last_name": "Rodr\u00edguez Carmona",
         "gender": "M",
         "university": 1,
         "created_by": 2570,
@@ -5409,7 +5409,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Candido",
-        "last_name": "Perez",
+        "last_name": "Perez Oms",
         "gender": "M",
         "university": 1,
         "created_by": 2580,
@@ -5562,7 +5562,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jose",
-        "last_name": "Rivera",
+        "last_name": "Rivera Cartagena",
         "gender": "M",
         "university": 1,
         "created_by": 2581,
@@ -5629,8 +5629,8 @@
     "pk": 332,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Gayle",
-        "last_name": "W.",
+        "first_name": "Gayle W.",
+        "last_name": "Griggs",
         "gender": "F",
         "university": 1,
         "created_by": 2570,
@@ -5681,7 +5681,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Alfredo",
-        "last_name": "Ortiz",
+        "last_name": "Ortiz Mercado",
         "gender": "M",
         "university": 1,
         "created_by": 2581,
@@ -5749,7 +5749,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Vikram",
-        "last_name": "Raj",
+        "last_name": "Raj Pandya",
         "gender": "M",
         "university": 1,
         "created_by": 2581,
@@ -5817,7 +5817,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Mar\u00eda",
-        "last_name": "Gunt\u00edn",
+        "last_name": "Gunt\u00edn Burgos",
         "gender": "F",
         "university": 1,
         "created_by": 2570,
@@ -5919,7 +5919,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jorge",
-        "last_name": "L\u00f3pez",
+        "last_name": "L\u00f3pez Le\u00f3n ",
         "gender": "M",
         "university": 3,
         "created_by": 2585,
@@ -5970,7 +5970,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Luis",
-        "last_name": "Lugo",
+        "last_name": "Lugo Cortijo",
         "gender": "M",
         "university": 34,
         "created_by": 2453,
@@ -6038,7 +6038,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carmen",
-        "last_name": "Acevedo",
+        "last_name": "Acevedo Luc\u00edo",
         "gender": "F",
         "university": 8,
         "created_by": 2592,
@@ -6088,8 +6088,8 @@
     "pk": 359,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Rosario",
+        "first_name": "Dra. Rosario E.",
+        "last_name": "R\u00edos ",
         "gender": "F",
         "university": 2,
         "created_by": 2595,
@@ -6105,8 +6105,8 @@
     "pk": 360,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Prof.",
-        "last_name": "Hector",
+        "first_name": "Prof. Hector",
+        "last_name": "Lamboy",
         "gender": "M",
         "university": 2,
         "created_by": 2595,
@@ -6122,8 +6122,8 @@
     "pk": 361,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Jose",
+        "first_name": "Dr. Jose L.",
+        "last_name": "Alicea",
         "gender": "M",
         "university": 2,
         "created_by": 2595,
@@ -6139,8 +6139,8 @@
     "pk": 362,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Luis",
+        "first_name": "Dr. Luis R.",
+        "last_name": "Sanchez",
         "gender": "M",
         "university": 2,
         "created_by": 2595,
@@ -6156,8 +6156,8 @@
     "pk": 363,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Arelis",
+        "first_name": "Dra. Arelis",
+        "last_name": "Torres",
         "gender": "F",
         "university": 2,
         "created_by": 2595,
@@ -6173,8 +6173,8 @@
     "pk": 364,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Marisel",
+        "first_name": "Dra. Marisel",
+        "last_name": "Sepulveda ",
         "gender": "F",
         "university": 2,
         "created_by": 2595,
@@ -6190,8 +6190,8 @@
     "pk": 365,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Prof.",
-        "last_name": "Ineabelle",
+        "first_name": "Prof. Ineabelle",
+        "last_name": "Montes",
         "gender": "F",
         "university": 2,
         "created_by": 2595,
@@ -6207,8 +6207,8 @@
     "pk": 366,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Silvia",
+        "first_name": "Dra. Silvia",
+        "last_name": "Moroza",
         "gender": "F",
         "university": 2,
         "created_by": 2595,
@@ -6224,8 +6224,8 @@
     "pk": 367,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Mayra",
+        "first_name": "Dra. Mayra",
+        "last_name": "Montero",
         "gender": "F",
         "university": 2,
         "created_by": 2595,
@@ -6241,8 +6241,8 @@
     "pk": 368,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Jennifer",
+        "first_name": "Dra. Jennifer",
+        "last_name": "Alicea",
         "gender": "F",
         "university": 2,
         "created_by": 2595,
@@ -6258,8 +6258,8 @@
     "pk": 369,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Paco",
+        "first_name": "Dr. Paco",
+        "last_name": "Vazquez Pica",
         "gender": "M",
         "university": 2,
         "created_by": 2595,
@@ -6275,8 +6275,8 @@
     "pk": 370,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Legna",
+        "first_name": "Dra. Legna",
+        "last_name": "Vargas",
         "gender": "F",
         "university": 2,
         "created_by": 2595,
@@ -6292,8 +6292,8 @@
     "pk": 371,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Luis",
+        "first_name": "Dr. Luis",
+        "last_name": "Gonzalez Sotomayor",
         "gender": "M",
         "university": 2,
         "created_by": 2595,
@@ -6309,8 +6309,8 @@
     "pk": 372,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Carlos",
+        "first_name": "Dr. Carlos",
+        "last_name": "Zapata",
         "gender": "M",
         "university": 2,
         "created_by": 2595,
@@ -6326,8 +6326,8 @@
     "pk": 373,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Prof.",
-        "last_name": "Mayra",
+        "first_name": "Prof. Mayra",
+        "last_name": "Giorgi ",
         "gender": "F",
         "university": 2,
         "created_by": 2595,
@@ -6344,7 +6344,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Isabel",
-        "last_name": "Cintron",
+        "last_name": "Cintron ",
         "gender": "F",
         "university": 11,
         "created_by": 2602,
@@ -6513,8 +6513,8 @@
     "pk": 384,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Jos\u00e9",
+        "first_name": "Dr. Jos\u00e9",
+        "last_name": "Ram\u00f3n Villal\u00f3n",
         "gender": "M",
         "university": 2,
         "created_by": 2609,
@@ -6565,7 +6565,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Rosa",
-        "last_name": "Pellerano",
+        "last_name": "Pellerano ",
         "gender": "F",
         "university": 3,
         "created_by": 2613,
@@ -6701,7 +6701,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ana",
-        "last_name": "Morales",
+        "last_name": "Morales Zeno",
         "gender": "F",
         "university": 3,
         "created_by": 2628,
@@ -6752,7 +6752,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Rita",
-        "last_name": "Deliz",
+        "last_name": "Deliz ",
         "gender": "F",
         "university": 3,
         "created_by": 2628,
@@ -6802,8 +6802,8 @@
     "pk": 401,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Lydia",
-        "last_name": "E.",
+        "first_name": "Lydia E.",
+        "last_name": "Ayala",
         "gender": "F",
         "university": 19,
         "created_by": 2631,
@@ -6820,7 +6820,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Isaida",
-        "last_name": "Cabrera",
+        "last_name": "Cabrera Montero",
         "gender": "F",
         "university": 18,
         "created_by": 2631,
@@ -6854,7 +6854,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Dolores",
-        "last_name": "Aponte",
+        "last_name": "Aponte \"Lola\"",
         "gender": "F",
         "university": 8,
         "created_by": 2631,
@@ -6888,7 +6888,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Antonio",
-        "last_name": "Gonzalez",
+        "last_name": "Gonzalez Walker",
         "gender": "M",
         "university": 8,
         "created_by": 2631,
@@ -6956,7 +6956,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ram\u00f3n",
-        "last_name": "Lopez",
+        "last_name": "Lopez Aleman",
         "gender": "M",
         "university": 8,
         "created_by": 2631,
@@ -6973,7 +6973,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jose",
-        "last_name": "Maldonado",
+        "last_name": "Maldonado Moll",
         "gender": "M",
         "university": 8,
         "created_by": 2631,
@@ -7058,7 +7058,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Roberto",
-        "last_name": "Trinidad",
+        "last_name": "Trinidad Pizarro",
         "gender": "M",
         "university": 8,
         "created_by": 2631,
@@ -7177,7 +7177,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ramon",
-        "last_name": "Matos",
+        "last_name": "Matos Berrios",
         "gender": "M",
         "university": 10,
         "created_by": 2641,
@@ -7330,7 +7330,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ana",
-        "last_name": "Ivette",
+        "last_name": "Ivette Hern\u00e1ndez",
         "gender": "F",
         "university": 43,
         "created_by": 2366,
@@ -7363,8 +7363,8 @@
     "pk": 434,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Eva",
+        "first_name": "Dra. Eva",
+        "last_name": "Lopez ",
         "gender": "F",
         "university": 2,
         "created_by": 2659,
@@ -7398,7 +7398,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Benabe",
-        "last_name": "",
+        "last_name": "Lamore",
         "gender": "M",
         "university": 8,
         "created_by": 2664,
@@ -7407,7 +7407,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 34,
-        "slug": "benabe",
+        "slug": "benabe-lamore",
         "personality": 0.0
     }
 }, {
@@ -7432,7 +7432,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carmen",
-        "last_name": "Figueroa",
+        "last_name": "Figueroa ",
         "gender": "F",
         "university": 8,
         "created_by": 2381,
@@ -7449,7 +7449,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jose",
-        "last_name": "Alejandro",
+        "last_name": "Alejandro ",
         "gender": "M",
         "university": 49,
         "created_by": 2381,
@@ -7465,8 +7465,8 @@
     "pk": 440,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Maria",
-        "last_name": "E.",
+        "first_name": "Maria E.",
+        "last_name": "Alonso ",
         "gender": "F",
         "university": 8,
         "created_by": 2381,
@@ -7483,7 +7483,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Marta",
-        "last_name": "Medina",
+        "last_name": "Medina ",
         "gender": "F",
         "university": 8,
         "created_by": 2381,
@@ -7499,8 +7499,8 @@
     "pk": 442,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Hector",
-        "last_name": "R.",
+        "first_name": "Hector R.",
+        "last_name": "Maury",
         "gender": "M",
         "university": 8,
         "created_by": 2381,
@@ -7517,7 +7517,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ana",
-        "last_name": "Maria",
+        "last_name": "Maria Perez ",
         "gender": "F",
         "university": 8,
         "created_by": 2381,
@@ -7568,7 +7568,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ruben",
-        "last_name": "Soto",
+        "last_name": "Soto Rivera",
         "gender": "M",
         "university": 11,
         "created_by": 2448,
@@ -7585,7 +7585,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Arana",
-        "last_name": "",
+        "last_name": "Soto Rivera",
         "gender": "F",
         "university": 43,
         "created_by": 2599,
@@ -7594,7 +7594,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 19,
-        "slug": "arana",
+        "slug": "arana-soto-rivera",
         "personality": 0.0
     }
 }, {
@@ -7602,7 +7602,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Latorre",
-        "last_name": "",
+        "last_name": "Soto Rivera",
         "gender": "F",
         "university": 43,
         "created_by": 2599,
@@ -7611,7 +7611,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 1,
-        "slug": "latorre",
+        "slug": "latorre-soto-rivera",
         "personality": 0.0
     }
 }, {
@@ -7635,8 +7635,8 @@
     "pk": 450,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Jossie",
-        "last_name": "de",
+        "first_name": "Jossie de",
+        "last_name": "Varona",
         "gender": "F",
         "university": 4,
         "created_by": 2683,
@@ -7686,8 +7686,8 @@
     "pk": 453,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Juan",
-        "last_name": "C.",
+        "first_name": "Juan C.",
+        "last_name": "Musa",
         "gender": "M",
         "university": 39,
         "created_by": 2683,
@@ -7703,8 +7703,8 @@
     "pk": 454,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Renee",
-        "last_name": "de",
+        "first_name": "Renee de",
+        "last_name": "Luca",
         "gender": "F",
         "university": 4,
         "created_by": 2683,
@@ -7721,7 +7721,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Bert",
-        "last_name": "Rivera",
+        "last_name": "Rivera Marchand",
         "gender": "M",
         "university": 5,
         "created_by": 2684,
@@ -7840,7 +7840,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Saddi",
-        "last_name": "Orsini",
+        "last_name": "Orsini Luiggi",
         "gender": "M",
         "university": 7,
         "created_by": 2694,
@@ -7924,8 +7924,8 @@
     "pk": 467,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Arelis",
-        "last_name": "N.",
+        "first_name": "Arelis N.",
+        "last_name": "Arcelay Caro",
         "gender": "F",
         "university": 7,
         "created_by": 2694,
@@ -8061,7 +8061,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Antonio",
-        "last_name": "Garcia",
+        "last_name": "Garcia Del Toro",
         "gender": "M",
         "university": 4,
         "created_by": 2698,
@@ -8163,7 +8163,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Antonio",
-        "last_name": "Sanchez",
+        "last_name": "Sanchez Gaetan",
         "gender": "M",
         "university": 43,
         "created_by": 2451,
@@ -8180,7 +8180,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Axel",
-        "last_name": "Velez",
+        "last_name": "Velez Caraballo",
         "gender": "M",
         "university": 23,
         "created_by": 2706,
@@ -8367,7 +8367,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Miguel",
-        "last_name": "Rodriguez",
+        "last_name": "Rodriguez Casellas",
         "gender": "M",
         "university": 15,
         "created_by": 2710,
@@ -8537,7 +8537,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Luz",
-        "last_name": "Teresa",
+        "last_name": "Teresa Mart\u00ednez",
         "gender": "F",
         "university": 3,
         "created_by": 2727,
@@ -8621,8 +8621,8 @@
     "pk": 508,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Jos\u00e9",
-        "last_name": "E.",
+        "first_name": "Jos\u00e9 E.",
+        "last_name": "Gandia",
         "gender": "M",
         "university": 3,
         "created_by": 2734,
@@ -8842,8 +8842,8 @@
     "pk": 521,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Jos\u00e9",
-        "last_name": "A.",
+        "first_name": "Jos\u00e9 A.",
+        "last_name": "Rosado",
         "gender": "M",
         "university": 12,
         "created_by": 2742,
@@ -8877,7 +8877,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ram\u00f3n",
-        "last_name": "Soto",
+        "last_name": "Soto Mart\u00ednez",
         "gender": "F",
         "university": 34,
         "created_by": 2742,
@@ -8894,7 +8894,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Hamilton",
-        "last_name": "Cruz",
+        "last_name": "Cruz Rosa",
         "gender": "M",
         "university": 3,
         "created_by": 2364,
@@ -8996,7 +8996,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Gerardo",
-        "last_name": "Estrada",
+        "last_name": "Estrada Ferrer",
         "gender": "M",
         "university": 1,
         "created_by": 2428,
@@ -9047,7 +9047,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Wanda",
-        "last_name": "Ortiz",
+        "last_name": "Ortiz Carrion",
         "gender": "F",
         "university": 20,
         "created_by": 2765,
@@ -9098,7 +9098,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jorge",
-        "last_name": "Luis",
+        "last_name": "Luis Pi\u00f1ero Pi\u00f1ero",
         "gender": "M",
         "university": 20,
         "created_by": 2767,
@@ -9183,7 +9183,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "\u00c1ngel",
-        "last_name": "Carri\u00f3n",
+        "last_name": "Carri\u00f3n Tav\u00e1rez",
         "gender": "M",
         "university": 11,
         "created_by": 2773,
@@ -9200,7 +9200,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Graciela",
-        "last_name": "Roig",
+        "last_name": "Roig Casanova",
         "gender": "F",
         "university": 11,
         "created_by": 2773,
@@ -9217,7 +9217,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Pedro",
-        "last_name": "Silva",
+        "last_name": "Silva Vel\u00e1zquez",
         "gender": "M",
         "university": 11,
         "created_by": 2773,
@@ -9285,7 +9285,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jose",
-        "last_name": "Luis",
+        "last_name": "Luis Arroyo",
         "gender": "M",
         "university": 33,
         "created_by": 2775,
@@ -9319,7 +9319,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jose",
-        "last_name": "Luis",
+        "last_name": "Luis Gonzalez Robles",
         "gender": "M",
         "university": 22,
         "created_by": 2778,
@@ -9387,7 +9387,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Maria",
-        "last_name": "Ramos",
+        "last_name": "Ramos Rosado",
         "gender": "F",
         "university": 8,
         "created_by": 2381,
@@ -9437,8 +9437,8 @@
     "pk": 556,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Juan",
-        "last_name": "R",
+        "first_name": "Juan R",
+        "last_name": "Rodriguez Mejias",
         "gender": "M",
         "university": 4,
         "created_by": 2788,
@@ -9506,7 +9506,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Oronoz",
-        "last_name": "",
+        "last_name": "Agrait",
         "gender": "F",
         "university": 43,
         "created_by": 2805,
@@ -9515,7 +9515,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 13,
-        "slug": "oronoz",
+        "slug": "oronoz-agrait",
         "personality": 0.0
     }
 }, {
@@ -9523,7 +9523,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Maria",
-        "last_name": "Judy",
+        "last_name": "Judy Colon",
         "gender": "M",
         "university": 4,
         "created_by": 2811,
@@ -9591,7 +9591,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Myrna",
-        "last_name": "rodriguez",
+        "last_name": "rodriguez Veg",
         "gender": "F",
         "university": 4,
         "created_by": 2813,
@@ -9642,7 +9642,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Teresita",
-        "last_name": "Soto",
+        "last_name": "Soto Falto",
         "gender": "F",
         "university": 17,
         "created_by": 2814,
@@ -9676,7 +9676,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Juan",
-        "last_name": "Qui\u00f1ones",
+        "last_name": "Qui\u00f1ones Mat\u00edas",
         "gender": "M",
         "university": 17,
         "created_by": 2814,
@@ -9795,7 +9795,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Rafael",
-        "last_name": "del",
+        "last_name": "del Toro",
         "gender": "M",
         "university": 58,
         "created_by": 2809,
@@ -9897,7 +9897,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Luciano",
-        "last_name": "",
+        "last_name": "Pared",
         "gender": "M",
         "university": 9,
         "created_by": 2823,
@@ -9906,7 +9906,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 13,
-        "slug": "luciano",
+        "slug": "luciano-pared",
         "personality": 0.0
     }
 }, {
@@ -9999,7 +9999,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Eileen",
-        "last_name": "V\u00e1zquez",
+        "last_name": "V\u00e1zquez de Serrano",
         "gender": "F",
         "university": 3,
         "created_by": 2837,
@@ -10015,7 +10015,7 @@
     "pk": 590,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Sandra",
+        "first_name": "Sandra ",
         "last_name": "Cuadrado",
         "gender": "F",
         "university": 3,
@@ -10084,7 +10084,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Martinez",
-        "last_name": "",
+        "last_name": "Figueroa",
         "gender": "F",
         "university": 43,
         "created_by": 2379,
@@ -10093,7 +10093,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 3,
-        "slug": "martinez",
+        "slug": "martinez-figueroa",
         "personality": 0.0
     }
 }, {
@@ -10101,7 +10101,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ernesto",
-        "last_name": "Gonzalez",
+        "last_name": "Gonzalez Torres",
         "gender": "M",
         "university": 43,
         "created_by": 2850,
@@ -10186,7 +10186,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carmen",
-        "last_name": "Del",
+        "last_name": "Del Toro",
         "gender": "F",
         "university": 43,
         "created_by": 2852,
@@ -10237,7 +10237,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carlos",
-        "last_name": "Rojas",
+        "last_name": "Rojas Osorio",
         "gender": "M",
         "university": 11,
         "created_by": 2859,
@@ -10254,7 +10254,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Nilsa",
-        "last_name": "Lugo",
+        "last_name": "Lugo Colon",
         "gender": "F",
         "university": 11,
         "created_by": 2859,
@@ -10271,7 +10271,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Marcos",
-        "last_name": "Reyes",
+        "last_name": "Reyes Davila",
         "gender": "M",
         "university": 11,
         "created_by": 2859,
@@ -10288,7 +10288,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Evelyn",
-        "last_name": "Torres",
+        "last_name": "Torres Gallardo",
         "gender": "F",
         "university": 11,
         "created_by": 2859,
@@ -10322,7 +10322,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ladislao",
-        "last_name": "Perez",
+        "last_name": "Perez Almeyda",
         "gender": "M",
         "university": 34,
         "created_by": 2453,
@@ -10356,7 +10356,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ivette",
-        "last_name": "Gonzalez",
+        "last_name": "Gonzalez Buitrago",
         "gender": "F",
         "university": 8,
         "created_by": 2868,
@@ -10406,8 +10406,8 @@
     "pk": 613,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Luis",
-        "last_name": "A.",
+        "first_name": "Luis A.",
+        "last_name": "Gonz\u00e1lez",
         "gender": "M",
         "university": 11,
         "created_by": 2531,
@@ -10560,7 +10560,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Efrain",
-        "last_name": "Vazquez",
+        "last_name": "Vazquez Vera",
         "gender": "M",
         "university": 11,
         "created_by": 2624,
@@ -10695,8 +10695,8 @@
     "pk": 630,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Jesus",
-        "last_name": "M.",
+        "first_name": "Jesus M.",
+        "last_name": "Rivera Delgado",
         "gender": "M",
         "university": 43,
         "created_by": 2394,
@@ -10865,8 +10865,8 @@
     "pk": 640,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Carmen",
-        "last_name": "Z.",
+        "first_name": "Carmen Z.",
+        "last_name": "Perez Mart\u00ednez",
         "gender": "F",
         "university": 11,
         "created_by": 2914,
@@ -10882,8 +10882,8 @@
     "pk": 641,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Juan",
-        "last_name": "E.",
+        "first_name": "Juan E.",
+        "last_name": "Marcano",
         "gender": "M",
         "university": 11,
         "created_by": 2914,
@@ -10899,8 +10899,8 @@
     "pk": 642,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Lilliam",
+        "first_name": "Dra. Lilliam",
+        "last_name": "Alicea",
         "gender": "F",
         "university": 6,
         "created_by": 2915,
@@ -10968,7 +10968,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carlos",
-        "last_name": "G\u00f3mez",
+        "last_name": "G\u00f3mez Beras ",
         "gender": "M",
         "university": 11,
         "created_by": 2927,
@@ -10985,7 +10985,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Paula",
-        "last_name": "Rivera",
+        "last_name": "Rivera Torres",
         "gender": "F",
         "university": 11,
         "created_by": 2927,
@@ -11070,7 +11070,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Edwin",
-        "last_name": "Irizarry",
+        "last_name": "Irizarry Mora",
         "gender": "M",
         "university": 1,
         "created_by": 2942,
@@ -11087,7 +11087,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Luisa",
-        "last_name": "Seijo",
+        "last_name": "Seijo Maldonado",
         "gender": "F",
         "university": 1,
         "created_by": 2942,
@@ -11291,7 +11291,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Cabrer",
-        "last_name": "",
+        "last_name": "Olazagasti",
         "gender": "M",
         "university": 43,
         "created_by": 2949,
@@ -11300,7 +11300,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 25,
-        "slug": "cabrer",
+        "slug": "cabrer-olazagasti",
         "personality": 0.0
     }
 }, {
@@ -11392,8 +11392,8 @@
     "pk": 671,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Rosa",
-        "last_name": "M.",
+        "first_name": "Rosa M.",
+        "last_name": "Juarbe",
         "gender": "F",
         "university": 8,
         "created_by": 2970,
@@ -11427,7 +11427,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Glorivee",
-        "last_name": "Rosario",
+        "last_name": "Rosario ",
         "gender": "F",
         "university": 12,
         "created_by": 2971,
@@ -11443,8 +11443,8 @@
     "pk": 674,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dra.",
-        "last_name": "Migdalia",
+        "first_name": "Dra. Migdalia",
+        "last_name": "Alvarez",
         "gender": "F",
         "university": 2,
         "created_by": 2973,
@@ -11460,8 +11460,8 @@
     "pk": 675,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Prof.",
-        "last_name": "Heidi",
+        "first_name": "Prof. Heidi",
+        "last_name": "Reyes",
         "gender": "F",
         "university": 2,
         "created_by": 2973,
@@ -11563,7 +11563,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jos\u00e9",
-        "last_name": "Rodr\u00edguez",
+        "last_name": "Rodr\u00edguez Valent\u00edn",
         "gender": "M",
         "university": 3,
         "created_by": 2364,
@@ -11580,7 +11580,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Angel",
-        "last_name": "Rodr\u00edguez",
+        "last_name": "Rodr\u00edguez Negr\u00f3n",
         "gender": "M",
         "university": 11,
         "created_by": 2914,
@@ -11630,8 +11630,8 @@
     "pk": 685,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Eda",
-        "last_name": "M.",
+        "first_name": "Eda M.",
+        "last_name": "Burgos Malav\u00e9",
         "gender": "F",
         "university": 8,
         "created_by": 2906,
@@ -11647,8 +11647,8 @@
     "pk": 686,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Norma",
-        "last_name": "E.",
+        "first_name": "Norma E.",
+        "last_name": "Cruz",
         "gender": "F",
         "university": 8,
         "created_by": 2906,
@@ -11665,7 +11665,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Zoraida",
-        "last_name": "Santiago",
+        "last_name": "Santiago Buitrago",
         "gender": "F",
         "university": 8,
         "created_by": 2906,
@@ -11682,7 +11682,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Irizelma",
-        "last_name": "Robles",
+        "last_name": "Robles \u00c1lvarez",
         "gender": "F",
         "university": 8,
         "created_by": 2906,
@@ -11699,7 +11699,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jos\u00e9",
-        "last_name": "Garriga",
+        "last_name": "Garriga Pic\u00f3",
         "gender": "M",
         "university": 8,
         "created_by": 2913,
@@ -11716,7 +11716,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Luz",
-        "last_name": "del",
+        "last_name": "del Alba Acevedo",
         "gender": "F",
         "university": 8,
         "created_by": 2913,
@@ -11750,7 +11750,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Europa",
-        "last_name": "Pi\u00f1ero",
+        "last_name": "Pi\u00f1ero Gonz\u00e1lez",
         "gender": "F",
         "university": 8,
         "created_by": 2906,
@@ -11766,8 +11766,8 @@
     "pk": 693,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Luis",
-        "last_name": "R.",
+        "first_name": "Luis R.",
+        "last_name": "C\u00e1mara",
         "gender": "M",
         "university": 8,
         "created_by": 2913,
@@ -11835,7 +11835,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ada",
-        "last_name": "Haiman",
+        "last_name": "Haiman Arena",
         "gender": "F",
         "university": 8,
         "created_by": 2906,
@@ -11851,8 +11851,8 @@
     "pk": 698,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Zaira",
-        "last_name": "O.",
+        "first_name": "Zaira O.",
+        "last_name": "Rivera Casellas",
         "gender": "F",
         "university": 8,
         "created_by": 2993,
@@ -11954,7 +11954,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ernesto",
-        "last_name": "Ulloa",
+        "last_name": "Ulloa Davila",
         "gender": "M",
         "university": 15,
         "created_by": 3002,
@@ -11971,7 +11971,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Rodolfo",
-        "last_name": "Tardy",
+        "last_name": "Tardy Garcia",
         "gender": "M",
         "university": 15,
         "created_by": 3002,
@@ -11988,7 +11988,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Zulma",
-        "last_name": "Garcia",
+        "last_name": "Garcia Acevedo",
         "gender": "F",
         "university": 15,
         "created_by": 3002,
@@ -12005,7 +12005,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carmen",
-        "last_name": "Maldonado",
+        "last_name": "Maldonado Soto",
         "gender": "F",
         "university": 15,
         "created_by": 3002,
@@ -12022,7 +12022,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Maria",
-        "last_name": "Garcia",
+        "last_name": "Garcia Sandoval",
         "gender": "F",
         "university": 15,
         "created_by": 3002,
@@ -12039,7 +12039,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Manuel",
-        "last_name": "Capella",
+        "last_name": "Capella Casellas",
         "gender": "M",
         "university": 15,
         "created_by": 3002,
@@ -12056,7 +12056,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Miguel",
-        "last_name": "Soto",
+        "last_name": "Soto Soler",
         "gender": "M",
         "university": 15,
         "created_by": 3002,
@@ -12073,7 +12073,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Sergio",
-        "last_name": "Charon",
+        "last_name": "Charon ",
         "gender": "M",
         "university": 15,
         "created_by": 3002,
@@ -12107,7 +12107,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Blanca",
-        "last_name": "Tallaj",
+        "last_name": "Tallaj Almanzar",
         "gender": "F",
         "university": 15,
         "created_by": 3002,
@@ -12141,7 +12141,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Roberto",
-        "last_name": "Colon",
+        "last_name": "Colon Rodriguez",
         "gender": "M",
         "university": 15,
         "created_by": 3002,
@@ -12157,8 +12157,8 @@
     "pk": 716,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Maria",
-        "last_name": "de",
+        "first_name": "Maria de",
+        "last_name": "los angeles medina",
         "gender": "F",
         "university": 15,
         "created_by": 3001,
@@ -12175,7 +12175,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jocelyn",
-        "last_name": "Medina",
+        "last_name": "Medina Paneto",
         "gender": "F",
         "university": 43,
         "created_by": 2366,
@@ -12192,7 +12192,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Helmuth",
-        "last_name": "Calderon",
+        "last_name": "Calderon Mendez",
         "gender": "M",
         "university": 17,
         "created_by": 3012,
@@ -12209,7 +12209,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Mari",
-        "last_name": "Luz",
+        "last_name": "Luz Acevedo",
         "gender": "F",
         "university": 9,
         "created_by": 2975,
@@ -12226,7 +12226,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Horacio",
-        "last_name": "Serano",
+        "last_name": "Serano ",
         "gender": "M",
         "university": 9,
         "created_by": 2975,
@@ -12243,7 +12243,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Denise",
-        "last_name": "Rodriguez",
+        "last_name": "Rodriguez Carrasquillo",
         "gender": "M",
         "university": 11,
         "created_by": 2860,
@@ -12260,7 +12260,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jos\u00e9",
-        "last_name": "Rojas",
+        "last_name": "Rojas P\u00e9rez",
         "gender": "M",
         "university": 11,
         "created_by": 2860,
@@ -12277,7 +12277,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Sonia",
-        "last_name": "Parrilla",
+        "last_name": "Parrilla Colon",
         "gender": "F",
         "university": 11,
         "created_by": 3019,
@@ -12344,8 +12344,8 @@
     "pk": 727,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Alfredo",
-        "last_name": "J.",
+        "first_name": "Alfredo J.",
+        "last_name": "Torruella",
         "gender": "M",
         "university": 8,
         "created_by": 3023,
@@ -12361,8 +12361,8 @@
     "pk": 728,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Jaime",
-        "last_name": "A.",
+        "first_name": "Jaime A.",
+        "last_name": "Ponce de Le\u00f3n",
         "gender": "M",
         "university": 8,
         "created_by": 3023,
@@ -12378,8 +12378,8 @@
     "pk": 729,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Luis",
-        "last_name": "F.",
+        "first_name": "Luis F.",
+        "last_name": "Fonseca",
         "gender": "M",
         "university": 8,
         "created_by": 3023,
@@ -12396,7 +12396,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Lutful",
-        "last_name": "Bari",
+        "last_name": "Bari Bhuiyan",
         "gender": "M",
         "university": 8,
         "created_by": 3023,
@@ -12412,8 +12412,8 @@
     "pk": 731,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Peter",
-        "last_name": "X.",
+        "first_name": "Peter X.",
+        "last_name": "Feng",
         "gender": "M",
         "university": 8,
         "created_by": 3023,
@@ -12514,8 +12514,8 @@
     "pk": 737,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Prof.",
-        "last_name": "Marcelo",
+        "first_name": "Prof. Marcelo",
+        "last_name": "Ubriaco",
         "gender": "M",
         "university": 8,
         "created_by": 3028,
@@ -12566,7 +12566,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jose",
-        "last_name": "lucas",
+        "last_name": "lucas Rodriguez",
         "gender": "M",
         "university": 34,
         "created_by": 3044,
@@ -12583,7 +12583,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Marisol",
-        "last_name": "L\u00f3pez",
+        "last_name": "L\u00f3pez Filiberty",
         "gender": "F",
         "university": 34,
         "created_by": 3044,
@@ -12599,8 +12599,8 @@
     "pk": 742,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Felix",
-        "last_name": "A.",
+        "first_name": "Felix A.",
+        "last_name": "Ramos",
         "gender": "M",
         "university": 34,
         "created_by": 3044,
@@ -12617,7 +12617,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Roberto",
-        "last_name": "Garcia",
+        "last_name": "Garcia Cabrera",
         "gender": "M",
         "university": 34,
         "created_by": 3044,
@@ -12667,8 +12667,8 @@
     "pk": 746,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Lourdes",
-        "last_name": "De",
+        "first_name": "Lourdes De",
+        "last_name": "Le\u00f3n",
         "gender": "F",
         "university": 34,
         "created_by": 3044,
@@ -12702,7 +12702,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Edgardo",
-        "last_name": "Torres",
+        "last_name": "Torres Reyes",
         "gender": "M",
         "university": 34,
         "created_by": 3044,
@@ -12736,7 +12736,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Cuenca",
-        "last_name": "",
+        "last_name": "Westwood",
         "gender": "F",
         "university": 34,
         "created_by": 3044,
@@ -12745,7 +12745,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 33,
-        "slug": "cuenca",
+        "slug": "cuenca-westwood",
         "personality": 0.0
     }
 }, {
@@ -12787,7 +12787,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Llompart",
-        "last_name": "",
+        "last_name": "Torres",
         "gender": "M",
         "university": 43,
         "created_by": 2710,
@@ -12796,7 +12796,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 1,
-        "slug": "llompart",
+        "slug": "llompart-torres",
         "personality": 0.0
     }
 }, {
@@ -12804,7 +12804,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Andr\u00e9s",
-        "last_name": "Rodriguez",
+        "last_name": "Rodriguez Rubio",
         "gender": "M",
         "university": 43,
         "created_by": 2710,
@@ -12838,7 +12838,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Liliam",
-        "last_name": "Casillas",
+        "last_name": "Casillas Martinez",
         "gender": "F",
         "university": 11,
         "created_by": 2516,
@@ -12905,8 +12905,8 @@
     "pk": 760,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Edgardo",
-        "last_name": "A.",
+        "first_name": "Edgardo A.",
+        "last_name": "Ortiz Corps",
         "gender": "M",
         "university": 11,
         "created_by": 3051,
@@ -13008,7 +13008,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Maritza",
-        "last_name": "Santana",
+        "last_name": "Santana Sierra",
         "gender": "F",
         "university": 11,
         "created_by": 3062,
@@ -13160,8 +13160,8 @@
     "pk": 775,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Antonio",
+        "first_name": "Dr. Antonio",
+        "last_name": "Serra",
         "gender": "M",
         "university": 39,
         "created_by": 3078,
@@ -13177,8 +13177,8 @@
     "pk": 776,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Rafael",
-        "last_name": "A.",
+        "first_name": "Rafael A.",
+        "last_name": "Nieves Rivera",
         "gender": "M",
         "university": 5,
         "created_by": 3086,
@@ -13280,7 +13280,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jalil",
-        "last_name": "Sued",
+        "last_name": "Sued Badillo",
         "gender": "M",
         "university": 8,
         "created_by": 3105,
@@ -13296,8 +13296,8 @@
     "pk": 783,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Dr.",
-        "last_name": "Jalil",
+        "first_name": "Dr. Jalil",
+        "last_name": "Sued-Badillo",
         "gender": "M",
         "university": 8,
         "created_by": 3105,
@@ -13314,7 +13314,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Mayra",
-        "last_name": "Santos",
+        "last_name": "Santos Febres ",
         "gender": "F",
         "university": 8,
         "created_by": 3106,
@@ -13347,8 +13347,8 @@
     "pk": 786,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Carmen",
-        "last_name": "I.",
+        "first_name": "Carmen I.",
+        "last_name": "Medina",
         "gender": "F",
         "university": 11,
         "created_by": 3111,
@@ -13365,7 +13365,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Angel",
-        "last_name": "Fonseca",
+        "last_name": "Fonseca Mulero",
         "gender": "M",
         "university": 11,
         "created_by": 3117,
@@ -13382,7 +13382,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Carlos",
-        "last_name": "Cordero",
+        "last_name": "Cordero Jimenez",
         "gender": "M",
         "university": 11,
         "created_by": 3117,
@@ -13399,7 +13399,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Felix",
-        "last_name": "Lebron",
+        "last_name": "Lebron Algarin",
         "gender": "M",
         "university": 11,
         "created_by": 3117,
@@ -13416,7 +13416,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Pi~ero",
-        "last_name": "",
+        "last_name": "Lebron Algarin",
         "gender": "M",
         "university": 11,
         "created_by": 3122,
@@ -13425,7 +13425,7 @@
         "score": 0.0,
         "responsibility": 0.0,
         "department": 37,
-        "slug": "piero",
+        "slug": "piero-lebron-algarin",
         "personality": 0.0
     }
 }, {
@@ -13450,7 +13450,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Aida",
-        "last_name": "Rodr\u00edguez",
+        "last_name": "Rodr\u00edguez Roig",
         "gender": "F",
         "university": 11,
         "created_by": 3124,
@@ -13466,8 +13466,8 @@
     "pk": 793,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Sandra",
-        "last_name": "I",
+        "first_name": "Sandra I",
+        "last_name": "Rodriguez Maldonado",
         "gender": "F",
         "university": 11,
         "created_by": 3126,
@@ -13484,7 +13484,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Luis",
-        "last_name": "Lopez",
+        "last_name": "Lopez Rojas",
         "gender": "M",
         "university": 11,
         "created_by": 3128,
@@ -13500,8 +13500,8 @@
     "pk": 795,
     "model": "professors.professor",
     "fields": {
-        "first_name": "Jose",
-        "last_name": "A,",
+        "first_name": "Jose A,",
+        "last_name": "Saavedra",
         "gender": "M",
         "university": 11,
         "created_by": 3129,
@@ -13518,7 +13518,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jazmina",
-        "last_name": "Roman",
+        "last_name": "Roman Eyxarch",
         "gender": "F",
         "university": 11,
         "created_by": 3129,
@@ -13552,7 +13552,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Jose",
-        "last_name": "Diaz",
+        "last_name": "Diaz Pi\u00f1ero",
         "gender": "M",
         "university": 11,
         "created_by": 3129,
@@ -13637,7 +13637,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Vicor",
-        "last_name": "Ariel",
+        "last_name": "Ariel Mojica",
         "gender": "M",
         "university": 11,
         "created_by": 3180,
@@ -13688,7 +13688,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Rub\u00e9n",
-        "last_name": "Moreira",
+        "last_name": "Moreira Vidal",
         "gender": "M",
         "university": 11,
         "created_by": 2914,
@@ -13739,7 +13739,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Rosario",
-        "last_name": "Rivera",
+        "last_name": "Rivera ",
         "gender": "F",
         "university": 12,
         "created_by": 2691,
@@ -13824,7 +13824,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Gerardo",
-        "last_name": "Pi\u00f1ro",
+        "last_name": "Pi\u00f1ro Cadiz",
         "gender": "M",
         "university": 11,
         "created_by": 3129,
@@ -13892,7 +13892,7 @@
     "model": "professors.professor",
     "fields": {
         "first_name": "Ronald",
-        "last_name": "Selsby",
+        "last_name": "Selsby ",
         "gender": "M",
         "university": 8,
         "created_by": 2367,
