@@ -77,11 +77,24 @@ for u in js_university:
                 slug = " "
                 )
             uni.save()
-            print "created university " + u['id'] 
+            print "created university " + u['id']
 
+from universities.models import University
+import json
 
+file_with_slug = open('universities/fixtures/universities.json')
+js_with_slug = json.load(file_with_slug)
 
+file_without_slug = open('universities/fixtures/universities_final.json')
+js_without_slug = json.load(file_without_slug)
 
+for j in file_without_slug:
+    for i in file_with_slug:
+        if i['fields']['name'] == j['name'] and i['fields']['city'] == j['campus']:
+            uni = University(
+                slug = i['fields']['slug']
+                )
+            uni.save()
 
 
 from professors.models import Professor

@@ -5,7 +5,7 @@
         "city": "Mayag\u00fcez",
         "emblem": "uprm.png",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "urpm"
     }
 }, {
     "pk": 44,
@@ -14,7 +14,7 @@
         "city": "Ponce",
         "emblem": "uprp.png",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "uprp"
     }
 }, {
     "pk": 45,
@@ -23,7 +23,7 @@
         "city": "Bayam\u00f3n",
         "emblem": "uprb.png",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "uprb"
     }
 }, {
     "pk": 46,
@@ -32,7 +32,7 @@
         "city": "Metro",
         "emblem": "inter.png",
         "name": "Universidad Interamericana",
-        "slug": " "
+        "slug": "inter-metro"
     }
 }, {
     "pk": 47,
@@ -41,7 +41,7 @@
         "city": "Bayam\u00f3n",
         "emblem": "inter.png",
         "name": "Universidad Interamericana",
-        "slug": " "
+        "slug": "inter-bayamon"
     }
 }, {
     "pk": 49,
@@ -50,7 +50,7 @@
         "city": "Utuado",
         "emblem": "upru.png",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "upru"
     }
 }, {
     "pk": 50,
@@ -59,7 +59,7 @@
         "city": "Aguadilla",
         "emblem": "upraguadilla.png",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "uprag"
     }
 }, {
     "pk": 51,
@@ -68,7 +68,7 @@
         "city": "R\u00edo Piedras",
         "emblem": "uprrp.png",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "uprrp"
     }
 }, {
     "pk": 52,
@@ -77,7 +77,7 @@
         "city": "Arecibo",
         "emblem": "upra.png",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "upra"
     }
 }, {
     "pk": 53,
@@ -86,7 +86,7 @@
         "city": "Carolina",
         "emblem": "uprcarolina.png",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "uprca"
     }
 }, {
     "pk": 54,
@@ -95,7 +95,7 @@
         "city": "Humacao",
         "emblem": "uprh.png",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "uprh"
     }
 }, {
     "pk": 55,
@@ -104,7 +104,7 @@
         "city": "Cayey",
         "emblem": "uprcayey.png",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "uprc"
     }
 }, {
     "pk": 56,
@@ -113,7 +113,7 @@
         "city": "Ciencias M\u00e9dicas",
         "emblem": "uprcm.png",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "uprrcm"
     }
 }, {
     "pk": 57,
@@ -122,7 +122,7 @@
         "city": "Guaynabo",
         "emblem": "phoenix.png",
         "name": "University of Phoenix",
-        "slug": " "
+        "slug": "phoenix"
     }
 }, {
     "pk": 58,
@@ -131,7 +131,7 @@
         "city": "Hato Rey",
         "emblem": "pupr.png",
         "name": "Universidad Polit\u00e9cnica",
-        "slug": " "
+        "slug": "pupr"
     }
 }, {
     "pk": 59,
@@ -140,7 +140,7 @@
         "city": "Gurabo",
         "emblem": "turabo.png",
         "name": "Universidad del Turabo",
-        "slug": " "
+        "slug": "ut"
     }
 }, {
     "pk": 60,
@@ -149,7 +149,7 @@
         "city": "Aguadilla",
         "emblem": "inter.png",
         "name": "Universidad Interamericana",
-        "slug": " "
+        "slug": "inter-aguadilla"
     }
 }, {
     "pk": 61,
@@ -158,7 +158,7 @@
         "city": "Arecibo",
         "emblem": "inter.png",
         "name": "Universidad Interamericana",
-        "slug": " "
+        "slug": "inter-arecibo"
     }
 }, {
     "pk": 62,
@@ -167,7 +167,7 @@
         "city": "Barranquitas",
         "emblem": "inter.png",
         "name": "Universidad Interamericana",
-        "slug": " "
+        "slug": "inter-barranquitas"
     }
 }, {
     "pk": 63,
@@ -176,7 +176,7 @@
         "city": "Fajardo",
         "emblem": "inter.png",
         "name": "Universidad Interamericana",
-        "slug": " "
+        "slug": "inter-fajardo"
     }
 }, {
     "pk": 64,
@@ -185,7 +185,7 @@
         "city": "Guayama",
         "emblem": "inter.png",
         "name": "Universidad Interamericana",
-        "slug": " "
+        "slug": "inter-guayama"
     }
 }, {
     "pk": 65,
@@ -194,7 +194,7 @@
         "city": "Ponce",
         "emblem": "inter.png",
         "name": "Universidad Interamericana",
-        "slug": " "
+        "slug": "inter-ponce"
     }
 }, {
     "pk": 66,
@@ -203,7 +203,7 @@
         "city": "San Germ\u00e1n",
         "emblem": "inter.png",
         "name": "Universidad Interamericana",
-        "slug": " "
+        "slug": "inter-san-german"
     }
 }, {
     "pk": 67,
@@ -212,7 +212,7 @@
         "city": "Caguas",
         "emblem": "",
         "name": "Columbia College",
-        "slug": " "
+        "slug": "columbia-co-caguas"
     }
 }, {
     "pk": 68,
@@ -221,7 +221,7 @@
         "city": "Yauco",
         "emblem": "",
         "name": "Columbia College",
-        "slug": " "
+        "slug": "columbia-co-yauco"
     }
 }, {
     "pk": 69,
@@ -230,7 +230,7 @@
         "city": "Bayam\u00f3n",
         "emblem": "",
         "name": "Caribbean University",
-        "slug": " "
+        "slug": "caribbean-bayamon"
     }
 }, {
     "pk": 70,
@@ -239,7 +239,7 @@
         "city": "Carolina",
         "emblem": "",
         "name": "Caribbean University",
-        "slug": " "
+        "slug": "caribbean-carolina"
     }
 }, {
     "pk": 71,
@@ -248,7 +248,7 @@
         "city": "Ponce",
         "emblem": "",
         "name": "Caribbean University",
-        "slug": " "
+        "slug": "caribbean-ponce"
     }
 }, {
     "pk": 72,
@@ -257,7 +257,7 @@
         "city": "Vega Baja",
         "emblem": "",
         "name": "Caribbean University",
-        "slug": " "
+        "slug": "caribbean-vega-baja"
     }
 }, {
     "pk": 73,
@@ -266,7 +266,7 @@
         "city": "Bayam\u00f3n",
         "emblem": "",
         "name": "American University",
-        "slug": " "
+        "slug": "auprb"
     }
 }, {
     "pk": 74,
@@ -275,7 +275,7 @@
         "city": "Manat\u00ed",
         "emblem": "",
         "name": "American University",
-        "slug": " "
+        "slug": "auprm"
     }
 }, {
     "pk": 75,
@@ -284,7 +284,7 @@
         "city": "Bayam\u00f3n",
         "emblem": "",
         "name": "Universidad Central",
-        "slug": " "
+        "slug": "ucb"
     }
 }, {
     "pk": 76,
@@ -293,7 +293,7 @@
         "city": "Guaynabo",
         "emblem": "atlanticcollege.png",
         "name": "Atlantic College",
-        "slug": " "
+        "slug": "atlantic"
     }
 }, {
     "pk": 77,
@@ -302,7 +302,7 @@
         "city": "Ponce",
         "emblem": "pucpr.png",
         "name": "Universidad Cat\u00f3lica",
-        "slug": " "
+        "slug": "pucpr-ponce"
     }
 }, {
     "pk": 78,
@@ -311,7 +311,7 @@
         "city": "Mayaguez",
         "emblem": "pucpr.png",
         "name": "Universidad Cat\u00f3lica",
-        "slug": " "
+        "slug": "pucpr-mayaguez"
     }
 }, {
     "pk": 79,
@@ -320,7 +320,7 @@
         "city": "Arecibo",
         "emblem": "pucpr.png",
         "name": "Universidad Cat\u00f3lica",
-        "slug": " "
+        "slug": "pucpr-arecibo"
     }
 }, {
     "pk": 80,
@@ -329,7 +329,7 @@
         "city": "Bayam\u00f3n",
         "emblem": "ucb.png",
         "name": "Universidad Central del Caribe",
-        "slug": " "
+        "slug": "accaribe-bayamon"
     }
 }, {
     "pk": 81,
@@ -338,7 +338,7 @@
         "city": "Carolina",
         "emblem": "une.png",
         "name": "Universidad del Este",
-        "slug": " "
+        "slug": "une"
     }
 }, {
     "pk": 82,
@@ -347,7 +347,7 @@
         "city": "Cupey",
         "emblem": "umet.png",
         "name": "Universidad Metropolitana (UMET)",
-        "slug": " "
+        "slug": "umet"
     }
 }, {
     "pk": 83,
@@ -356,7 +356,7 @@
         "city": "Ponce",
         "emblem": "",
         "name": "Escuela de Medicina de Ponce",
-        "slug": " "
+        "slug": "psm"
     }
 }, {
     "pk": 84,
@@ -365,7 +365,7 @@
         "city": "San Juan",
         "emblem": "eapr.png",
         "name": "Escuela de Artes Pl\u00e1sticas de Puerto Rico",
-        "slug": " "
+        "slug": "eap"
     }
 }, {
     "pk": 85,
@@ -374,7 +374,7 @@
         "city": "San Juan",
         "emblem": "",
         "name": "Colegio Universitario de San Juan",
-        "slug": " "
+        "slug": "cunisanjuan"
     }
 }, {
     "pk": 86,
@@ -383,7 +383,7 @@
         "city": "San Juan",
         "emblem": "usc.png",
         "name": "Universidad del Sagrado Coraz\u00f3n",
-        "slug": " "
+        "slug": "sagrado"
     }
 }, {
     "pk": 87,
@@ -392,7 +392,7 @@
         "city": "Arecibo",
         "emblem": "",
         "name": "Icpr Junior College",
-        "slug": " "
+        "slug": "icprjc-arecibo"
     }
 }, {
     "pk": 88,
@@ -401,7 +401,7 @@
         "city": "Hato Rey",
         "emblem": "",
         "name": "Icpr Junior College",
-        "slug": " "
+        "slug": "icprjc-hato-rey"
     }
 }, {
     "pk": 89,
@@ -410,7 +410,7 @@
         "city": "Mayaguez",
         "emblem": "",
         "name": "Icpr Junior College",
-        "slug": " "
+        "slug": "icprjc-mayaguez"
     }
 }, {
     "pk": 90,
@@ -419,7 +419,7 @@
         "city": "San Juan",
         "emblem": "",
         "name": "Centro de Estudios Multidisciplinarios",
-        "slug": " "
+        "slug": "cem-san-juan"
     }
 }, {
     "pk": 91,
@@ -428,7 +428,7 @@
         "city": "Humacao",
         "emblem": "",
         "name": "Centro de Estudios Multidisciplinarios",
-        "slug": " "
+        "slug": "cem-humacao"
     }
 }, {
     "pk": 92,
@@ -437,7 +437,7 @@
         "city": "Rio Piedras",
         "emblem": "",
         "name": "Instituto Tecnologico de Puerto Rico",
-        "slug": " "
+        "slug": "itec-rio-piedras"
     }
 }, {
     "pk": 93,
@@ -446,7 +446,7 @@
         "city": "Guayama",
         "emblem": "",
         "name": "Instituto Tecnologico de Puerto Rico",
-        "slug": " "
+        "slug": "itec-rio-guayama"
     }
 }, {
     "pk": 94,
@@ -455,7 +455,7 @@
         "city": "Manati",
         "emblem": "",
         "name": "Instituto Tecnologico de Puerto Rico",
-        "slug": " "
+        "slug": "itec-manati"
     }
 }, {
     "pk": 95,
@@ -464,7 +464,7 @@
         "city": "Ponce",
         "emblem": "",
         "name": "Instituto Tecnologico de Puerto Rico",
-        "slug": " "
+        "slug": "itec-ponce"
     }
 }, {
     "pk": 96,
@@ -473,7 +473,7 @@
         "city": "San Juan",
         "emblem": "",
         "name": "Cambridge College",
-        "slug": " "
+        "slug": "cambridge-college"
     }
 }, {
     "pk": 97,
@@ -482,7 +482,7 @@
         "city": "Escuela de Derecho",
         "emblem": "",
         "name": "Universidad de Puerto Rico",
-        "slug": " "
+        "slug": "uprlaw"
     }
 }, {
     "pk": 100,
@@ -491,7 +491,7 @@
         "city": "Ponce",
         "emblem": "",
         "name": "Ponce Paramedical College",
-        "slug": " "
+        "slug": "popac"
     }
 }, {
     "pk": 101,
@@ -500,7 +500,7 @@
         "city": "Hato Rey",
         "emblem": "",
         "name": "EDP College",
-        "slug": " "
+        "slug": "edp-hato-rey"
     }
 }, {
     "pk": 102,
@@ -509,7 +509,7 @@
         "city": "San Sebasti\u00e1n",
         "emblem": "",
         "name": "EDP College",
-        "slug": " "
+        "slug": "edp-san-sebastian"
     }
 }, {
     "pk": 103,
@@ -518,7 +518,7 @@
         "city": "Bayam\u00f3n",
         "emblem": "",
         "name": "National University College",
-        "slug": " "
+        "slug": "nuc"
     }
 }, {
     "pk": 104,
@@ -527,7 +527,7 @@
         "city": "San Juan",
         "emblem": "",
         "name": "Instituto de Banca y Comercio",
-        "slug": " "
+        "slug": "ibanca-san-juan"
     }
 }, {
     "pk": 105,
@@ -536,7 +536,7 @@
         "city": "Ponce",
         "emblem": "",
         "name": "Instituto de Banca y Comercio",
-        "slug": " "
+        "slug": "ibanca-ponce"
     }
 }, {
     "pk": 106,
@@ -545,7 +545,7 @@
         "city": "Mayag\u00fcez",
         "emblem": "",
         "name": "Instituto de Banca y Comercio",
-        "slug": " "
+        "slug": "ibanca-mayaguez"
     }
 }, {
     "pk": 107,
@@ -554,7 +554,7 @@
         "city": "Caguas",
         "emblem": "",
         "name": "Instituto de Banca y Comercio",
-        "slug": " "
+        "slug": "ibanca-caguas"
     }
 }, {
     "pk": 108,
@@ -563,7 +563,7 @@
         "city": "Manat\u00ed",
         "emblem": "",
         "name": "Instituto de Banca y Comercio",
-        "slug": " "
+        "slug": "ibanca-manati"
     }
 }, {
     "pk": 109,
@@ -572,7 +572,7 @@
         "city": "Cayey",
         "emblem": "",
         "name": "Instituto de Banca y Comercio",
-        "slug": " "
+        "slug": "ibanca-cayey"
     }
 }, {
     "pk": 110,
@@ -581,7 +581,7 @@
         "city": "Fajardo",
         "emblem": "",
         "name": "Instituto de Banca y Comercio",
-        "slug": " "
+        "slug": "ibanca-fajardo"
     }
 }, {
     "pk": 111,
@@ -590,7 +590,7 @@
         "city": "Guayama",
         "emblem": "",
         "name": "Instituto de Banca y Comercio",
-        "slug": " "
+        "slug": "ibanca-guayama"
     }
 }, {
     "pk": 112,
@@ -599,7 +599,7 @@
         "city": "Humacao",
         "emblem": "",
         "name": "Instituto de Banca y Comercio",
-        "slug": " "
+        "slug": "ibanca-humacao"
     }
 }, {
     "pk": 113,
@@ -608,7 +608,7 @@
         "city": "Rio Piedras",
         "emblem": "",
         "name": "Instituto de Banca y Comercio",
-        "slug": " "
+        "slug": "ibanca-rio-piedras"
     }
 }, {
     "pk": 114,
@@ -617,7 +617,7 @@
         "city": "Arecibo",
         "emblem": "",
         "name": "Instituto de Banca y Comercio",
-        "slug": " "
+        "slug": "ibanca-arecibo"
     }
 }, {
     "pk": 115,

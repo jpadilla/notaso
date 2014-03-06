@@ -3,11 +3,18 @@ import json
 file = open('users.json')
 js = json.load(file)
 for i in js:
-	gender = i['fields']['gender']
-	if gender:
-		gender = gender.upper()
-	u = User(id=i['pk'], first_name=i['fields']['first_name'], last_name=i['fields']['last_name'], gender=gender, facebook_user_id=i['fields']['facebook_id'], is_active=i['fields']['is_active'], is_admin=i['fields']['is_staff'], email=i['fields']['email'], password=i['fields']['password'])
-	u.save()
+    gender = i['fields']['gender']
+    if gender:
+        gender = gender.upper()
+    u = User(id=i['pk'], first_name=i['fields']['first_name'], last_name=i['fields']['last_name'], gender=gender, facebook_user_id=i['fields']['facebook_id'], is_active=i['fields']['is_active'], is_admin=i['fields']['is_staff'], email=i['fields']['email'], password=i['fields']['password'])
+    u.save()
+
+from professors.models import Professor
+from users.models import User
+from universities.models import University
+from departments.models import Department
+import json
+
 
 
 from professors.models import Professor
@@ -15,11 +22,11 @@ from universities.models import University
 from departments.models import Department
 from users.models import User
 import json
-file = open('professors.json')
+file = open('professors_from_webappli.json')
 js = json.load(file)
 for i in js:
-    gender = i['fields']['sex'].upper()
-    names = i['fields']['name'].split(" ")
+    gender = i['sex'].upper()
+    names = i['name'].split(" ")
     print names
     if len(names) == 1:
         fname = names[0]
@@ -42,5 +49,5 @@ for i in js:
             else:
                 lname = " ".join(names[1:])
     print fname + " - " + lname
-    u = Professor(id=i['pk'], first_name=fname, last_name=lname, gender=gender, university=University.objects.get(id=i['fields']['university']), department=Department.objects.get(id=i['fields']['department']), created_by=User.objects.get(id=i['fields']['created_by']))
+    u = Professor(id=i['id'], first_name=fname, last_name=lname, gender=gender, university=University.objects.get(id=i['university_id']), department=Department.objects.get(id=i['department_id']), created_by=User.objects.get(id=i['created_by']))
     u.save()
