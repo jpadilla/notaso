@@ -22,13 +22,14 @@ class Comment(models.Model):
     def __unicode__(self):
         return self.body
 
+
 def recalculate_score(sender, **kwargs):
     c = kwargs['instance']
 
-    if c.responsibility and c.personality and c.workload and c.difficulty:   
+    if c.responsibility and c.personality and c.workload and c.difficulty:
         comments = Comment.objects.filter(
-            professor=c.professor.id, 
-            responsibility__isnull=False, 
+            professor=c.professor.id,
+            responsibility__isnull=False,
             personality__isnull=False,
             workload__isnull=False,
             difficulty__isnull=False)

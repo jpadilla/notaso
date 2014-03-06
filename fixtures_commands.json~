@@ -3,11 +3,11 @@ import json
 file = open('users.json')
 js = json.load(file)
 for i in js:
-	gender = i['fields']['gender']
-	if gender:
-		gender = gender.upper()
-	u = User(id=i['pk'], first_name=i['fields']['first_name'], last_name=i['fields']['last_name'], gender=gender, facebook_user_id=i['fields']['facebook_id'], is_active=i['fields']['is_active'], is_admin=i['fields']['is_staff'], email=i['fields']['email'], password=i['fields']['password'])
-	u.save()
+    gender = i['fields']['gender']
+    if gender:
+        gender = gender.upper()
+    u = User(id=i['pk'], first_name=i['fields']['first_name'], last_name=i['fields']['last_name'], gender=gender, facebook_user_id=i['fields']['facebook_id'], is_active=i['fields']['is_active'], is_admin=i['fields']['is_staff'], email=i['fields']['email'], password=i['fields']['password'])
+    u.save()
 
 
 from professors.models import Professor
@@ -18,29 +18,29 @@ import json
 file = open('professors.json')
 js = json.load(file)
 for i in js:
-	gender = i['fields']['sex'].upper()
-	name = i['fields']['name'].split()
-	fname = ""
-	lname = ""
-	if len(name) == 1:
-		fname = name[0]
-	elif len(name) == 2:
-		fname = name[0]
-		lname = name[1]
-	else:
-		if name[0].endswith('.'):
-			fname += name[0] + " " + name[1]
-			if name[2].endswith('.'):
-				fname += " " + name[2]
-				lname += ' '.join(name[3:])
-			else:
-				lname += ' '.join(name[2:])
-		else:
-			fname += name[0]
-			if name[1].endswith('.'):
-				fname += " " + name[1]
-				lname += ' '.join(name[2:])
-			else:
-				lname += ' '.join(name[1:])
-	u = Professor(id=i['pk'], first_name=fname, last_name=lname, gender=gender, university=University.objects.get(id=i['fields']['university']), department=Department.objects.get(id=i['fields']['department']), created_by=User.objects.get(id=i['fields']['created_by']))
-	u.save()
+    gender = i['fields']['sex'].upper()
+    name = i['fields']['name'].split()
+    fname = ""
+    lname = ""
+    if len(name) == 1:
+        fname = name[0]
+    elif len(name) == 2:
+        fname = name[0]
+        lname = name[1]
+    else:
+        if name[0].endswith('.'):
+            fname += name[0] + " " + name[1]
+            if name[2].endswith('.'):
+                fname += " " + name[2]
+                lname += ' '.join(name[3:])
+            else:
+                lname += ' '.join(name[2:])
+        else:
+            fname += name[0]
+            if name[1].endswith('.'):
+                fname += " " + name[1]
+                lname += ' '.join(name[2:])
+            else:
+                lname += ' '.join(name[1:])
+    u = Professor(id=i['pk'], first_name=fname, last_name=lname, gender=gender, university=University.objects.get(id=i['fields']['university']), department=Department.objects.get(id=i['fields']['department']), created_by=User.objects.get(id=i['fields']['created_by']))
+    u.save()
