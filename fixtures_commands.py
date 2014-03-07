@@ -1,3 +1,4 @@
+# Users
 from users.models import User
 import json
 file = open('users.json')
@@ -11,6 +12,7 @@ for i in js:
     u.save()
 
 
+# Professors
 from professors.models import Professor
 from universities.models import University
 from departments.models import Department
@@ -47,6 +49,7 @@ for i in js:
     u.save()
 
 
+# Universities
 from universities.models import University
 import json
 
@@ -97,19 +100,41 @@ for j in file_without_slug:
             uni.save()
 
 
+# Comments
 from professors.models import Professor
-from universities.models import University
-from departments.models import Department
 from users.models import User
+from comments.models import Comment
+
 import json
-
-file_professor = open('professors2.json')
-js_professor= json.load(file_professor)
-
-file = open('universities/fixtures/universities.json')
-js = json.load(file)
-
-file_university = open('webappli_notaso.json')
-js_university = json.load(file_university)
-
-...
+from datetime import datetime
+c = open('comments.json')
+comments = json.load(c)
+for i in comments:
+    user_id = i['user_id']
+    if User.objects.filter(id=user_id).count() > 0:
+        jd = i['johnDoe']
+        if jd == "1":
+            jd = True
+        else:
+            jd = False
+    date = datetime.strptime(i['date'],'%Y-%m-%d %H:%M:%S')
+    body = i['content']
+    if not body:
+       body = ""
+    responsibility = i['rating_1']
+    workload = i['rating_2']
+    difficulty = i['rating_3']
+    personality = i['rating_4']
+    if not responsibility:
+        responsibility = 0
+    if not workload:
+        workload = 0
+    if not difficulty:
+        difficulty = 0
+    if not personality:
+        personality = 0
+    if Professor.objects.filter(pk=i['professor_id']).count() > 0:    
+        comment = Comment(created_by=User.objects.get(id=user_id),professor=Professor.objects.get(pk=i['professor_id']),body = body,created_at=date,is_anonymous = jd,responsibility=responsibility,workload = workload,difficulty=difficulty,personality=personality)
+        comment.save()
+    else:
+        print user_id + " - " + i['id'] + " ---- " + "not found"
