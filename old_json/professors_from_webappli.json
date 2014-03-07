@@ -1,0 +1,5860 @@
+[{
+    "id": "1",
+    "university_id": "51",
+    "name": "Patricia Gonzalez",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "2"
+}, {
+    "id": "2",
+    "university_id": "51",
+    "name": "Raul Cotto Serrano",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "1"
+}, {
+    "id": "4",
+    "university_id": "86",
+    "name": "Gabriela Sifre",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "3"
+}, {
+    "id": "5",
+    "university_id": "86",
+    "name": "Virgen Ramos",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "3"
+}, {
+    "id": "6",
+    "university_id": "86",
+    "name": "Domingo P\u00e9rez",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "3"
+}, {
+    "id": "7",
+    "university_id": "86",
+    "name": "H\u00e9ctor Vient\u00f3s",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "3"
+}, {
+    "id": "8",
+    "university_id": "86",
+    "name": "Gloria Valed\u00f3n",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "3"
+}, {
+    "id": "9",
+    "university_id": "86",
+    "name": "Filia Garc\u00eda",
+    "sex": "F",
+    "department_id": "7",
+    "created_by": "3"
+}, {
+    "id": "10",
+    "university_id": "86",
+    "name": "Manuel Mu\u00f1iz",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "3"
+}, {
+    "id": "11",
+    "university_id": "86",
+    "name": "Mar\u00eda L\u00e1zaro",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "3"
+}, {
+    "id": "12",
+    "university_id": "86",
+    "name": "Zaida Gracia",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "3"
+}, {
+    "id": "13",
+    "university_id": "86",
+    "name": "Nadia Rein\u00e9s",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "3"
+}, {
+    "id": "14",
+    "university_id": "51",
+    "name": "Orlando de la Rosa",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "6"
+}, {
+    "id": "15",
+    "university_id": "51",
+    "name": "Aurelio Garcia",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "6"
+}, {
+    "id": "16",
+    "university_id": "66",
+    "name": "Gentil Est\u00e9vez",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "7"
+}, {
+    "id": "17",
+    "university_id": "43",
+    "name": "Hector Jose Huyke",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "8"
+}, {
+    "id": "18",
+    "university_id": "43",
+    "name": "Erwin Suazo",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "8"
+}, {
+    "id": "19",
+    "university_id": "43",
+    "name": "Mayra Cadiz Garcia",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "8"
+}, {
+    "id": "20",
+    "university_id": "43",
+    "name": "Rohit Sharma",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "8"
+}, {
+    "id": "21",
+    "university_id": "43",
+    "name": "Erika Zambrano Moreno",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "8"
+}, {
+    "id": "22",
+    "university_id": "43",
+    "name": "Ismael Rivera",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "8"
+}, {
+    "id": "23",
+    "university_id": "43",
+    "name": "Hector Suni Puma",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "8"
+}, {
+    "id": "24",
+    "university_id": "69",
+    "name": "Luis F. Campos",
+    "sex": "M",
+    "department_id": "26",
+    "created_by": "9"
+}, {
+    "id": "25",
+    "university_id": "45",
+    "name": "Yolanda Velez",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "9"
+}, {
+    "id": "26",
+    "university_id": "45",
+    "name": "Rosa Vallejo",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "9"
+}, {
+    "id": "27",
+    "university_id": "45",
+    "name": "Etnairis Rivera",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "9"
+}, {
+    "id": "28",
+    "university_id": "45",
+    "name": "Edward Caro",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "9"
+}, {
+    "id": "29",
+    "university_id": "45",
+    "name": "Samuel Diaz",
+    "sex": "M",
+    "department_id": "29",
+    "created_by": "9"
+}, {
+    "id": "30",
+    "university_id": "45",
+    "name": "Hector Padro",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "9"
+}, {
+    "id": "31",
+    "university_id": "45",
+    "name": "Juan Negron",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "9"
+}, {
+    "id": "32",
+    "university_id": "86",
+    "name": "Manuel Aquino",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "14"
+}, {
+    "id": "33",
+    "university_id": "45",
+    "name": "Joaqu\u00edn Med\u00edn",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "4"
+}, {
+    "id": "34",
+    "university_id": "86",
+    "name": "Teresa Gracia",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "15"
+}, {
+    "id": "35",
+    "university_id": "86",
+    "name": "Maria Elisa Santana",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "15"
+}, {
+    "id": "36",
+    "university_id": "51",
+    "name": "Hector Melendez",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "17"
+}, {
+    "id": "37",
+    "university_id": "86",
+    "name": "Andres Cab\u00e1n",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "3"
+}, {
+    "id": "38",
+    "university_id": "51",
+    "name": "Damian Roman",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "17"
+}, {
+    "id": "39",
+    "university_id": "86",
+    "name": "Mayra Llad\u00f3",
+    "sex": "F",
+    "department_id": "15",
+    "created_by": "3"
+}, {
+    "id": "40",
+    "university_id": "51",
+    "name": "Miguel Nater",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "17"
+}, {
+    "id": "41",
+    "university_id": "86",
+    "name": "Teresa L\u00f3pez",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "3"
+}, {
+    "id": "42",
+    "university_id": "86",
+    "name": "Ricardo Cruz",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "3"
+}, {
+    "id": "43",
+    "university_id": "86",
+    "name": "Carlos Lago",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "3"
+}, {
+    "id": "44",
+    "university_id": "86",
+    "name": "Walter G\u00f3mez",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "3"
+}, {
+    "id": "45",
+    "university_id": "55",
+    "name": "Daniel Cruz",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "20"
+}, {
+    "id": "46",
+    "university_id": "65",
+    "name": "Victor Feliberty",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "11"
+}, {
+    "id": "47",
+    "university_id": "65",
+    "name": "Luis Ortiz Negron",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "11"
+}, {
+    "id": "48",
+    "university_id": "65",
+    "name": "Dra. Lilliam Laboy",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "11"
+}, {
+    "id": "49",
+    "university_id": "65",
+    "name": "Rafael Balzac",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "11"
+}, {
+    "id": "50",
+    "university_id": "65",
+    "name": "Edgardo Balzac",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "11"
+}, {
+    "id": "51",
+    "university_id": "65",
+    "name": "Dra. Luz Rivera",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "11"
+}, {
+    "id": "52",
+    "university_id": "65",
+    "name": "Herminio Rodriguez Pr\u00edncipe ",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "11"
+}, {
+    "id": "53",
+    "university_id": "65",
+    "name": "Jose E. Moura",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "11"
+}, {
+    "id": "54",
+    "university_id": "51",
+    "name": "Maria Elba Torres",
+    "sex": "F",
+    "department_id": "20",
+    "created_by": "6"
+}, {
+    "id": "55",
+    "university_id": "65",
+    "name": "Vivien Mattei",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "11"
+}, {
+    "id": "56",
+    "university_id": "65",
+    "name": "Edwin Blanco",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "11"
+}, {
+    "id": "57",
+    "university_id": "65",
+    "name": "Dra. Mar\u00eda Galarza ",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "11"
+}, {
+    "id": "58",
+    "university_id": "65",
+    "name": "Giovanni Delgado",
+    "sex": "M",
+    "department_id": "12",
+    "created_by": "11"
+}, {
+    "id": "59",
+    "university_id": "65",
+    "name": "Elsa Correa",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "11"
+}, {
+    "id": "61",
+    "university_id": "86",
+    "name": "Olga Jim\u00e9nez",
+    "sex": "F",
+    "department_id": "12",
+    "created_by": "3"
+}, {
+    "id": "62",
+    "university_id": "55",
+    "name": "Carmen C. Umpierre",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "20"
+}, {
+    "id": "63",
+    "university_id": "86",
+    "name": "Matanzo",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "22"
+}, {
+    "id": "64",
+    "university_id": "64",
+    "name": "Ramon A. Soltero",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "25"
+}, {
+    "id": "65",
+    "university_id": "59",
+    "name": "Hiram Marrero",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "25"
+}, {
+    "id": "66",
+    "university_id": "59",
+    "name": "Sarah Platt ",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "25"
+}, {
+    "id": "67",
+    "university_id": "55",
+    "name": "Ives Paul Corcelle",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "29"
+}, {
+    "id": "261",
+    "university_id": "45",
+    "name": "Mar\u00eda del Pilar Gonz\u00e1lez Ma\u00edz",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "4"
+}, {
+    "id": "69",
+    "university_id": "45",
+    "name": "Javier Avalos",
+    "sex": "F",
+    "department_id": "21",
+    "created_by": "9"
+}, {
+    "id": "70",
+    "university_id": "45",
+    "name": "Antonio Algaze",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "9"
+}, {
+    "id": "71",
+    "university_id": "53",
+    "name": "Walbert Marcano Aguayo",
+    "sex": "M",
+    "department_id": "31",
+    "created_by": "32"
+}, {
+    "id": "72",
+    "university_id": "43",
+    "name": "Anibal Aponte",
+    "sex": "M",
+    "department_id": "10",
+    "created_by": "33"
+}, {
+    "id": "73",
+    "university_id": "86",
+    "name": "Rafael Melendez",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "36"
+}, {
+    "id": "75",
+    "university_id": "51",
+    "name": "Pedro Lipsett",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "39"
+}, {
+    "id": "76",
+    "university_id": "51",
+    "name": "Carlos Pab\u00f3n",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "40"
+}, {
+    "id": "77",
+    "university_id": "51",
+    "name": "Nora Ponte",
+    "sex": "F",
+    "department_id": "35",
+    "created_by": "40"
+}, {
+    "id": "78",
+    "university_id": "51",
+    "name": "Carlos V\u00e1zquez",
+    "sex": "M",
+    "department_id": "35",
+    "created_by": "40"
+}, {
+    "id": "79",
+    "university_id": "51",
+    "name": "Dra. Irma Santiago",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "40"
+}, {
+    "id": "80",
+    "university_id": "86",
+    "name": "E. Hernandez",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "41"
+}, {
+    "id": "81",
+    "university_id": "60",
+    "name": "Jos\u00e9 Navarro",
+    "sex": "M",
+    "department_id": "8",
+    "created_by": "40"
+}, {
+    "id": "82",
+    "university_id": "51",
+    "name": "Prof. Guzzardo",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "40"
+}, {
+    "id": "83",
+    "university_id": "51",
+    "name": "Nicholas Haydock",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "40"
+}, {
+    "id": "84",
+    "university_id": "51",
+    "name": "Michael Sharp",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "40"
+}, {
+    "id": "85",
+    "university_id": "51",
+    "name": "Maria Brazzoloto",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "40"
+}, {
+    "id": "86",
+    "university_id": "51",
+    "name": "Jos\u00e9 R. Silva",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "40"
+}, {
+    "id": "87",
+    "university_id": "51",
+    "name": "Dr. Arturo D\u00e1vila",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "40"
+}, {
+    "id": "88",
+    "university_id": "47",
+    "name": "Edwin Col\u00f3n",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "40"
+}, {
+    "id": "89",
+    "university_id": "47",
+    "name": "Kristin Cobos",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "40"
+}, {
+    "id": "90",
+    "university_id": "51",
+    "name": "C\u00e9sar Sol\u00e1",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "40"
+}, {
+    "id": "91",
+    "university_id": "51",
+    "name": "Carmen Rita Rabell",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "40"
+}, {
+    "id": "92",
+    "university_id": "51",
+    "name": "Maria Elena Rodr\u00edguez",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "40"
+}, {
+    "id": "93",
+    "university_id": "51",
+    "name": "Jos\u00e9 Ram\u00f3n Torres",
+    "sex": "M",
+    "department_id": "35",
+    "created_by": "40"
+}, {
+    "id": "94",
+    "university_id": "51",
+    "name": "Ernesto Alonso",
+    "sex": "M",
+    "department_id": "35",
+    "created_by": "40"
+}, {
+    "id": "95",
+    "university_id": "51",
+    "name": "Juan Sorroche",
+    "sex": "M",
+    "department_id": "35",
+    "created_by": "40"
+}, {
+    "id": "96",
+    "university_id": "51",
+    "name": "Luis Alvarez",
+    "sex": "M",
+    "department_id": "35",
+    "created_by": "40"
+}, {
+    "id": "97",
+    "university_id": "86",
+    "name": "Madeline Pietri",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "15"
+}, {
+    "id": "98",
+    "university_id": "51",
+    "name": "Estela Pagan",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "6"
+}, {
+    "id": "99",
+    "university_id": "51",
+    "name": "Pedro Juan Rodriguez Esquerdo",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "6"
+}, {
+    "id": "100",
+    "university_id": "51",
+    "name": "Walter Melendez",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "6"
+}, {
+    "id": "101",
+    "university_id": "45",
+    "name": "Carmen Skerett",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "43"
+}, {
+    "id": "102",
+    "university_id": "51",
+    "name": "Elizabeth Dvorsky",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "44"
+}, {
+    "id": "103",
+    "university_id": "51",
+    "name": "Alma Simounet",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "45"
+}, {
+    "id": "104",
+    "university_id": "51",
+    "name": "Rafael Rios",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "6"
+}, {
+    "id": "105",
+    "university_id": "51",
+    "name": "Vicky Muniz",
+    "sex": "F",
+    "department_id": "20",
+    "created_by": "6"
+}, {
+    "id": "106",
+    "university_id": "55",
+    "name": "Prof. Muncher",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "46"
+}, {
+    "id": "107",
+    "university_id": "51",
+    "name": "Alejandro Torres Rivera",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "47"
+}, {
+    "id": "108",
+    "university_id": "58",
+    "name": "Juan Nieves",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "50"
+}, {
+    "id": "109",
+    "university_id": "54",
+    "name": "Carmen Lopez",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "51"
+}, {
+    "id": "110",
+    "university_id": "54",
+    "name": "Aida Caceres",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "51"
+}, {
+    "id": "111",
+    "university_id": "54",
+    "name": "Edwin Florez",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "51"
+}, {
+    "id": "112",
+    "university_id": "54",
+    "name": "Jorge Zayas",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "51"
+}, {
+    "id": "113",
+    "university_id": "54",
+    "name": "Ivan Davila",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "51"
+}, {
+    "id": "114",
+    "university_id": "54",
+    "name": "Angel Morales",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "51"
+}, {
+    "id": "115",
+    "university_id": "43",
+    "name": "Ivonne Recinos Aquino",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "52"
+}, {
+    "id": "116",
+    "university_id": "54",
+    "name": "Ezio Fasoli",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "51"
+}, {
+    "id": "117",
+    "university_id": "54",
+    "name": "Joaquin Jimenez",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "51"
+}, {
+    "id": "118",
+    "university_id": "43",
+    "name": "Gerardo Muniz Villalon",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "52"
+}, {
+    "id": "119",
+    "university_id": "54",
+    "name": "Roberto Roman",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "51"
+}, {
+    "id": "120",
+    "university_id": "54",
+    "name": "Hiram Guadalupe",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "51"
+}, {
+    "id": "121",
+    "university_id": "54",
+    "name": "Fabio Alape",
+    "sex": "M",
+    "department_id": "32",
+    "created_by": "51"
+}, {
+    "id": "122",
+    "university_id": "54",
+    "name": "Pedro Vazquez Baez",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "51"
+}, {
+    "id": "123",
+    "university_id": "54",
+    "name": "Francisco Fuentes",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "51"
+}, {
+    "id": "124",
+    "university_id": "54",
+    "name": "Jose Rojas",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "51"
+}, {
+    "id": "125",
+    "university_id": "54",
+    "name": "Nelson Rivera",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "51"
+}, {
+    "id": "126",
+    "university_id": "54",
+    "name": "Barbara Santiago",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "51"
+}, {
+    "id": "127",
+    "university_id": "43",
+    "name": "Fernando A. Souto Bachiller",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "52"
+}, {
+    "id": "128",
+    "university_id": "43",
+    "name": "Emily Rose Aguilo",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "52"
+}, {
+    "id": "129",
+    "university_id": "54",
+    "name": "Neftali Rios",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "51"
+}, {
+    "id": "130",
+    "university_id": "54",
+    "name": "Debora Parrilla",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "51"
+}, {
+    "id": "131",
+    "university_id": "54",
+    "name": "Felix Castrodad",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "51"
+}, {
+    "id": "132",
+    "university_id": "54",
+    "name": "Jeandeliz Gonzalez",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "51"
+}, {
+    "id": "133",
+    "university_id": "54",
+    "name": "Sheila Barrios",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "51"
+}, {
+    "id": "134",
+    "university_id": "54",
+    "name": "Wanda Rodriguez",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "54"
+}, {
+    "id": "135",
+    "university_id": "54",
+    "name": "Ana Del Llano",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "54"
+}, {
+    "id": "136",
+    "university_id": "43",
+    "name": "Lolita Rodriguez",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "55"
+}, {
+    "id": "137",
+    "university_id": "85",
+    "name": "Phaedra Gelipi  Rodriguez",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "56"
+}, {
+    "id": "138",
+    "university_id": "85",
+    "name": "Yarah Bochetti",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "56"
+}, {
+    "id": "139",
+    "university_id": "85",
+    "name": "Luz Ramos",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "56"
+}, {
+    "id": "140",
+    "university_id": "85",
+    "name": "Maria Vigo",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "56"
+}, {
+    "id": "141",
+    "university_id": "51",
+    "name": "Brunilda Cotto Ibarra",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "57"
+}, {
+    "id": "142",
+    "university_id": "55",
+    "name": "Jos\u00e9 Perez Llavona",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "58"
+}, {
+    "id": "143",
+    "university_id": "52",
+    "name": "Nayla Baez",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "59"
+}, {
+    "id": "144",
+    "university_id": "51",
+    "name": "Doris Quio\u00f1es",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "60"
+}, {
+    "id": "145",
+    "university_id": "43",
+    "name": "Nilsa Toro",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "61"
+}, {
+    "id": "146",
+    "university_id": "43",
+    "name": "Betsy Morales",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "63"
+}, {
+    "id": "147",
+    "university_id": "77",
+    "name": "Brunilda Guzman",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "64"
+}, {
+    "id": "148",
+    "university_id": "51",
+    "name": "Manuel Almedida",
+    "sex": "M",
+    "department_id": "10",
+    "created_by": "66"
+}, {
+    "id": "149",
+    "university_id": "86",
+    "name": "Larry McKinley",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "67"
+}, {
+    "id": "150",
+    "university_id": "43",
+    "name": "Carlos Rios-Velazquez",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "70"
+}, {
+    "id": "151",
+    "university_id": "43",
+    "name": "Doris Ramirez Soto",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "70"
+}, {
+    "id": "152",
+    "university_id": "43",
+    "name": "Pablo J. Marrero",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "70"
+}, {
+    "id": "153",
+    "university_id": "43",
+    "name": "Vivian Navas",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "70"
+}, {
+    "id": "154",
+    "university_id": "43",
+    "name": "Carlos Rodriguez Minguela",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "70"
+}, {
+    "id": "155",
+    "university_id": "43",
+    "name": "Wei Wei",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "70"
+}, {
+    "id": "156",
+    "university_id": "43",
+    "name": "Luis Gordillo",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "70"
+}, {
+    "id": "157",
+    "university_id": "43",
+    "name": "Sonia Borges",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "70"
+}, {
+    "id": "158",
+    "university_id": "55",
+    "name": "Morera",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "58"
+}, {
+    "id": "159",
+    "university_id": "51",
+    "name": "Marta S\u00e1nchez",
+    "sex": "F",
+    "department_id": "20",
+    "created_by": "37"
+}, {
+    "id": "160",
+    "university_id": "51",
+    "name": "Patricia Burrowes",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "73"
+}, {
+    "id": "161",
+    "university_id": "55",
+    "name": "Segundo Diaz",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "74"
+}, {
+    "id": "162",
+    "university_id": "73",
+    "name": "Carmen Landron",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "76"
+}, {
+    "id": "163",
+    "university_id": "43",
+    "name": "Maritza De Jesus",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "77"
+}, {
+    "id": "164",
+    "university_id": "54",
+    "name": "Marta Jimenez Alicea",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "78"
+}, {
+    "id": "165",
+    "university_id": "51",
+    "name": "Dr. Eduardo Su\u00e1rez",
+    "sex": "M",
+    "department_id": "15",
+    "created_by": "40"
+}, {
+    "id": "166",
+    "university_id": "51",
+    "name": "Dr. Juan Hernandez",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "80"
+}, {
+    "id": "167",
+    "university_id": "51",
+    "name": "Dra. Mayra Rosario Urrutia",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "80"
+}, {
+    "id": "168",
+    "university_id": "50",
+    "name": "Dr. Carlos Mendoza",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "80"
+}, {
+    "id": "169",
+    "university_id": "50",
+    "name": "Dra. Hilda Vera",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "80"
+}, {
+    "id": "170",
+    "university_id": "43",
+    "name": "Yanira Aleman",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "81"
+}, {
+    "id": "171",
+    "university_id": "92",
+    "name": "Rolando Silva",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "83"
+}, {
+    "id": "172",
+    "university_id": "51",
+    "name": "Dra. Mae Lynn Reyes",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "40"
+}, {
+    "id": "173",
+    "university_id": "43",
+    "name": "Fernando Gaztambide",
+    "sex": "M",
+    "department_id": "17",
+    "created_by": "40"
+}, {
+    "id": "174",
+    "university_id": "51",
+    "name": "Yury Posada",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "40"
+}, {
+    "id": "175",
+    "university_id": "51",
+    "name": "Jos\u00e9 Felix G\u00f3mez",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "40"
+}, {
+    "id": "176",
+    "university_id": "51",
+    "name": "Jos\u00e9 Rafael Iguina",
+    "sex": "M",
+    "department_id": "35",
+    "created_by": "40"
+}, {
+    "id": "177",
+    "university_id": "51",
+    "name": "Gustavo Batista",
+    "sex": "M",
+    "department_id": "35",
+    "created_by": "40"
+}, {
+    "id": "178",
+    "university_id": "51",
+    "name": "Maria de los A. Gomez",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "40"
+}, {
+    "id": "179",
+    "university_id": "51",
+    "name": "Carlos del Toro",
+    "sex": "M",
+    "department_id": "36",
+    "created_by": "40"
+}, {
+    "id": "180",
+    "university_id": "86",
+    "name": "Nitza Luna",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "86"
+}, {
+    "id": "181",
+    "university_id": "86",
+    "name": "Norma Guasp",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "86"
+}, {
+    "id": "182",
+    "university_id": "86",
+    "name": "Sof\u00eda Gonz\u00e1lez",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "3"
+}, {
+    "id": "183",
+    "university_id": "54",
+    "name": "Anibal Munoz",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "101"
+}, {
+    "id": "184",
+    "university_id": "54",
+    "name": "Luis Nieves",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "101"
+}, {
+    "id": "185",
+    "university_id": "54",
+    "name": "Cruz M Ortiz Cuadra",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "101"
+}, {
+    "id": "186",
+    "university_id": "77",
+    "name": "Vivianne Asad",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "104"
+}, {
+    "id": "187",
+    "university_id": "77",
+    "name": "Blanca Nieves",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "104"
+}, {
+    "id": "188",
+    "university_id": "77",
+    "name": "Nilda Seda Cuevas",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "104"
+}, {
+    "id": "189",
+    "university_id": "77",
+    "name": "Lesbia M. Cruz",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "104"
+}, {
+    "id": "190",
+    "university_id": "77",
+    "name": "Frances Fournier",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "104"
+}, {
+    "id": "191",
+    "university_id": "54",
+    "name": "Carmen Ana Miranda",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "103"
+}, {
+    "id": "192",
+    "university_id": "54",
+    "name": "Kike Lopez",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "105"
+}, {
+    "id": "193",
+    "university_id": "54",
+    "name": "Luz M. Cordero",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "106"
+}, {
+    "id": "194",
+    "university_id": "54",
+    "name": "Maximiliano Due\u00f1as Guzman",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "103"
+}, {
+    "id": "195",
+    "university_id": "54",
+    "name": "Antonia Rivera",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "105"
+}, {
+    "id": "196",
+    "university_id": "54",
+    "name": "Carlos Villahermosa",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "105"
+}, {
+    "id": "197",
+    "university_id": "54",
+    "name": "Migdalia Caratini",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "105"
+}, {
+    "id": "198",
+    "university_id": "51",
+    "name": "Khalman Barsy",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "109"
+}, {
+    "id": "199",
+    "university_id": "54",
+    "name": "Alinaluz Santiago",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "105"
+}, {
+    "id": "200",
+    "university_id": "46",
+    "name": "Matilde Garcia",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "110"
+}, {
+    "id": "201",
+    "university_id": "51",
+    "name": "Pedro Subirats",
+    "sex": "M",
+    "department_id": "15",
+    "created_by": "112"
+}, {
+    "id": "202",
+    "university_id": "51",
+    "name": "Gustavo Sanchez",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "114"
+}, {
+    "id": "203",
+    "university_id": "45",
+    "name": "Sonia Feliciano",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "115"
+}, {
+    "id": "204",
+    "university_id": "51",
+    "name": "Carlos Guilbe",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "116"
+}, {
+    "id": "205",
+    "university_id": "47",
+    "name": "Luis Cardona",
+    "sex": "M",
+    "department_id": "8",
+    "created_by": "121"
+}, {
+    "id": "206",
+    "university_id": "54",
+    "name": "Miriam Ramirez",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "118"
+}, {
+    "id": "207",
+    "university_id": "54",
+    "name": "Hector Pinero",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "118"
+}, {
+    "id": "208",
+    "university_id": "54",
+    "name": "Gloria Yukavetsky",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "118"
+}, {
+    "id": "209",
+    "university_id": "54",
+    "name": "Maria Teresa",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "118"
+}, {
+    "id": "210",
+    "university_id": "51",
+    "name": "Gladys Nazario",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "125"
+}, {
+    "id": "211",
+    "university_id": "65",
+    "name": "Dennis Vald\u00e9s Brito",
+    "sex": "M",
+    "department_id": "35",
+    "created_by": "126"
+}, {
+    "id": "212",
+    "university_id": "72",
+    "name": "Carmen Fuentes ",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "128"
+}, {
+    "id": "213",
+    "university_id": "59",
+    "name": "Licette Gaona",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "129"
+}, {
+    "id": "214",
+    "university_id": "59",
+    "name": "Prof. Vissepo",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "129"
+}, {
+    "id": "215",
+    "university_id": "64",
+    "name": "Federico Mejia ",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "130"
+}, {
+    "id": "216",
+    "university_id": "65",
+    "name": "Carlos Velez Granell",
+    "sex": "M",
+    "department_id": "5",
+    "created_by": "130"
+}, {
+    "id": "217",
+    "university_id": "51",
+    "name": "Jos\u00e9 L. Garrido",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "131"
+}, {
+    "id": "218",
+    "university_id": "77",
+    "name": "Alejandro Pagan",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "104"
+}, {
+    "id": "219",
+    "university_id": "60",
+    "name": "Floil\u00e1n Perdomo",
+    "sex": "M",
+    "department_id": "12",
+    "created_by": "139"
+}, {
+    "id": "220",
+    "university_id": "51",
+    "name": "Pedro San Miguel",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "140"
+}, {
+    "id": "221",
+    "university_id": "51",
+    "name": "Jos\u00e9 Cruz Arrigoita",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "140"
+}, {
+    "id": "222",
+    "university_id": "51",
+    "name": "Elsa Gutierrez",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "143"
+}, {
+    "id": "223",
+    "university_id": "52",
+    "name": "Prof. Luis A. Vel\u00e1zquez Vera",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "144"
+}, {
+    "id": "224",
+    "university_id": "71",
+    "name": "Jose L Pacheco Roman",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "148"
+}, {
+    "id": "225",
+    "university_id": "71",
+    "name": "Jose A Franco Santiago",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "148"
+}, {
+    "id": "226",
+    "university_id": "71",
+    "name": "Gilberto Rodriguez Zayas",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "148"
+}, {
+    "id": "227",
+    "university_id": "71",
+    "name": "Gary Gutierrez Rentas",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "148"
+}, {
+    "id": "228",
+    "university_id": "71",
+    "name": "Nydia Guilbe Vargas",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "148"
+}, {
+    "id": "229",
+    "university_id": "71",
+    "name": "Virgen Santiago",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "148"
+}, {
+    "id": "230",
+    "university_id": "81",
+    "name": "Lic. Hern\u00e1n Cort\u00e9s",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "150"
+}, {
+    "id": "231",
+    "university_id": "86",
+    "name": "Sonia Fritz",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "151"
+}, {
+    "id": "239",
+    "university_id": "51",
+    "name": "Sandra Pujals",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "152"
+}, {
+    "id": "240",
+    "university_id": "71",
+    "name": "Dra. Cristina Torres Velazquez",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "148"
+}, {
+    "id": "241",
+    "university_id": "54",
+    "name": "Alex Camacho",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "153"
+}, {
+    "id": "242",
+    "university_id": "54",
+    "name": "Farrique Pesquera",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "153"
+}, {
+    "id": "243",
+    "university_id": "54",
+    "name": "Marisol Gomez-Mouakad",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "153"
+}, {
+    "id": "244",
+    "university_id": "54",
+    "name": "Olga Rodriguez",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "155"
+}, {
+    "id": "245",
+    "university_id": "54",
+    "name": "Melisa Colon",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "155"
+}, {
+    "id": "246",
+    "university_id": "54",
+    "name": "Rosario Ventura Miguel",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "155"
+}, {
+    "id": "247",
+    "university_id": "60",
+    "name": "Ileana N. Lugo",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "157"
+}, {
+    "id": "248",
+    "university_id": "88",
+    "name": "Pablo Pedraza",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "158"
+}, {
+    "id": "249",
+    "university_id": "66",
+    "name": "Alexis Velez",
+    "sex": "M",
+    "department_id": "8",
+    "created_by": "160"
+}, {
+    "id": "250",
+    "university_id": "45",
+    "name": "Dra. Raquel Rosario",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "161"
+}, {
+    "id": "254",
+    "university_id": "51",
+    "name": "Nilsa Medina Pi\u00f1a",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "162"
+}, {
+    "id": "253",
+    "university_id": "45",
+    "name": "Dra Elizabeth Crespo",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "161"
+}, {
+    "id": "255",
+    "university_id": "52",
+    "name": "Martha Qui\u00f1ones Dom\u00ednguez",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "171"
+}, {
+    "id": "256",
+    "university_id": "55",
+    "name": "Brookman ",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "177"
+}, {
+    "id": "257",
+    "university_id": "51",
+    "name": "Antonio Gaztambide",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "182"
+}, {
+    "id": "258",
+    "university_id": "54",
+    "name": "Luis Sanchez Longo",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "185"
+}, {
+    "id": "259",
+    "university_id": "51",
+    "name": "Yvette Torres",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "187"
+}, {
+    "id": "260",
+    "university_id": "51",
+    "name": "Nicholas Faraclas",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "187"
+}, {
+    "id": "262",
+    "university_id": "45",
+    "name": "\u00c1ngel Morera Gonz\u00e1lez",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "4"
+}, {
+    "id": "263",
+    "university_id": "45",
+    "name": "Clemencia Delgado Figueroa",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "4"
+}, {
+    "id": "264",
+    "university_id": "45",
+    "name": "Etnairis Rivera Santos",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "4"
+}, {
+    "id": "265",
+    "university_id": "45",
+    "name": "Nancy Villanueva Col\u00f3n",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "4"
+}, {
+    "id": "266",
+    "university_id": "45",
+    "name": "Antonio Huertas Berm\u00fadez",
+    "sex": "M",
+    "department_id": "8",
+    "created_by": "4"
+}, {
+    "id": "267",
+    "university_id": "47",
+    "name": "Ruth Hernandez",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "192"
+}, {
+    "id": "268",
+    "university_id": "52",
+    "name": "Carlos Gonzalez",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "171"
+}, {
+    "id": "269",
+    "university_id": "86",
+    "name": "Eduardo Lamadrid",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "196"
+}, {
+    "id": "270",
+    "university_id": "51",
+    "name": "Blanca Cucurella",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "196"
+}, {
+    "id": "271",
+    "university_id": "86",
+    "name": "Lopez Aleman",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "196"
+}, {
+    "id": "272",
+    "university_id": "86",
+    "name": "Maite Gonzalez",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "196"
+}, {
+    "id": "273",
+    "university_id": "51",
+    "name": "Mariajose Moreno Viqueira",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "200"
+}, {
+    "id": "274",
+    "university_id": "51",
+    "name": "Ratnakar Palai",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "200"
+}, {
+    "id": "275",
+    "university_id": "51",
+    "name": "Wildeliz Torres",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "200"
+}, {
+    "id": "276",
+    "university_id": "46",
+    "name": "Jos\u00e9 Efra\u00edn Hern\u00e1ndez Acevedo",
+    "sex": "M",
+    "department_id": "10",
+    "created_by": "201"
+}, {
+    "id": "653",
+    "university_id": "60",
+    "name": "Dra. Hayme\u00e9 Nazario",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "122"
+}, {
+    "id": "278",
+    "university_id": "52",
+    "name": "Glorimil Santiago",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "171"
+}, {
+    "id": "279",
+    "university_id": "52",
+    "name": "Vangelo Figueroa",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "171"
+}, {
+    "id": "280",
+    "university_id": "51",
+    "name": "Lismeleth Villero",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "208"
+}, {
+    "id": "281",
+    "university_id": "45",
+    "name": "Claritza Castro",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "209"
+}, {
+    "id": "282",
+    "university_id": "45",
+    "name": "Maritza Sostres",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "209"
+}, {
+    "id": "283",
+    "university_id": "45",
+    "name": "Ana Salicrup",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "209"
+}, {
+    "id": "284",
+    "university_id": "45",
+    "name": "Peggy Santiago",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "209"
+}, {
+    "id": "285",
+    "university_id": "52",
+    "name": "Martiza Matrinez",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "210"
+}, {
+    "id": "286",
+    "university_id": "52",
+    "name": "Roberto Torres",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "210"
+}, {
+    "id": "287",
+    "university_id": "52",
+    "name": "Luis Hernandez Roldan",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "210"
+}, {
+    "id": "288",
+    "university_id": "68",
+    "name": "Raul Moris",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "199"
+}, {
+    "id": "289",
+    "university_id": "68",
+    "name": "Carlos Figueroa Quintana",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "199"
+}, {
+    "id": "290",
+    "university_id": "54",
+    "name": "Grabriel Barletta",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "215"
+}, {
+    "id": "291",
+    "university_id": "54",
+    "name": "Eduvigis Gonz\u00e1lez",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "215"
+}, {
+    "id": "292",
+    "university_id": "54",
+    "name": "Iris Vel\u00e1zquez",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "215"
+}, {
+    "id": "293",
+    "university_id": "54",
+    "name": "Ariel D\u00edaz",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "215"
+}, {
+    "id": "294",
+    "university_id": "54",
+    "name": "Sylvia V\u00e9lez",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "215"
+}, {
+    "id": "295",
+    "university_id": "54",
+    "name": "Miguel P. Sastre",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "215"
+}, {
+    "id": "296",
+    "university_id": "54",
+    "name": "David Santiago",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "215"
+}, {
+    "id": "297",
+    "university_id": "54",
+    "name": "Luz Vega",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "215"
+}, {
+    "id": "298",
+    "university_id": "54",
+    "name": "Bruckman",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "215"
+}, {
+    "id": "299",
+    "university_id": "54",
+    "name": "Carmen Baerga",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "215"
+}, {
+    "id": "300",
+    "university_id": "52",
+    "name": "Manuel A. Saponara",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "216"
+}, {
+    "id": "301",
+    "university_id": "52",
+    "name": "Roberto Rodriguez Rodriguez",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "216"
+}, {
+    "id": "302",
+    "university_id": "77",
+    "name": "Herminio De Jesus Viera",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "104"
+}, {
+    "id": "303",
+    "university_id": "77",
+    "name": "Adela de Coro",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "104"
+}, {
+    "id": "304",
+    "university_id": "77",
+    "name": "Lourdes Pe\u00f1a Santiago",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "104"
+}, {
+    "id": "305",
+    "university_id": "77",
+    "name": "Migdalia De Jesus",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "104"
+}, {
+    "id": "306",
+    "university_id": "51",
+    "name": "Vivian Olivera ",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "220"
+}, {
+    "id": "307",
+    "university_id": "51",
+    "name": "Carmen Irma Gonzalez",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "220"
+}, {
+    "id": "308",
+    "university_id": "51",
+    "name": "Jose Longo Mullet",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "220"
+}, {
+    "id": "309",
+    "university_id": "51",
+    "name": "Gabriel de la Luz",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "220"
+}, {
+    "id": "310",
+    "university_id": "51",
+    "name": "Eliezer Nieves Rodriguez",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "220"
+}, {
+    "id": "311",
+    "university_id": "51",
+    "name": "Barbara Gonzalez",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "220"
+}, {
+    "id": "312",
+    "university_id": "43",
+    "name": "Jacqueline Gir\u00f3n",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "225"
+}, {
+    "id": "313",
+    "university_id": "43",
+    "name": "Nelly V\u00e1zquez",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "225"
+}, {
+    "id": "314",
+    "university_id": "43",
+    "name": "Eda Marrero",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "225"
+}, {
+    "id": "315",
+    "university_id": "43",
+    "name": "Joseph Ag\u00fcero",
+    "sex": "M",
+    "department_id": "36",
+    "created_by": "225"
+}, {
+    "id": "316",
+    "university_id": "45",
+    "name": "Nitza Blanco",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "175"
+}, {
+    "id": "317",
+    "university_id": "43",
+    "name": "Celia Sanders",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "225"
+}, {
+    "id": "318",
+    "university_id": "43",
+    "name": "Cidmarie Odiott",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "225"
+}, {
+    "id": "319",
+    "university_id": "45",
+    "name": "Mario Tacher",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "175"
+}, {
+    "id": "320",
+    "university_id": "43",
+    "name": "Carlos Mu\u00f1oz",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "225"
+}, {
+    "id": "321",
+    "university_id": "50",
+    "name": "Nery Lugo",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "228"
+}, {
+    "id": "322",
+    "university_id": "52",
+    "name": "Profesora Eva Lopez",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "229"
+}, {
+    "id": "323",
+    "university_id": "81",
+    "name": "Zoe Santigao ",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "231"
+}, {
+    "id": "324",
+    "university_id": "43",
+    "name": "Eliseo Cruz",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "232"
+}, {
+    "id": "325",
+    "university_id": "43",
+    "name": "Aimee M. Montero",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "225"
+}, {
+    "id": "326",
+    "university_id": "43",
+    "name": "Judith Casey",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "232"
+}, {
+    "id": "327",
+    "university_id": "52",
+    "name": "Neil Torres",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "229"
+}, {
+    "id": "328",
+    "university_id": "43",
+    "name": "Humberto Rodr\u00edguez Carmona",
+    "sex": "M",
+    "department_id": "17",
+    "created_by": "225"
+}, {
+    "id": "329",
+    "university_id": "43",
+    "name": "Orlando Sotomayor",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "235"
+}, {
+    "id": "330",
+    "university_id": "43",
+    "name": "Candido Perez Oms",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "235"
+}, {
+    "id": "331",
+    "university_id": "43",
+    "name": "Leandro Col\u00f3n",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "225"
+}, {
+    "id": "332",
+    "university_id": "43",
+    "name": "Maria Oronoz",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "235"
+}, {
+    "id": "333",
+    "university_id": "43",
+    "name": "Maria Sarmiento",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "225"
+}, {
+    "id": "334",
+    "university_id": "43",
+    "name": "Raymond Knight",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "225"
+}, {
+    "id": "335",
+    "university_id": "43",
+    "name": "Jaime Acosta",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "225"
+}, {
+    "id": "336",
+    "university_id": "43",
+    "name": "Linda Rodriguez",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "225"
+}, {
+    "id": "337",
+    "university_id": "43",
+    "name": "Carlos Santos",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "225"
+}, {
+    "id": "338",
+    "university_id": "43",
+    "name": "Taras Oleksyk",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "225"
+}, {
+    "id": "339",
+    "university_id": "43",
+    "name": "Jose Rivera Cartagena",
+    "sex": "M",
+    "department_id": "28",
+    "created_by": "236"
+}, {
+    "id": "340",
+    "university_id": "43",
+    "name": "Roman Kvasov",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "225"
+}, {
+    "id": "341",
+    "university_id": "43",
+    "name": "\u00c1ngel Cruz",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "225"
+}, {
+    "id": "342",
+    "university_id": "45",
+    "name": "Husmail Figueroa",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "175"
+}, {
+    "id": "343",
+    "university_id": "43",
+    "name": "Gayle W. Griggs",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "225"
+}, {
+    "id": "344",
+    "university_id": "43",
+    "name": "Marek Rysz",
+    "sex": "M",
+    "department_id": "29",
+    "created_by": "236"
+}, {
+    "id": "345",
+    "university_id": "43",
+    "name": "Yvette Cabrera",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "236"
+}, {
+    "id": "346",
+    "university_id": "43",
+    "name": "Alfredo Ortiz Mercado",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "236"
+}, {
+    "id": "347",
+    "university_id": "43",
+    "name": "Iv\u00e1n Baig\u00e9s",
+    "sex": "M",
+    "department_id": "29",
+    "created_by": "236"
+}, {
+    "id": "348",
+    "university_id": "43",
+    "name": "Basir Shafiq",
+    "sex": "M",
+    "department_id": "29",
+    "created_by": "236"
+}, {
+    "id": "349",
+    "university_id": "43",
+    "name": "Lizzie Garc\u00eda",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "236"
+}, {
+    "id": "350",
+    "university_id": "43",
+    "name": "Vikram Raj Pandya",
+    "sex": "M",
+    "department_id": "31",
+    "created_by": "236"
+}, {
+    "id": "351",
+    "university_id": "43",
+    "name": "Pricilla Santiago",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "225"
+}, {
+    "id": "352",
+    "university_id": "43",
+    "name": "Efrank Mendoza",
+    "sex": "M",
+    "department_id": "17",
+    "created_by": "225"
+}, {
+    "id": "353",
+    "university_id": "45",
+    "name": "Fernando Pantoja",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "225"
+}, {
+    "id": "354",
+    "university_id": "43",
+    "name": "Mar\u00eda Gunt\u00edn Burgos",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "225"
+}, {
+    "id": "355",
+    "university_id": "100",
+    "name": "Damian Torres",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "199"
+}, {
+    "id": "356",
+    "university_id": "68",
+    "name": "Adeline Perez",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "199"
+}, {
+    "id": "357",
+    "university_id": "75",
+    "name": "Elias Beauchamp",
+    "sex": "M",
+    "department_id": "27",
+    "created_by": "241"
+}, {
+    "id": "358",
+    "university_id": "45",
+    "name": "Luis Rivera",
+    "sex": "M",
+    "department_id": "31",
+    "created_by": "242"
+}, {
+    "id": "359",
+    "university_id": "45",
+    "name": "Nestor Suro",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "4"
+}, {
+    "id": "360",
+    "university_id": "45",
+    "name": "Jorge L\u00f3pez Le\u00f3n ",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "243"
+}, {
+    "id": "363",
+    "university_id": "51",
+    "name": "Dieter Reetz",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "245"
+}, {
+    "id": "362",
+    "university_id": "77",
+    "name": "Luis Rivera",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "104"
+}, {
+    "id": "364",
+    "university_id": "77",
+    "name": "Luis Lugo Cortijo",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "104"
+}, {
+    "id": "365",
+    "university_id": "77",
+    "name": "Olga Bizoso",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "104"
+}, {
+    "id": "366",
+    "university_id": "77",
+    "name": "Ada Junco",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "104"
+}, {
+    "id": "367",
+    "university_id": "77",
+    "name": "Edgar Rodriguez",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "104"
+}, {
+    "id": "368",
+    "university_id": "51",
+    "name": "Carmen Acevedo Luc\u00edo",
+    "sex": "F",
+    "department_id": "35",
+    "created_by": "250"
+}, {
+    "id": "369",
+    "university_id": "51",
+    "name": "Manuel Almeida",
+    "sex": "M",
+    "department_id": "10",
+    "created_by": "250"
+}, {
+    "id": "370",
+    "university_id": "51",
+    "name": "Alex Betancourt",
+    "sex": "M",
+    "department_id": "10",
+    "created_by": "250"
+}, {
+    "id": "371",
+    "university_id": "44",
+    "name": "Dra. Rosario E. R\u00edos ",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "253"
+}, {
+    "id": "372",
+    "university_id": "44",
+    "name": "Prof. Hector Lamboy",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "373",
+    "university_id": "44",
+    "name": "Dr. Jose L. Alicea",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "374",
+    "university_id": "44",
+    "name": "Dr. Luis R. Sanchez",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "375",
+    "university_id": "44",
+    "name": "Dra. Arelis Torres",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "376",
+    "university_id": "44",
+    "name": "Dra. Marisel Sepulveda ",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "377",
+    "university_id": "44",
+    "name": "Prof. Ineabelle Montes",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "378",
+    "university_id": "44",
+    "name": "Dra. Silvia Moroza",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "379",
+    "university_id": "44",
+    "name": "Dra. Mayra Montero",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "380",
+    "university_id": "44",
+    "name": "Dra. Jennifer Alicea",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "253"
+}, {
+    "id": "381",
+    "university_id": "44",
+    "name": "Dr. Paco Vazquez Pica",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "382",
+    "university_id": "44",
+    "name": "Dra. Legna Vargas",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "383",
+    "university_id": "44",
+    "name": "Dr. Luis Gonzalez Sotomayor",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "384",
+    "university_id": "44",
+    "name": "Dr. Carlos Zapata",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "253"
+}, {
+    "id": "385",
+    "university_id": "44",
+    "name": "Prof. Mayra Giorgi ",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "253"
+}, {
+    "id": "390",
+    "university_id": "54",
+    "name": "Isabel Cintron ",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "260"
+}, {
+    "id": "391",
+    "university_id": "51",
+    "name": "Miguel Drouyn",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "208"
+}, {
+    "id": "392",
+    "university_id": "51",
+    "name": "C\u00e1rmen P\u00e9rez-Herranz",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "265"
+}, {
+    "id": "393",
+    "university_id": "51",
+    "name": "Wanda Ramos",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "265"
+}, {
+    "id": "394",
+    "university_id": "51",
+    "name": "Everlidis Vargas",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "265"
+}, {
+    "id": "395",
+    "university_id": "51",
+    "name": "Cynthia Pittmann",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "265"
+}, {
+    "id": "396",
+    "university_id": "51",
+    "name": "Ivelisse Rubio",
+    "sex": "F",
+    "department_id": "8",
+    "created_by": "265"
+}, {
+    "id": "397",
+    "university_id": "51",
+    "name": "Luis Lugo",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "265"
+}, {
+    "id": "398",
+    "university_id": "51",
+    "name": "Teresa Pe\u00f1a",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "265"
+}, {
+    "id": "399",
+    "university_id": "51",
+    "name": "Jhonny Navarro",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "265"
+}, {
+    "id": "400",
+    "university_id": "44",
+    "name": "Dr. Jos\u00e9 Ram\u00f3n Villal\u00f3n",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "266"
+}, {
+    "id": "401",
+    "university_id": "52",
+    "name": "Manuel Rivera",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "216"
+}, {
+    "id": "402",
+    "university_id": "52",
+    "name": "Claribel Negron",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "216"
+}, {
+    "id": "403",
+    "university_id": "45",
+    "name": "Rosa Pellerano ",
+    "sex": "F",
+    "department_id": "26",
+    "created_by": "270"
+}, {
+    "id": "404",
+    "university_id": "45",
+    "name": "Jorge Velar",
+    "sex": "M",
+    "department_id": "26",
+    "created_by": "270"
+}, {
+    "id": "405",
+    "university_id": "45",
+    "name": "William Ortiz",
+    "sex": "M",
+    "department_id": "35",
+    "created_by": "272"
+}, {
+    "id": "406",
+    "university_id": "55",
+    "name": "Janice Gordils",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "276"
+}, {
+    "id": "407",
+    "university_id": "43",
+    "name": "Ana Velez",
+    "sex": "F",
+    "department_id": "7",
+    "created_by": "278"
+}, {
+    "id": "408",
+    "university_id": "77",
+    "name": "Lillian Velazquez-Zamora",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "104"
+}, {
+    "id": "409",
+    "university_id": "77",
+    "name": "Mar\u00eda Torres",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "104"
+}, {
+    "id": "410",
+    "university_id": "55",
+    "name": "Augusto Carvajal",
+    "sex": "M",
+    "department_id": "7",
+    "created_by": "284"
+}, {
+    "id": "411",
+    "university_id": "45",
+    "name": "Ana Morales Zeno",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "286"
+}, {
+    "id": "412",
+    "university_id": "45",
+    "name": "Elsa Gelp\u00ed",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "286"
+}, {
+    "id": "413",
+    "university_id": "45",
+    "name": "Gisela Le\u00f3n",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "286"
+}, {
+    "id": "414",
+    "university_id": "45",
+    "name": "Rita Deliz ",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "286"
+}, {
+    "id": "415",
+    "university_id": "45",
+    "name": "Maria A\u00f1eses",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "286"
+}, {
+    "id": "416",
+    "university_id": "45",
+    "name": "Virginia Hern\u00e1ndez",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "286"
+}, {
+    "id": "417",
+    "university_id": "62",
+    "name": "Lydia E. Ayala",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "289"
+}, {
+    "id": "418",
+    "university_id": "61",
+    "name": "Isaida Cabrera Montero",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "289"
+}, {
+    "id": "419",
+    "university_id": "51",
+    "name": "Elsa Planell",
+    "sex": "F",
+    "department_id": "20",
+    "created_by": "289"
+}, {
+    "id": "420",
+    "university_id": "51",
+    "name": "Dolores Aponte \"Lola\"",
+    "sex": "F",
+    "department_id": "20",
+    "created_by": "289"
+}, {
+    "id": "421",
+    "university_id": "51",
+    "name": "Nancy Lopez",
+    "sex": "F",
+    "department_id": "20",
+    "created_by": "289"
+}, {
+    "id": "422",
+    "university_id": "51",
+    "name": "Antonio Gonzalez Walker",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "289"
+}, {
+    "id": "423",
+    "university_id": "51",
+    "name": "Carlos Gil",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "289"
+}, {
+    "id": "424",
+    "university_id": "51",
+    "name": "Wanda Velazquez",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "289"
+}, {
+    "id": "425",
+    "university_id": "51",
+    "name": "Jairo Fuquene",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "289"
+}, {
+    "id": "426",
+    "university_id": "51",
+    "name": "Ram\u00f3n Lopez Aleman",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "289"
+}, {
+    "id": "427",
+    "university_id": "51",
+    "name": "Jose Maldonado Moll",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "289"
+}, {
+    "id": "428",
+    "university_id": "51",
+    "name": "Nitza Hernandez",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "289"
+}, {
+    "id": "429",
+    "university_id": "51",
+    "name": "Ivelisse Hernandez",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "289"
+}, {
+    "id": "430",
+    "university_id": "51",
+    "name": "Brenda Mendez",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "289"
+}, {
+    "id": "433",
+    "university_id": "86",
+    "name": "Edwin Cordero",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "86"
+}, {
+    "id": "432",
+    "university_id": "51",
+    "name": "Roberto Trinidad Pizarro",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "289"
+}, {
+    "id": "434",
+    "university_id": "53",
+    "name": "Javier Lasso",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "299"
+}, {
+    "id": "435",
+    "university_id": "53",
+    "name": "Ariel Rodriguez",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "299"
+}, {
+    "id": "436",
+    "university_id": "51",
+    "name": "Pablo Canino",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "300"
+}, {
+    "id": "437",
+    "university_id": "81",
+    "name": "Santiago Roman",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "299"
+}, {
+    "id": "438",
+    "university_id": "53",
+    "name": "Zulma Penchi",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "299"
+}, {
+    "id": "439",
+    "university_id": "53",
+    "name": "Zulma Mu\u00f1oz",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "299"
+}, {
+    "id": "440",
+    "university_id": "53",
+    "name": "Ramon Matos Berrios",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "299"
+}, {
+    "id": "441",
+    "university_id": "53",
+    "name": "Danya Parrilla",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "299"
+}, {
+    "id": "442",
+    "university_id": "53",
+    "name": "Julio Mitma",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "299"
+}, {
+    "id": "443",
+    "university_id": "52",
+    "name": "Hernan Rodriguez",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "303"
+}, {
+    "id": "444",
+    "university_id": "51",
+    "name": "Gladys Aponte",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "6"
+}, {
+    "id": "445",
+    "university_id": "51",
+    "name": "Mario Casa\u00f1as",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "6"
+}, {
+    "id": "478",
+    "university_id": "43",
+    "name": "Lawrence Chott",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "354"
+}, {
+    "id": "447",
+    "university_id": "51",
+    "name": "Anabella Zuluaga",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "6"
+}, {
+    "id": "448",
+    "university_id": "51",
+    "name": "Rene Rodriguez",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "6"
+}, {
+    "id": "449",
+    "university_id": "86",
+    "name": "Ana Ivette Hern\u00e1ndez",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "3"
+}, {
+    "id": "450",
+    "university_id": "65",
+    "name": "Jorge Morales",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "317"
+}, {
+    "id": "451",
+    "university_id": "44",
+    "name": "Dra. Eva Lopez ",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "317"
+}, {
+    "id": "452",
+    "university_id": "43",
+    "name": "Eric Lamore",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "319"
+}, {
+    "id": "453",
+    "university_id": "51",
+    "name": "Benabe",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "324"
+}, {
+    "id": "454",
+    "university_id": "62",
+    "name": "Antonio Carro",
+    "sex": "M",
+    "department_id": "12",
+    "created_by": "327"
+}, {
+    "id": "455",
+    "university_id": "51",
+    "name": "Carmen Figueroa ",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "338"
+}, {
+    "id": "456",
+    "university_id": "92",
+    "name": "Jose Alejandro ",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "338"
+}, {
+    "id": "457",
+    "university_id": "51",
+    "name": "Maria E. Alonso ",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "338"
+}, {
+    "id": "458",
+    "university_id": "51",
+    "name": "Marta Medina ",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "338"
+}, {
+    "id": "459",
+    "university_id": "51",
+    "name": "Hector R. Maury",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "338"
+}, {
+    "id": "460",
+    "university_id": "51",
+    "name": "Ana Maria Perez ",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "338"
+}, {
+    "id": "461",
+    "university_id": "86",
+    "name": "Madeline Ramos",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "257"
+}, {
+    "id": "462",
+    "university_id": "86",
+    "name": "Damaris Pagan",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "257"
+}, {
+    "id": "463",
+    "university_id": "54",
+    "name": "Ruben Soto Rivera",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "101"
+}, {
+    "id": "464",
+    "university_id": "86",
+    "name": "Arana",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "257"
+}, {
+    "id": "465",
+    "university_id": "86",
+    "name": "Latorre",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "257"
+}, {
+    "id": "466",
+    "university_id": "59",
+    "name": "Jackie Rosado",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "339"
+}, {
+    "id": "467",
+    "university_id": "46",
+    "name": "Jossie de Varona",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "344"
+}, {
+    "id": "468",
+    "university_id": "82",
+    "name": "Mar\u00eda Vilches",
+    "sex": "F",
+    "department_id": "7",
+    "created_by": "344"
+}, {
+    "id": "469",
+    "university_id": "82",
+    "name": "Alexis Molinares",
+    "sex": "M",
+    "department_id": "7",
+    "created_by": "344"
+}, {
+    "id": "470",
+    "university_id": "82",
+    "name": "Juan C. Musa",
+    "sex": "M",
+    "department_id": "7",
+    "created_by": "344"
+}, {
+    "id": "471",
+    "university_id": "46",
+    "name": "Renee de Luca",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "344"
+}, {
+    "id": "472",
+    "university_id": "47",
+    "name": "Bert Rivera Marchand",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "345"
+}, {
+    "id": "473",
+    "university_id": "51",
+    "name": "Pascal Mege",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "6"
+}, {
+    "id": "474",
+    "university_id": "55",
+    "name": "Loliannette Emmanuelli",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "353"
+}, {
+    "id": "475",
+    "university_id": "55",
+    "name": "Suzette Acevedo",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "353"
+}, {
+    "id": "476",
+    "university_id": "55",
+    "name": "Mayra Nadal",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "353"
+}, {
+    "id": "477",
+    "university_id": "55",
+    "name": "Lillian Cartajena",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "353"
+}, {
+    "id": "479",
+    "university_id": "43",
+    "name": "Nilsa Velazquez",
+    "sex": "F",
+    "department_id": "14",
+    "created_by": "354"
+}, {
+    "id": "480",
+    "university_id": "50",
+    "name": "Saddi Orsini Luiggi",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "356"
+}, {
+    "id": "481",
+    "university_id": "50",
+    "name": "Walter Bonilla",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "356"
+}, {
+    "id": "482",
+    "university_id": "50",
+    "name": "Benjamin Rivera",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "356"
+}, {
+    "id": "483",
+    "university_id": "50",
+    "name": "Doris Feliciano",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "356"
+}, {
+    "id": "484",
+    "university_id": "50",
+    "name": "Julio Rodriguez",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "356"
+}, {
+    "id": "485",
+    "university_id": "50",
+    "name": "Arelis N. Arcelay Caro",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "356"
+}, {
+    "id": "486",
+    "university_id": "66",
+    "name": "Rafael Mu\u00f1oz",
+    "sex": "M",
+    "department_id": "12",
+    "created_by": "357"
+}, {
+    "id": "487",
+    "university_id": "66",
+    "name": "Evelin Zapata",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "357"
+}, {
+    "id": "488",
+    "university_id": "66",
+    "name": "Sarah Torres",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "357"
+}, {
+    "id": "489",
+    "university_id": "52",
+    "name": "Miriam Cruz",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "358"
+}, {
+    "id": "490",
+    "university_id": "51",
+    "name": "Eduardo Rodriguez",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "359"
+}, {
+    "id": "491",
+    "university_id": "51",
+    "name": "Elsie Rivera",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "359"
+}, {
+    "id": "492",
+    "university_id": "61",
+    "name": "Monserrate Cardoza",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "98"
+}, {
+    "id": "493",
+    "university_id": "46",
+    "name": "Antonio Garcia Del Toro",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "360"
+}, {
+    "id": "494",
+    "university_id": "52",
+    "name": "Deika Otero",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "98"
+}, {
+    "id": "495",
+    "university_id": "60",
+    "name": "Marcos Velez",
+    "sex": "M",
+    "department_id": "17",
+    "created_by": "98"
+}, {
+    "id": "496",
+    "university_id": "100",
+    "name": "Luis Bosques",
+    "sex": "M",
+    "department_id": "18",
+    "created_by": "361"
+}, {
+    "id": "552",
+    "university_id": "45",
+    "name": "Margarita Ramos",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "424"
+}, {
+    "id": "498",
+    "university_id": "86",
+    "name": "Ileana Pi\u00f1eda",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "96"
+}, {
+    "id": "499",
+    "university_id": "86",
+    "name": "Antonio Sanchez Gaetan",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "96"
+}, {
+    "id": "500",
+    "university_id": "66",
+    "name": "Axel Velez Caraballo",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "370"
+}, {
+    "id": "501",
+    "university_id": "66",
+    "name": "Mercedes Rodriguez",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "370"
+}, {
+    "id": "502",
+    "university_id": "66",
+    "name": "Nilda Caraballo",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "370"
+}, {
+    "id": "503",
+    "university_id": "66",
+    "name": "Angela Gonzalez",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "370"
+}, {
+    "id": "504",
+    "university_id": "66",
+    "name": "Tulio Chavez-Gil",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "370"
+}, {
+    "id": "505",
+    "university_id": "66",
+    "name": "Felix Torres",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "370"
+}, {
+    "id": "508",
+    "university_id": "76",
+    "name": "Ramon Lorenzana",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "374"
+}, {
+    "id": "509",
+    "university_id": "58",
+    "name": "Ivonne Marcial",
+    "sex": "F",
+    "department_id": "2",
+    "created_by": "374"
+}, {
+    "id": "510",
+    "university_id": "76",
+    "name": "Jennifer Cort\u00e9z",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "374"
+}, {
+    "id": "511",
+    "university_id": "58",
+    "name": "Miguel Szendrey",
+    "sex": "M",
+    "department_id": "2",
+    "created_by": "374"
+}, {
+    "id": "512",
+    "university_id": "58",
+    "name": "Jaime Cobas",
+    "sex": "M",
+    "department_id": "2",
+    "created_by": "374"
+}, {
+    "id": "513",
+    "university_id": "58",
+    "name": "Miguel Rodriguez Casellas",
+    "sex": "M",
+    "department_id": "2",
+    "created_by": "374"
+}, {
+    "id": "514",
+    "university_id": "76",
+    "name": "Marcia Pacheco",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "374"
+}, {
+    "id": "515",
+    "university_id": "58",
+    "name": "Jesus Mar\u00edn",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "374"
+}, {
+    "id": "518",
+    "university_id": "58",
+    "name": "Josue Rivera",
+    "sex": "M",
+    "department_id": "2",
+    "created_by": "374"
+}, {
+    "id": "517",
+    "university_id": "58",
+    "name": "Imel Sierra",
+    "sex": "M",
+    "department_id": "2",
+    "created_by": "374"
+}, {
+    "id": "519",
+    "university_id": "58",
+    "name": "Juan Velazques",
+    "sex": "M",
+    "department_id": "2",
+    "created_by": "374"
+}, {
+    "id": "520",
+    "university_id": "52",
+    "name": "Rafael Garcia",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "375"
+}, {
+    "id": "521",
+    "university_id": "59",
+    "name": "Sharon Mauras",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "377"
+}, {
+    "id": "522",
+    "university_id": "46",
+    "name": "Joanne Tally",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "378"
+}, {
+    "id": "523",
+    "university_id": "60",
+    "name": "Ana Delgado",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "387"
+}, {
+    "id": "524",
+    "university_id": "45",
+    "name": "Luz Teresa Mart\u00ednez",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "391"
+}, {
+    "id": "525",
+    "university_id": "45",
+    "name": "Mapy Gonz\u00e1lez",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "395"
+}, {
+    "id": "526",
+    "university_id": "86",
+    "name": "Nelson Hernandez",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "396"
+}, {
+    "id": "527",
+    "university_id": "45",
+    "name": "Janet Cabrera",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "4"
+}, {
+    "id": "528",
+    "university_id": "45",
+    "name": "Vivian Mayol",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "4"
+}, {
+    "id": "529",
+    "university_id": "45",
+    "name": "Jos\u00e9 E. Gandia",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "398"
+}, {
+    "id": "530",
+    "university_id": "49",
+    "name": "Hector Cintr\u00f3n",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "399"
+}, {
+    "id": "531",
+    "university_id": "76",
+    "name": "Ivan Berrios",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "374"
+}, {
+    "id": "532",
+    "university_id": "76",
+    "name": "Miguel Morales",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "374"
+}, {
+    "id": "533",
+    "university_id": "76",
+    "name": "Jorge Romero",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "374"
+}, {
+    "id": "534",
+    "university_id": "58",
+    "name": "Ronaldo Sosa",
+    "sex": "M",
+    "department_id": "31",
+    "created_by": "401"
+}, {
+    "id": "535",
+    "university_id": "76",
+    "name": "Amanda Jusino",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "374"
+}, {
+    "id": "536",
+    "university_id": "76",
+    "name": "Roberto Jim\u00e9nez",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "374"
+}, {
+    "id": "537",
+    "university_id": "76",
+    "name": "Henry Benel",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "374"
+}, {
+    "id": "538",
+    "university_id": "76",
+    "name": "Fransisco Gu\u00e9dez",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "374"
+}, {
+    "id": "539",
+    "university_id": "43",
+    "name": "Sara Delgado",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "402"
+}, {
+    "id": "540",
+    "university_id": "59",
+    "name": "Glenda Garcia",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "405"
+}, {
+    "id": "541",
+    "university_id": "55",
+    "name": "Yamila Bauz\u00e1",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "406"
+}, {
+    "id": "542",
+    "university_id": "55",
+    "name": "Jos\u00e9 A. Rosado",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "406"
+}, {
+    "id": "543",
+    "university_id": "55",
+    "name": "Esther Rodr\u00edguez",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "406"
+}, {
+    "id": "544",
+    "university_id": "77",
+    "name": "Ram\u00f3n Soto Mart\u00ednez",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "406"
+}, {
+    "id": "545",
+    "university_id": "45",
+    "name": "Hamilton Cruz Rosa",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "4"
+}, {
+    "id": "546",
+    "university_id": "86",
+    "name": "Prof. Barreiro",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "410"
+}, {
+    "id": "547",
+    "university_id": "86",
+    "name": "Elmer Gonz\u00e1lez",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "410"
+}, {
+    "id": "548",
+    "university_id": "55",
+    "name": "Diana Rorodriguez",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "413"
+}, {
+    "id": "549",
+    "university_id": "55",
+    "name": "Rolando Cid",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "413"
+}, {
+    "id": "550",
+    "university_id": "43",
+    "name": "Gilberto Rios",
+    "sex": "M",
+    "department_id": "36",
+    "created_by": "70"
+}, {
+    "id": "551",
+    "university_id": "43",
+    "name": "Gerardo Estrada Ferrer",
+    "sex": "M",
+    "department_id": "36",
+    "created_by": "70"
+}, {
+    "id": "553",
+    "university_id": "45",
+    "name": "Nelliud Torres",
+    "sex": "M",
+    "department_id": "8",
+    "created_by": "424"
+}, {
+    "id": "554",
+    "university_id": "86",
+    "name": "Hugo Rodr\u00edguez",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "3"
+}, {
+    "id": "555",
+    "university_id": "63",
+    "name": "Wanda Ortiz Carrion",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "429"
+}, {
+    "id": "556",
+    "university_id": "81",
+    "name": "Osvaldo Cox",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "431"
+}, {
+    "id": "557",
+    "university_id": "63",
+    "name": "Mercedes Lopez",
+    "sex": "F",
+    "department_id": "12",
+    "created_by": "430"
+}, {
+    "id": "558",
+    "university_id": "63",
+    "name": "Jorge Luis Pi\u00f1ero Pi\u00f1ero",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "431"
+}, {
+    "id": "559",
+    "university_id": "63",
+    "name": "Iris Gomez",
+    "sex": "F",
+    "department_id": "12",
+    "created_by": "431"
+}, {
+    "id": "560",
+    "university_id": "63",
+    "name": "Yolanda Robles",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "429"
+}, {
+    "id": "561",
+    "university_id": "63",
+    "name": "Rafael Miranda",
+    "sex": "M",
+    "department_id": "12",
+    "created_by": "430"
+}, {
+    "id": "562",
+    "university_id": "51",
+    "name": "Elizabeth Burgos",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "435"
+}, {
+    "id": "563",
+    "university_id": "54",
+    "name": "\u00c1ngel Carri\u00f3n Tav\u00e1rez",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "439"
+}, {
+    "id": "564",
+    "university_id": "54",
+    "name": "Graciela Roig Casanova",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "439"
+}, {
+    "id": "565",
+    "university_id": "54",
+    "name": "Pedro Silva Vel\u00e1zquez",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "439"
+}, {
+    "id": "566",
+    "university_id": "55",
+    "name": "Diana Rodr\u00edguez",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "440"
+}, {
+    "id": "567",
+    "university_id": "54",
+    "name": "Sharon Marrero",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "439"
+}, {
+    "id": "568",
+    "university_id": "54",
+    "name": "Margarita Parilla",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "439"
+}, {
+    "id": "569",
+    "university_id": "76",
+    "name": "Jose Luis Arroyo",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "443"
+}, {
+    "id": "570",
+    "university_id": "60",
+    "name": "Erik Ortega",
+    "sex": "M",
+    "department_id": "12",
+    "created_by": "444"
+}, {
+    "id": "571",
+    "university_id": "65",
+    "name": "Jose Luis Gonzalez Robles",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "446"
+}, {
+    "id": "572",
+    "university_id": "51",
+    "name": "Carmen Espina",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "452"
+}, {
+    "id": "573",
+    "university_id": "51",
+    "name": "Carlos Lebron",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "452"
+}, {
+    "id": "574",
+    "university_id": "43",
+    "name": "Alberto Santana",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "455"
+}, {
+    "id": "575",
+    "university_id": "51",
+    "name": "Maria Ramos Rosado",
+    "sex": "F",
+    "department_id": "20",
+    "created_by": "338"
+}, {
+    "id": "576",
+    "university_id": "52",
+    "name": "Diomedes Pagan",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "456"
+}, {
+    "id": "577",
+    "university_id": "52",
+    "name": "Deyka Ortega",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "456"
+}, {
+    "id": "578",
+    "university_id": "46",
+    "name": "Juan R Rodriguez Mejias",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "457"
+}, {
+    "id": "579",
+    "university_id": "86",
+    "name": "Ana Mart\u00ednez",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "86"
+}, {
+    "id": "580",
+    "university_id": "77",
+    "name": "Otto Sievens",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "487"
+}, {
+    "id": "581",
+    "university_id": "51",
+    "name": "Francisco Agrait",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "490"
+}, {
+    "id": "582",
+    "university_id": "86",
+    "name": "Oronoz",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "496"
+}, {
+    "id": "586",
+    "university_id": "46",
+    "name": "Maria Judy Colon",
+    "sex": "M",
+    "department_id": "18",
+    "created_by": "502"
+}, {
+    "id": "584",
+    "university_id": "103",
+    "name": "Cesar Lopez",
+    "sex": "M",
+    "department_id": "15",
+    "created_by": "500"
+}, {
+    "id": "585",
+    "university_id": "86",
+    "name": "Janet Irizarry",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "496"
+}, {
+    "id": "587",
+    "university_id": "60",
+    "name": "Millie Pi\u00f1eiro",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "503"
+}, {
+    "id": "588",
+    "university_id": "46",
+    "name": "Myrna rodriguez Veg",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "504"
+}, {
+    "id": "599",
+    "university_id": "103",
+    "name": "Irma Rivera",
+    "sex": "F",
+    "department_id": "15",
+    "created_by": "500"
+}, {
+    "id": "590",
+    "university_id": "60",
+    "name": "Eva Arroyo",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "505"
+}, {
+    "id": "591",
+    "university_id": "60",
+    "name": "Teresita Soto Falto",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "505"
+}, {
+    "id": "592",
+    "university_id": "60",
+    "name": "Pedro Roque",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "505"
+}, {
+    "id": "593",
+    "university_id": "60",
+    "name": "Juan Qui\u00f1ones Mat\u00edas",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "505"
+}, {
+    "id": "594",
+    "university_id": "60",
+    "name": "Francisco Traverso",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "505"
+}, {
+    "id": "595",
+    "university_id": "60",
+    "name": "Eda Cuba",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "505"
+}, {
+    "id": "596",
+    "university_id": "60",
+    "name": "Prof. Geraldino",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "505"
+}, {
+    "id": "597",
+    "university_id": "60",
+    "name": "Prof. Guzman",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "505"
+}, {
+    "id": "598",
+    "university_id": "60",
+    "name": "Rey Rivera",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "505"
+}, {
+    "id": "600",
+    "university_id": "103",
+    "name": "Esther Aguayo",
+    "sex": "F",
+    "department_id": "15",
+    "created_by": "500"
+}, {
+    "id": "601",
+    "university_id": "103",
+    "name": "Rafael del Toro",
+    "sex": "M",
+    "department_id": "15",
+    "created_by": "500"
+}, {
+    "id": "602",
+    "university_id": "103",
+    "name": "Maricarmen Rivera",
+    "sex": "F",
+    "department_id": "15",
+    "created_by": "500"
+}, {
+    "id": "603",
+    "university_id": "103",
+    "name": "Hector Velez",
+    "sex": "M",
+    "department_id": "15",
+    "created_by": "500"
+}, {
+    "id": "604",
+    "university_id": "103",
+    "name": "Angel Rivera",
+    "sex": "M",
+    "department_id": "15",
+    "created_by": "500"
+}, {
+    "id": "607",
+    "university_id": "60",
+    "name": "Josefina Pe\u00f1a",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "505"
+}, {
+    "id": "606",
+    "university_id": "46",
+    "name": "Nercy Pared",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "511"
+}, {
+    "id": "608",
+    "university_id": "52",
+    "name": "Luciano",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "514"
+}, {
+    "id": "609",
+    "university_id": "52",
+    "name": "Emanuel Gutierrez",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "514"
+}, {
+    "id": "610",
+    "university_id": "50",
+    "name": "Carlos Gomez",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "517"
+}, {
+    "id": "611",
+    "university_id": "51",
+    "name": "Brenda Camara",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "520"
+}, {
+    "id": "612",
+    "university_id": "44",
+    "name": "Charles Fischler",
+    "sex": "M",
+    "department_id": "8",
+    "created_by": "525"
+}, {
+    "id": "613",
+    "university_id": "59",
+    "name": "Anastacio Emiliano",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "25"
+}, {
+    "id": "614",
+    "university_id": "45",
+    "name": "Eileen V\u00e1zquez de Serrano",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "528"
+}, {
+    "id": "615",
+    "university_id": "45",
+    "name": "Sandra  Cuadrado",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "529"
+}, {
+    "id": "616",
+    "university_id": "47",
+    "name": "Margarita Fernandez",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "272"
+}, {
+    "id": "617",
+    "university_id": "86",
+    "name": "Alfredo Andueza",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "257"
+}, {
+    "id": "618",
+    "university_id": "86",
+    "name": "Doris Figueroa",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "257"
+}, {
+    "id": "619",
+    "university_id": "86",
+    "name": "Martinez",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "22"
+}, {
+    "id": "620",
+    "university_id": "86",
+    "name": "Ernesto Gonzalez Torres",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "540"
+}, {
+    "id": "621",
+    "university_id": "51",
+    "name": "James Benson",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "541"
+}, {
+    "id": "622",
+    "university_id": "86",
+    "name": "Irma Hern\u00e1ndez",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "542"
+}, {
+    "id": "623",
+    "university_id": "86",
+    "name": "Edgar Quiles",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "542"
+}, {
+    "id": "624",
+    "university_id": "86",
+    "name": "Madeline Villamil",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "542"
+}, {
+    "id": "625",
+    "university_id": "86",
+    "name": "Carmen Del Toro",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "542"
+}, {
+    "id": "626",
+    "university_id": "86",
+    "name": "Benjam\u00edn Ruiz",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "542"
+}, {
+    "id": "633",
+    "university_id": "51",
+    "name": "Pablo Salzberg",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "555"
+}, {
+    "id": "628",
+    "university_id": "54",
+    "name": "Carlos Rojas Osorio",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "549"
+}, {
+    "id": "629",
+    "university_id": "54",
+    "name": "Nilsa Lugo Colon",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "549"
+}, {
+    "id": "630",
+    "university_id": "54",
+    "name": "Marcos Reyes Davila",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "549"
+}, {
+    "id": "631",
+    "university_id": "54",
+    "name": "Evelyn Torres Gallardo",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "549"
+}, {
+    "id": "632",
+    "university_id": "54",
+    "name": "Amalia Rivera",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "550"
+}, {
+    "id": "634",
+    "university_id": "77",
+    "name": "Ladislao Perez Almeyda",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "104"
+}, {
+    "id": "635",
+    "university_id": "51",
+    "name": "Dorian Lugo",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "558"
+}, {
+    "id": "636",
+    "university_id": "51",
+    "name": "Ivette Gonzalez Buitrago",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "558"
+}, {
+    "id": "637",
+    "university_id": "54",
+    "name": "Carmen Orama",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "559"
+}, {
+    "id": "638",
+    "university_id": "54",
+    "name": "Debora Nieves",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "559"
+}, {
+    "id": "639",
+    "university_id": "54",
+    "name": "Luis A. Gonz\u00e1lez",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "185"
+}, {
+    "id": "640",
+    "university_id": "54",
+    "name": "Josee Vedrine-Pauleus",
+    "sex": "F",
+    "department_id": "21",
+    "created_by": "185"
+}, {
+    "id": "641",
+    "university_id": "54",
+    "name": "Claudio Guerra",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "185"
+}, {
+    "id": "642",
+    "university_id": "43",
+    "name": "David Logue",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "573"
+}, {
+    "id": "643",
+    "university_id": "53",
+    "name": "Gloria Cordero",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "582"
+}, {
+    "id": "644",
+    "university_id": "53",
+    "name": "Eunice Esquilin",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "582"
+}, {
+    "id": "645",
+    "university_id": "53",
+    "name": "Juan Bonilla",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "582"
+}, {
+    "id": "646",
+    "university_id": "53",
+    "name": "Jorge Delgado",
+    "sex": "M",
+    "department_id": "3",
+    "created_by": "582"
+}, {
+    "id": "647",
+    "university_id": "53",
+    "name": "Jose Qui\u00f1ones",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "582"
+}, {
+    "id": "648",
+    "university_id": "54",
+    "name": "Efrain Vazquez Vera",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "282"
+}, {
+    "id": "649",
+    "university_id": "54",
+    "name": "Abraham Ruiz",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "584"
+}, {
+    "id": "650",
+    "university_id": "51",
+    "name": "Jos\u00e9 Aponte",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "586"
+}, {
+    "id": "654",
+    "university_id": "51",
+    "name": "Rafael Marrero",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "208"
+}, {
+    "id": "652",
+    "university_id": "51",
+    "name": "Jos\u00e9 Laborde",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "586"
+}, {
+    "id": "655",
+    "university_id": "51",
+    "name": "Sandra Sepulveda",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "208"
+}, {
+    "id": "656",
+    "university_id": "51",
+    "name": "Noel Luna",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "208"
+}, {
+    "id": "657",
+    "university_id": "51",
+    "name": "Karen Tossas",
+    "sex": "F",
+    "department_id": "20",
+    "created_by": "208"
+}, {
+    "id": "658",
+    "university_id": "86",
+    "name": "Jesus M. Rivera Delgado",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "36"
+}, {
+    "id": "659",
+    "university_id": "51",
+    "name": "Phillip Pennance",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "597"
+}, {
+    "id": "660",
+    "university_id": "54",
+    "name": "Wilson Ruiz",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "597"
+}, {
+    "id": "661",
+    "university_id": "54",
+    "name": "Wanda Ortiz",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "597"
+}, {
+    "id": "662",
+    "university_id": "54",
+    "name": "Daniel Lind",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "597"
+}, {
+    "id": "663",
+    "university_id": "54",
+    "name": "Alberto C\u00e1ceres",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "597"
+}, {
+    "id": "664",
+    "university_id": "54",
+    "name": "Idalyn R\u00edos",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "597"
+}, {
+    "id": "665",
+    "university_id": "54",
+    "name": "Rolando Castro",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "597"
+}, {
+    "id": "666",
+    "university_id": "54",
+    "name": "Eudez Perez",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "597"
+}, {
+    "id": "667",
+    "university_id": "45",
+    "name": "Horacio Matos",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "602"
+}, {
+    "id": "668",
+    "university_id": "54",
+    "name": "Carmen Z. Perez Mart\u00ednez",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "605"
+}, {
+    "id": "669",
+    "university_id": "54",
+    "name": "Juan E. Marcano",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "605"
+}, {
+    "id": "670",
+    "university_id": "49",
+    "name": "Dra. Lilliam Alicea",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "606"
+}, {
+    "id": "671",
+    "university_id": "45",
+    "name": "Luz Gracia",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "612"
+}, {
+    "id": "672",
+    "university_id": "54",
+    "name": "Jorge Montoya",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "559"
+}, {
+    "id": "673",
+    "university_id": "59",
+    "name": "LUZ ADDARICH",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "614"
+}, {
+    "id": "674",
+    "university_id": "54",
+    "name": "Carlos G\u00f3mez Beras ",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "618"
+}, {
+    "id": "675",
+    "university_id": "54",
+    "name": "Paula Rivera Torres",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "618"
+}, {
+    "id": "676",
+    "university_id": "55",
+    "name": "Grisel Mu\u00f1oz",
+    "sex": "F",
+    "department_id": "15",
+    "created_by": "353"
+}, {
+    "id": "677",
+    "university_id": "55",
+    "name": "Ricardo Molina",
+    "sex": "M",
+    "department_id": "15",
+    "created_by": "353"
+}, {
+    "id": "678",
+    "university_id": "43",
+    "name": "Milagritos Gonzalez",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "631"
+}, {
+    "id": "679",
+    "university_id": "43",
+    "name": "Freddie Santiago",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "631"
+}, {
+    "id": "680",
+    "university_id": "43",
+    "name": "Edwin Irizarry Mora",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "633"
+}, {
+    "id": "681",
+    "university_id": "43",
+    "name": "Luisa Seijo Maldonado",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "633"
+}, {
+    "id": "682",
+    "university_id": "43",
+    "name": "Israel Alameda",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "633"
+}, {
+    "id": "683",
+    "university_id": "43",
+    "name": "Olben Delgado",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "633"
+}, {
+    "id": "684",
+    "university_id": "43",
+    "name": "Francisco Garcia",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "633"
+}, {
+    "id": "685",
+    "university_id": "43",
+    "name": "Monica Alfaro",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "633"
+}, {
+    "id": "686",
+    "university_id": "43",
+    "name": "Jeffrey Valentin",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "633"
+}, {
+    "id": "687",
+    "university_id": "43",
+    "name": "Eduardo Kicinsky",
+    "sex": "M",
+    "department_id": "14",
+    "created_by": "633"
+}, {
+    "id": "688",
+    "university_id": "54",
+    "name": "Artemio Penalbert",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "634"
+}, {
+    "id": "689",
+    "university_id": "54",
+    "name": "Neyssa Palmer",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "168"
+}, {
+    "id": "690",
+    "university_id": "54",
+    "name": "Carlos Serrano",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "168"
+}, {
+    "id": "691",
+    "university_id": "86",
+    "name": "Gilbert Louzao",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "639"
+}, {
+    "id": "692",
+    "university_id": "86",
+    "name": "Ignacio Olazagasti",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "639"
+}, {
+    "id": "693",
+    "university_id": "86",
+    "name": "Cabrer",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "639"
+}, {
+    "id": "694",
+    "university_id": "86",
+    "name": "Vilma Rodriguez",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "639"
+}, {
+    "id": "695",
+    "university_id": "86",
+    "name": "De Jesus",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "639"
+}, {
+    "id": "696",
+    "university_id": "86",
+    "name": "Adlin Rios",
+    "sex": "F",
+    "department_id": "3",
+    "created_by": "639"
+}, {
+    "id": "700",
+    "university_id": "47",
+    "name": "Orlando Robles",
+    "sex": "M",
+    "department_id": "8",
+    "created_by": "657"
+}, {
+    "id": "698",
+    "university_id": "43",
+    "name": "Gerson Beauchamp",
+    "sex": "M",
+    "department_id": "28",
+    "created_by": "642"
+}, {
+    "id": "701",
+    "university_id": "51",
+    "name": "Rosa M. Juarbe",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "660"
+}, {
+    "id": "702",
+    "university_id": "55",
+    "name": "Margarita Santiago",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "661"
+}, {
+    "id": "703",
+    "university_id": "55",
+    "name": "Glorivee Rosario ",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "661"
+}, {
+    "id": "704",
+    "university_id": "44",
+    "name": "Dra. Migdalia Alvarez",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "663"
+}, {
+    "id": "705",
+    "university_id": "44",
+    "name": "Prof. Heidi Reyes",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "663"
+}, {
+    "id": "706",
+    "university_id": "60",
+    "name": "Raul Ruiz",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "664"
+}, {
+    "id": "707",
+    "university_id": "60",
+    "name": "Iliana Lugo",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "664"
+}, {
+    "id": "708",
+    "university_id": "60",
+    "name": "Jesica Soto",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "664"
+}, {
+    "id": "709",
+    "university_id": "60",
+    "name": "Japhet Rivera",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "664"
+}, {
+    "id": "710",
+    "university_id": "60",
+    "name": "Elias Fernandez",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "664"
+}, {
+    "id": "711",
+    "university_id": "45",
+    "name": "Jos\u00e9 Rodr\u00edguez Valent\u00edn",
+    "sex": "M",
+    "department_id": "19",
+    "created_by": "4"
+}, {
+    "id": "714",
+    "university_id": "54",
+    "name": "Angel Rodr\u00edguez Negr\u00f3n",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "605"
+}, {
+    "id": "713",
+    "university_id": "43",
+    "name": "Silvestre Colon",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "674"
+}, {
+    "id": "729",
+    "university_id": "51",
+    "name": "Laura N\u00e1ter",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "604"
+}, {
+    "id": "716",
+    "university_id": "51",
+    "name": "Eda M. Burgos Malav\u00e9",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "596"
+}, {
+    "id": "718",
+    "university_id": "51",
+    "name": "Norma E. Cruz",
+    "sex": "F",
+    "department_id": "7",
+    "created_by": "596"
+}, {
+    "id": "720",
+    "university_id": "51",
+    "name": "Zoraida Santiago Buitrago",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "596"
+}, {
+    "id": "722",
+    "university_id": "51",
+    "name": "Irizelma Robles \u00c1lvarez",
+    "sex": "F",
+    "department_id": "20",
+    "created_by": "596"
+}, {
+    "id": "723",
+    "university_id": "51",
+    "name": "Jos\u00e9 Garriga Pic\u00f3",
+    "sex": "M",
+    "department_id": "10",
+    "created_by": "604"
+}, {
+    "id": "724",
+    "university_id": "51",
+    "name": "Luz del Alba Acevedo",
+    "sex": "F",
+    "department_id": "10",
+    "created_by": "604"
+}, {
+    "id": "728",
+    "university_id": "51",
+    "name": "Rub\u00e9n Nazario",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "604"
+}, {
+    "id": "726",
+    "university_id": "51",
+    "name": "Europa Pi\u00f1ero Gonz\u00e1lez",
+    "sex": "F",
+    "department_id": "20",
+    "created_by": "596"
+}, {
+    "id": "727",
+    "university_id": "51",
+    "name": "Luis R. C\u00e1mara",
+    "sex": "M",
+    "department_id": "10",
+    "created_by": "604"
+}, {
+    "id": "737",
+    "university_id": "58",
+    "name": "Roxana Roman",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "688"
+}, {
+    "id": "731",
+    "university_id": "51",
+    "name": "Marc Passerieu",
+    "sex": "M",
+    "department_id": "20",
+    "created_by": "604"
+}, {
+    "id": "738",
+    "university_id": "58",
+    "name": "Houssain Kettani",
+    "sex": "M",
+    "department_id": "27",
+    "created_by": "687"
+}, {
+    "id": "733",
+    "university_id": "51",
+    "name": "Ada Haiman Arena",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "596"
+}, {
+    "id": "734",
+    "university_id": "51",
+    "name": "Zaira O. Rivera Casellas",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "683"
+}, {
+    "id": "735",
+    "university_id": "51",
+    "name": "Miriam Mu\u00f1iz",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "683"
+}, {
+    "id": "736",
+    "university_id": "86",
+    "name": "Diana Acosta",
+    "sex": "F",
+    "department_id": "22",
+    "created_by": "274"
+}, {
+    "id": "739",
+    "university_id": "58",
+    "name": "Helia Hernandez",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "688"
+}, {
+    "id": "740",
+    "university_id": "58",
+    "name": "Juan Garcia",
+    "sex": "M",
+    "department_id": "26",
+    "created_by": "688"
+}, {
+    "id": "741",
+    "university_id": "58",
+    "name": "Roberto Claudio",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "688"
+}, {
+    "id": "742",
+    "university_id": "58",
+    "name": "Ernesto Ulloa Davila",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "692"
+}, {
+    "id": "743",
+    "university_id": "58",
+    "name": "Rodolfo Tardy Garcia",
+    "sex": "M",
+    "department_id": "26",
+    "created_by": "692"
+}, {
+    "id": "744",
+    "university_id": "58",
+    "name": "Zulma Garcia Acevedo",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "692"
+}, {
+    "id": "745",
+    "university_id": "58",
+    "name": "Carmen Maldonado Soto",
+    "sex": "F",
+    "department_id": "21",
+    "created_by": "692"
+}, {
+    "id": "746",
+    "university_id": "58",
+    "name": "Maria Garcia Sandoval",
+    "sex": "F",
+    "department_id": "30",
+    "created_by": "692"
+}, {
+    "id": "747",
+    "university_id": "58",
+    "name": "Manuel Capella Casellas",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "692"
+}, {
+    "id": "748",
+    "university_id": "58",
+    "name": "Miguel Soto Soler",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "692"
+}, {
+    "id": "749",
+    "university_id": "58",
+    "name": "Sergio Charon ",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "692"
+}, {
+    "id": "750",
+    "university_id": "58",
+    "name": "Felix Nevarez",
+    "sex": "M",
+    "department_id": "27",
+    "created_by": "692"
+}, {
+    "id": "751",
+    "university_id": "58",
+    "name": "Blanca Tallaj Almanzar",
+    "sex": "F",
+    "department_id": "27",
+    "created_by": "692"
+}, {
+    "id": "752",
+    "university_id": "58",
+    "name": "Reinaldo Torres",
+    "sex": "M",
+    "department_id": "26",
+    "created_by": "692"
+}, {
+    "id": "753",
+    "university_id": "58",
+    "name": "Roberto Colon Rodriguez",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "692"
+}, {
+    "id": "754",
+    "university_id": "58",
+    "name": "Maria de los angeles medina",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "691"
+}, {
+    "id": "755",
+    "university_id": "86",
+    "name": "Jocelyn Medina Paneto",
+    "sex": "F",
+    "department_id": "36",
+    "created_by": "3"
+}, {
+    "id": "756",
+    "university_id": "60",
+    "name": "Helmuth Calderon Mendez",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "702"
+}, {
+    "id": "757",
+    "university_id": "52",
+    "name": "Mari Luz Acevedo",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "665"
+}, {
+    "id": "758",
+    "university_id": "52",
+    "name": "Horacio Serano ",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "665"
+}, {
+    "id": "759",
+    "university_id": "54",
+    "name": "Denise Rodriguez Carrasquillo",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "550"
+}, {
+    "id": "760",
+    "university_id": "54",
+    "name": "Jos\u00e9 Rojas P\u00e9rez",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "550"
+}, {
+    "id": "761",
+    "university_id": "54",
+    "name": "Sonia Parrilla Colon",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "709"
+}, {
+    "id": "762",
+    "university_id": "54",
+    "name": "Rody Rivera",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "709"
+}, {
+    "id": "763",
+    "university_id": "54",
+    "name": "Aida Carrasquillo",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "709"
+}, {
+    "id": "764",
+    "university_id": "54",
+    "name": "Prof. Mart\u00ednez",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "710"
+}, {
+    "id": "765",
+    "university_id": "51",
+    "name": "Alfredo J. Torruella",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "713"
+}, {
+    "id": "766",
+    "university_id": "51",
+    "name": "Jaime A. Ponce de Le\u00f3n",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "713"
+}, {
+    "id": "767",
+    "university_id": "51",
+    "name": "Luis F. Fonseca",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "713"
+}, {
+    "id": "768",
+    "university_id": "51",
+    "name": "Lutful Bari Bhuiyan",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "713"
+}, {
+    "id": "769",
+    "university_id": "51",
+    "name": "Peter X. Feng",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "713"
+}, {
+    "id": "770",
+    "university_id": "51",
+    "name": "Carmen Pantoja",
+    "sex": "F",
+    "department_id": "21",
+    "created_by": "713"
+}, {
+    "id": "771",
+    "university_id": "51",
+    "name": "Jos\u00e9 Molinelli",
+    "sex": "M",
+    "department_id": "23",
+    "created_by": "713"
+}, {
+    "id": "772",
+    "university_id": "86",
+    "name": "Lina Torres",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "3"
+}, {
+    "id": "773",
+    "university_id": "86",
+    "name": "Carmen Padial",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "639"
+}, {
+    "id": "774",
+    "university_id": "86",
+    "name": "Fernando Pieras",
+    "sex": "M",
+    "department_id": "17",
+    "created_by": "639"
+}, {
+    "id": "775",
+    "university_id": "51",
+    "name": "Prof. Marcelo Ubriaco",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "718"
+}, {
+    "id": "776",
+    "university_id": "43",
+    "name": "Carlos Mar\u00ed\u00adn",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "713"
+}, {
+    "id": "777",
+    "university_id": "51",
+    "name": "Fouad Aliev",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "713"
+}, {
+    "id": "778",
+    "university_id": "77",
+    "name": "Jose lucas Rodriguez",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "734"
+}, {
+    "id": "779",
+    "university_id": "77",
+    "name": "Marisol L\u00f3pez Filiberty",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "734"
+}, {
+    "id": "780",
+    "university_id": "77",
+    "name": "Felix A. Ramos",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "734"
+}, {
+    "id": "781",
+    "university_id": "77",
+    "name": "Roberto Garcia Cabrera",
+    "sex": "M",
+    "department_id": "10",
+    "created_by": "734"
+}, {
+    "id": "782",
+    "university_id": "77",
+    "name": "Adelaida Bidot",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "734"
+}, {
+    "id": "783",
+    "university_id": "77",
+    "name": "Amado Vega",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "734"
+}, {
+    "id": "784",
+    "university_id": "77",
+    "name": "Lourdes De Le\u00f3n",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "734"
+}, {
+    "id": "785",
+    "university_id": "77",
+    "name": "Cantaliz Cornier",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "734"
+}, {
+    "id": "786",
+    "university_id": "77",
+    "name": "Edgardo Torres Reyes",
+    "sex": "M",
+    "department_id": "22",
+    "created_by": "734"
+}, {
+    "id": "787",
+    "university_id": "77",
+    "name": "Ligia Westwood",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "734"
+}, {
+    "id": "788",
+    "university_id": "77",
+    "name": "Cuenca",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "734"
+}, {
+    "id": "789",
+    "university_id": "77",
+    "name": "Evelyn Rodr\u00edguez",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "734"
+}, {
+    "id": "790",
+    "university_id": "77",
+    "name": "Gaspar Torres",
+    "sex": "M",
+    "department_id": "13",
+    "created_by": "734"
+}, {
+    "id": "791",
+    "university_id": "86",
+    "name": "Llompart",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "374"
+}, {
+    "id": "792",
+    "university_id": "86",
+    "name": "Andr\u00e9s Rodriguez Rubio",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "374"
+}, {
+    "id": "793",
+    "university_id": "86",
+    "name": "Doribell Rodriguez",
+    "sex": "F",
+    "department_id": "38",
+    "created_by": "735"
+}, {
+    "id": "794",
+    "university_id": "54",
+    "name": "Liliam Casillas Martinez",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "168"
+}, {
+    "id": "795",
+    "university_id": "54",
+    "name": "Francisco Pagan",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "168"
+}, {
+    "id": "796",
+    "university_id": "86",
+    "name": "Reina Delucca",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "257"
+}, {
+    "id": "797",
+    "university_id": "86",
+    "name": "Oscar Feliciano",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "257"
+}, {
+    "id": "798",
+    "university_id": "54",
+    "name": "Edgardo A. Ortiz Corps",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "743"
+}, {
+    "id": "799",
+    "university_id": "51",
+    "name": "Valentin Keyantuo",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "6"
+}, {
+    "id": "800",
+    "university_id": "51",
+    "name": "Luis Medina",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "6"
+}, {
+    "id": "801",
+    "university_id": "51",
+    "name": "Lillian Corcino",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "6"
+}, {
+    "id": "802",
+    "university_id": "54",
+    "name": "Rafael Muller",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "752"
+}, {
+    "id": "803",
+    "university_id": "54",
+    "name": "Elio Ramos",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "754"
+}, {
+    "id": "804",
+    "university_id": "54",
+    "name": "Maritza Santana Sierra",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "754"
+}, {
+    "id": "805",
+    "university_id": "86",
+    "name": "Ilia Bouyett",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "542"
+}, {
+    "id": "806",
+    "university_id": "86",
+    "name": "Silvestrina Rodr\u00edguez",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "542"
+}, {
+    "id": "807",
+    "university_id": "86",
+    "name": "Catherine Matos",
+    "sex": "F",
+    "department_id": "13",
+    "created_by": "542"
+}, {
+    "id": "808",
+    "university_id": "54",
+    "name": "Dalma Gonzalez",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "647"
+}, {
+    "id": "809",
+    "university_id": "54",
+    "name": "Ramonita Reyes",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "647"
+}, {
+    "id": "810",
+    "university_id": "54",
+    "name": "Bethzabeth L\u00f3pez",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "761"
+}, {
+    "id": "811",
+    "university_id": "54",
+    "name": "Elizabeth Hodges",
+    "sex": "F",
+    "department_id": "33",
+    "created_by": "723"
+}, {
+    "id": "812",
+    "university_id": "54",
+    "name": "Santa Leon",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "723"
+}, {
+    "id": "813",
+    "university_id": "82",
+    "name": "Dr. Antonio Serra",
+    "sex": "M",
+    "department_id": "33",
+    "created_by": "770"
+}, {
+    "id": "814",
+    "university_id": "47",
+    "name": "Rafael A. Nieves Rivera",
+    "sex": "M",
+    "department_id": "8",
+    "created_by": "778"
+}, {
+    "id": "815",
+    "university_id": "86",
+    "name": "Abraham Rosa",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "3"
+}, {
+    "id": "816",
+    "university_id": "54",
+    "name": "Ilva Sanabria",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "782"
+}, {
+    "id": "817",
+    "university_id": "54",
+    "name": "Wilfredo Ayala",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "782"
+}, {
+    "id": "818",
+    "university_id": "45",
+    "name": "Omar D\u00edaz",
+    "sex": "M",
+    "department_id": "8",
+    "created_by": "4"
+}, {
+    "id": "819",
+    "university_id": "89",
+    "name": "Dewell Martinez",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "796"
+}, {
+    "id": "820",
+    "university_id": "51",
+    "name": "Jalil Sued Badillo",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "797"
+}, {
+    "id": "821",
+    "university_id": "51",
+    "name": "Dr. Jalil Sued-Badillo",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "797"
+}, {
+    "id": "822",
+    "university_id": "51",
+    "name": "Mayra Santos Febres ",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "798"
+}, {
+    "id": "823",
+    "university_id": "86",
+    "name": "Luis Gonzalez",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "801"
+}, {
+    "id": "824",
+    "university_id": "54",
+    "name": "Carmen I. Medina",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "803"
+}, {
+    "id": "825",
+    "university_id": "54",
+    "name": "Angel Fonseca Mulero",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "809"
+}, {
+    "id": "826",
+    "university_id": "54",
+    "name": "Carlos Cordero Jimenez",
+    "sex": "M",
+    "department_id": "15",
+    "created_by": "809"
+}, {
+    "id": "827",
+    "university_id": "54",
+    "name": "Felix Lebron Algarin",
+    "sex": "M",
+    "department_id": "15",
+    "created_by": "809"
+}, {
+    "id": "828",
+    "university_id": "54",
+    "name": "Pi~ero",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "814"
+}, {
+    "id": "829",
+    "university_id": "54",
+    "name": "Maril\u00fa Lebr\u00f3n",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "816"
+}, {
+    "id": "830",
+    "university_id": "54",
+    "name": "Aida Rodr\u00edguez Roig",
+    "sex": "F",
+    "department_id": "15",
+    "created_by": "816"
+}, {
+    "id": "831",
+    "university_id": "54",
+    "name": "Sandra I Rodriguez Maldonado",
+    "sex": "F",
+    "department_id": "4",
+    "created_by": "818"
+}, {
+    "id": "832",
+    "university_id": "54",
+    "name": "Luis Lopez Rojas",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "820"
+}, {
+    "id": "833",
+    "university_id": "54",
+    "name": "Jose A, Saavedra",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "821"
+}, {
+    "id": "834",
+    "university_id": "54",
+    "name": "Jazmina Roman Eyxarch",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "821"
+}, {
+    "id": "835",
+    "university_id": "54",
+    "name": "Lorell Mu\u00f1oz",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "821"
+}, {
+    "id": "836",
+    "university_id": "54",
+    "name": "Jose Diaz Pi\u00f1ero",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "821"
+}, {
+    "id": "837",
+    "university_id": "45",
+    "name": "Marc Legault",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "842"
+}, {
+    "id": "838",
+    "university_id": "45",
+    "name": "Lillian Bras",
+    "sex": "F",
+    "department_id": "8",
+    "created_by": "843"
+}, {
+    "id": "839",
+    "university_id": "45",
+    "name": "Adalberto Andino",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "843"
+}, {
+    "id": "840",
+    "university_id": "54",
+    "name": "Baretti Machin",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "859"
+}, {
+    "id": "841",
+    "university_id": "54",
+    "name": "Vicor Ariel Mojica",
+    "sex": "M",
+    "department_id": "1",
+    "created_by": "872"
+}, {
+    "id": "842",
+    "university_id": "54",
+    "name": "Ruben Lopez",
+    "sex": "M",
+    "department_id": "35",
+    "created_by": "881"
+}, {
+    "id": "843",
+    "university_id": "54",
+    "name": "Jose Encarnaci\u00f3n",
+    "sex": "M",
+    "department_id": "15",
+    "created_by": "881"
+}, {
+    "id": "844",
+    "university_id": "54",
+    "name": "Rub\u00e9n Moreira Vidal",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "605"
+}, {
+    "id": "845",
+    "university_id": "54",
+    "name": "elmy rosario",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "916"
+}, {
+    "id": "846",
+    "university_id": "54",
+    "name": "quique lopez",
+    "sex": "M",
+    "department_id": "11",
+    "created_by": "916"
+}, {
+    "id": "848",
+    "university_id": "55",
+    "name": "Rosario Rivera ",
+    "sex": "F",
+    "department_id": "11",
+    "created_by": "353"
+}, {
+    "id": "849",
+    "university_id": "55",
+    "name": "Luis Lugo",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "353"
+}, {
+    "id": "850",
+    "university_id": "55",
+    "name": "Lucy Quiroga",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "353"
+}, {
+    "id": "851",
+    "university_id": "55",
+    "name": "Hernando Steidel",
+    "sex": "M",
+    "department_id": "15",
+    "created_by": "353"
+}, {
+    "id": "852",
+    "university_id": "86",
+    "name": "Dorila Le\u00f3n",
+    "sex": "F",
+    "department_id": "1",
+    "created_by": "542"
+}, {
+    "id": "853",
+    "university_id": "54",
+    "name": "Gerardo Pi\u00f1ro Cadiz",
+    "sex": "M",
+    "department_id": "25",
+    "created_by": "821"
+}, {
+    "id": "854",
+    "university_id": "51",
+    "name": "Ivan Cardona",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "6"
+}, {
+    "id": "855",
+    "university_id": "54",
+    "name": "Mirna Rivera",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "929"
+}, {
+    "id": "856",
+    "university_id": "86",
+    "name": "jorge torres",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "86"
+}, {
+    "id": "857",
+    "university_id": "51",
+    "name": "Ronald Selsby ",
+    "sex": "M",
+    "department_id": "21",
+    "created_by": "6"
+}, {
+    "id": "858",
+    "university_id": "45",
+    "name": "Adalberto Agosto",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "933"
+}, {
+    "id": "859",
+    "university_id": "45",
+    "name": "Aminda Sierra",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "933"
+}, {
+    "id": "860",
+    "university_id": "47",
+    "name": "Alvaro Correa",
+    "sex": "M",
+    "department_id": "34",
+    "created_by": "933"
+}, {
+    "id": "861",
+    "university_id": "45",
+    "name": "Liliana Torres",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "933"
+}, {
+    "id": "862",
+    "university_id": "45",
+    "name": "Sonia Morales",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "933"
+}, {
+    "id": "863",
+    "university_id": "45",
+    "name": "Aleida Gelpi",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "933"
+}, {
+    "id": "864",
+    "university_id": "45",
+    "name": "Maria Machado",
+    "sex": "F",
+    "department_id": "19",
+    "created_by": "933"
+}, {
+    "id": "865",
+    "university_id": "112",
+    "name": "Elizabeth Vel\u00e1zquez",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "168"
+}, {
+    "id": "866",
+    "university_id": "54",
+    "name": "Elizabeth Vel\u00e1zquez",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "168"
+}, {
+    "id": "867",
+    "university_id": "54",
+    "name": "Carmen Albino",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "168"
+}, {
+    "id": "868",
+    "university_id": "54",
+    "name": "Carmen Fonseca",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "168"
+}, {
+    "id": "869",
+    "university_id": "54",
+    "name": "Esmeralda Rosado",
+    "sex": "F",
+    "department_id": "18",
+    "created_by": "168"
+}, {
+    "id": "870",
+    "university_id": "52",
+    "name": "Ernest Aragon\u00e9s",
+    "sex": "F",
+    "department_id": "34",
+    "created_by": "936"
+}, {
+    "id": "871",
+    "university_id": "51",
+    "name": "Edwin Qui\u00f1ones",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "200"
+}, {
+    "id": "872",
+    "university_id": "51",
+    "name": "Nestor Carballeira",
+    "sex": "M",
+    "department_id": "37",
+    "created_by": "200"
+}, {
+    "id": "873",
+    "university_id": "45",
+    "name": "Juan Sol\u00e1 Sloan",
+    "sex": "M",
+    "department_id": "8",
+    "created_by": "938"
+}, {
+    "id": "874",
+    "university_id": "45",
+    "name": "Elio Lozano ",
+    "sex": "M",
+    "department_id": "8",
+    "created_by": "938"
+}, {
+    "id": "876",
+    "university_id": "54",
+    "name": "Zo\u00e9 Jim\u00e9nez  Corretjer",
+    "sex": "F",
+    "department_id": "25",
+    "created_by": "821"
+}, {
+    "id": "877",
+    "university_id": "46",
+    "name": "Agnes Dubey",
+    "sex": "F",
+    "department_id": "37",
+    "created_by": "953"
+}, {
+    "id": "878",
+    "university_id": "46",
+    "name": "Gaddier de Jesus",
+    "sex": "M",
+    "department_id": "4",
+    "created_by": "953"
+}, {
+    "id": "879",
+    "university_id": "46",
+    "name": "Pedro Subirats",
+    "sex": "M",
+    "department_id": "38",
+    "created_by": "953"
+}]
