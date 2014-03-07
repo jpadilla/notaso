@@ -7,4 +7,5 @@ admin
 assets
 static
 uploaded_files
-
+fixtures_commands
+old_json
