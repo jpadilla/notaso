@@ -2,8 +2,9 @@ from django.db import models
 
 from professors.models import Professor
 
+
 def get_upload_file_name(intance, filename):
-    return "uploaded_files/%s" % (filename)
+    return "static/uploaded_files/%s" % (filename)
 
 
 class University(models.Model):
@@ -27,7 +28,10 @@ class University(models.Model):
             percent += p.get_percent()
             count += 1
 
-        percent = percent/count
+        if count == 0:
+            percent = 0
+        else:
+            percent = percent/count
 
         if percent >= 90:
             return 'A'

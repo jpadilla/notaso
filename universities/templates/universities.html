@@ -1,12 +1,40 @@
+{% extends "base.html"%}
 {% load static %}
-<head>
-	
-</head>
-<body>
-	{% for universities in universities %}
-		<h1>
-			<p><a href = "{{universities.slug}}">{{universities.name}} {{universities.city}}</a></p>
-		</h1>
-		<img src="{{universities.emblem}}" height = "200px">
-	{% endfor %}
-</body>
+{% block title %}Notaso | Universities{% endblock %}
+{% block content %}
+	<div class = "container block">
+		<section class = "col-md-12">
+			<ul>
+			{% for universities in universities %}
+				{% if universities.emblem %}	
+					<li>
+						<div class = "col-md-3 thumbnail spaces">
+							<a href = "{{universities.slug}}">
+									<img src = "/static/{{universities.emblem}}" height = "180px" width = "100%">	
+								<div class = "caption">
+										<p>{{universities.name}} <br/>{{universities.city}}</p>
+										<div class = "grade{{universities.get_grade}}lrg grade"></div>
+								</div>
+							</a>
+						</div>
+					</li>
+				{% else %}
+					<li>
+						<div class = "col-md-3 thumbnail spaces">
+							<a href = "{{universities.slug}}">
+								<div class = "center-block">
+									<img src = "http://dummyimage.com/200x180/5a5a5a/fff.png&text=No+Emblem" width = "100%">
+								</div>	
+								<div class = "caption">
+									<p>{{universities.name}}<br>{{universities.city}}</p>
+									<div class = "grade{{universities.get_grade}}lrg grade"></div>
+								</div>
+							</a>
+						</div>
+					</li>
+				{% endif %}	
+			{% endfor %}
+			</ul>
+		</section>
+	</div>
+{% endblock %}

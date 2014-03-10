@@ -10,12 +10,5 @@
 {% endblock css %}
 
 {% block content %}
-	<ul>
-		<li><a href="/">Home</a></li>
-		<li><a href="{% url 'users:signup' %}">Signup</a></li>
-		<li><a href="{% url 'users:login' %}">Login</a></li>
-		<li><a href="{% url 'users:logout' %}">Logout</a></li>
-		<li><a href="{% url 'universities:universities' %}">Universities</a></li>
-		<li><a href="{% url 'professors:index' %}">Professors</a></li>
-	</ul>
+
 {% endblock content %}
