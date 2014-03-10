@@ -90,6 +90,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+    ('static', os.path.join(BASE_DIR, 'static')),
+)
+
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 AUTH_USER_MODEL = 'users.User'
