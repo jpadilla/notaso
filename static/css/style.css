@@ -1,0 +1,84 @@
+#loginBtn{
+	background-color: white;
+	color: #428bca;
+	border-color: #428bca;
+}
+#loginBtn:hover{
+	background-color: #428bca;
+	color: white;
+	border-color: #357ebd;
+}
+#brand_image{
+	margin-top: -9px;
+	margin-left: 9%;
+}
+#myNavbar{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+#test{
+	background-color: red;
+	margin-top: 10%;
+}
+.footerIcons{
+	font-size: 65px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 35px;
+	text-align: center;
+}
+.campus{
+	font-size: 100%;
+}
+.block{
+	margin-top: 6%;
+}
+.spaces{
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	margin-right: 5%;
+}
+.spaces p{
+	margin-bottom: 0;
+	font-size: 12px;
+	font-weight: bold;
+}
+.spaces a{
+	text-decoration: none;
+}
+li{
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.grade{
+	margin-left: 86%;
+}
+.university-info a: hover{
+	text-decoration: none;
+}
+#signUpBtn{
+	background-color: white;
+	color: #398439;
+	border-color: #398439;
+}
+#signUpBtn:hover{
+	background-color: #47a447;
+	color: white;
+	border-color: #398439;
+}
+.heading-style{
+	width:100%;
+	background-color: #0B4F85;
+	padding-bottom: 0;
+}
+.heading-style h1{
+	color: white;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+.heading-style p{
+	color: #3175A0;
+	margin-top: -1%;
+}

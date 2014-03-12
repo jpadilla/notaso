@@ -1,0 +1,193 @@
+		.rate1btn,.rate2btn,.rate3btn,.rate4btn,.rate5btn,
+		.rate1sml,.rate2sml,.rate3sml,.rate4sml,.rate5sml,
+		.gradeAbtn,.gradeBbtn,.gradeCbtn,.gradeDbtn,.gradeFbtn,
+		.gradeAlrg,.gradeBlrg,.gradeClrg,.gradeDlrg,.gradeFlrg,.avatarFlrg,.avatarMlrg,
+		.gradeAsml,.gradeBsml,.gradeCsml,.gradeDsml,.gradeFsml,.avatarFsml,.avatarMsml,.diggUp,.diggDown,
+		.avatarFalpha,.avatarMalpha,
+		.btn1,.btn2,.btn3,.btn4,.btn5,.cap,.arrow{ 
+			background: url('../img/sprites.png'); cursor:pointer;
+		}
+		.rate1btn,.rate2btn,.rate3btn,.rate4btn,.rate5btn,
+		.gradeAbtn,.gradeBbtn,.gradeCbtn,.gradeDbtn,.gradeFbtn{ width:39px; height:41px}
+		.rate1sml,.rate2sml,.rate3sml,.rate4sml,.rate5sml,
+		.gradeAsml,.gradeBsml,.gradeCsml,.gradeDsml,.gradeFsml,.avatarFsml,.avatarMsml,.diggUp,.diggDown{ width:15px; height:15px; }
+		.gradeAlrg,.gradeBlrg,.gradeClrg,.gradeDlrg,.gradeFlrg,.avatarFlrg,.avatarMlrg{ width:35px; height:35px}
+		.avatarFalpha,.avatarMalpha{ width:29px; height:34px}
+
+/**********/
+/* Grades */
+	/*buttons*/
+		/*grade normal*/
+			/* a */
+			.gradeAbtn{ width:40px; background-position: 0px -123px }
+			/* b */
+			.gradeBbtn{ background-position: -40px -123px }
+			/* c */
+			.gradeCbtn{ background-position: -79px -123px }
+			/* d */
+			.gradeDbtn{ background-position: -118px -123px }
+			/* f */
+			.gradeFbtn{ width:41px; background-position: -157px -123px }
+		/*grade hover*/
+			/* a */
+			.gradeAbtn:hover{ background-position: 0px -164px }
+			/* b */
+			.gradeBbtn:hover{ background-position: -40px -164px }
+			/* c */
+			.gradeCbtn:hover{ background-position: -79px -164px }
+			/* d */
+			.gradeDbtn:hover{ background-position: -118px -164px }
+			/* f */
+			.gradeFbtn:hover{ background-position: -157px -164px }
+		/*grade active*/
+			/* a */
+			.gradeAbtn.active{ background-position: 0px -205px }
+			/* b */
+			.gradeBbtn.active{ background-position: -40px -205px }
+			/* c */
+			.gradeCbtn.active{ background-position: -79px -205px }
+			/* d */
+			.gradeDbtn.active{ background-position: -118px -205px }
+			/* f */
+			.gradeFbtn.active{ background-position: -157px -205px }
+		/*rate normal*/
+			/* 1 */
+			.rate1btn{ width:40px; background-position: 0px 0px }
+			/* 2 */
+			.rate2btn{ background-position: -40px 0px }
+			/* 3 */
+			.rate3btn{ background-position: -79px 0px }
+			/* 4 */
+			.rate4btn{ background-position: -118px 0px }
+			/* 5 */
+			.rate5btn{ width:41px; background-position: -157px 0px }
+		/*rate hover*/
+			/* 1 */
+			.rate1btn:hover{ background-position: 0px -41px }
+			/* 2 */
+			.rate2btn:hover{ background-position: -40px -41px }
+			/* 3 */
+			.rate3btn:hover{ background-position: -79px -41px }
+			/* 4 */
+			.rate4btn:hover{ background-position: -118px -41px }
+			/* 5 */
+			.rate5btn:hover{ background-position: -157px -41px }
+		/*rate active*/
+			/* 1 */
+			.rate1btn.active{ background-position: 0px -82px }
+			/* 2 */
+			.rate2btn.active{ background-position: -40px -82px }
+			/* 3 */
+			.rate3btn.active{ background-position: -79px -82px }
+			/* 4 */
+			.rate4btn.active{ background-position: -118px -82px }
+			/* 5 */
+			.rate5btn.active{ background-position: -157px -82px }
+
+		/*large*/
+			/* a */
+			.gradeAlrg{ background-position: 0px -246px }
+			/* b */
+			.gradeBlrg{ background-position: -35px -246px }
+			/* c */
+			.gradeClrg{ background-position: -70px -246px }
+			/* d */
+			.gradeDlrg{ background-position: -105px -246px }
+			/* f */
+			.gradeFlrg{ background-position: -140px -246px }
+
+		/*small*/
+			/* a */
+			.gradeAsml{ background-position: -228px -164px }
+			/* b */
+			.gradeBsml{ background-position: -243px -164px }
+			/* c */
+			.gradeCsml{ background-position: -258px -164px }
+			/* d */
+			.gradeDsml{ background-position: -273px -164px }
+			/* f */
+			.gradeFsml{ background-position: -288px -164px }
+			
+			/* 1 */
+			.rate1sml{ background-position: -288px -149px }
+			/* 2 */
+			.rate2sml{ background-position: -273px -149px }
+			/* 3 */
+			.rate3sml{ background-position: -258px -149px }
+			/* 4 */
+			.rate4sml{ background-position: -243px -149px }
+			/* 5 */
+			.rate5sml{ background-position: -228px -149px }
+
+	
+/*************/
+/* Gravatars */
+
+	/*large*/
+		/*female*/
+		.avatarFlrg{ background-position: -175px -246px }
+		/*male*/
+		.avatarMlrg{ background-position: -210px -246px }
+
+	/*small*/
+		/*female*/
+		.avatarFsml{ background-position: -198px -164px }
+		/*male*/
+		.avatarMsml{ background-position: -213px -164px }
+
+	/*alpha*/
+		/*female*/
+		.avatarFalpha{ background-position: -245px -246px }
+		/*male*/
+		.avatarMalpha{ background-position: -274px -246px }
+
+		
+/***********/
+/* Buttons */
+	.btn1,.btn2,.btn3,.btn4,.btn5{ display:block; text-align:center; font-weight:bold; max-width:290px; line-height:3 !important; font-size:14px !important; position:relative; text-decoration:none; color:black}
+	.btn1 .icon,.btn2 .icon,.btn3 .icon,.btn4 .icon,.btn5 .icon{ position:absolute; left:5px;}
+
+	/*digg up*/
+		.diggUp{ background-position: -198px -179px }
+	/*digg down*/
+		.diggDown{ background-position: -213px -179px }
+
+	/*primary*/
+		.btn1{ height:41px; background-position: 0px -281px; color:white;}
+		.btn1:hover{ background-position: 0px -607px; color:white; }
+		.btn1:active{ background-position: 0px -322px; color:white; }
+		.btn1 span.cap{ display:block; height:41px; width:13px; background-position: right -281px; position:absolute; right:-2px; top:0px}
+		.btn1:hover span.cap{ background-position: right -607px}
+		.btn1:active span.cap{ background-position: right -322px}
+		
+		/*primary green*/
+			.btn5{ height:41px; background-position: 0px -740px; color:white;}
+			.btn5:hover{ background-position: 0px -781px; color:white; }
+			.btn5:active{ background-position: 0px -822px; color:white; }
+			.btn5 span.cap{ display:block; height:41px; width:13px; background-position: right -740px; position:absolute; right:-2px; top:0px}
+			.btn5:hover span.cap{ background-position: right -781px}
+			.btn5:active span.cap{ background-position: right -822px}
+		
+	/*secondary*/
+		.btn2{ height:41px; background-position: 0px -363px }
+		.btn2:hover{ background-position: 0px -648px }
+		.btn2:active, .btn2.active{ background-position: 0px -404px }
+		.btn2 span.cap{ display:block; height:41px; width:13px; background-position: right -363px; position:absolute; right:-2px; top:0px}
+		.btn2:hover span.cap{ background-position: right -648px}
+		.btn2:active span.cap{ background-position: right -404px}
+		.btn2:active span.cap, .btn2.active span.cap{ background-position: right -404px}
+		
+		
+	/*big*/
+		.btn3{ height:51px; line-height:4 !important; background-position: 0px -445px }
+		.btn3:hover{ background-position: 0px -525px }
+		.btn3:active{ background-position: 0px -332px }
+		.btn3 span.cap{ display:block; height:51px; width:13px; background-position: right -281px; position:absolute; right:-2px; top:0px}
+		.btn3:hover span.cap{ background-position: right -689px}
+		.btn3:active span.cap{ background-position: right -496px}
+		
+	/*overlay*/
+		.btn4{ height:60px; line-height:5 !important; background-position: 0px -547px; }
+		.btn4 span.cap{ display:block; height:60px; width:13px; background-position: right -547px; position:absolute; right:-10px; top:0px}
+		.btn4 span.arrow{ width:33px; height:13px; background-position: -228px -179px; position:absolute; bottom:-12px; left:45%}
+		
