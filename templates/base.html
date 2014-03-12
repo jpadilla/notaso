@@ -26,24 +26,25 @@
                 <a class="navbar-brand" href="/home"><img id = "brand_image" src="{% static "static/img/notaso-200x37.png" %}"/></a>
             </div>
 
-            <div class="collapse navbar-collapse" id = "myNavbar">
+            <div class="collapse navbar-collapse navbar-right" id = "myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Professors</a>
+                    <li><a href="/professors">Professors</a>
                     </li>
-                    <li><a href="#">Universities</a>
+                    <li><a href="/universities">Universities</a>
                 </ul>
-                <form class="navbar-form navbar-right">
+                <form class="navbar-form navbar-right navbar-collapse">
                     <a href="/login">
                         <button type="button" class="btn btn-primary" id = "loginBtn" >Login</button>
                     </a>
                     <a href="/signup">
-                        <button type="button" class="btn btn-default">Sign Up</button>
+                        <button type="button" class="btn btn-default" id = "signUpBtn">Sign Up</button>
                     </a>
                 </form>
             </div>
         </div>
     </nav>
     {% endblock %}
+    {% block header %}{% endblock %}
     {% block content %}{% endblock %}
     {% block footer %}
         <div class = "container">

@@ -20,6 +20,9 @@ class University(models.Model):
         self.slug = self.slug.lower()
         super(University, self).save(*args, **kwargs)
 
+    def count(instance):
+        return Professor.objects.filter(university=instance).count()
+
     def get_grade(instance):
         professors = Professor.objects.filter(university=instance)
         count = 0

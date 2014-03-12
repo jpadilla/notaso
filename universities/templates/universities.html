@@ -1,9 +1,19 @@
 {% extends "base.html"%}
 {% load static %}
-{% block title %}Notaso | Universities{% endblock %}
+{% block title %}Universidades | Notaso{% endblock %}
+{% block header %}
+<div class = "jumbotron heading-style">
+	<div class = "container">
+		<div class = "row">
+			<h1>Universidades</h1>
+			<p>Conoces a tus profesores antes de entrar al salón</p>
+		</div>	
+	</div>
+</div>
+{% endblock %}
 {% block content %}
-	<div class = "container block">
-		<section class = "col-md-12">
+	<div class = "container">
+		<section class = "col-md-12 col-md-offset-1">
 			<ul>
 			{% for universities in universities %}
 				{% if universities.emblem %}	
@@ -11,9 +21,13 @@
 						<div class = "col-md-3 thumbnail spaces">
 							<a href = "{{universities.slug}}">
 									<img src = "/static/{{universities.emblem}}" height = "180px" width = "100%">	
-								<div class = "caption">
-										<p>{{universities.name}} <br/>{{universities.city}}</p>
-										<div class = "grade{{universities.get_grade}}lrg grade"></div>
+								<div>
+									<p>{{universities.name}}</p>
+									<p>{{universities.city}}</p>
+									
+									<p><span class = "label label-primary">{{universities.count}}</span>
+									 profesores</p>
+									<div class = "grade{{universities.get_grade}}lrg grade"></div>
 								</div>
 							</a>
 						</div>
@@ -25,8 +39,11 @@
 								<div class = "center-block">
 									<img src = "http://dummyimage.com/200x180/5a5a5a/fff.png&text=No+Emblem" width = "100%">
 								</div>	
-								<div class = "caption">
-									<p>{{universities.name}}<br>{{universities.city}}</p>
+								<div>
+									<p>{{universities.name}}</p>
+									<p>{{universities.city}}</p>
+									<p><span class = "label label-primary">{{universities.count}}</span>
+									 profesores</p>
 									<div class = "grade{{universities.get_grade}}lrg grade"></div>
 								</div>
 							</a>
