@@ -1,13 +1,61 @@
-<p>{{specified_university.name}} {{specified_university.city}}</p>
-<p>
-	<h3>Grade: <strong>{{ grade }}</strong></h3>
-</p>
-<table>
-	{% for depart in departments %}
-	<tr>
-		<td>
-			<a href="{{depart.slug}}"> {{depart.name}} </a>
-		</td>
-	</tr>
-	{% endfor %}
-</table>
+{% extends 'base.html' %}
+{% block header %}
+<div class = "jumbotron heading-style">
+	<div class = "container">
+		<div class = "col-md-12">
+			<div class = "col-md-1 pull-right">
+				<div class = "grade{{specified_university.grade}}lrg university-grade"></div>
+			</div>
+			<div class = "col-md-11">
+				<h2>
+					{{specified_university.name}}, {{specified_university.city}}
+				</h2>
+			</div>
+		</div>	
+	</div>
+</div>
+{% endblock %}
+{% block content %}
+<div class = "container">
+	<div class = "row">
+		<div class = "col-md-12">
+			<div class = "col-md-4">
+				<div class = "panel panel-default">
+					<div class = "panel-heading">
+						Los Mejores 5
+					</div>
+					<div class = "panel-body">
+						{% for best_professors in hi_professors %}
+							<p>{{best_professors}}</p>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "panel panel-default">
+					<div class = "panel-heading">
+						Los Peores 5
+					</div>
+					<div class = "panel-body">
+						{% for low_professors in low_professors %}
+							<p>{{low_professors}}</p>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "panel panel-default">
+					<div class = "panel-heading">
+						Comentarios recientes
+					</div>
+					<div class = "panel-body">
+						{% for recent_comment in recent_comments %}
+							<p>{{recent_comment|truncatewords:5}}</p>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock%}

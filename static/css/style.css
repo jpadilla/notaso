@@ -47,6 +47,7 @@
 }
 .spaces a{
 	text-decoration: none;
+	color: #252525
 }
 li{
 	padding-bottom: 0;
@@ -81,4 +82,14 @@ li{
 .heading-style p{
 	color: #3175A0;
 	margin-top: -1%;
+}
+.heading-style h2{
+	color: white;
+	padding-bottom: 5px; 
+}
+.university-grade{
+	margin-top: 27%;
+}
+.spaces:hover {
+	background-color: #0B4F85;
 }
