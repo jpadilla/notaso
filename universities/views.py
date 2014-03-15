@@ -4,6 +4,7 @@ from .models import University
 
 from departments.models import Department
 from professors.models import Professor
+from comments.models import Comment
 
 
 def universities_view(request):
@@ -18,7 +19,9 @@ def specific_university_view(request, slug):
     data = {
         'specified_university': university,
         'departments': Department.objects.all(),
-        'professors': Professor.objects.filter(university=university),
-        'grade': university.get_grade()
+        'hi_professors': Professor.objects.filter(university=university, ).order_by('-score')[:5],
+        'grade': university.get_grade(),
+        'low_professors': Professor.objects.filter(university=university).order_by('score')[:5],
+        'recent_comments': Comment.objects.filter(professor__in=Professor.objects.filter(university=university)).order_by('-created_at')[:5]
     }
     return render_to_response("university.html", data)
