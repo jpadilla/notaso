@@ -1,16 +1,105 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Notaso</title>
-</head>
-<body>
+{% extends 'base.html' %} 
 
-<form method="POST" action="">
-	{% csrf_token %}
-	{{ form.as_p }}
-	<input type="submit" value="Submit">
-</form>
+{% block header %}
+<div class = "jumbotron heading-style">
+	<div class = "container">
+		<div class = "row">
+			<h1>Registrate</h1>
+			<p>Conoces a tus profesores antes de entrar al salón</p>
+		</div>	
+	</div>
+</div>
+{% endblock %}
 
-</body>
-</html>
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="form-group">
+            <form method="POST" action="" class="horizontal-form" role="form">{% csrf_token %}
+                <div class="col-md-12 col-md-offset-1">
+                    {% if form.email.errors %}
+                    <div class="col-md-10 alert alert-danger">{{form.email.errors}}</div>
+                    {% endif %}
+                    <div class="form-group">
+                        <label class="col-md-2" for="id_email">Email:</label>
+                        <div class="col-md-8">
+                            <input class="form-control" placeholder="Email" id="id_email" maxlength="40" name="email" type="email" />
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="col-md-12 col-md-offset-1">
+                    {% if form.first_name.errors %}
+                    <div class="col-md-10 alert alert-danger">{{form.first_name.errors}}</div>
+                    {% endif %}
+                    <div class="form-group">
+                        <label class="col-md-2" for="id_first_name">Nombre:</label>
+                        <div class="col-md-8">
+                            <input class="form-control" placeholder="Nombre" id="id_first_name" maxlength="30" name="first_name" type="text" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-md-offset-1">
+                    {% if form.last_name.errors %}
+                    <div class="col-md-10 alert alert-danger">{{form.last_name.errors}}</div>
+                    {% endif %}
+                    <div class="form-group">
+                        <label class="col-md-2" for="id_last_name">Apellidos:</label>
+                        <div class="col-md-8">
+                            <input class="form-control" placeholder="Apellidos" id="id_last_name" maxlength="30" name="last_name" type="text" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-md-offset-1">
+                    {% if form.email.errors %}
+                    <div class="col-md-5 alert alert-danger">{{form.gender.errors}}</div>
+                    {% endif %}
+                    <label class="col-md-2" for="id_gender">Genero:</label>
+                    <div class="col-md-3">
+                        <select class="form-control" id="id_gender" name="gender">
+                            <option value="" selected="selected">---------</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+
+                    </div>
+                </div>
+
+        </div>
+        <div class="col-md-12 col-md-offset-1">
+            {% if form.password1.errors %}
+            <div class="col-md-10 alert alert-danger">{{form.password1.errors}}</div>
+            {% endif %}
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label for="id_password1">Password:</label>
+
+                </div>
+                <div class="col-md-8">
+                    <input type="password" class="form-control" name="password1" id="id_password1" placeholder="Password">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-md-offset-1">
+            {% if form.password2.errors %}
+            <div class="col-md-10 alert alert-danger">{{form.password2.errors}}</div>
+            {% endif %}
+            <div class="form-group">
+                <div class="col-md-2">
+                    <label for="id_password2">Password confirmation:</label>
+                </div>
+                <div class="col-md-8">
+                    <input type="password" class="form-control" name="password2" id="id_password2" placeholder="Password">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 col-md-offset-1">
+            <input type="submit" class="btn btn-success btn-lg pull-right" value="Sign Up">
+
+        </div>
+        </form>
+
+    </div>
+</div>
+{% endblock %}
