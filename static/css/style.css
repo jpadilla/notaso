@@ -16,7 +16,6 @@ body {
 	margin-left: 9%;
 }
 #myNavbar{
-	padding-left: 25px;
 	padding-right: 25px;
 }
 #test{
@@ -82,7 +81,7 @@ li{
 }
 .heading-style p{
 	color: #3175A0;
-	margin-top: -1%;
+	padding-top: 0px;
 }
 .heading-style h2{
 	color: white;
@@ -151,4 +150,46 @@ li{
 	left: 2%;
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 	border-radius: 200px / 50px;
+}
+.search input.search-text{
+	height: 30px;
+	border:0 !important;
+	color: #555;
+	margin: 0 auto;
+	width:200px;
+
+	transition: width 700ms ,background 700ms;
+	
+	-webkit-transition: width 700ms ,background 700ms;
+	-moz-transition: width 700ms ,background 700ms;
+	-ms-transition: width 700ms ,background 700ms;
+	-o-transition: width 700ms ,background 700ms;
+
+	box-shadow: inset 0 1px 1px #444;
+	-webkit-box-shadow: inset 0 1px 1px #444;
+	-moz-box-shadow: inset 0 1px 1px #444;
+	-ms-box-shadow: inset 0 1px 1px #444;
+	-o-box-shadow: inset 0 1px 1px #444;
+	 
+	 border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+
+}	
+.search input.search-text:focus{
+	background-color: white;
+	width:450px;
+	border-color: #66afe9;
+}
+#btnSearch{
+	background-color: white;
+	color: #0B4F85;
+	border-color: #0B4F85;
+}
+#btnSearch:hover{
+	background-color: #134C75;
+	color: white;
+	border-color: #0B4F85;
 }
