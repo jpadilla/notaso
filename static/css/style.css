@@ -1,3 +1,6 @@
+body {
+	margin-top: 50px;
+}
 #loginBtn{
 	background-color: white;
 	color: #428bca;
@@ -34,10 +37,7 @@
 	margin-top: 6%;
 }
 .spaces{
-	padding-top: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 15px;
+	padding: 15px;
 	margin-right: 5%;
 }
 .spaces p{
@@ -72,6 +72,7 @@ li{
 .heading-style{
 	width:100%;
 	background-color: #0B4F85;
+	padding-top: 0;
 	padding-bottom: 0;
 }
 .heading-style h1{
@@ -92,4 +93,62 @@ li{
 }
 .spaces:hover {
 	background-color: #0B4F85;
+}
+.panel-heading > h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.panel-body {
+	background-color: #f5f5f5;
+	padding-bottom: 0;
+}
+.panel-body > ul > li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.panel-body > ul > li > p{
+	padding-left: 50px;
+}
+.search-width {
+	width: 80%;
+}
+#home-searchform {
+	padding: 10px;
+	background-color: #f8f8f8;
+	border: 1px solid #e8e8e8;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.home-banner {
+	margin: 25px 0;
+	padding: 15px;
+	color: #fff;
+	text-align: center;
+	background-color: #0B4F85;
+	border-top: 1px solid #134C75;
+	border-bottom: 1px solid #134C75;
+}
+.home-banner > h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.home-banner > h4 {
+	margin-bottom: 0;
+	opacity: .3; 
+}
+.awesome-shadow {
+	margin-top: 10px;
+	height: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.awesome-shadow:before {
+	content: "";
+	position: absolute;
+	width: 96%;
+	height: 15px;
+	top: -15px;
+	left: 2%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	border-radius: 200px / 50px;
 }

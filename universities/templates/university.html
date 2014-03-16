@@ -4,7 +4,7 @@
 	<div class = "container">
 		<div class = "col-md-12">
 			<div class = "col-md-1 pull-right">
-				<div class = "grade{{specified_university.grade}}lrg university-grade"></div>
+				<div class = "grade{{grade}}lrg university-grade"></div>
 			</div>
 			<div class = "col-md-11">
 				<h2>
@@ -22,36 +22,51 @@
 			<div class = "col-md-4">
 				<div class = "panel panel-default">
 					<div class = "panel-heading">
-						Los Mejores 5
+						<h4 class="text-center">Los Mejores 5</h4>
 					</div>
 					<div class = "panel-body">
+					<ul>
 						{% for best_professors in hi_professors %}
+							<li class="clearfix">
+							<div class = "grade{{best_professors.get_grade}}lrg professor-grade pull-left"></div>
 							<p>{{best_professors}}</p>
+							</li>
 						{% endfor %}
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class = "col-md-4">
 				<div class = "panel panel-default">
 					<div class = "panel-heading">
-						Los Peores 5
+						<h4 class="text-center">Los Peores 5</h4>
 					</div>
 					<div class = "panel-body">
+						<ul>
 						{% for low_professors in low_professors %}
+							<li class="clearfix">
+							<div class = "grade{{low_professors.get_grade}}lrg pull-left"></div>
 							<p>{{low_professors}}</p>
+							</li>
 						{% endfor %}
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class = "col-md-4">
 				<div class = "panel panel-default">
 					<div class = "panel-heading">
-						Comentarios recientes
+						<h4 class="text-center">Comentarios recientes</h4>
 					</div>
 					<div class = "panel-body">
+						<ul>	
 						{% for recent_comment in recent_comments %}
-							<p>{{recent_comment|truncatewords:5}}</p>
+							<li class="clearfix">
+							<div class = "avatar{{recent_comment.created_by.gender}}lrg pull-left"></div>
+							<p>{{recent_comment|truncatechars:30}}</p>
+							</li>
 						{% endfor %}
+						</ul>
 					</div>
 				</div>
 			</div>
