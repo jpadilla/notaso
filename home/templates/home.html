@@ -1,14 +1,78 @@
-{% extends 'base.html' %}
-
-{% block css %}
-<style>
-	li {
-		display: inline;
-	}
-</style>
-
-{% endblock css %}
-
+{% extends 'base.html' %} 
 {% block content %}
 
+<div class="container">
+<div id="home-searchform" class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+    <form action="" role="form">
+        <div class="col-md-10 col-xs-10">
+            <input type="text" class="form-control input-lg" placeholder="Busca un profesor">
+        </div>
+        <div class="col-md-2 col-xs-2">
+            <button class="btn btn-default btn-lg" type="button">Buscar</button>
+        </div>
+    </form>
+</div>
+</div>
+<div class="home-banner">
+	<h2>Conoce a tus profesores antes de llegar al salón.</h2>
+	<h4>Notaso te ayuda a decidir que clase tomar y que profesor es mejor.</h4>
+</div>
+
+<div class = "container">
+	<div class = "row">
+		<div class = "col-md-12">
+			<div class = "col-md-4">
+				<div class = "panel panel-default">
+					<div class = "panel-heading">
+						<h4 class="text-center">Top 5 Profesores</h4>
+					</div>
+					<div class = "panel-body">
+					<ul>
+						{% for p in professors %}
+							<li class="clearfix">
+							<div class = "grade{{p.get_grade}}lrg professor-grade pull-left"></div>
+							<p>{{p}}</p>
+							</li>
+						{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "panel panel-default">
+					<div class = "panel-heading">
+						<h4 class="text-center">Top 5 Universidades</h4>
+					</div>
+					<div class = "panel-body">
+						<ul>
+						{% for u in universities %}
+							<li class="clearfix">
+							<div class = "grade{{u.get_grade}}lrg pull-left"></div>
+							<p>{{u}}</p>
+							</li>
+						{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "panel panel-default">
+					<div class = "panel-heading">
+						<h4 class="text-center">Comentarios recientes</h4>
+					</div>
+					<div class = "panel-body">
+						<ul>	
+						{% for rc in recent_comments %}
+							<li class="clearfix">
+							<div class = "avatar{{rc.created_by.gender}}lrg pull-left"></div>
+							<p>{{rc|truncatechars:30}}</p>
+							</li>
+						{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock content %}
