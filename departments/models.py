@@ -11,6 +11,9 @@ class Department(models.Model):
     def __unicode__(self):
         return self.name
 
+    def count(self, university):
+        return Professor.objects.filter(department=self.id, university=university).count()
+
     def get_grade(instance, university):
     	professors = Professor.objects.filter(university=university, department=instance)
         count = 0
