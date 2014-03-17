@@ -53,8 +53,7 @@ class User(AbstractBaseUser):
     REQUIRED_FIELDS = ['first_name', 'last_name', 'gender']
 
     def get_full_name(self):
-        self.gender = self.gender.upper()
-        return "%s %s" % self.first_name, self.last_name
+        return "%s %s" % (self.first_name, self.last_name)
 
     def get_short_name(self):
         return self.first_name

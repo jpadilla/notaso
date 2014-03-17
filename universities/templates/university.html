@@ -1,76 +1,103 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
+{% load department_extras %}
 {% block header %}
-<div class = "jumbotron heading-style">
-	<div class = "container">
-		<div class = "col-md-12">
-			<div class = "col-md-1 pull-right">
-				<div class = "grade{{grade}}lrg university-grade"></div>
-			</div>
-			<div class = "col-md-11">
-				<h2>
-					{{specified_university.name}}, {{specified_university.city}}
-				</h2>
-			</div>
-		</div>	
-	</div>
+<div class="jumbotron heading-style">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="col-md-1 pull-right">
+                <div class="grade{{grade}}lrg university-grade"></div>
+            </div>
+            <div class="col-md-11">
+                <h2>
+                    {{specified_university.name}}, {{specified_university.city}}
+                </h2>
+            </div>
+        </div>
+    </div>
 </div>
-{% endblock %}
-{% block content %}
-<div class = "container">
-	<div class = "row">
-		<div class = "col-md-12">
-			<div class = "col-md-4">
-				<div class = "panel panel-default">
-					<div class = "panel-heading">
-						<h4 class="text-center">Los Mejores 5</h4>
-					</div>
-					<div class = "panel-body">
-					<ul>
-						{% for best_professors in hi_professors %}
-							<li class="clearfix">
-							<div class = "grade{{best_professors.get_grade}}lrg professor-grade pull-left"></div>
-							<p>{{best_professors}}</p>
-							</li>
-						{% endfor %}
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4">
-				<div class = "panel panel-default">
-					<div class = "panel-heading">
-						<h4 class="text-center">Los Peores 5</h4>
-					</div>
-					<div class = "panel-body">
-						<ul>
-						{% for low_professors in low_professors %}
-							<li class="clearfix">
-							<div class = "grade{{low_professors.get_grade}}lrg pull-left"></div>
-							<p>{{low_professors}}</p>
-							</li>
-						{% endfor %}
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4">
-				<div class = "panel panel-default">
-					<div class = "panel-heading">
-						<h4 class="text-center">Comentarios recientes</h4>
-					</div>
-					<div class = "panel-body">
-						<ul>	
-						{% for recent_comment in recent_comments %}
-							<li class="clearfix">
-							<div class = "avatar{{recent_comment.created_by.gender}}lrg pull-left"></div>
-							<p>{{recent_comment|truncatechars:30}}</p>
-							</li>
-						{% endfor %}
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+{% endblock %} {% block content %}
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="text-center">Los Mejores 5</h4>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            {% for best_professors in hi_professors %}
+                            <li class="clearfix">
+                                <div class="grade{{best_professors.get_grade}}lrg professor-grade pull-left"></div>
+                                <a href="{% url 'professors:specified_professor' best_professors.slug %}" class="home-table-name">{{best_professors}}</a>
+                                <br>
+                                <a href="{% url 'universities:specified_university' best_professors.university.slug %}" class="home-table-city text-muted">{{best_professors.university}}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="text-center">Los Peores 5</h4>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            {% for low_professors in low_professors %}
+                            <li class="clearfix">
+                                <div class="grade{{low_professors.get_grade}}lrg pull-left"></div>
+                                <a href="{% url 'professors:specified_professor' low_professors.slug %}" class="home-table-name">{{low_professors}}</a>
+                                <br>
+                                <a href="{% url 'universities:specified_university' low_professors.university.slug %}" class="home-table-city text-muted">{{low_professors.university}}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="text-center">Comentarios recientes</h4>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            {% for recent_comment in recent_comments %}
+                            <li class="clearfix">
+                                <div class="avatar{{recent_comment.created_by.gender}}lrg pull-left"></div>
+                                <a class="home-table-name">{{recent_comment|truncatechars:30}}</a>
+                                <br>
+                                <a class="home-table-city text-muted">
+                                    {% if recent_comment.is_anonymous %} Anónimo {% else %} {{recent_comment.created_by.get_full_name}} {% endif %}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h3>Departamentos</h3>
+    <br>
+    <div class="row">
+
+        {% for d in departments %}
+		   {% if d|count_professors:specified_university > 0 %}
+	        <div class="col-md-3">
+                <a href="{% url 'universities:departments:specified_department' specified_university.slug d.slug %}">
+	        	  <div class="department-slip clearfix">
+	            	  <span class="pull-left">{{ d|count_professors:specified_university }}</span>
+	            	  <p class="pull-left">{{ d }}</p>
+	               </div>
+                </a>
+	        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
 </div>
 {% endblock%}

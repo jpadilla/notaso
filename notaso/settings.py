@@ -40,9 +40,9 @@ INSTALLED_APPS = (
     'debug_toolbar',
 
     'users',
-    'departments',
     'universities',
     'professors',
+    'departments',
     'comments',
     'home',
 )
