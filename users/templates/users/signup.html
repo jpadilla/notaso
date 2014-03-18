@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% block header %}
+{% extends 'base.html' %} 
+{% block title %} Sign-up | Notaso {% endblock %}
+{% block header %}
 <div class="jumbotron heading-style">
     <div class="container">
         <div class="row">
@@ -7,7 +9,8 @@
         </div>
     </div>
 </div>
-{% endblock %} {% block content %}
+{% endblock %} 
+{% block content %}
 <div class="container">
     <div class="row">
         <div class="form-group">
@@ -30,7 +33,9 @@
 
                     <li>
                         {% if form.first_name.errors %}
-                        <li class = "alert alert-danger">{{form.first_name.errors}}</li>
+                        <li class = "form-group">
+                            <li class = "alert alert-danger">{{form.first_name.errors}}</li>
+                        </li>
                         {% endif %}
                         <li class="form-group">
                             <li>
@@ -43,7 +48,9 @@
                     </li>
                     <li>
                         {% if form.last_name.errors %}
-                        <li class = "alert alert-danger">{{form.last_name.errors}}</li>
+                        <li class = "form-group">
+                            <li class = "alert alert-danger">{{form.last_name.errors}}</li>
+                        </li>
                         {% endif %}
                         <li class="form-group">
                             <li>
@@ -55,8 +62,10 @@
                         </li>
                     </li>
                     <li>
-                        {% if form.email.errors %}
-                        <li class = "alert alert-danger">{{form.gender.errors}}</li>
+                        {% if form.gender.errors %}
+                        <li class = "form-group">
+                            <li class = "alert alert-danger">{{form.gender.errors}}</li>   
+                        </li>
                         {% endif %}
                         <li class = "form-group">
                             <li>
@@ -73,27 +82,31 @@
                     </li>
                     <li>
                         {% if form.password1.errors %}
-                        <li class = "alert alert-danger">{{form.password1.errors}}</li>
+                        <li class = "form-group">
+                            <li class = "alert alert-danger">{{form.password1.errors}}</li>
+                        </li>
                         {% endif %}
                         <li class="form-group">
                             <li>
                                 <label for="id_password1">Password:</label>
                             </li>
                             <li>
-                                <input class="form-control" placeholder="Password" id="id_password1" maxlength="30" name="password1" type="password" />
+                                <input class="form-control" placeholder="Password" id="id_password1" name="password1" type="password" />
                             </li>
                         </li>
                     </li>
                     <li>
                         {% if form.password2.errors %}
-                        <li class = "alert alert-danger">{{form.password2.errors}}</li>
+                        <li class = "form-group">
+                            <li class = "alert alert-danger">{{form.password2.errors}}</li>
+                        </li>
                         {% endif %}
                         <li class="form-group">
                             <li>
                                 <label for="id_password2">Password Confirmation:</label>
                             </li>
                             <li>
-                                <input class="form-control" placeholder="Password" id="id_password2" maxlength="30" name="password2" type="password" />
+                                <input class="form-control" placeholder="Password" id="id_password2" name="password2" type="password" />
                             </li>
                         </li>
                     </li>

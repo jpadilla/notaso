@@ -1,41 +1,41 @@
-<head>
-    <title>Notaso | {{specified_professor.first_name}}{{specified_professor.last_name}}</title>
-</head>
-
+{% extends 'base.html' %}
+{% block title %}{{specified_professor.first_name}} {{specified_professor.last_name}} | Notaso{% endblock %}
+{% block header %}
+<div class="jumbotron heading-style">
+    <div class="container">
+        <div class="row">
+            <h1>{{specified_professor.first_name}} {{specified_professor.last_name}}</h1>
+            <p>{{specified_professor.university}}</p>
+            <div class = "grade{{grade}}lrg grade pull-right"></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block content %}
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-10 col-md-offset2">
+            <div class = "col-md-8 pull-left">
+                
+            </div>
+            <div class = "col-md-3 pull-right">
+                <h3>Promedio:</h3>
+                <h1>{{specified_professor.score}} %</h1>
+                <h3> Destalles </h3>   
+                <p><div class = "grade{{responsability}}lrg"></div>Responsabilidad</p>
+                <p><div class = "grade{{personality}}lrg"></div>Personalidad</p>
+                <p>Cantidad de trabajo <div class = "rate{{difficulty}}sml"></div></p>
+                <p>Dificultad <div class = "rate{{difficulty}}sml"></div></p>
+            </div>
+        </div>
+    </div>    
+</div>
+{% endblock %}
 <body>
-    <h1>{{specified_professor.first_name}}{{specified_professor.last_name}}</h1>
     <p>{{specified_professor.gender}}
-        <br>{{specified_professor.university}}
         <br>{{specified_professor.department}}
     </p>
-    <table border = "1">
-        <tr>
-            <th>Grade</th>
-            <th>Responsability</th>
-            <th>Personality</th>
-            <th>Workload</th>
-            <th>Difficulty</th>
-        </tr>
-        <tr>
-            <td>
-                {{grade}}
-            </td>
-            <td>
-                {{responsability}}
-            </td>
-            <td>
-                {{personality}}
-            </td>
-            <td>
-                {{workload}}
-            </td>
-            <td>
-                {{difficulty}}
-            </td>
-        </tr>
-    </table>
-    <br>
-    <br>
 
     <form action="" method="post">
         {% csrf_token %}
