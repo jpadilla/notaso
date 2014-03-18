@@ -208,26 +208,52 @@ li {
 .home-table-name:hover {
     color: #333;
 }
-.department-slip {
-    margin: 5px 0;
+.department-slip, .professor-slip {
+    margin: 8px 0;
     background-color: #fcfcfc;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    color: #333;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
 }
-.department-slip > span {
+.department-slip > span, .professor-slip  > span {
     background-color: #0B4F85;
-    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 40px;
+    line-height: 40px;
     color: #fff;
+}
+.professor-slip > span {
+    width: 35px;
 }
 .department-slip > p {
     padding: 10px;
     margin-bottom: 0;
 }
-.department-slip:hover {
+.professor-slip > p {
+    padding: 10px;
+    padding-bottom: 0;
+    padding-top: 7px;
+    margin-bottom: 0;
+}
+.department-slip:hover, .professor-slip:hover {
     background-color: #0B4F85;
     color: #fff;
-    transition: all .3s;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.m-bottom-0 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.department-label {
+    font-size: 12px;
+    margin-bottom: 10px;
 }

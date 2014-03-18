@@ -8,8 +8,11 @@ from comments.models import Comment
 
 
 def universities_view(request):
+    universities = University.objects.all()
+    universities = list(universities)
+    universities.sort(key=lambda x: x.count(), reverse=True)
     data = {
-        'universities': University.objects.all()
+        'universities': universities
     }
     return render_to_response("universities.html", data)
 

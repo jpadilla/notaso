@@ -1,7 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
-from django.core.urlresolvers import reverse
 from django.views.generic.list import ListView
 
 from .models import Professor
@@ -15,9 +14,9 @@ class ProfessorListView(ListView):
     model = Professor
     template_name = 'professor_list.html'
 
+
 def specific_professor_view(request, professors_slug):
     professor = get_object_or_404(Professor, slug=professors_slug)
-        
     form = AddCommentForm(request.POST or None)
 
     if request.user.is_authenticated and form.is_valid():
@@ -35,7 +34,6 @@ def specific_professor_view(request, professors_slug):
         'difficulty': professor.get_difficulty()
     }
 
-
     return render(request, 'professor.html', data)
 
 
@@ -44,8 +42,8 @@ def create_professor_view(request):
     if request.POST:
         form = AddProfessorForm(request.POST)
         if form.is_valid():
-            professor_information = form.save_form(request)
-            return HttpResponseRedirect('/professors/%s' % professor_information.slug)
+            professor_info = form.save_form(request)
+            return HttpResponseRedirect('/professors/%s' % professor_info.slug)
     else:
         form = AddProfessorForm()
     data = {
