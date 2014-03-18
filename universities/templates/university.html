@@ -85,19 +85,18 @@
     <h3>Departamentos</h3>
     <br>
     <div class="row">
-
-        {% for d in departments %}
+     {% for d in departments %}
 		   {% if d|count_professors:specified_university > 0 %}
 	        <div class="col-md-3">
                 <a href="{% url 'universities:departments:specified_department' specified_university.slug d.slug %}">
 	        	  <div class="department-slip clearfix">
-	            	  <span class="pull-left">{{ d|count_professors:specified_university }}</span>
-	            	  <p class="pull-left">{{ d }}</p>
+	            	  <span class="pull-left"><b>{{ d|count_professors:specified_university }}</b></span>
+	            	  <p class="pull-left"><b>{{ d }}</b></p>
 	               </div>
                 </a>
 	        </div>
         {% endif %}
-        {% endfor %}
+    {% endfor %}
     </div>
 </div>
 {% endblock%}
