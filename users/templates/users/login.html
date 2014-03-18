@@ -1,18 +1,60 @@
 {% extends "base.html" %}
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Notaso</title>
-</head>
-<body>
-	
-<form method="post" action="{% url 'users:login' %}">
-{% csrf_token %}
-	{{ form.as_p }}
-<input type="submit" value="login" />
+{% block title %} Login | Notaso {% endblock %}
+{% block header %}
+<div class="jumbotron heading-style">
+    <div class="container">
+        <div class="row">
+            <h1>Login</h1>
+            <p>Conoces a tus profesores antes de entrar al salón</p>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="form-group">
+            <ul class="col-md-8 col-md-offset-2">
+                <form method="POST" action="" class="horizontal-form" role="form">{% csrf_token %}
+                    <li>
+                        {% if form.email.errors %}
+                            <li class = "alert alert-danger">{{form.email.errors}}</li>
+                        {% endif %}
+                        <li class="form-group">
+                            <li>
+                                <label for="id_email">Email:</label>
+                            </li>
+                            <li>
+                                <input class="form-control" placeholder="Email" id="id_email" maxlength="40" name="email" type="email" />
+                            </li>
+                        </li>
+                    </li>
+                    <li>
+                        {% if form.password.errors %}
+                        <li class = "form-group">
+                            <li class = "alert alert-danger">{{form.password.errors}}</li>
+                        </li>
+                        {% endif %}
+                        <li class="form-group">
+                            <li>
+                                <label for="id_password">Password:</label>
+                            </li>
+                            <li>
+                                <input class="form-control" placeholder="Password" id="id_password" name="password" type="password" />
+                            </li>
+                        </li>
+                    </li>
+                    <li>
+                        <li class = "form-group">
+                            <li class="pull-right">
+                                <input type="submit" class="btn btn-primary btn-lg pull-right" value="Login">
+                            </li>  
+                        </li>
+                    </li>
+                </form>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
 
-</form>
-
-</body>
-</html>

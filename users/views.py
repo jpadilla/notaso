@@ -17,7 +17,7 @@ def register(request):
             reverse('users:login')
         )
 
-    return render(request, 'users/index.html', {'form' : form})
+    return render(request, 'users/signup.html', {'form' : form})
 
 def login(request):
     print request.user

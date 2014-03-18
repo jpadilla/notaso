@@ -1,14 +1,28 @@
-<head>
-	<title>Notaso | Create Professor</title>
-</head>
-<body>
-	<h2>Create Professor</h2>
-	<!--enctype hace saber que es un form que puede a~adir texto y data-->
-	<form action="/professors/create/" method="post" enctype="multipart/form-data">{% csrf_token %}
-		<ul>
-			{{form.as_ul}}
-		</ul>
+{% extends 'base.html' %}
+{% block title %}Crea tu profesor | Notaso {% endblock %}
+{% block header %}
+<div class="jumbotron heading-style">
+    <div class="container">
+        <div class="row">
+            <h1>Crea tu profesor</h1>
+            <p>Conoces a tus profesores antes de entrar al salón</p>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block content %}
+<div class = "container">
+	<div class = "row">
+		<div class = "form-group">
+			<div class = "col-md-8 col-md-offset-2">
+				<form action="/professors/create/" method = "POST" role = "form" enctype="multipart/form-data">
+					{% csrf_token %}
+					{{form.as_p}}
+					<input class = "btn btn-success btn-lg pull-right" type="submit" name="crear" value="Create">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 
-	<input type="submit" name="submit" value="Submit">
-	</form>
-</body> 
+{% endblock %}
