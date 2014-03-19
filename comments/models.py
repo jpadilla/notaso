@@ -47,7 +47,8 @@ def recalculate_score(sender, **kwargs):
             sum_difficulty += c.difficulty
             comments_count += 1
 
-        score = float((sum_responsibility+sum_personality+sum_workload+sum_difficulty))/(comments_count*20)
+        score = float((sum_responsibility+sum_personality +
+                       sum_workload+sum_difficulty))/(comments_count*20)
 
         p = get_object_or_404(Professor, pk=c.professor.id)
         p.score = score

@@ -1,37 +1,46 @@
-{% extends 'base.html' %}
-{% block title %}{{specified_professor.first_name}} {{specified_professor.last_name}} | Notaso{% endblock %}
+{% extends 'base.html' %} 
+{% block title %}
+{{specified_professor.first_name}} {{specified_professor.last_name}} | Notaso
+{% endblock %} 
 {% block header %}
 <div class="jumbotron heading-style">
     <div class="container">
         <div class="row">
             <h1>{{specified_professor.first_name}} {{specified_professor.last_name}}</h1>
             <p>{{specified_professor.university}}</p>
-            <div class = "grade{{grade}}lrg grade pull-right"></div>
+            <div class="grade{{grade}}lrg grade pull-right"></div>
             <div></div>
         </div>
     </div>
 </div>
 {% endblock %} 
 {% block content %}
-<div class = "container">
-    <div class = "row">
-        <div class = "col-md-10 col-md-offset2">
-            <div class = "col-md-8 pull-left">
-                
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset2">
+            <div class="col-md-8 pull-left">
+
             </div>
-            <div class = "col-md-3 pull-right">
+            <div class="col-md-3 pull-right">
                 <h3>Promedio:</h3>
                 <h1>{{specified_professor.score}} %</h1>
-                <h3> Destalles </h3>   
-                <p><div class = "grade{{responsability}}lrg"></div>Responsabilidad</p>
-                <p><div class = "grade{{personality}}lrg"></div>Personalidad</p>
-                <p>Cantidad de trabajo <div class = "rate{{difficulty}}sml"></div></p>
-                <p>Dificultad <div class = "rate{{difficulty}}sml"></div></p>
+                <h3>Destalles</h3>
+                <p>
+                    <div class="grade{{responsability}}lrg"></div>Responsabilidad</p>
+                <p>
+                    <div class="grade{{personality}}lrg"></div>Personalidad</p>
+                <p>Cantidad de trabajo
+                    <div class="rate{{difficulty}}sml"></div>
+                </p>
+                <p>Dificultad
+                    <div class="rate{{difficulty}}sml"></div>
+                </p>
             </div>
         </div>
-    </div>    
+    </div>
 </div>
 {% endblock %}
+
 <body>
     <p>{{specified_professor.gender}}
         <br>{{specified_professor.department}}
