@@ -8,14 +8,16 @@ from .models import Comment
 
 
 class AddCommentForm(forms.ModelForm):
-    responsibility = forms.IntegerField(required=False, min_value=0, max_value=5)
+    responsibility = forms.IntegerField(required=False,
+                                        min_value=0, max_value=5)
     personality = forms.IntegerField(required=False, min_value=0, max_value=5)
     workload = forms.IntegerField(required=False, min_value=0, max_value=5)
     difficulty = forms.IntegerField(required=False, min_value=0, max_value=5)
 
     class Meta:
         model = Comment
-        fields = ['body', 'is_anonymous', 'responsibility', 'personality', 'workload', 'difficulty']
+        fields = ['body', 'is_anonymous', 'responsibility', 'personality',
+                  'workload', 'difficulty']
 
     def save_form(self, request, prof_slug):
         c = self.save(commit=False)

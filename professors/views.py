@@ -1,18 +1,12 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
-from django.views.generic.list import ListView
 
 from .models import Professor
 from .forms import AddProfessorForm
 
 from comments.forms import AddCommentForm
 from comments.models import Comment
-
-
-class ProfessorListView(ListView):
-    model = Professor
-    template_name = 'professor_list.html'
 
 
 def specific_professor_view(request, professors_slug):
