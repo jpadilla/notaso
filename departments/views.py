@@ -19,8 +19,8 @@ def department_view(request, slug, department_slug):
         'professors': Professor.objects.filter(
             university=uni,
             department=department).order_by('first_name'),
-        'hi_professors': professors[:5],
-        'low_professors': professors.reverse()[:5],
+        'hi_professors': professors.reverse()[:5],
+        'low_professors': professors[:5],
         'recent_comments': Comment.objects.filter(
             professor__in=Professor.objects.filter(
                 university=uni,
