@@ -17,6 +17,7 @@ def specific_professor_view(request, professors_slug):
         form.save_form(request, professors_slug)
         return HttpResponseRedirect('/professors/%s' % professors_slug)
 
+    print professor.get_grade()
     data = {
         'specified_professor': professor,
         'comment_form': form,
