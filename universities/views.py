@@ -1,19 +1,21 @@
+from django.db.models import Count
 from django.shortcuts import render_to_response, get_object_or_404
-
-from .models import University
 
 from departments.models import Department
 from professors.models import Professor
 from comments.models import Comment
 
+from .models import University
+
 
 def universities_view(request):
-    universities = University.objects.all()
-    universities = list(universities)
-    universities.sort(key=lambda x: x.count(), reverse=True)
+    universities = University.objects.all().annotate(
+        Count('professor')).order_by('-professor__count')
+
     data = {
         'universities': universities
     }
+
     return render_to_response("universities.html", data)
 
 
