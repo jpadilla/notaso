@@ -8,32 +8,6 @@ def populate_professor_slug(instance):
     return instance.get_full_name()
 
 
-def evaluate_with_grade(percent):
-    if percent >= 90:
-        return 'A'
-    elif percent >= 80:
-        return 'B'
-    elif percent >= 70:
-        return 'C'
-    elif percent >= 60:
-        return 'D'
-    else:
-        return 'F'
-
-
-def evaluate_with_number(percent):
-    if percent >= 90:
-        return 1
-    elif percent >= 80:
-        return 2
-    elif percent >= 70:
-        return 3
-    elif percent >= 60:
-        return 4
-    else:
-        return 5
-
-
 class Professor(models.Model):
     MALE = 'M'
     FEMALE = 'F'
@@ -70,16 +44,66 @@ class Professor(models.Model):
         return self.score*100
 
     def get_grade(instance):
-        return evaluate_with_grade(instance.get_percent)
+        percent = instance.get_percent()
+        if percent >= 90:
+            return 'A'
+        elif percent >= 80:
+            return 'B'
+        elif percent >= 70:
+            return 'C'
+        elif percent >= 60:
+            return 'D'
+        else:
+            return 'F'
 
     def get_responsibility(self):
-        return evaluate_with_grade(self.responsibility*100)
+        percent = self.responsibility
+        if percent >= 90:
+            return 'A'
+        elif percent >= 80:
+            return 'B'
+        elif percent >= 70:
+            return 'C'
+        elif percent >= 60:
+            return 'D'
+        else:
+            return 'F'
 
     def get_personality(self):
-        return evaluate_with_grade(self.personality*100)
+        percent = self.personality
+        if percent >= 90:
+            return 'A'
+        elif percent >= 80:
+            return 'B'
+        elif percent >= 70:
+            return 'C'
+        elif percent >= 60:
+            return 'D'
+        else:
+            return 'F'
 
     def get_workload(self):
-        return evaluate_with_number(self.workload*100)
+        percent = self.workload
+        if percent >= 90:
+            return 1
+        elif percent >= 80:
+            return 2
+        elif percent >= 70:
+            return 3
+        elif percent >= 60:
+            return 4
+        else:
+            return 5
 
     def get_difficulty(self):
-        return evaluate_with_number(self.difficulty*100)
+        percent = self.difficulty
+        if percent >= 90:
+            return 1
+        elif percent >= 80:
+            return 2
+        elif percent >= 70:
+            return 3
+        elif percent >= 60:
+            return 4
+        else:
+            return 5
