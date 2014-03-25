@@ -4,7 +4,7 @@
 <div class="jumbotron heading-style">
     <div class="container">
         <div class="row">
-            <h1>Crea tu profesor</h1>
+            <h1>Crea a tu profesor</h1>
             <p>Conoces a tus profesores antes de entrar al salón</p>
         </div>
     </div>
@@ -14,11 +14,11 @@
 <div class = "container">
 	<div class = "row">
 		<div class = "form-group">
-			<div class = "col-md-8 col-md-offset-2">
+			<div class = "col-md-4 col-md-offset-4">
 				<form action="/professors/create/" method = "POST" role = "form" enctype="multipart/form-data">
 					{% csrf_token %}
 					{{form.as_p}}
-					<input class = "btn btn-success btn-lg pull-right" type="submit" name="crear" value="Create">
+					<input class = "btn btn-success btn-lg pull-right" type="submit" name="crear" value="Crear">
 				</form>
 			</div>
 		</div>

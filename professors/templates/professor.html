@@ -1,75 +1,141 @@
-{% extends 'base.html' %} 
-{% block title %}
-{{specified_professor.first_name}} {{specified_professor.last_name}} | Notaso
+{% extends 'base.html' %}
+{% load static %} 
+{% block title %} 
+    {{specified_professor.first_name}} {{specified_professor.last_name}} | Notaso 
 {% endblock %} 
 {% block header %}
 <div class="jumbotron heading-style">
     <div class="container">
         <div class="row">
             <h1>{{specified_professor.first_name}} {{specified_professor.last_name}}</h1>
-            <p>{{specified_professor.university}}</p>
-            <div class="grade{{grade}}lrg grade pull-right"></div>
-            <div></div>
+            <p>{{specified_professor.university}} <span class="label label-danger department">{{specified_professor.department}}</span></p>
         </div>
     </div>
 </div>
-{% endblock %} 
-{% block content %}
+{% endblock %} {% block content %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset2">
-            <div class="col-md-8 pull-left">
-
+        <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-5 pull-left">
+                <img src="http://chart.apis.google.com/chart?cht=lc&chs=450x200&chd=t:{{specified_professor.score}}&chds=1,5&chm=B,0fa8db,0,0,0&chco=0fa8db">
+                <div class="fb-share-button" data-href="http://www.notaso.com/professors/{{specified_professor.slug}}" data-width="152px" data-type="button"></div>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="none">Tweetear</a>
             </div>
-            <div class="col-md-3 pull-right">
+            <div class="col-md-3 pull-right percent">
                 <h3>Promedio:</h3>
-                <h1>{{specified_professor.get_percent}} %</h1>
-                <h3>Detalles</h3>
-                <p>
-                    <div class="grade{{responsability}}lrg"></div>Responsabilidad</p>
-                <p>
-                    <div class="grade{{personality}}lrg"></div>Personalidad</p>
-                <p>Cantidad de trabajo
-                    <div class="rate{{difficulty}}sml"></div>
-                </p>
-                <p>Dificultad
-                    <div class="rate{{difficulty}}sml"></div>
-                </p>
+                <h1>{{specified_professor.get_percent}}%
+                <span class="grade{{grade}}lrg professor-percent"></span>
+                </h1>
+                <h4>Detalles:</h4>
+                <div class="grade{{responsability}}sml professor-details">
+                    <p>Responsabilidad</p>
+                </div>
+                <div class="grade{{personality}}sml professor-details">
+                    <p>Personalidad</p>
+                </div>
+                <div class="rate{{difficulty}}sml professor-details">
+                    <p>Dificultad</p>
+                </div>
+                <div class="rate{{workload}}sml professor-details">
+                    <p>Trabajo</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class = "col-md-8 col-md-offset-2">
+            <h2>Comentarios</h2> 
+            <hr>
+            {% for c in comments %}
+                {% if c.is_anonymous and not c.body %}
+                {% elif c.is_anonymous and c.body %}
+                <div class = "col-md-1">
+                    <div class = "avatarMlrg"></div>
+                </div>
+                    <h4 class = "submited-by">Anónimo</h4>
+                    <p>{{ c.created_at }}</p>
+                    <p>{{ c.body }}</p>
+                    <hr>
+                {% else %}
+                <div class = "col-md-1">
+                    <div class = "avatar{{c.created_by.gender}}lrg"></div>
+                </div>
+                    <span class = "created-by">
+                        <h4 class = "submited-by">{{ c.created_by.first_name }} {{c.created_by.last_name}}</h4>
+                    </span>
+                    <p>{{ c.created_at }}</p>
+                    <p>{{ c.body }}</p>
+                    <hr>
+                {% endif %}
+            {% endfor %}
+            {% if user.is_authenticated %}
+                <div id = "comment">
+                    <div class = "form-group">
+                        <form action="" role = "form" method="POST">
+                            {% csrf_token %}
+
+                            <div class = "col-md-10 col-md-offset-1">
+                                <h3>Comparte tu opinión</h3> 
+                                <textarea name="body" class = "form-control" rows="10"></textarea>
+                                <div>
+                                    <input class="btn btn-success" type="submit" name="submit" value="Enviar">
+                                    <input type = "checkbox" id = "id_is_anonymous" name = "is_anonymous">
+                                    <label for = "id_is_anonymous"> Enviar anónimamente</label>
+                                </div>
+                            </div>
+                            <!--<div class = "col-md-5">
+                                <div>
+                                    <input type="radio" id="radio1-1" name="rating_1" value="5" />
+                                    <label for="radio1-1">
+                                        <div class = "gradeAbtn"></div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="radio2-1" name="rating_1" value="4" /><label for="radio2-1"><div class="gradeBbtn"></div></label>   
+                                </div>
+                                <div>
+                                    <input type="radio" id="radio3-1" name="rating_1" value="3" /><label for="radio3-1"><div class="gradeCbtn"></div></label>
+                                    
+                                </div>
+                                <div>
+                                    <input type="radio" id="radio4-1" name="rating_1" value="2" /><label for="radio4-1"><span class="gradeDbtn"></span></label>
+                                    
+                                </div>
+                                <div>
+                                    <input type="radio" id="radio5-1" name="rating_1" value="1" /><label for="radio5-1"><span class="gradeFbtn left"></span></label>
+                                </div>
+                            </div>-->
+                        </form>
+                    </div>
+                </div>
+                {% else %}
+                <p><a href="/signup"> Crea una cuenta</a> para poder comentar. Si tiene una cuenta haz un <a href="/login"> login </a> para poder comentar. </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block  js %}
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script src="{% static "static/js/bootstrap.min.js"%}"></script>
+
 {% endblock %}
 
-<body>
-    <p>{{specified_professor.gender}}
-        <br>{{specified_professor.department}}
-    </p>
-
-    <form action="" method="post">
+    <!--<form action="" method="post">
         {% csrf_token %}
         <ul>
             {{comment_form.as_ul}}
         </ul>
         <input type="submit" name="submit" value="Submit">
     </form>
-    <br>
-    <br>
-    <hr>{% for c in comments %}
-
-    <p>{{ c.body }}</p>
-    <p>{{ c.date }}</p>
-    {% if c.is_anonymous %}
-    <p>Anonymous</p>
-    {% else %}
-    <p>{{ c.created_by }}</p>
-
-    {% endif %}
-    <p>{{ c.is_anonimo }}</p>
-    <p>{{ c.responsibility }}</p>
-    <p>{{ c.personality }}</p>
-    <p>{{ c.workload }}</p>
-    <p>{{ c.difficulty }}</p>
-
-    <hr>{% endfor %}
-</body>
+</body>-->

@@ -257,3 +257,29 @@ li {
     font-size: 12px;
     margin-bottom: 10px;
 }
+.professor-details{
+    font-weight: bold;
+    margin-right: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.professor-details p{
+    margin-left: 30px;
+    margin-bottom: 2px;
+    padding-bottom: 10px;
+}
+.percent h1{
+    margin-top: 5px;
+}
+.percent h3{
+    margin-top: 5px;
+}
+.professor-percent{
+    float: right;
+}
+.submited-by{
+    margin-bottom: 3px;
+}
+.department{
+    font-size: 14px;
+}
