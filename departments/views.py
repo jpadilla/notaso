@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response, get_object_or_404
+from django.shortcuts import render, get_object_or_404
 
 from universities.models import University
 from professors.models import Professor
@@ -28,4 +28,4 @@ def department_view(request, slug, department_slug):
         body__exact='').order_by('-created_at')[:5]
 
     }
-    return render_to_response('department.html', data)
+    return render(request, 'department.html', data)

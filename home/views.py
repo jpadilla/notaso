@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 
 from professors.models import Professor
 from universities.models import University
@@ -15,4 +15,4 @@ def home(request):
         'recent_comments': Comment.objects.all().exclude
         (body__exact='').order_by('-created_at')[:5],
     }
-    return render_to_response("home.html", data)
+    return render(request, "home.html", data)

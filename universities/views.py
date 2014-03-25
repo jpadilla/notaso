@@ -1,5 +1,5 @@
 from django.db.models import Count
-from django.shortcuts import render_to_response, get_object_or_404
+from django.shortcuts import render, get_object_or_404
 
 from departments.models import Department
 from professors.models import Professor
@@ -16,7 +16,7 @@ def universities_view(request):
         'universities': universities
     }
 
-    return render_to_response("universities.html", data)
+    return render(request, "universities.html", data)
 
 
 def specific_university_view(request, slug):
@@ -38,4 +38,4 @@ def specific_university_view(request, slug):
         'recent_comments': comments.order_by('-created_at')[:5]
     }
 
-    return render_to_response("university.html", data)
+    return render(request, "university.html", data)

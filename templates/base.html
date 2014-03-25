@@ -30,17 +30,25 @@
             <div class="collapse navbar-collapse" id = "myNavbar">
                 <div class = "navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="/professors">Profesores</a>
+                        {% if user.is_authenticated %}
+                        <li><a href="/professors/create">Crear Profesor</a>
                         </li>
+                        {% endif %}
                         <li><a href="/universities">Universidades</a>
                     </ul>
                     <form class="navbar-form navbar-right navbar-collapse">
+                        {% if user.is_authenticated %}
+                        <a href="/logout">
+                            <button type="button" class="btn btn-primary" id = "loginBtn" >Logout</button>
+                        </a>
+                        {% else %}
                         <a href="/login">
                             <button type="button" class="btn btn-primary" id = "loginBtn" >Login</button>
                         </a>
                         <a href="/signup">
                             <button type="button" class="btn btn-default" id = "signUpBtn">Registrarse</button>
                         </a>
+                        {% endif %}
                     </form>
                 </div>
                 <div class = "search navbar-right">
