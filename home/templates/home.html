@@ -46,12 +46,12 @@
 
 <div class="container">
     <div id="home-searchform" class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-        <form action="" role="form">
+        <form action = "/search" role="form" method = "GET">
             <div class="col-md-10 col-xs-10">
-                <input type="text" class="form-control input-lg" placeholder="Busca un profesor">
+                    <input type="text" name = "q" value = "{{search_term}}" class="form-control input-lg" placeholder="Busca un profesor">
             </div>
             <div class="col-md-2 col-xs-2">
-                <button class="btn btn-default btn-lg" type="button">Buscar</button>
+                <input type = "submit" class="btn btn-default btn-lg" value = "Buscar">
             </div>
         </form>
     </div>

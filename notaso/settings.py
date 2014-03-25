@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'departments',
     'comments',
     'home',
+    'search',
 )
 
 MIDDLEWARE_CLASSES = (
