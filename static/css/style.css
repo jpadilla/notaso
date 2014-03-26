@@ -283,3 +283,12 @@ li {
 .department{
     font-size: 14px;
 }
+.rates{
+    margin-top: 4%;
+}
+.rates button{
+    font-weight: bolder;
+}
+.rates .btn-group{
+    margin-right: 5%;
+}

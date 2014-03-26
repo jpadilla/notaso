@@ -1,33 +1,75 @@
 {% extends 'base.html' %} 
 {% load static %}
-{% block content %}
+{% block title %}Notaso | Busqueda{% endblock %}
+{% block navbar %}
+    <nav class="navbar navbar-default navbar-fixed-top m-top-for-nav" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img id = "brand_image" src= "{% static "static/img/notaso-200x37.png" %}"/></a>
+            </div>
 
-<br>
+            <div class="collapse navbar-collapse" id = "myNavbar">
+                <div class = "navbar-right">
+                    <ul class="nav navbar-nav">
+                        {% if user.is_authenticated %}
+                            <li><a href="/professors/create">Crear Profesor</a></li>
+                        {% endif %}
+                        <li><a href="/universities">Universidades</a>
+                    </ul>
+                    <form class="navbar-form navbar-right navbar-collapse">
+                        {% if user.is_authenticated %}
+                        <a href="/logout">
+                            <button type="button" class="btn btn-primary" id = "loginBtn" >Logout</button>
+                        </a>
+                        {% else %}
+                        <a href="/login">
+                            <button type="button" class="btn btn-primary" id = "loginBtn" >Login</button>
+                        </a>
+                        <a href="/signup">
+                            <button type="button" class="btn btn-default" id = "signUpBtn">Registrarse</button>
+                        </a>
+                        {% endif %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class = "row">
+        <div id="home-searchform" class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+            <form action = "/search" role="form" method = "GET">
+                <div class="col-md-10 col-xs-10">
+                        <input type="text" name = "q" value = "{{search_term}}" class="form-control input-lg" placeholder="Busca un profesor">
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    <input type = "submit" class="btn btn-default btn-lg" value = "Buscar">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <div class="col-md-4 col-md-offset-4">
+        <div class="col-md-10 col-md-offset-2">
+            <ul class = "col-md-3 nav nav-pills nav-stacked">
+                <li class = "active"><a href="">Profesor</a></li>
+                <li><a href="">Universidad</a></li>
+                <li><a href="">Departmento</a></li>
+            </ul>
+            <div class="col-md-7">
                 <ul>
                 {% for prof in object_list %}
-                    <li>{{ prof }}</li>
-                {% endfor %}
-                </ul>
-            </div>
-        </div>
-         <div class="col-md-12">
-            <div class="col-md-4 col-md-offset-4">
-                <ul>
-                {% for u in universities %}
-                    <li>{{ u }}</li>
-                {% endfor %}
-                </ul>
-            </div>
-        </div>
-         <div class="col-md-12">
-            <div class="col-md-4 col-md-offset-4">
-                <ul>
-                {% for d in departments %}
-                    <li>{{ d }}</li>
+                    <a href="/professors/{{prof.slug}}"><h4>{{ prof.first_name|capfirst }} {{ prof.last_name|capfirst }}</h4></a>
+                    <li>{{ prof.university }} <span class="label label-danger department pull-right">{{prof.department}}</span></li>
+                    <hr/>
                 {% endfor %}
                 </ul>
             </div>

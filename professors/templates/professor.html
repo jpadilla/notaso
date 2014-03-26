@@ -1,18 +1,19 @@
 {% extends 'base.html' %}
 {% load static %} 
 {% block title %} 
-    {{specified_professor.first_name}} {{specified_professor.last_name}} | Notaso 
+    {{specified_professor.first_name|capfirst}} {{specified_professor.last_name|capfirst}} | Notaso 
 {% endblock %} 
 {% block header %}
 <div class="jumbotron heading-style">
     <div class="container">
         <div class="row">
-            <h1>{{specified_professor.first_name}} {{specified_professor.last_name}}</h1>
+            <h1>{{specified_professor.first_name|capfirst}} {{specified_professor.last_name|capfirst}}</h1>
             <p>{{specified_professor.university}} <span class="label label-danger department">{{specified_professor.department}}</span></p>
         </div>
     </div>
 </div>
-{% endblock %} {% block content %}
+{% endblock %} 
+{% block content %}
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -75,6 +76,7 @@
                     </span>
                     <p>{{ c.created_at }}</p>
                     <p>{{ c.body }}</p>
+
                     <hr>
                 {% endif %}
             {% endfor %}
@@ -89,32 +91,60 @@
                                 <textarea name="body" class = "form-control" rows="10"></textarea>
                                 <div>
                                     <input class="btn btn-success" type="submit" name="submit" value="Enviar">
-                                    <input type = "checkbox" id = "id_is_anonymous" name = "is_anonymous">
+                                    <a href=""data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> try me</a>
+                                    <input type = "checkbox" id = "id_is_anonymous" if = "collapseOne"name = "is_anonymous">
                                     <label for = "id_is_anonymous"> Enviar anónimamente</label>
                                 </div>
                             </div>
-                            <!--<div class = "col-md-5">
-                                <div>
-                                    <input type="radio" id="radio1-1" name="rating_1" value="5" />
-                                    <label for="radio1-1">
-                                        <div class = "gradeAbtn"></div>
-                                    </label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="radio2-1" name="rating_1" value="4" /><label for="radio2-1"><div class="gradeBbtn"></div></label>   
-                                </div>
-                                <div>
-                                    <input type="radio" id="radio3-1" name="rating_1" value="3" /><label for="radio3-1"><div class="gradeCbtn"></div></label>
-                                    
-                                </div>
-                                <div>
-                                    <input type="radio" id="radio4-1" name="rating_1" value="2" /><label for="radio4-1"><span class="gradeDbtn"></span></label>
-                                    
-                                </div>
-                                <div>
-                                    <input type="radio" id="radio5-1" name="rating_1" value="1" /><label for="radio5-1"><span class="gradeFbtn left"></span></label>
-                                </div>
-                            </div>-->
+                            <div class = "col-md-10 col-md-offset-1 rates">
+                                <table>
+                                    <tr>
+                                        <th class = "col-md-5" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Responsabilidad</th>
+                                        <th class = "col-md-5">Cantidad de trabajo</th>
+                                    </tr>
+                                    <tr>
+                                        <td class = "btn-group btn-group-lg col-md-5" data-toggle="buttons-radio">
+                                            <button type = "button" class = "btn btn-default" name="b1">A</button>
+                                            <button type = "button" class = "btn btn-default" name="b1">B</button>
+                                            <button type = "button" class = "btn btn-default" name="b1">C</button>
+                                            <button type = "button" class = "btn btn-default" name="b1">D</button>
+                                            <button type = "button" class = "btn btn-default" name="b1">F</button>
+                                        </td>
+                                        <td class = "btn-group btn-group-lg col-md-5" data-toggle="buttons-radio">
+                                            <button type = "button" class = "btn btn-default" name="b2">1</button>
+                                            <button type = "button" class = "btn btn-default" name="b2">2</button>
+                                            <button type = "button" class = "btn btn-default" name="b2">3</button>
+                                            <button type = "button" class = "btn btn-default" name="b2">4</button>
+                                            <button type = "button" class = "btn btn-default" name="b2">5</button>
+                                        </td>
+                                    </tr>
+                                    <br>
+                                    <tr>
+                                        <th class = "col-md-5">Personalidad</th> 
+                                        <th class = "col-md-5">Dificultad</th> 
+                                    </tr>
+                                    <tr>
+                                        <span>
+                                            <td class = "btn-group btn-group-lg col-md-5" data-toggle="buttons-radio">
+                                                <button type = "radio" class = "btn btn-default" name="b3">A</button>
+                                                <button type = "radio" class = "btn btn-default" name="b3">B</button>
+                                                <button type = "radio" class = "btn btn-default" name="b3">C</button>
+                                                <button type = "radio" class = "btn btn-default" name="b3">D</button>
+                                                <button type = "radio" class = "btn btn-default" name="b3">F</button>
+                                            </td>        
+                                        </span>
+                                        <span>
+                                            <td class = "btn-group btn-group-lg col-md-5" data-toggle="buttons-radio">
+                                                <button type = "button" class = "btn btn-default">1</button>
+                                                <button type = "button" class = "btn btn-default">2</button>
+                                                <button type = "button" class = "btn btn-default">3</button>
+                                                <button type = "button" class = "btn btn-default">4</button>
+                                                <button type = "button" class = "btn btn-default">5</button>
+                                            </td>
+                                        </span>
+                                    </tr>
+                                </table>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -125,11 +155,9 @@
         </div>
     </div>
 {% endblock %}
-{% block  js %}
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<script src="{% static "static/js/bootstrap.min.js"%}"></script>
-
-{% endblock %}
+<!--{% block  js %}
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+{% endblock %}-->
 
     <!--<form action="" method="post">
         {% csrf_token %}

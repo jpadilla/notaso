@@ -45,6 +45,6 @@ class SearchView(ListView):
                     search_args.append(Q(**{query: term}))
 
             return queryset.filter(
-                reduce(operator.or_, search_args)).distinct()[:10]
+                reduce(operator.or_, search_args)).distinct()
 
         return queryset[:10]
