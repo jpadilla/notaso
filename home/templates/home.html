@@ -43,6 +43,7 @@
     </nav>
 {% endblock %}
 {% block content %}
+
 <div class="container">
     <div id="home-searchform" class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
         <form action = "/search" role="form" method = "GET">
@@ -110,7 +111,11 @@
                         <ul>
                             {% for rc in recent_comments %}
                             <li class="clearfix">
+                            {% if rc.created_by.socialaccount_set.all %}
+                                <img src="{{ rc.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35" class="pull-left">
+                                {% else %}
                                 <div class="avatar{{rc.created_by.gender}}lrg pull-left"></div>
+                                {% endif %}
                                 <a class="home-table-name">{{rc|truncatechars:30}}</a>
                                 <br>
                                 <a class="home-table-city text-muted">

@@ -57,7 +57,7 @@ class Professor(models.Model):
             return 'F'
 
     def get_responsibility(self):
-        percent = self.responsibility
+        percent = self.responsibility*100
         if percent >= 90:
             return 'A'
         elif percent >= 80:
@@ -70,7 +70,7 @@ class Professor(models.Model):
             return 'F'
 
     def get_personality(self):
-        percent = self.personality
+        percent = self.personality*100
         if percent >= 90:
             return 'A'
         elif percent >= 80:
@@ -83,27 +83,27 @@ class Professor(models.Model):
             return 'F'
 
     def get_workload(self):
-        percent = self.workload
+        percent = self.workload*100
         if percent >= 90:
-            return 1
+            return 5
         elif percent >= 80:
-            return 2
+            return 4
         elif percent >= 70:
             return 3
         elif percent >= 60:
-            return 4
+            return 2
         else:
-            return 5
+            return 1
 
     def get_difficulty(self):
-        percent = self.difficulty
+        percent = self.difficulty*100
         if percent >= 90:
-            return 1
+            return 5
         elif percent >= 80:
-            return 2
+            return 4
         elif percent >= 70:
             return 3
         elif percent >= 60:
-            return 4
+            return 2
         else:
-            return 5
+            return 1
