@@ -10,7 +10,7 @@ urlpatterns = patterns(
     '',
 
     url(r'^admin/', include(admin.site.urls)),
-
+    url(r'^accounts/', include('allauth.urls')),
     url(r'^', include('home.urls', namespace='home')),
     url(r'^universities/', include('universities.urls', namespace='universities')),
     url(r'^', include('users.urls', namespace='users')),
