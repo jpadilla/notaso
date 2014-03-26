@@ -11,7 +11,7 @@ class MyUserManager(BaseUserManager):
             raise ValueError('Users must have an email address')
 
         user = self.model(
-            email=self.normalize_email(email),
+            username=self.normalize_email(email),
             first_name=first_name,
             last_name=last_name,
             gender=gender,
@@ -21,11 +21,13 @@ class MyUserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, first_name, last_name, gender, password):
+
+    def create_superuser(self, username, first_name, last_name, gender, password):
         """
         Creates and saves a superUser with the given email, firstname, lastname, gender and password.
         """
-        user = self.create_user(email,
+        user = self.create_user(
+            username,
             password=password,
             first_name=first_name,
             last_name=last_name,
@@ -37,7 +39,7 @@ class MyUserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser):
-    email = models.EmailField(max_length=40, unique=True)
+    username = models.EmailField(max_length=40, unique=True)
     GENDER_CHOICES = (('M', 'M'), ('F', 'F'),)
 
     first_name = models.CharField(max_length=30)
@@ -49,7 +51,7 @@ class User(AbstractBaseUser):
 
     objects = MyUserManager()
 
-    USERNAME_FIELD = 'email'
+    USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['first_name', 'last_name', 'gender']
 
     def get_full_name(self):
@@ -60,7 +62,7 @@ class User(AbstractBaseUser):
 
     # On Python 3: def __str__(self):
     def __unicode__(self):
-        return self.email
+        return self.username
 
     def has_perm(self, perm, obj=None):
         "Does the user have a specific permission?"
