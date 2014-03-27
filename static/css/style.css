@@ -305,3 +305,6 @@ input[type="radio"]{
 #graph{
     margin-bottom: 5px;
 }
+.result-not-found a{
+    text-decoration: none;
+}
