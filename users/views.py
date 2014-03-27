@@ -16,11 +16,10 @@ def register(request):
         return HttpResponseRedirect(
             reverse('users:login')
         )
+    return render(request, 'users/signup.html', {'form': form})
 
-    return render(request, 'users/signup.html', {'form' : form})
 
 def login(request):
-    print request.user
     if request.user.is_authenticated():
         return HttpResponseRedirect('/')
 
@@ -34,7 +33,8 @@ def login(request):
             auth.login(request, user)
             return HttpResponseRedirect('/')
 
-    return render(request, 'users/login.html', {'form' : form})
+    return render(request, 'users/login.html', {'form': form})
+
 
 def logout(request):
     if request.user.is_authenticated():

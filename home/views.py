@@ -15,5 +15,5 @@ def home(request):
         'recent_comments': Comment.objects.all().exclude
         (body__exact='').order_by('-created_at')[:5],
     }
-    print request.user
+
     return render(request, "home.html", data)

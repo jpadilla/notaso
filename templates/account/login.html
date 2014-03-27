@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load socialaccount %}
+{% block title %} Login | Notaso {% endblock %}
+{% block header %}
+<div class="jumbotron heading-style">
+    <div class="container">
+        <div class="row">
+            <h1>Login</h1>
+            <p>Conoces a tus profesores antes de entrar al salón</p>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="form-group">
+            <ul class="col-md-6 col-md-offset-3">
+            {% if socialaccount.providers  %}
+                <p class="text-center lead">Favor de hacer login con algunas de sus cuentas existentes
+                de Facebook o Twitter. O se puede registrar <a href="{{ signup_url }}">aqui.</a></p>
+
+                <div class="text-center">
+                    <a href="{% provider_login_url "facebook" method="oauth2" %}" class="login-social button facebook">Login with Facebook</i></a>
+                    <a href="{% provider_login_url "twitter" method="oauth" %}" class="login-social button twitter">Login with Twitter</a>
+                </div>
+                <br>
+                <p class="text-center lead">Para una cuenta de {{site.name}}, puede hacer login:</p>
+
+
+                {% else %}
+                <p>If you have not created an account yet, then please
+                <a href="{{ signup_url }}">sign up</a> first.</p>
+                {% endif %}
+                <form method="POST" action="" class="horizontal-form" role="form">{% csrf_token %}
+                    <li>
+                        {% if form.username.errors %}
+                            <div class = "alert alert-danger alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            {{form.username.errors}}</div>
+                        </li>
+
+                        {% endif %}
+                        <li class="form-group">
+                                <label for="id_login">Email:</label>
+                                <input class="form-control" placeholder="Email" id="id_login" maxlength="40" name="id_login" type="text" />
+                        </li>
+                    <li>
+                        {% if form.password.errors %}
+                            <div class = "alert alert-danger alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            {{form.password.errors}}</div>
+                        {% endif %}
+                    </li>
+                        <li class="form-group">
+                                <label for="id_password">Password:</label>
+                                <input class="form-control" placeholder="Password" id="id_password" name="password" type="password" />
+                        </li>
+                    <li>
+                        <li class = "form-group">
+                        <a class="pull-left" id="forgot-pwd" href="{% url 'account_reset_password' %}">Forgot Password?</a>
+                            <li class="pull-right">
+                              {% if redirect_field_value %}
+                                  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                                  {% endif %}
+                                  <button class="btn btn-primary btn-lg pull-right" type="submit">Login</button>
+                            </li>  
+                        </li>
+                    </li>
+                </form>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,127 @@
+{% extends 'base.html' %} 
+{% block title %} Sign-up | Notaso {% endblock %}
+{% block header %}
+<div class="jumbotron heading-style">
+    <div class="container">
+        <div class="row">
+            <h1>Registrate</h1>
+            <p>Conoces a tus profesores antes de entrar al salón</p>
+        </div>
+    </div>
+</div>
+{% endblock %} 
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="form-group">
+            <ul class="col-md-8 col-md-offset-2">
+            <p>Already have an account? Then please <a href="{{ login_url }}">sign in.</a></p>
+                <form method="POST" action="" class="horizontal-form" role="form">{% csrf_token %}
+                    <li>
+                        {% if form.email.errors %}
+                        <li class = "alert alert-danger">{{form.email.errors}}</li>
+                        {% endif %}
+                        <li class="form-group">
+                            <li>
+                                <label for="id_email">Email:</label>
+                            </li>
+                            <li>
+
+                                <input class="form-control" placeholder="Email" id="id_email" maxlength="40" name="email" type="email" />
+                            </li>
+                        </li>
+                    </li>
+
+                    <li>
+                        {% if form.first_name.errors %}
+                        <li class = "form-group">
+                            <li class = "alert alert-danger">{{form.first_name.errors}}</li>
+                        </li>
+                        {% endif %}
+                        <li class="form-group">
+                            <li>
+                                <label for="id_first_name">Nombre:</label>
+                            </li>
+                            <li>
+                                <input class="form-control" placeholder="Nombre" id="id_first_name" maxlength="30" name="first_name" type="text" />
+                            </li>
+                        </li>
+                    </li>
+                    <li>
+                        {% if form.last_name.errors %}
+                        <li class = "form-group">
+                            <li class = "alert alert-danger">{{form.last_name.errors}}</li>
+                        </li>
+                        {% endif %}
+                        <li class="form-group">
+                            <li>
+                                <label for="id_last_name">Apellido:</label>
+                            </li>
+                            <li>
+                                <input class="form-control" placeholder="Apellidos" id="id_last_name" maxlength="30" name="last_name" type="text" />
+                            </li>
+                        </li>
+                    </li>
+                    <li>
+                        {% if form.gender.errors %}
+                        <li class = "form-group">
+                            <li class = "alert alert-danger">{{form.gender.errors}}</li>   
+                        </li>
+                        {% endif %}
+                        <li class = "form-group">
+                            <li>
+                                <label for="id_gender">Genero:</label>
+                            </li>
+                            <li>
+                                <select class="form-control" id="id_gender" name="gender">
+                                    <option value="" selected="selected">---------</option>
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                </select>
+                            </li>
+                        </li>
+                    </li>
+                    <li>
+                        {% if form.password1.errors %}
+                        <li class = "form-group">
+                            <li class = "alert alert-danger">{{form.password1.errors}}</li>
+                        </li>
+                        {% endif %}
+                        <li class="form-group">
+                            <li>
+                                <label for="id_password1">Password:</label>
+                            </li>
+                            <li>
+                                <input class="form-control" placeholder="Password" id="id_password1" name="password1" type="password" />
+                            </li>
+                        </li>
+                    </li>
+                    <li>
+                        {% if form.password2.errors %}
+                        <li class = "form-group">
+                            <li class = "alert alert-danger">{{form.password2.errors}}</li>
+                        </li>
+                        {% endif %}
+                        <li class="form-group">
+                            <li>
+                                <label for="id_password2">Password Confirmation:</label>
+                            </li>
+                            <li>
+                                <input class="form-control" placeholder="Password" id="id_password2" name="password2" type="password" />
+                            </li>
+                        </li>
+                    </li>
+                    <li>
+                        <li class = "form-group">
+                            <li class="pull-right">
+                                <input type="submit" class="btn btn-success btn-lg pull-right" value="Sign Up">
+                            </li>
+                            
+                        </li>
+                    </li>
+                </form>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

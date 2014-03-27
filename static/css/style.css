@@ -308,3 +308,120 @@ input[type="radio"]{
 .result-not-found a{
     text-decoration: none;
 }
+#forgot-pwd {
+    margin-top: 25px;
+}
+.login-social {
+    margin: 0 20px;
+}
+/*
+* Styling the base of the buttons
+*/
+ .button {
+    width:120px;
+    padding:10px;
+    margin:15px;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    text-decoration:none;
+    text-shadow:1px 0 2px #333;
+    color:#FFF;
+}
+.button:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+/*
+* Changing the background color for each button
+*/
+ .facebook {
+    background:#3b5998;
+}
+.twitter {
+    background:#00acee;
+}
+.googleplus {
+    background:#dd4b39;
+}
+.pinterest {
+    background:#c8232c;
+}
+.stumbleupon {
+    background:#f74425;
+}
+.linkedin {
+    background:#0e76a8;
+}
+.pocket {
+    background:#ee4056;
+}
+.reddit {
+    background:#ff4500;
+}
+.tumblr {
+    background:#34526f;
+}
+.rss {
+    background:#ee802f;
+}
+.path {
+    background:#e41f11;
+}
+.hootsuite {
+    background:#003366;
+}
+.github {
+    background:#171515;
+}
+.behance {
+    background:#005cff;
+}
+/*
+* Changing the background color for each button on hover
+*/
+ .facebook:hover {
+    background:#2f4679;
+}
+.twitter:hover {
+    background:#0089bd;
+}
+.googleplus:hover {
+    background:#b03b2d;
+}
+.pinterest:hover {
+    background:#9f1b23;
+}
+.stumbleupon:hover {
+    background:#c4361d;
+}
+.linkedin:hover {
+    background:#0b5e85;
+}
+.pocket:hover {
+    background:#bd3344;
+}
+.reddit:hover {
+    background:#cb3600;
+}
+.tumblr:hover {
+    background:#294158;
+}
+.rss:hover {
+    background:#bd6625;
+}
+.path:hover {
+    background:#b5180d;
+}
+.hootsuite:hover {
+    background:#002851;
+}
+.github:hover {
+    background:#121010;
+}
+.behance:hover {
+    background:#0049cb;
+}
+.profile-pic-nav {
+    margin-right: 10px;
+}
