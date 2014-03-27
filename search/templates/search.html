@@ -46,7 +46,7 @@
     <div class = "row">
         <div id="home-searchform" class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
             <form action = "/search" role="form" method = "GET">
-                <div class="col-md-10 col-xs-10">
+                <div class="col-md-10 col-xs-8">
                         <input type="text" name = "q" value = "{{search_term}}" class="form-control input-lg" placeholder="Busca un profesor">
                 </div>
                 <div class="col-md-2 col-xs-2">
@@ -58,20 +58,21 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset-2">
-            <ul class = "col-md-3 nav nav-pills nav-stacked">
-                <li class = "active"><a href="">Profesor</a></li>
-                <li><a href="">Universidad</a></li>
-                <li><a href="">Departmento</a></li>
+        <div class="col-md-8 col-md-offset-2 search">
+            <ul class="nav nav-pills nav-stacked col-md-3">
+              <li class="active"><a href="#professor" data-toggle="tab">Profesor</a></li>
             </ul>
-            <div class="col-md-7">
-                <ul>
-                {% for prof in object_list %}
-                    <a href="/professors/{{prof.slug}}"><h4>{{ prof.first_name|capfirst }} {{ prof.last_name|capfirst }}</h4></a>
-                    <li>{{ prof.university }} <span class="label label-danger department pull-right">{{prof.department}}</span></li>
-                    <hr/>
-                {% endfor %}
-                </ul>
+
+            <div class="tab-content col-md-9">
+                <div class="tab-pane active">
+                    <ul>    
+                    {% for prof in object_list %}
+                        <a href="/professors/{{prof.slug}}"><h4>{{ prof.first_name|capfirst }} {{ prof.last_name|capfirst }}</h4></a>
+                        <li>{{ prof.university }} <span class="label label-danger department pull-right">{{prof.department}}</span></li>
+                        <hr/>
+                    {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

@@ -67,11 +67,20 @@
                         <ul>
                             {% for recent_comment in recent_comments %}
                             <li class="clearfix">
-                                <div class="avatar{{recent_comment.created_by.gender}}lrg pull-left"></div>
+                                {% if recent_comment.created_by.socialaccount_set.all and not recent_comment.is_anonymous %}
+                                    <img src="{{ recent_comment.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35" class="pull-left">
+                                {% else %}
+                                    <div class="avatarMlrg pull-left"></div>
+                                {% endif %}
                                 <a class="home-table-name">{{recent_comment|truncatechars:30}}</a>
                                 <br>
                                 <a class="home-table-city text-muted">
-                                    {% if recent_comment.is_anonymous %} Anónimo {% else %} {{recent_comment.created_by.get_full_name}} {% endif %}</a>
+                                {% if recent_comment.is_anonymous %}
+                                    Anónimo 
+                                {% else %}
+                                    {{recent_comment.created_by.get_full_name}} 
+                                {% endif %}
+                                </a>
                             </li>
                             {% endfor %}
                         </ul>
