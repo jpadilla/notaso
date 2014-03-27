@@ -28,11 +28,11 @@
                             <button type="button" class="btn btn-primary" id = "loginBtn" >Logout</button>
                         </a>
                         {% else %}
-                        <a href="/login">
+                        <a href="/accounts/login">
                             <button type="button" class="btn btn-primary" id = "loginBtn" >Login</button>
                         </a>
-                        <a href="/signup">
-                            <button type="button" class="btn btn-default" id = "signUpBtn">Registrarse</button>
+                        <a href="/accounts/signup">
+                            <button type="button" class="btn btn-default" id = "signUpBtn">Sign-up</button>
                         </a>
                         {% endif %}
                     </form>
@@ -65,12 +65,29 @@
 
             <div class="tab-content col-md-9">
                 <div class="tab-pane active">
-                    <ul>    
-                    {% for prof in object_list %}
-                        <a href="/professors/{{prof.slug}}"><h4>{{ prof.first_name|capfirst }} {{ prof.last_name|capfirst }}</h4></a>
-                        <li>{{ prof.university }} <span class="label label-danger department pull-right">{{prof.department}}</span></li>
-                        <hr/>
-                    {% endfor %}
+                    <ul>
+                    {% if object_list %}
+                        {% for prof in object_list %}
+                            <a href="/professors/{{prof.slug}}"><h4>{{ prof.first_name|capfirst }} {{ prof.last_name|capfirst }}</h4></a>
+                            <li>{{ prof.university }} <span class="label label-danger department pull-right">{{prof.department}}</span></li>
+                            <hr/>
+                        {% endfor %}
+                    {% else %}
+                        {% if user.is_authenticated %}
+                        <div class = "result-not-found">
+                            <h4>El profesor que ha buscado no se encuentra.</h4>
+                            <a href="/professors/create"><button type = "button" class = "btn btn-success btn-lg btn-block">Crear Profesor</button></a>
+                        </div>
+                        {% else %}
+                        <div class = "result-not-found">
+                            <h4>El profesor que ha buscado no se encuentra.</h4>
+                            <p>Cree una cuenta o si ya tiene una haga login para crear al profesor.</p>
+                            <a href="/accounts/signup"><button type = "button" class = "btn btn-default btn-lg btn-block">Sign-up</button></a>
+                            <br> 
+                            <a href="/accounts/login"><button type = "button" class = "btn btn-success btn-lg btn-block">Login</button></a>
+                        </div>
+                        {% endif %}
+                    {% endif %}
                     </ul>
                 </div>
             </div>
