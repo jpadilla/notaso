@@ -134,3 +134,16 @@ SITE_ID = 1
 
 # auth and allauth settings
 LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/accounts/login/'
+ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
+ACCOUNT_EMAIL_SUBJECT_PREFIX = '[Notaso] '
+ACCOUNT_LOGOUT_ON_GET = True
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_CONFIRM_EMAIL_ON_GET = True
+ACCOUNT_LOGOUT_REDIRECT_URL = '/'
+ACCOUNT_USER_MODEL_EMAIL_FIELD = "username"
+ACCOUNT_SIGNUP_FORM_CLASS = 'users.forms.UserCreationForm'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

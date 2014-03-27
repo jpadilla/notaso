@@ -23,31 +23,41 @@
                         {% endif %}
                         <li><a href="/universities">Universidades</a>
                     </ul>
-                    <form class="navbar-form navbar-right navbar-collapse">
-                        {% if user.is_authenticated %}
-                        <a href="/logout">
-                            <button type="button" class="btn btn-primary" id = "loginBtn" >Logout</button>
-                        </a>
+                    {% if user.is_authenticated %}
+                        <ul class="nav navbar-nav navbar-right">
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                            {% if user.socialaccount_set.all %}
+                                 <img src="{{ user.socialaccount_set.all.0.get_avatar_url }}" class="brand profile-pic-nav" width="20" height="20" class="pull-left">
+                            {% endif %}
+                            {{ user.username }}<b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+
+                            <li><a href="accounts/logout">Logout</a></li>
+                          </ul>
+                        </li>
                         {% else %}
+                        <ul class="nav navbar-nav navbar-form navbar-right">
+
                         <a href="/accounts/login">
                             <button type="button" class="btn btn-primary" id = "loginBtn" >Login</button>
                         </a>
                         <a href="/accounts/signup">
-                            <button type="button" class="btn btn-default" id = "signUpBtn">Sign-up</button>
+                            <button type="button" class="btn btn-default" id = "signUpBtn">Registrarse</button>
                         </a>
                         {% endif %}
-                    </form>
+                    </ul>
                 </div>
             </div>
         </div>
     </nav>
 {% endblock %}
 {% block content %}
-
 <div class="container">
     <div id="home-searchform" class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
         <form action = "/search" role="form" method = "GET">
-            <div class="col-md-10 col-xs-8">
+            <div class="col-md-10 col-xs-10">
                     <input type="text" name = "q" value = "{{search_term}}" class="form-control input-lg" placeholder="Busca un profesor">
             </div>
             <div class="col-md-2 col-xs-2">
@@ -111,20 +121,15 @@
                         <ul>
                             {% for rc in recent_comments %}
                             <li class="clearfix">
-                            {% if rc.created_by.socialaccount_set.all and not rc.is_anonymous %}
+                            {% if rc.created_by.socialaccount_set.all %}
                                 <img src="{{ rc.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35" class="pull-left">
-                            {% else %}
-                                <div class="avatarMlrg pull-left"></div>
-                            {% endif %}
+                                {% else %}
+                                <div class="avatar{{rc.created_by.gender}}lrg pull-left"></div>
+                                {% endif %}
                                 <a class="home-table-name">{{rc|truncatechars:30}}</a>
                                 <br>
                                 <a class="home-table-city text-muted">
-                            {% if rc.is_anonymous %}
-                                Anónimo 
-                            {% else %}
-                                {{rc.created_by.get_full_name}} 
-                            {% endif %}
-                            </a>
+                                    {% if rc.is_anonymous %} Anónimo {% else %} {{rc.created_by.get_full_name}} {% endif %}</a>
                             </li>
                             {% endfor %}
                         </ul>
