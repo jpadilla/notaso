@@ -26,27 +26,30 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="col-md-5 pull-left">
-                <img src="http://chart.apis.google.com/chart?cht=lc&chs=450x200&chd=t:{{specified_professor.score}}&chds=1,5&chm=B,0fa8db,0,0,0&chco=0fa8db">
-                <div class="fb-share-button" data-href="http://www.notaso.com/professors/{{specified_professor.slug}}" data-width="152px" data-type="button"></div>
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="none">Tweetear</a>
-            </div>
-            <div class="col-md-3 pull-right percent">
+                <img id = "graph" src="http://chart.apis.google.com/chart?cht=lc&chs=450x200&chd=t:{{specified_professor.score}}&chds=1,5&chm=B,0fa8db,0,0,0&chco=0fa8db">
+                
+                <div class="fb-share-button pull-left" data-href="http://www.notaso.com/professors/{{specified_professor.slug}}" data-type="button"></div>
+                
+                <a id = "twitter" href="https://twitter.com/share" class="twitter-share-button pull-right" data-lang="en" data-count="none"></a>
+                </div>
+            <div class="col-md-4 pull-right percent">
                 <h3>Promedio:</h3>
-                <h1>{{specified_professor.get_percent}}%
-                <span class="grade{{grade}}lrg professor-percent"></span>
-                </h1>
-                <h4>Detalles:</h4>
-                <div class="grade{{responsability}}sml professor-details">
-                    <p>Responsabilidad</p>
-                </div>
-                <div class="grade{{personality}}sml professor-details">
-                    <p>Personalidad</p>
-                </div>
-                <div class="rate{{difficulty}}sml professor-details">
-                    <p>Dificultad</p>
-                </div>
-                <div class="rate{{workload}}sml professor-details">
-                    <p>Trabajo</p>
+                <p class = "professor-percent">{{specified_professor.get_percent}}%
+                </p>
+                <div class = "details">
+                    <h4>Detalles:</h4>
+                    <div class="grade{{responsability}}sml professor-details">
+                        <p>Responsabilidad</p>
+                    </div>
+                    <div class="grade{{personality}}sml professor-details">
+                        <p>Personalidad</p>
+                    </div>
+                    <div class="rate{{difficulty}}sml professor-details">
+                        <p>Dificultad</p>
+                    </div>
+                    <div class="rate{{workload}}sml professor-details">
+                        <p>Trabajo</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,19 +61,11 @@
             <h2>Comentarios</h2> 
             <hr>
             {% for c in comments %}
-                {% if c.is_anonymous and not c.body %}
-                {% elif c.is_anonymous and c.body %}
-                <div class = "col-md-1">
-                    <div class = "avatarMlrg"></div>
-                </div>
-                    <h4 class = "submited-by">Anónimo</h4>
-                    <p>{{ c.created_at }}</p>
-                    <p>{{ c.body }}</p>
-                    <hr>
-                {% else %}
-                <div class = "col-md-1">
-                    <div class = "avatar{{c.created_by.gender}}lrg"></div>
-                </div>
+                {% if c.created_by.socialaccount_set.all and not rc.is_anonymous %}
+                    <div class = "col-md-1">
+                        
+                    <img src="{{ c.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35">
+                    </div>
                     <span class = "created-by">
                         <h4 class = "submited-by">{{ c.created_by.first_name }} {{c.created_by.last_name}}</h4>
                     </span>
@@ -78,6 +73,25 @@
                     <p>{{ c.body }}</p>
 
                     <hr>
+                {% elif c.is_anonymous and c.body %}
+                    <div class = "col-md-1">
+                        <div class = "avatarMlrg"></div>
+                    </div>
+                        <h4 class = "submited-by">Anónimo</h4>
+                        <p>{{ c.created_at }}</p>
+                        <p>{{ c.body }}</p>
+                        <hr>
+                {% else %}
+                    <div class = "col-md-1">
+                        <div class = "avatar{{c.created_by.gender}}lrg"></div>
+                    </div>
+                        <span class = "created-by">
+                            <h4 class = "submited-by">{{ c.created_by.first_name }} {{c.created_by.last_name}}</h4>
+                        </span>
+                        <p>{{ c.created_at }}</p>
+                        <p>{{ c.body }}</p>
+
+                        <hr>
                 {% endif %}
             {% endfor %}
             {% if user.is_authenticated %}
@@ -91,7 +105,6 @@
                                 <textarea name="body" class = "form-control" rows="10"></textarea>
                                 <div>
                                     <input class="btn btn-success" type="submit" name="submit" value="Enviar">
-                                    <a href=""data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> try me</a>
                                     <input type = "checkbox" id = "id_is_anonymous" if = "collapseOne"name = "is_anonymous">
                                     <label for = "id_is_anonymous"> Enviar anónimamente</label>
                                 </div>
@@ -104,18 +117,28 @@
                                     </tr>
                                     <tr>
                                         <td class = "btn-group btn-group-lg col-md-5" data-toggle="buttons-radio">
-                                            <button type = "button" class = "btn btn-default" name="b1">A</button>
+                                            <input type="radio" class="btn btn-default" name="b1" value="A" />
+                                            <input type="radio" class="btn btn-default" name="b1" value="B" />
+                                            <input type="radio" class="btn btn-default" name="b1" value="C" />
+                                            <input type="radio" class="btn btn-default" name="b1" value="D" />
+                                            <input type="radio" class="btn btn-default" name="b1" value="F" />
+                                            <!--<button type = "button" class = "btn btn-default" name="b1">A</button>
                                             <button type = "button" class = "btn btn-default" name="b1">B</button>
                                             <button type = "button" class = "btn btn-default" name="b1">C</button>
                                             <button type = "button" class = "btn btn-default" name="b1">D</button>
-                                            <button type = "button" class = "btn btn-default" name="b1">F</button>
+                                            <button type = "button" class = "btn btn-default" name="b1">F</button>-->
                                         </td>
                                         <td class = "btn-group btn-group-lg col-md-5" data-toggle="buttons-radio">
-                                            <button type = "button" class = "btn btn-default" name="b2">1</button>
+                                            <input type="radio" class="btn btn-default" name="b2" value="1" />
+                                            <input type="radio" class="btn btn-default" name="b2" value="2" />
+                                            <input type="radio" class="btn btn-default" name="b2" value="3" />
+                                            <input type="radio" class="btn btn-default" name="b2" value="4" />
+                                            <input type="radio" class="btn btn-default" name="b2" value="5" />
+                                            <!--<button type = "button" class = "btn btn-default" name="b2">1</button>
                                             <button type = "button" class = "btn btn-default" name="b2">2</button>
                                             <button type = "button" class = "btn btn-default" name="b2">3</button>
                                             <button type = "button" class = "btn btn-default" name="b2">4</button>
-                                            <button type = "button" class = "btn btn-default" name="b2">5</button>
+                                            <button type = "button" class = "btn btn-default" name="b2">5</button>-->
                                         </td>
                                     </tr>
                                     <br>
@@ -124,24 +147,30 @@
                                         <th class = "col-md-5">Dificultad</th> 
                                     </tr>
                                     <tr>
-                                        <span>
-                                            <td class = "btn-group btn-group-lg col-md-5" data-toggle="buttons-radio">
-                                                <button type = "radio" class = "btn btn-default" name="b3">A</button>
-                                                <button type = "radio" class = "btn btn-default" name="b3">B</button>
-                                                <button type = "radio" class = "btn btn-default" name="b3">C</button>
-                                                <button type = "radio" class = "btn btn-default" name="b3">D</button>
-                                                <button type = "radio" class = "btn btn-default" name="b3">F</button>
-                                            </td>        
-                                        </span>
-                                        <span>
-                                            <td class = "btn-group btn-group-lg col-md-5" data-toggle="buttons-radio">
-                                                <button type = "button" class = "btn btn-default">1</button>
-                                                <button type = "button" class = "btn btn-default">2</button>
-                                                <button type = "button" class = "btn btn-default">3</button>
-                                                <button type = "button" class = "btn btn-default">4</button>
-                                                <button type = "button" class = "btn btn-default">5</button>
-                                            </td>
-                                        </span>
+                                        <td class = "btn-group btn-group-lg col-md-5" data-toggle="buttons-radio">
+                                            <input type="radio" class="btn btn-default" name="b3" value="A" />
+                                            <input type="radio" class="btn btn-default" name="b3" value="B" />
+                                            <input type="radio" class="btn btn-default" name="b3" value="C" />
+                                            <input type="radio" class="btn btn-default" name="b3" value="D" />
+                                            <input type="radio" class="btn btn-default" name="b3" value="F" />
+                                            <!--<button type = "radio" class = "btn btn-default" name="b3">A</button>
+                                            <button type = "radio" class = "btn btn-default" name="b3">B</button>
+                                            <button type = "radio" class = "btn btn-default" name="b3">C</button>
+                                            <button type = "radio" class = "btn btn-default" name="b3">D</button>
+                                            <button type = "radio" class = "btn btn-default" name="b3">F</button>-->
+                                        </td>        
+                                        <td class = "btn-group btn-group-lg col-md-5" data-toggle="buttons-radio">
+                                            <label class = "btn btn-default"><input type="radio" class = "test btn btn-default" name="b4" value="1" />1</label>
+                                            <label class = "btn btn-default"><input type="radio" class = "btn btn-default" name="b4" value="2" />2</label>
+                                            <label class = "btn btn-default"><input type="radio" class="btn btn-default" name="b4" value="3" />3</label>
+                                            <label class = "btn btn-default"><input type="radio" class="btn btn-default" name="b4" value="4" />4</label>
+                                            <label class = "btn btn-default"><input type="radio" class="btn btn-default" name="b4" value="5" />5</label>
+                                           <!-- <button type = "button" class = "btn btn-default">1</button>
+                                            <button type = "button" class = "btn btn-default">2</button>
+                                            <button type = "button" class = "btn btn-default">3</button>
+                                            <button type = "button" class = "btn btn-default">4</button>
+                                            <button type = "button" class = "btn btn-default">5</button>-->
+                                        </td>
                                     </tr>
                                 </table>
                             </div>

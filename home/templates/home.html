@@ -47,7 +47,7 @@
 <div class="container">
     <div id="home-searchform" class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
         <form action = "/search" role="form" method = "GET">
-            <div class="col-md-10 col-xs-10">
+            <div class="col-md-10 col-xs-8">
                     <input type="text" name = "q" value = "{{search_term}}" class="form-control input-lg" placeholder="Busca un profesor">
             </div>
             <div class="col-md-2 col-xs-2">
@@ -111,15 +111,20 @@
                         <ul>
                             {% for rc in recent_comments %}
                             <li class="clearfix">
-                            {% if rc.created_by.socialaccount_set.all %}
+                            {% if rc.created_by.socialaccount_set.all and not rc.is_anonymous %}
                                 <img src="{{ rc.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35" class="pull-left">
-                                {% else %}
-                                <div class="avatar{{rc.created_by.gender}}lrg pull-left"></div>
-                                {% endif %}
+                            {% else %}
+                                <div class="avatarMlrg pull-left"></div>
+                            {% endif %}
                                 <a class="home-table-name">{{rc|truncatechars:30}}</a>
                                 <br>
                                 <a class="home-table-city text-muted">
-                                    {% if rc.is_anonymous %} Anónimo {% else %} {{rc.created_by.get_full_name}} {% endif %}</a>
+                            {% if rc.is_anonymous %}
+                                Anónimo 
+                            {% else %}
+                                {{rc.created_by.get_full_name}} 
+                            {% endif %}
+                            </a>
                             </li>
                             {% endfor %}
                         </ul>

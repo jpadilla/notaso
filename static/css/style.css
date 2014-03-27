@@ -275,7 +275,7 @@ li {
     margin-top: 5px;
 }
 .professor-percent{
-    float: right;
+    font-size: 36px;
 }
 .submited-by{
     margin-bottom: 3px;
@@ -291,4 +291,17 @@ li {
 }
 .rates .btn-group{
     margin-right: 5%;
+}
+.search{
+    padding-right: 0;
+    padding-left: 0;
+}
+input[type="radio"]{
+    display:none;
+}
+#rate_dificulty input[type="radio"]:checked + label{ 
+  background-color:red;
+}
+#graph{
+    margin-bottom: 5px;
 }
