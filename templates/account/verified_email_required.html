@@ -3,8 +3,6 @@
 {% load url from future %}
 {% load i18n %}
 
-{% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
-
 {% block content %}
 <h1>{% trans "Verify Your E-mail Address" %}</h1>
 
@@ -20,5 +18,36 @@ contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
 
 <p>{% blocktrans %}<strong>Note:</strong> you can still <a href="{{email_url}}">change your e-mail address</a>.{% endblocktrans %}</p>
 
+
+{% endblock %}
+
+{% block title %} Verificación Enviada| Notaso {% endblock %}
+{% block header %}
+<div class="jumbotron heading-style">
+    <div class="container">
+        <div class="row">
+            <h2>{% trans Verificación enviada requerida %}</h2>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% load i18n %}
+
+{% block content %}
+<div class = "container">
+	<div class = "row">
+		<div class = "col-md-10 col-md-offset-2">
+			{% url 'account_email' as email_url %}
+			<p>{% blocktrans %}Esta parte de la página nos requiere que verifiquemos que eres quien dices ser. Por esta razón, pedimos verificar que usted es el dueño de la cuenta de e-mail que nos fue provista.{% endblocktrans %}</p>
+
+    		<p>{% blocktrans %}Hemos enviado un e-mail para la verificación. Entre al enlace provisto en el e-mail para finalizar el proceso de registro. Favor contactenos si no recibe el e-mail en los proximos minutos.{% endblocktrans %}</p>
+    		
+			<p>{% blocktrans %}<strong>Note:</strong> you can still <a href="{{email_url}}">change your e-mail address</a>.{% endblocktrans %}</p>
+
+	
+		</div>	
+	</div>
+</div>
 
 {% endblock %}

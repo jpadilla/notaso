@@ -425,3 +425,9 @@ input[type="radio"]{
 .profile-pic-nav {
     margin-right: 10px;
 }
+.login-color{
+    background-color: #f5f5f5;
+    border: 1px solid #e4e4e4;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}

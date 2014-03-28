@@ -15,23 +15,30 @@
 <div class="container">
     <div class="row">
         <div class="form-group">
-            <ul class="col-md-6 col-md-offset-3">
+            <ul class="col-md-10 col-md-offset-2 col-xs-12">
             {% if socialaccount.providers  %}
+            <div class = "col-md-5 col-xs-12">
+                
                 <p class="text-center lead">Favor de hacer login con algunas de sus cuentas existentes
-                de Facebook o Twitter. O se puede registrar <a href="{{ signup_url }}">aqui.</a></p>
+                de Facebook o Twitter. También se puede registrar <a href="{{ signup_url }}">aqui.</a></p>
 
                 <div class="text-center">
-                    <a href="{% provider_login_url "facebook" method="oauth2" %}" class="login-social button facebook">Login with Facebook</i></a>
-                    <a href="{% provider_login_url "twitter" method="oauth" %}" class="login-social button twitter">Login with Twitter</a>
+                    <div>
+                        <a href="{% provider_login_url "facebook" method="oauth2" %}" class="login-social button facebook">Login con Facebook</a>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="{% provider_login_url "twitter" method="oauth" %}" class="login-social button twitter">Login con Twitter</a>
+                    </div>
+                    <br>
                 </div>
-                <br>
-                <p class="text-center lead">Para una cuenta de {{site.name}}, puede hacer login:</p>
-
-
-                {% else %}
+            {% else %}    
                 <p>If you have not created an account yet, then please
                 <a href="{{ signup_url }}">sign up</a> first.</p>
-                {% endif %}
+            {% endif %}
+            </div>
+            <div class = "col-md-5 col-xs-12 login-color">
+            <p class="text-center lead">Si tiene una cuenta de {{site.name}}, puede hacer login:</p>
                 <form method="POST" action="" class="horizontal-form" role="form">{% csrf_token %}
                     <div>
                         {% if form.login.errors %}
@@ -58,8 +65,8 @@
                         </div>
                     <div>
                         <div class = "form-group">
-                        <a class="pull-left" id="forgot-pwd" href="{% url 'account_reset_password' %}">Forgot Password?</a>
-                            <div class="pull-right">
+                        <a class="pull-left" id="forgot-pwd" href="{% url 'account_reset_password' %}">¿Cambiar su contraseña?</a>
+                            <div class="pull-right test">
                               {% if redirect_field_value %}
                                   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                                   {% endif %}
@@ -68,6 +75,7 @@
                         </div>
                     </div>
                 </form>
+            </div>
             </ul>
         </div>
     </div>

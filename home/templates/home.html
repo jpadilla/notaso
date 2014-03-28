@@ -37,6 +37,7 @@
                             <li><a href="accounts/logout">Logout</a></li>
                           </ul>
                         </li>
+                        </ul>
                         {% else %}
                         <ul class="nav navbar-nav navbar-form navbar-right">
 
@@ -57,7 +58,7 @@
 <div class="container">
     <div id="home-searchform" class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
         <form action = "/search" role="form" method = "GET">
-            <div class="col-md-10 col-xs-10">
+            <div class="col-md-10 col-xs-8">
                     <input type="text" name = "q" value = "{{search_term}}" class="form-control input-lg" placeholder="Busca un profesor">
             </div>
             <div class="col-md-2 col-xs-2">
