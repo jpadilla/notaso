@@ -21,7 +21,8 @@ def specific_professor_view(request, professors_slug):
     data = {
         'specified_professor': professor,
         'comment_form': form,
-        'comments': Comment.objects.filter(professor=professor.id),
+        'comments': Comment.objects.filter(professor=professor.id)
+        .exclude(body__exact=''),
         'grade': professor.get_grade(),
         'responsability': professor.get_responsibility(),
         'personality': professor.get_personality(),
