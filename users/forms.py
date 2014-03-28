@@ -1,23 +1,21 @@
 from django import forms
 
-from .models import User
 
-
-class SignupForm(forms.ModelForm):
+class SignupForm(forms.Form):
     email = forms.EmailField(
         label="Email",
         max_length=60,
         widget=forms.TextInput(attrs={
             'placeholder': 'Email',
             'autofocus': 'autofocus'}))
-
-    class Meta:
-        model = User
-        fields = ('first_name', 'last_name', 'gender')
+    first_name = forms.CharField(max_length=30)
+    last_name = forms.CharField(max_length=30)
 
     def save(self, user):
         email = self.cleaned_data['email']
         user.email = email
+        user.first_name = self.cleaned_data['first_name']
+        user.last_name = self.cleaned_data['last_name']
         user.save()
 
 

@@ -1,5 +1,5 @@
-import operator
-from functools import reduce
+# import operator
+# from functools import reduce
 
 from django.views.generic import ListView
 from django.db.models import Q
@@ -16,9 +16,11 @@ class SearchView(ListView):
     def get_context_data(self):
         context = super(SearchView, self).get_context_data()
 
-        universities = University.objects.all().values_list('name', 'city').distinct()
+        universities = University.objects.all().values_list(
+            'name', 'city').distinct()
 
-        departments = Department.objects.all().values_list('name', flat=True).distinct()
+        departments = Department.objects.all().values_list(
+            'name', flat=True).distinct()
 
         context.update({
             'universities': universities[:20],
@@ -33,18 +35,26 @@ class SearchView(ListView):
         search_term = self.request.GET.get('q')
 
         if search_term:
-            search_args = []
-            queries = (
-                'first_name__istartswith',
-                'last_name__istartswith',
-                'last_name__icontains',
-            )
+            # search_args = []
+            # queries = (
+            #     'first_name__istartswith',
+            #     'last_name__istartswith',
+            #     'last_name__icontains',
+            # )
 
+            # for term in search_term.split():
+            #     for query in queries:
+            #         search_args.append(Q(**{query: term}))
+
+            # return queryset.filter(
+            #     reduce(operator.or_, search_args)).distinct()
+            qs = Professor.objects.all()
             for term in search_term.split():
-                for query in queries:
-                    search_args.append(Q(**{query: term}))
-
-            return queryset.filter(
-                reduce(operator.or_, search_args)).distinct()
+                qs = qs.filter(
+                    Q(first_name__istartswith=term) |
+                    Q(first_name__icontains=term) |
+                    Q(last_name__istartswith=term) |
+                    Q(last_name__icontains=term))
+            return qs
 
         return queryset[:10]
