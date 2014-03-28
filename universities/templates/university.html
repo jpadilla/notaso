@@ -4,15 +4,13 @@
 {% block header %}
 <div class="jumbotron heading-style">
     <div class="container">
-        <div class="col-md-12">
-            <div class="col-md-1 pull-right">
+        <div class="col-md-12 col-xs-12">
+            <div class="col-md-1 col-xs-1">
                 <div class="grade{{grade}}lrg university-grade"></div>
             </div>
-            <div class="col-md-11">
-                <h2>
-                    {{specified_university.name}}, {{specified_university.city}}
-                </h2>
-            </div>
+            <h2>
+                {{specified_university.name}}, {{specified_university.city}}
+            </h2>
         </div>
     </div>
 </div>
@@ -97,7 +95,7 @@
     <div class="row">
      {% for d in departments %}
 		   {% if d|count_professors:specified_university > 0 %}
-	        <div class="col-md-3">
+	        <div class="col-md-3 col-xs-12 col-sm-6">
                 <a href="{% url 'universities:departments:specified_department' specified_university.slug d.slug %}">
 	        	  <div class="department-slip clearfix">
 	            	  <span class="pull-left"><b>{{ d|count_professors:specified_university }}</b></span>
