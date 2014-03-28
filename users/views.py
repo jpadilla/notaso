@@ -3,12 +3,11 @@ from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.core.urlresolvers import reverse
 
-from users.admin import UserCreationForm
-from .forms import UserLoginForm
+from .forms import LoginForm, SignupForm
 
 
 def register(request):
-    form = UserCreationForm(request.POST or None)
+    form = SignupForm(request.POST or None)
 
     if form.is_valid():
         form.save()
@@ -23,7 +22,7 @@ def login(request):
     if request.user.is_authenticated():
         return HttpResponseRedirect('/')
 
-    form = UserLoginForm(request.POST or None)
+    form = LoginForm(request.POST or None)
     if form.is_valid():
         email = form.cleaned_data['email']
         password = form.cleaned_data['password']
