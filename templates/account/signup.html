@@ -18,46 +18,6 @@
             <p>Already have an account? Then please <a href="{{ login_url }}">sign in.</a></p>
                 <form method="POST" action="" class="horizontal-form" role="form">{% csrf_token %}
                     <li>
-                        {% if form.username.errors %}
-                        <div class = "alert alert-danger">{{form.username.errors}}</div>
-                        {% endif %}
-                        <div class="form-group">
-                            <label for="id_username">Username:</label> 
-                            <input autofocus="autofocus" class="form-control" id="id_username" maxlength="30" name="username" placeholder="Username" type="text">
-                        </div>
-                    </li>
-                    <li>
-                        {% if form.first_name.errors %}
-                        <div class = "alert alert-danger">{{form.first_name.errors}}</div>
-                        {% endif %}
-                        <div class="form-group">
-                            <label for="id_first_name">Nombre:</label>
-                            <input class="form-control" placeholder="Nombre" id="id_first_name" maxlength="30" name="first_name" type="text" />
-                        </div>
-                    </li>
-                    <li>
-                        {% if form.last_name.errors %}
-                        <div class = "alert alert-danger">{{form.last_name.errors}}</div>
-                        {% endif %}
-                        <div class="form-group">
-                            <label for="id_last_name">Apellido:</label>
-                            <input class="form-control" placeholder="Apellidos" id="id_last_name" maxlength="30" name="last_name" type="text" />
-                        </div>
-                    </li>
-                    <li>
-                        {% if form.gender.errors %}
-                        <div class = "alert alert-danger">{{form.gender.errors}}</div>   
-                        {% endif %}
-                        <div class = "form-group">
-                            <label for="id_gender">Genero:</label>
-                            <select class="form-control" id="id_gender" name="gender">
-                                <option value="" selected="selected">---------</option>
-                                <option value="M">Male</option>
-                                <option value="F">Female</option>
-                            </select>
-                        </div>
-                    </li>
-                    <li>
                         {% if form.email.errors %}
                         <div class = "alert alert-danger">{{form.email.errors}}</div>
                         {% endif %}
@@ -67,6 +27,23 @@
                         </div>
                     </li>
                     <li>
+                        {% if form.first_name.errors %}
+                        <div class = "alert alert-danger">{{form.first_name.errors}}</div>
+                        {% endif %}
+                        <div class="form-group">
+                            <label for="id_first_name">Nombre:</label>
+                            <input class="form-control" placeholder="Nombre" id="first_name" maxlength="30" name="first_name" type="text" />
+                        </div>
+                    </li>
+                    <li>
+                        {% if form.last_name.errors %}
+                        <div class = "alert alert-danger">{{form.last_name.errors}}</div>
+                        {% endif %}
+                        <div class="form-group">
+                            <label for="id_last_name">Apellidos:</label>
+                            <input class="form-control" placeholder="Apellidos" id="last_name" maxlength="30" name="last_name" type="text" />
+                        </div>
+                    </li>
                         {% if form.password1.errors %}
                         <div class = "alert alert-danger">{{form.password1.errors}}</div>
                         {% endif %}
