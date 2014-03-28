@@ -105,8 +105,6 @@ STATICFILES_DIRS = (
 
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
-AUTH_USER_MODEL = 'users.User'
-
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.auth.context_processors.auth",
     "django.core.context_processors.debug",
@@ -132,18 +130,21 @@ AUTHENTICATION_BACKENDS = (
 
 SITE_ID = 1
 
+AUTH_USER_MODEL = 'users.User'
+
 # auth and allauth settings
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/accounts/login/'
-ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+ACCOUNT_EMAIL_VERIFICATION = "none"
 ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
 ACCOUNT_EMAIL_SUBJECT_PREFIX = '[Notaso] '
 ACCOUNT_LOGOUT_ON_GET = True
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_CONFIRM_EMAIL_ON_GET = True
-ACCOUNT_LOGOUT_REDIRECT_URL = '/'
-ACCOUNT_USER_MODEL_EMAIL_FIELD = "username"
-ACCOUNT_SIGNUP_FORM_CLASS = 'users.forms.UserCreationForm'
+ACCOUNT_LOGOUT_REDIRECT_URL = LOGIN_URL
+ACCOUNT_USERNAME_BLACKLIST = ['admin']
+ACCOUNT_SIGNUP_FORM_CLASS = 'users.forms.SignupForm'
+ACCOUNT_AUTHENTICATION_METHOD = "username_email"
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

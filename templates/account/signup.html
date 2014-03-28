@@ -18,106 +18,79 @@
             <p>Already have an account? Then please <a href="{{ login_url }}">sign in.</a></p>
                 <form method="POST" action="" class="horizontal-form" role="form">{% csrf_token %}
                     <li>
-                        {% if form.email.errors %}
-                        <li class = "alert alert-danger">{{form.email.errors}}</li>
+                        {% if form.username.errors %}
+                        <div class = "alert alert-danger">{{form.username.errors}}</div>
                         {% endif %}
-                        <li class="form-group">
-                            <li>
-                                <label for="id_email">Email:</label>
-                            </li>
-                            <li>
-
-                                <input class="form-control" placeholder="Email" id="id_email" maxlength="40" name="email" type="email" />
-                            </li>
-                        </li>
+                        <div class="form-group">
+                            <label for="id_username">Username:</label> 
+                            <input autofocus="autofocus" class="form-control" id="id_username" maxlength="30" name="username" placeholder="Username" type="text">
+                        </div>
                     </li>
-
                     <li>
                         {% if form.first_name.errors %}
-                        <li class = "form-group">
-                            <li class = "alert alert-danger">{{form.first_name.errors}}</li>
-                        </li>
+                        <div class = "alert alert-danger">{{form.first_name.errors}}</div>
                         {% endif %}
-                        <li class="form-group">
-                            <li>
-                                <label for="id_first_name">Nombre:</label>
-                            </li>
-                            <li>
-                                <input class="form-control" placeholder="Nombre" id="id_first_name" maxlength="30" name="first_name" type="text" />
-                            </li>
-                        </li>
+                        <div class="form-group">
+                            <label for="id_first_name">Nombre:</label>
+                            <input class="form-control" placeholder="Nombre" id="id_first_name" maxlength="30" name="first_name" type="text" />
+                        </div>
                     </li>
                     <li>
                         {% if form.last_name.errors %}
-                        <li class = "form-group">
-                            <li class = "alert alert-danger">{{form.last_name.errors}}</li>
-                        </li>
+                        <div class = "alert alert-danger">{{form.last_name.errors}}</div>
                         {% endif %}
-                        <li class="form-group">
-                            <li>
-                                <label for="id_last_name">Apellido:</label>
-                            </li>
-                            <li>
-                                <input class="form-control" placeholder="Apellidos" id="id_last_name" maxlength="30" name="last_name" type="text" />
-                            </li>
-                        </li>
+                        <div class="form-group">
+                            <label for="id_last_name">Apellido:</label>
+                            <input class="form-control" placeholder="Apellidos" id="id_last_name" maxlength="30" name="last_name" type="text" />
+                        </div>
                     </li>
                     <li>
                         {% if form.gender.errors %}
-                        <li class = "form-group">
-                            <li class = "alert alert-danger">{{form.gender.errors}}</li>   
-                        </li>
+                        <div class = "alert alert-danger">{{form.gender.errors}}</div>   
                         {% endif %}
-                        <li class = "form-group">
-                            <li>
-                                <label for="id_gender">Genero:</label>
-                            </li>
-                            <li>
-                                <select class="form-control" id="id_gender" name="gender">
-                                    <option value="" selected="selected">---------</option>
-                                    <option value="M">Male</option>
-                                    <option value="F">Female</option>
-                                </select>
-                            </li>
-                        </li>
+                        <div class = "form-group">
+                            <label for="id_gender">Genero:</label>
+                            <select class="form-control" id="id_gender" name="gender">
+                                <option value="" selected="selected">---------</option>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        {% if form.email.errors %}
+                        <div class = "alert alert-danger">{{form.email.errors}}</div>
+                        {% endif %}
+                        <div class="form-group">
+                            <label for="id_email">Email:</label>
+                            <input class="form-control" placeholder="Email" id="id_email" maxlength="40" name="email" type="email" />
+                        </div>
                     </li>
                     <li>
                         {% if form.password1.errors %}
-                        <li class = "form-group">
-                            <li class = "alert alert-danger">{{form.password1.errors}}</li>
-                        </li>
+                        <div class = "alert alert-danger">{{form.password1.errors}}</div>
                         {% endif %}
-                        <li class="form-group">
-                            <li>
-                                <label for="id_password1">Password:</label>
-                            </li>
-                            <li>
-                                <input class="form-control" placeholder="Password" id="id_password1" name="password1" type="password" />
-                            </li>
-                        </li>
+                        <div class="form-group">
+                            <label for="id_password1">Password:</label>
+                            <input class="form-control" placeholder="Password" id="id_password1" name="password1" type="password" />
+                        </div>
                     </li>
                     <li>
                         {% if form.password2.errors %}
-                        <li class = "form-group">
-                            <li class = "alert alert-danger">{{form.password2.errors}}</li>
-                        </li>
+                        <div class = "alert alert-danger">{{form.password2.errors}}</div>
                         {% endif %}
-                        <li class="form-group">
-                            <li>
-                                <label for="id_password2">Password Confirmation:</label>
-                            </li>
-                            <li>
-                                <input class="form-control" placeholder="Password" id="id_password2" name="password2" type="password" />
-                            </li>
-                        </li>
+                        <div class="form-group">
+                            <label for="id_password2">Password Confirmation:</label>
+                            <input class="form-control" placeholder="Password" id="id_password2" name="password2" type="password" />
+                            <input id="id_confirmation_key" name="confirmation_key" type="hidden">
+                        </div>
                     </li>
                     <li>
-                        <li class = "form-group">
-                            <li class="pull-right">
+                        <div class = "form-group">
+                            <div class="pull-right">
                                 <input type="submit" class="btn btn-success btn-lg pull-right" value="Sign Up">
-                            </li>
-                            
-                        </li>
+                            </div>
+                        </div>
                     </li>
                 </form>
             </ul>

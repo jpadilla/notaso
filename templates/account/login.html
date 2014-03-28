@@ -33,40 +33,40 @@
                 <a href="{{ signup_url }}">sign up</a> first.</p>
                 {% endif %}
                 <form method="POST" action="" class="horizontal-form" role="form">{% csrf_token %}
-                    <li>
-                        {% if form.username.errors %}
+                    <div>
+                        {% if form.login.errors %}
                             <div class = "alert alert-danger alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            {{form.username.errors}}</div>
-                        </li>
+                            {{form.login.errors}}</div>
+                        </div>
 
                         {% endif %}
-                        <li class="form-group">
+                        <div class="form-group">
                                 <label for="id_login">Email:</label>
-                                <input class="form-control" placeholder="Email" id="id_login" maxlength="40" name="id_login" type="text" />
-                        </li>
-                    <li>
+                                <input class="form-control" placeholder="Email" id="id_login" maxlength="40" name="login" type="text" />
+                        </div>
+                    <div>
                         {% if form.password.errors %}
                             <div class = "alert alert-danger alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                             {{form.password.errors}}</div>
                         {% endif %}
-                    </li>
-                        <li class="form-group">
+                    </div>
+                        <div class="form-group">
                                 <label for="id_password">Password:</label>
                                 <input class="form-control" placeholder="Password" id="id_password" name="password" type="password" />
-                        </li>
-                    <li>
-                        <li class = "form-group">
+                        </div>
+                    <div>
+                        <div class = "form-group">
                         <a class="pull-left" id="forgot-pwd" href="{% url 'account_reset_password' %}">Forgot Password?</a>
-                            <li class="pull-right">
+                            <div class="pull-right">
                               {% if redirect_field_value %}
                                   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                                   {% endif %}
                                   <button class="btn btn-primary btn-lg pull-right" type="submit">Login</button>
-                            </li>  
-                        </li>
-                    </li>
+                            </div>  
+                        </div>
+                    </div>
                 </form>
             </ul>
         </div>
