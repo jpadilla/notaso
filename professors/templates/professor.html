@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %} 
+{% load users_extras %}
 {% block title %} 
     {{specified_professor.first_name|capfirst}} {{specified_professor.last_name|capfirst}} | Notaso 
 {% endblock %} 
@@ -73,9 +74,9 @@
                     <p>{{ c.body }}</p>
 
                     <hr>
-                {% elif c.is_anonymous and c.body %}
+                {% elif c.is_anonymous %}
                     <div class = "col-md-1">
-                        <div class = "avatarMlrg"></div>
+                        <img src="{{ c.created_by|gravatar_url:"retro" }}" width="35" height="35" class="pull-left">
                     </div>
                         <h4 class = "submited-by">Anónimo</h4>
                         <p>{{ c.created_at }}</p>
@@ -83,7 +84,7 @@
                         <hr>
                 {% else %}
                     <div class = "col-md-1">
-                        <div class = "avatar{{c.created_by.gender}}lrg"></div>
+                        <img src="{{ c.created_by|gravatar_url:c.created_by.email }}" width="35" height="35" class="pull-left">
                     </div>
                         <span class = "created-by">
                             <h4 class = "submited-by">{{ c.created_by.first_name }} {{c.created_by.last_name}}</h4>

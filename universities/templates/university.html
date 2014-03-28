@@ -1,5 +1,6 @@
 {% extends 'base.html' %} 
 {% load department_extras %}
+{% load users_extras %}
 {% block header %}
 <div class="jumbotron heading-style">
     <div class="container">
@@ -70,7 +71,7 @@
                                 {% if recent_comment.created_by.socialaccount_set.all and not recent_comment.is_anonymous %}
                                     <img src="{{ recent_comment.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35" class="pull-left">
                                 {% else %}
-                                    <div class="avatarMlrg pull-left"></div>
+                                    <img src="{{ recent_comment.created_by|gravatar_url:recent_comment.created_by.email }}" width="35" height="35" class="pull-left">
                                 {% endif %}
                                 <a class="home-table-name">{{recent_comment|truncatechars:30}}</a>
                                 <br>
