@@ -77,8 +77,8 @@
 <br>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <div class="col-md-4">
+        <div class="col-md-12 col-xs-12">
+            <div class="col-md-4 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="text-center">Top 5 Profesores</h4>
@@ -88,7 +88,7 @@
                             {% for p in professors %}
                             <li class="clearfix">
                                 <div class="grade{{p.get_grade}}lrg professor-grade pull-left"></div>
-                                <a href="{% url 'professors:specified_professor' p.slug %}" class="home-table-name">{{p}}</a>
+                                <a href="{% url 'professors:specified_professor' p.slug %}" class="home-table-name">{{p|capfirst}}</a>
                                 <br>
                                 <a href="{% url 'universities:specified_university' p.university.slug %}" class="home-table-city text-muted">{{p.university}}</a>
                             </li>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="text-center">Top 5 Universidades</h4>
@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="text-center">Comentarios recientes</h4>
@@ -133,7 +133,7 @@
                                 <a class="home-table-name">{{rc|truncatechars:30}}</a>
                                 <br>
                                 <a class="home-table-city text-muted">
-                                    {% if rc.is_anonymous %} Anónimo {% else %} {{rc.created_by.get_full_name}} {% endif %}</a>
+                                    {% if rc.is_anonymous %} Anónimo {% else %} {{rc.created_by.get_full_name|capfirst}} {% endif %}</a>
                             </li>
                             {% endfor %}
                         </ul>

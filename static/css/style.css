@@ -126,6 +126,7 @@ li {
 }
 .home-banner {
     margin: 25px 0;
+    margin-top: 0;
     padding: 15px;
     color: #fff;
     text-align: center;
