@@ -29,19 +29,21 @@
                                 {% if user.socialaccount_set.all %}
                                      <img src="{{ user.socialaccount_set.all.0.get_avatar_url }}" class="brand profile-pic-nav" width="20" height="20" class="pull-left">
                                 {% endif %}
-                                {{ user.username }}<b class="caret"></b></a>
+                                {{ user.email }}<b class="caret"></b></a>
                               <ul class="dropdown-menu">
                                 <li><a href="/accounts/logout">Logout</a></li>
                               </ul>
                             </li>
                         </ul>
-                        {% else %}
-                        <a href="/accounts/login">
-                            <button type="button" class="btn btn-primary" id = "loginBtn" >Login</button>
-                        </a>
-                        <a href="/accounts/signup">
-                            <button type="button" class="btn btn-default" id = "signUpBtn">Sign-up</button>
-                        </a>
+                        {% else %}  
+                        <ul class="nav navbar-nav navbar-form navbar-right">
+                            <a href="/accounts/login">
+                                <button type="button" class="btn btn-primary" id = "loginBtn" >Login</button>
+                            </a>
+                            <a href="/accounts/signup">
+                                <button type="button" class="btn btn-default" id = "signUpBtn">Registrarse</button>
+                            </a> 
+                        </ul>
                         {% endif %}
                 </div>
             </div>
@@ -65,12 +67,12 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2 search">
+        <div class="col-md-8 col-md-offset-2 search col-xs-12">
             <ul class="nav nav-pills nav-stacked col-md-3">
               <li class="active"><a href="#professor" data-toggle="tab">Profesor</a></li>
             </ul>
 
-            <div class="tab-content col-md-9">
+            <div class="tab-content col-md-9 col-xs-12">
                 <div class="tab-pane active">
                     <ul>
                     {% if object_list %}
