@@ -1,1 +1,1 @@
-web: gunicorn notaso.wsgi
+web: gunicorn -b "0.0.0.0:$PORT" -w 3 notaso.wsgi
