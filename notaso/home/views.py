@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
-from professors.models import Professor
-from universities.models import University
-from comments.models import Comment
+from ..professors.models import Professor
+from ..universities.models import University
+from ..comments.models import Comment
 
 
 def home(request):

@@ -1,6 +1,6 @@
 from django.db import models
 
-from professors.models import Professor
+from ..professors.models import Professor
 
 
 def get_upload_file_name(intance, filename):
