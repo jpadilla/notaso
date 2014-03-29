@@ -26,7 +26,8 @@ body {
     font-size: 30px;
     padding-left: 35px;
     padding-right: 35px;
-    padding-top: 35px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     text-align: center;
 }
 .campus {

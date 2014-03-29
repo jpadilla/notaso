@@ -99,11 +99,11 @@
                 {% endif %}
             {% endfor %}
             {% if user.is_authenticated %}
+            {{comment_form.as_p}}
                 <div id = "comment">
                     <div class = "form-group">
                         <form action="" role = "form" method="POST">
                             {% csrf_token %}
-
                             <div class = "col-md-10 col-md-offset-1">
                                 <h3>Comparte tu opinión</h3> 
                                 <textarea name="body" class = "form-control" rows="10"></textarea>
@@ -115,79 +115,80 @@
                                 </div>
                             </div>
                             <div class = "col-md-12 col-md-offset-1 col-xs-12 rates">
-                                <div class = "col-md-5 col-xs-12" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><p>Responsabilidad</p>
+                                <div class = "col-md-5 col-xs-12"><p>Responsabilidad</p>
                                     <span class = "btn-group btn-group-lg" data-toggle="buttons">
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class = "test btn btn-default" name="b1" value="5" />A
+
+                                        <label for = "id_responsibility" class = "btn btn-default">
+                                            <input id = "id_responsibility" type="radio" class = "test btn btn-default" name="responsibility" value="5" />A
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class = "btn btn-default" name="b1" value="4" />B
+                                        <label for = "id_responsibility" class = "btn btn-default">
+                                            <input id = "id_responsibility" type="radio" class = "btn btn-default" name="responsibility" value="4" />B
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b1" value="3" />C
+                                        <label for = "id_responsibility"  class = "btn btn-default">
+                                            <input id = "id_responsibility"  type="radio" class="btn btn-default" name="responsibility" value="3" />C
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b1" value="2" />D
+                                        <label for = "id_responsibility" class = "btn btn-default">
+                                            <input id = "id_responsibility"  type="radio" class="btn btn-default" name="responsibility" value="2" />D
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b1" value="1" />F
+                                        <label for = "id_responsibility"  class = "btn btn-default">
+                                            <input id = "id_responsibility"  type="radio" class="btn btn-default" name="responsibility" value="1" />F
                                         </label>
                                     </span>
                                 </div>
                                 <div class = "col-md-5 col-xs-12"><p>Cantidad de trabajo</p>
                                     <span class = "btn-group btn-group-lg" data-toggle="buttons">
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class = "test btn btn-default" name="b2" value="1" />1
+                                        <label for = "id_workload" class = "btn btn-default">
+                                            <input id = "id_workload" type="radio" class = "test btn btn-default" name="workload" value="1" />1
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class = "btn btn-default" name="b2" value="2" />2
+                                        <label for = "id_workload" class = "btn btn-default">
+                                            <input id = "id_workload" type="radio" class = "btn btn-default" name="workload" value="2" />2
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b2" value="3" />3
+                                        <label for = "id_workload" class = "btn btn-default">
+                                            <input id = "id_workload" type="radio" class="btn btn-default" name="workload" value="3" />3
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b2" value="4" />4
+                                        <label for = "id_workload" class = "btn btn-default">
+                                            <input id = "id_workload" type="radio" class="btn btn-default" name="workload" value="4" />4
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b2" value="5" />5
+                                        <label for = "id_workload" class = "btn btn-default">
+                                            <input id = "id_workload"type="radio" class="btn btn-default" name="workload" value="5" />5
                                         </label>  
                                     </span>
                                 </div>
                                 <div class = "col-md-5 col-xs-12"><p>Personalidad</p>
                                     <span class = "btn-group btn-group-lg" data-toggle="buttons">
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class = "test btn btn-default" name="b3" value="5" />A
+                                        <label for = "id_personality" class = "btn btn-default">
+                                            <input id = "id_personality" type="radio" class = "test btn btn-default" name="personality" value="5" />A
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class = "btn btn-default" name="b3" value="4" />B
+                                        <label for = "id_personality" class = "btn btn-default">
+                                            <input id = "id_personality" type="radio" class = "btn btn-default" name="personality" value="4" />B
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b3" value="3" />C
+                                        <label for = "id_personality" class = "btn btn-default">
+                                            <input id = "id_personality" type="radio" class="btn btn-default" name="personality" value="3" />C
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b3" value="2" />D
+                                        <label for = "id_personality" class = "btn btn-default">
+                                            <input id = "id_personality" type="radio" class="btn btn-default" name="personality" value="2" />D
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b3" value="1" />F
+                                        <label for = "id_personality" class = "btn btn-default">
+                                            <input id = "id_personality" type="radio" class="btn btn-default" name="personality" value="1" />F
                                         </label>
                                     </span>
                                 </div> 
                                 <div class = "col-md-5 col-xs-12"><p>Dificultad</p>
                                     <span class = "btn-group btn-group-lg" data-toggle="buttons">
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class = "test btn btn-default" name="b4" value="1" />1
+                                        <label for = "id_difficulty" class = "btn btn-default">
+                                            <input id = "id_difficulty"  type="radio" class = "test btn btn-default" name="difficulty" value="1" />1
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class = "btn btn-default" name="b4" value="2" />2
+                                        <label for = "id_difficulty" class = "btn btn-default">
+                                            <input id = "id_difficulty" type="radio" class = "btn btn-default" name="difficulty" value="2" />2
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b4" value="3" />3
+                                        <label for = "id_difficulty" class = "btn btn-default">
+                                            <input id = "id_difficulty" type="radio" class="btn btn-default" name="difficulty" value="3" />3
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b4" value="4" />4
+                                        <label for = "id_difficulty" class = "btn btn-default">
+                                            <input id = "id_difficulty" type="radio" class="btn btn-default" name="difficulty" value="4" />4
                                         </label>
-                                        <label class = "btn btn-default">
-                                            <input type="radio" class="btn btn-default" name="b4" value="5" />5
+                                        <label for = "id_difficulty" class = "btn btn-default">
+                                            <input id = "id_difficulty" type="radio" class="btn btn-default" name="difficulty" value="5" />5
                                         </label>
                                     </span>
                                 </div>
