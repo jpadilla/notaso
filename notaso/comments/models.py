@@ -3,7 +3,7 @@ from django.conf import settings
 from django.db.models.signals import post_save
 from django.shortcuts import get_object_or_404
 
-from professors.models import Professor
+from ..professors.models import Professor
 
 
 class Comment(models.Model):

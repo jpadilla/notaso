@@ -1,9 +1,9 @@
 from django.db.models import Count
 from django.shortcuts import render, get_object_or_404
 
-from departments.models import Department
-from professors.models import Professor
-from comments.models import Comment
+from ..departments.models import Department
+from ..professors.models import Professor
+from ..comments.models import Comment
 
 from .models import University
 

@@ -47,13 +47,13 @@ INSTALLED_APPS = (
     'django_extensions',
 
     # Apps
-    'users',
-    'universities',
-    'professors',
-    'departments',
-    'comments',
-    'home',
-    'search',
+    'notaso.users',
+    'notaso.universities',
+    'notaso.professors',
+    'notaso.departments',
+    'notaso.comments',
+    'notaso.home',
+    'notaso.search',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -142,7 +142,7 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 ACCOUNT_LOGOUT_REDIRECT_URL = LOGIN_URL
 ACCOUNT_USERNAME_BLACKLIST = ['admin']
-ACCOUNT_SIGNUP_FORM_CLASS = 'users.forms.SignupForm'
+ACCOUNT_SIGNUP_FORM_CLASS = 'notaso.users.forms.SignupForm'
 ACCOUNT_AUTHENTICATION_METHOD = "email"
 ACCOUNT_USERNAME_REQUIRED = False
 

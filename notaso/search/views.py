@@ -4,9 +4,9 @@
 from django.views.generic import ListView
 from django.db.models import Q
 
-from professors.models import Professor
-from departments.models import Department
-from universities.models import University
+from ..professors.models import Professor
+from ..departments.models import Department
+from ..universities.models import University
 
 
 class SearchView(ListView):

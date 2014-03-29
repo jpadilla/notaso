@@ -3,7 +3,7 @@ import datetime
 from django import forms
 from django.shortcuts import get_object_or_404
 
-from professors.models import Professor
+from ..professors.models import Professor
 from .models import Comment
 
 

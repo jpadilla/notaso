@@ -2,7 +2,7 @@ from django.db import models
 
 from autoslug import AutoSlugField
 
-from professors.models import Professor
+from ..professors.models import Professor
 
 
 class Department(models.Model):
