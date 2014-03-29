@@ -12,7 +12,7 @@ class UserCreationForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ('email', 'first_name', 'last_name')
+        fields = ('email', 'first_name', 'last_name', 'is_active')
 
     def clean_password2(self):
         # Check that the two password entries match
@@ -40,7 +40,7 @@ class UserChangeForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ['email', 'password', 'first_name', 'last_name', 'is_admin']
+        fields = ['email', 'password', 'first_name', 'last_name', 'is_admin', 'is_active']
 
     def clean_password(self):
         # Regardless of what the user provides, return the initial value.
@@ -52,3 +52,21 @@ class UserChangeForm(forms.ModelForm):
 class UserLoginForm(forms.Form):
     email = forms.EmailField()
     password = forms.CharField(widget=forms.PasswordInput)
+
+
+class SignupForm(forms.Form):
+    email = forms.EmailField(
+        label="Email",
+        max_length=60,
+        widget=forms.TextInput(attrs={
+            'placeholder': 'Email',
+            'autofocus': 'autofocus'}))
+    first_name = forms.CharField(max_length=30)
+    last_name = forms.CharField(max_length=30)
+
+    def signup(self, request, user):
+        email = self.cleaned_data['email']
+        user.email = email
+        user.first_name = self.cleaned_data['first_name']
+        user.last_name = self.cleaned_data['last_name']
+        user.save()
