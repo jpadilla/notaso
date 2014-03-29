@@ -32,6 +32,7 @@ class Common(Configuration):
         'south',
         'debug_toolbar',
         'django_extensions',
+        'storages',
         'allauth',
         'allauth.account',
         'allauth.socialaccount',
@@ -163,3 +164,13 @@ class Production(Common):
     SECURE_CONTENT_TYPE_NOSNIFF = True
     SECURE_BROWSER_XSS_FILTER = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3.S3Storage'
+
+    STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+    STATIC_URL = 'https://com-notaso-static.s3.amazonaws.com/'
+
+    AWS_PRELOAD_METADATA = True
+    AWS_ACCESS_KEY_ID = values.Value(environ_prefix=None)
+    AWS_SECRET_ACCESS_KEY = values.Value(environ_prefix=None)
+    AWS_STORAGE_BUCKET_NAME = values.Value(environ_prefix=None)
