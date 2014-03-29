@@ -34,7 +34,7 @@
                 <div class="fb-share-button pull-left" data-href="http://www.notaso.com/professors/{{specified_professor.slug}}" data-type="button"></div>
                 
                 <a id = "twitter" href="https://twitter.com/share" class="twitter-share-button pull-right" data-lang="en" data-count="none"></a>
-                </div>
+            </div>
             <div class="col-md-4 pull-right percent col-xs-12">
                 <h3>Promedio:</h3>
                 <p class = "professor-percent">{{specified_professor.get_percent|stringformat:".2f"}}%
@@ -69,9 +69,8 @@
                     <img src="{{ c.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35">
                     </div>
                     <span class = "col-xs-11">
-                        
                     <span class = "created-by">
-                        <h4 class = "submited-by">{{ c.created_by.first_name|capfirst }} {{c.created_by.last_name|capfirst}}</h4>
+                        <h4 class = "submited-by">{{ c.created_by.first_name|capfirst }} {{ c.created_by.last_name|capfirst }}</h4>
                     </span>
                     <p>{{ c.created_at }}</p>
                     <p>{{ c.body }}</p>
@@ -115,89 +114,83 @@
                                     <label for = "id_is_anonymous"> Enviar anónimamente</label>
                                 </div>
                             </div>
-                            <div class = "col-md-10 col-md-offset-1 rates">
-                                <table>
-                                    <tr>
-                                        <th class = "col-md-5 col-xs-12" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Responsabilidad</th>
-                                        <th class = "col-md-5">Cantidad de trabajo</th>
-                                    </tr>
-                                    <tr>
-                                        <td class = "btn-group btn-group-lg col-md-5 col-xs-10 rates" data-toggle="buttons">
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class = "test btn btn-default" name="b1" value="5" />A
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class = "btn btn-default" name="b1" value="4" />B
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b1" value="3" />C
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b1" value="2" />D
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b1" value="1" />F
-                                            </label>
-                                        </td>
-                                        <td class = "btn-group btn-group-lg col-md-5 col-xs-10" data-toggle="buttons">
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class = "test btn btn-default" name="b2" value="1" />1
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class = "btn btn-default" name="b2" value="2" />2
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b2" value="3" />3
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b2" value="4" />4
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b2" value="5" />5
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class = "col-md-5 col-xs-12">Personalidad</th> 
-                                        <th class = "col-md-5 col-xs-12">Dificultad</th> 
-                                    </tr>
-                                    <tr>
-                                        <td class = "btn-group btn-group-lg col-md-5 col-xs-10" data-toggle="buttons">
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class = "test btn btn-default" name="b3" value="5" />A
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class = "btn btn-default" name="b3" value="4" />B
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b3" value="3" />C
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b3" value="2" />D
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b3" value="1" />F
-                                            </label>
-                                        </td>        
-                                        <td class = "btn-group btn-group-lg col-md-5 col-xs-10" data-toggle="buttons">
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class = "test btn btn-default" name="b4" value="1" />1
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class = "btn btn-default" name="b4" value="2" />2
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b4" value="3" />3
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b4" value="4" />4
-                                            </label>
-                                            <label class = "btn btn-default">
-                                                <input type="radio" class="btn btn-default" name="b4" value="5" />5
-                                            </label>
-                                        </td>
-                                    </tr>
-                                </table>
+                            <div class = "col-md-12 col-md-offset-1 col-xs-12 rates">
+                                <div class = "col-md-5 col-xs-12" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><p>Responsabilidad</p>
+                                    <span class = "btn-group btn-group-lg" data-toggle="buttons">
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class = "test btn btn-default" name="b1" value="5" />A
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class = "btn btn-default" name="b1" value="4" />B
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b1" value="3" />C
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b1" value="2" />D
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b1" value="1" />F
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class = "col-md-5 col-xs-12"><p>Cantidad de trabajo</p>
+                                    <span class = "btn-group btn-group-lg" data-toggle="buttons">
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class = "test btn btn-default" name="b2" value="1" />1
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class = "btn btn-default" name="b2" value="2" />2
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b2" value="3" />3
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b2" value="4" />4
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b2" value="5" />5
+                                        </label>  
+                                    </span>
+                                </div>
+                                <div class = "col-md-5 col-xs-12"><p>Personalidad</p>
+                                    <span class = "btn-group btn-group-lg" data-toggle="buttons">
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class = "test btn btn-default" name="b3" value="5" />A
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class = "btn btn-default" name="b3" value="4" />B
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b3" value="3" />C
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b3" value="2" />D
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b3" value="1" />F
+                                        </label>
+                                    </span>
+                                </div> 
+                                <div class = "col-md-5 col-xs-12"><p>Dificultad</p>
+                                    <span class = "btn-group btn-group-lg" data-toggle="buttons">
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class = "test btn btn-default" name="b4" value="1" />1
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class = "btn btn-default" name="b4" value="2" />2
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b4" value="3" />3
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b4" value="4" />4
+                                        </label>
+                                        <label class = "btn btn-default">
+                                            <input type="radio" class="btn btn-default" name="b4" value="5" />5
+                                        </label>
+                                    </span>
+                                </div>
                             </div>
                         </form>
                     </div>

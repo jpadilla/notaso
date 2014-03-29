@@ -288,8 +288,15 @@ li {
 .rates{
     margin-top: 4%;
 }
+.rates p{
+    font-weight: bolder;
+    margin-bottom: 0;
+}
 .rates label{
     font-weight: bolder;
+}
+.rates span{
+    margin-bottom: 4%;
 }
 .rates .btn-group{
     margin-right: 5%;
