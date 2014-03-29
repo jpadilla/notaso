@@ -51,6 +51,7 @@ class Common(Configuration):
     )
 
     MIDDLEWARE_CLASSES = (
+        'djangosecure.middleware.SecurityMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware',
         'django.middleware.common.CommonMiddleware',
         'django.middleware.csrf.CsrfViewMiddleware',
