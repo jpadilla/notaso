@@ -38,6 +38,7 @@ class Common(Configuration):
         'allauth.socialaccount',
         'allauth.socialaccount.providers.facebook',
         'allauth.socialaccount.providers.twitter',
+        'djangosecure',
 
         # Apps
         'notaso.home',
