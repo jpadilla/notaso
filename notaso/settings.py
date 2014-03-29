@@ -14,7 +14,9 @@ class Common(Configuration):
 
     TEMPLATE_DEBUG = False
 
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = [
+        'notaso.herokuapp.com'
+    ]
 
     # Application definition
     INSTALLED_APPS = (
@@ -27,6 +29,7 @@ class Common(Configuration):
         'django.contrib.sites',
 
         # Third Party
+        'south',
         'debug_toolbar',
         'django_extensions',
         'allauth',
