@@ -30,7 +30,7 @@ class MyUserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser):
-    email = models.EmailField(max_length=40, unique=True)
+    email = models.EmailField(max_length=254, unique=True)
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     is_admin = models.BooleanField(default=False)
