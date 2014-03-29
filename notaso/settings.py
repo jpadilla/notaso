@@ -6,7 +6,7 @@ from configurations import Configuration, values
 class Common(Configuration):
     BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-    ENVIRONMENT = values.Value(environ_prefix=None, default='development')
+    ENVIRONMENT = values.Value(environ_prefix=None, default='DEVELOPMENT')
 
     SECRET_KEY = values.SecretValue(environ_prefix=None)
 
@@ -150,6 +150,8 @@ class Development(Common):
 
 
 class Production(Common):
+    DEBUG_TOOLBAR_PATCH_SETTINGS = False
+
     # django-secure settings
     PROTOCOL = 'https'
     SESSION_COOKIE_SECURE = True
