@@ -29,7 +29,7 @@ class Common(Configuration):
         'django.contrib.sites',
 
         # Third Party
-        'south',
+        # 'south',
         'debug_toolbar',
         'django_extensions',
         'storages',
@@ -131,6 +131,7 @@ class Common(Configuration):
     ACCOUNT_CONFIRM_EMAIL_ON_GET = True
     ACCOUNT_LOGOUT_REDIRECT_URL = LOGIN_URL
     ACCOUNT_USERNAME_BLACKLIST = ['admin']
+    ACCOUNT_USER_MODEL_USERNAME_FIELD = "email"
     ACCOUNT_SIGNUP_FORM_CLASS = 'notaso.users.forms.SignupForm'
     ACCOUNT_AUTHENTICATION_METHOD = "email"
     ACCOUNT_USERNAME_REQUIRED = False
