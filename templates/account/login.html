@@ -37,7 +37,8 @@
                 <a href="{{ signup_url }}">sign up</a> first.</p>
             {% endif %}
             </div>
-            <div class = "col-md-5 col-xs-12 login-color">
+            <div class = "col-md-5 col-xs-12">
+            <div class="well clearfix">
             <p class="text-center lead">Si tiene una cuenta de {{site.name}}, puede hacer login:</p>
                 <form method="POST" action="" class="horizontal-form" role="form">{% csrf_token %}
                     <div>
@@ -75,6 +76,7 @@
                         </div>
                     </div>
                 </form>
+                </div>
             </div>
             </ul>
         </div>
