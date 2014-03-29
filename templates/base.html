@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Notaso{% endblock %}</title>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="{% static "static/css/reset.css"%}">
-    <link rel="stylesheet" href="{% static "static/css/sprite.css"%}">
-    <link rel="stylesheet" href="{% static "static/css/bootstrap.min.css"%}">
-    <link rel="stylesheet" type="text/css" href="{% static "static/css/style.css"%}">
+    <link rel="stylesheet" href="{% static "css/reset.css"%}">
+    <link rel="stylesheet" href="{% static "css/sprite.css"%}">
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css"%}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css"%}">
     {% block extra_head %}
     {% endblock %}
 </head>
@@ -19,7 +19,7 @@
     {% block navbar %}
     <nav class="navbar navbar-default navbar-fixed-top m-top-for-nav" role="navigation">
         <div class="container-fluid">
-            
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                   <span class="sr-only">Toggle navigation</span>
@@ -27,7 +27,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img id = "brand_image" class="img-responsive" alt="Responsive image" src="{% static "static/img/notaso-200x37.png" %}"/></a>
+                <a class="navbar-brand" href="/"><img id = "brand_image" class="img-responsive" alt="Responsive image" src="{% static "img/notaso-200x37.png" %}"/></a>
             </div>
 
             <div class="collapse navbar-collapse" id = "myNavbar">
@@ -41,7 +41,7 @@
                     </ul>
                     {% if user.is_authenticated %}
                         <ul class="nav navbar-nav navbar-right">
-                        
+
                         <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             {% if user.socialaccount_set.all %}
@@ -97,8 +97,8 @@
         </div>
     {% endblock %}
     {% block js %}
-        <script src="{% static "static/js/jquery-2.1.0.js"%}"></script>
-        <script src="{% static "static/js/bootstrap.min.js"%}"></script>
+        <script src="{% static "js/jquery-2.1.0.js"%}"></script>
+        <script src="{% static "js/bootstrap.min.js"%}"></script>
     {% endblock %}
 </body>
 </html>
