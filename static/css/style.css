@@ -23,7 +23,7 @@ body {
     margin-top: 10%;
 }
 .footerIcons {
-    font-size: 65px;
+    font-size: 30px;
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 35px;
@@ -308,7 +308,7 @@ li {
 input[type="radio"]{
     display:none;
 }
-#rate_dificulty input[type="radio"]:checked + label{ 
+#rate_dificulty input[type="radio"]:checked + label{
   background-color:red;
 }
 #graph{
