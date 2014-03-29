@@ -15,7 +15,7 @@
     <div class="row">
         <div class="form-group">
             <ul class="col-md-8 col-md-offset-2">
-            <p>Already have an account? Then please <a href="{{ login_url }}">sign in.</a></p>
+            <p>Ya tienes una cuenta? Entonces favor de hacer <a href="{{ login_url }}">login in.</a></p>
                 <form method="POST" action="" class="horizontal-form" role="form">{% csrf_token %}
                     <li>
                         {% if form.email.errors %}
