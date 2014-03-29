@@ -10,9 +10,9 @@ class Common(Configuration):
 
     SECRET_KEY = values.SecretValue(environ_prefix=None)
 
-    DEBUG = False
+    DEBUG = values.BooleanValue(False)
 
-    TEMPLATE_DEBUG = False
+    TEMPLATE_DEBUG = values.BooleanValue(DEBUG)
 
     ALLOWED_HOSTS = [
         'notaso.herokuapp.com'
