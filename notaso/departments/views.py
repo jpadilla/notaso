@@ -1,8 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 
-from universities.models import University
-from professors.models import Professor
-from comments.models import Comment
+from ..universities.models import University
+from ..professors.models import Professor
+from ..comments.models import Comment
 from .models import Department
 
 
