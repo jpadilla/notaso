@@ -176,9 +176,9 @@ class Production(Common):
     SECURE_BROWSER_XSS_FILTER = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-    DEFAULT_FILE_STORAGE = 'storages.backends.s3.S3Storage'
-
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
     STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
     STATIC_URL = 'https://com-notaso-static.s3.amazonaws.com/'
 
     AWS_PRELOAD_METADATA = True
