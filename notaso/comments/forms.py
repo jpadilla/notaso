@@ -24,6 +24,25 @@ class AddCommentForm(forms.ModelForm):
         c.created_by = request.user
         c.professor = get_object_or_404(Professor, slug=prof_slug)
         c.created_at = datetime.datetime.today()
+
+        if c.workload == 1:
+            c.workload = 5
+        elif c.workload == 2:
+            c.workload = 4
+        elif c.workload == 4:
+            c.workload = 2
+        elif c.workload == 5:
+            c.workload = 1
+
+        if c.difficulty == 1:
+            c.difficulty = 5
+        elif c.difficulty == 2:
+            c.difficulty = 4
+        elif c.difficulty == 4:
+            c.difficulty = 2
+        elif c.difficulty == 5:
+            c.difficulty = 1
+
         c.save()
 
     def __init__(self, data=None, *args, **kwargs):
