@@ -81,7 +81,7 @@
                     {% if object_list %}
                         {% for prof in object_list %}
                             <a href="/professors/{{prof.slug}}"><h4>{{ prof.first_name|capfirst }} {{ prof.last_name|capfirst }}</h4></a>
-                            <li>{{ prof.university }} <span class="label label-danger department pull-right">{{prof.department}}</span></li>
+                            <li>{{ prof.university }} <span class="label label-danger department pull-right hidden-xs">{{prof.department}}</span></li>
                             <hr/>
                         {% endfor %}
                     {% else %}
