@@ -142,7 +142,7 @@ class Common(Configuration):
     EMAIL_HOST_USER = values.Value()
     EMAIL_HOST_PASSWORD = values.Value()
     EMAIL_PORT = values.IntegerValue()
-    EMAIL_USE_TLS = values.BooleanValue()
+    EMAIL_USE_TLS = values.BooleanValue(False)
 
 
 class Development(Common):
