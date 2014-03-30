@@ -180,6 +180,7 @@ class Production(Common):
     STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
     STATIC_URL = 'https://com-notaso-static.s3.amazonaws.com/'
+    MEDIA_URL = STATIC_URL
 
     AWS_PRELOAD_METADATA = True
     AWS_ACCESS_KEY_ID = values.Value(environ_prefix=None)
