@@ -10,7 +10,7 @@ from .models import University
 
 def universities_view(request):
     universities = University.objects.all().annotate(
-        Count('professor')).order_by('-professor__count')
+        Count('professor')).order_by('-professor__count', '-emblem')
 
     data = {
         'universities': universities
