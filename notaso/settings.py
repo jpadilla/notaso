@@ -136,6 +136,14 @@ class Common(Configuration):
     ACCOUNT_AUTHENTICATION_METHOD = "email"
     ACCOUNT_USERNAME_REQUIRED = False
 
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    DEFAULT_FROM_EMAIL = values.Value()
+    EMAIL_HOST = values.Value()
+    EMAIL_HOST_USER = values.Value()
+    EMAIL_HOST_PASSWORD = values.Value()
+    EMAIL_PORT = values.IntegerValue()
+    EMAIL_USE_TLS = values.BooleanValue()
+
 
 class Development(Common):
     DEBUG = True
