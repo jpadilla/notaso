@@ -1,11 +1,11 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% load department_extras %}
 {% load users_extras %}
 {% block header %}
 <div class="jumbotron heading-style">
     <div class="container">
         <div class="col-md-12 col-xs-12">
-            <div class="col-md-1 col-xs-1">
+            <div class="col-md-1 col-xs-1 hidden-xs">
                 <div class="grade{{grade}}lrg university-grade"></div>
             </div>
             <h2>
@@ -75,9 +75,9 @@
                                 <br>
                                 <a class="home-table-city text-muted">
                                 {% if recent_comment.is_anonymous %}
-                                    Anónimo 
+                                    Anónimo
                                 {% else %}
-                                    {{recent_comment.created_by.get_full_name}} 
+                                    {{recent_comment.created_by.get_full_name}}
                                 {% endif %}
                                 </a>
                             </li>

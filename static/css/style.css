@@ -447,3 +447,22 @@ input[type="radio"]{
 .col-xs-12 {
     padding: 0 10px;
 }
+
+/* xs */
+@media (min-width: 0px) and (max-width: 767px) {
+    .jumbotron.heading-style h2 {
+        font-size: 24px;
+    }
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* lg */
+@media (min-width: 1200px) {
+}
