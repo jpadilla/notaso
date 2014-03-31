@@ -69,16 +69,11 @@
             {% for c in comments %}
                 {% if c.created_by.socialaccount_set.all and not rc.is_anonymous %}
                     <div class = "col-md-1">
-                    <img src="{{ c.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35">
+                        <img src="{{ c.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35">
                     </div>
-                    <span class = "col-xs-11">
-                    <span class = "created-by">
                         <h4 class = "submited-by">{{ c.created_by.first_name|capfirst }} {{ c.created_by.last_name|capfirst }}</h4>
-                    </span>
                     <p>{{ c.created_at }}</p>
                     <p>{{ c.body }}</p>
-                    </span>
-
                     <hr>
                 {% elif c.is_anonymous %}
                     <div class = "col-md-1">
