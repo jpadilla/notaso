@@ -286,6 +286,14 @@ li {
 .department{
     font-size: 14px;
 }
+.department a{
+    text-decoration: none;
+    color: white;
+}
+#p-profile-uni{
+    text-decoration: none;
+    color: #3175A0;
+}
 .rates{
     margin-top: 4%;
 }
@@ -440,6 +448,10 @@ input[type="radio"]{
     border: 1px solid #e4e4e4;
     padding-bottom: 1%;
     padding-top: 1%;
+}
+#uni-search{
+    text-decoration: none;
+    color: black;
 }
 .well {
     padding: 20px;
