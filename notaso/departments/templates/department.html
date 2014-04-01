@@ -71,6 +71,8 @@
                             <li class="clearfix">
                                 {% if recent_comment.created_by.socialaccount_set.all and not recent_comment.is_anonymous %}
                                     <img src="{{ recent_comment.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35" class="pull-left">
+                                {% elif recent_comment.is_anonymous %}
+                                    <img src="{{ recent_comment.created_by|gravatar_url:"retro" }}" width="35" height="35" class="pull-left">
                                 {% else %}
                                     <img src="{{ recent_comment.created_by|gravatar_url:recent_comment.created_by.email }}" width="35" height="35" class="pull-left">
                                 {% endif %}

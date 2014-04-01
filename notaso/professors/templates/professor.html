@@ -67,7 +67,7 @@
             <h2>Comentarios</h2> 
             <hr>
             {% for c in comments %}
-                {% if c.created_by.socialaccount_set.all and not rc.is_anonymous %}
+                {% if c.created_by.socialaccount_set.all and not c.is_anonymous %}
                     <div class = "col-md-1">
                     <img src="{{ c.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35">
                     </div>
