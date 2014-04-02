@@ -83,7 +83,7 @@
                             <a href="/professors/{{prof.slug}}"><h4>{{ prof.first_name|capfirst }} {{ prof.last_name|capfirst }}</h4></a>
                             <li><a id = "uni-search" href="/universities/{{prof.university.slug}}">{{ prof.university }}</a> 
                                 <span class="label label-danger department pull-right hidden-xs">
-                                    <a href="/universities/{{specified_professor.university.slug}}/{{specified_professor.department.slug}}">
+                                    <a href="/universities/{{prof.university.slug}}/{{prof.department.slug}}">
                                         {{prof.department}}
                                     </a>
                                 </span>
