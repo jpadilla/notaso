@@ -63,14 +63,16 @@
                         </ul>
                     {% endif %}
                 </div>
-                <div class = "search navbar-right">
-                    <form action = "/search" class="navbar-form navbar-left" role="form" method = "GET">
-                        <div class="form-group">
-                            <input class="search-text form-control box-shadow" type="text" placeholder="Busca un profesor" name = "q" value = "{{search_term}}"/>
-                        </div>
-                        <button type="submit" class="btn btn-info" id = "btnSearch">Buscar</button>
-                    </form>
-                </div>
+                {% if navbarSearchShow != True %}
+                    <div class = "search navbar-right">
+                        <form action = "/search" class="navbar-form navbar-left" role="form" method = "GET">
+                            <div class="form-group">
+                                <input class="search-text form-control box-shadow" type="text" placeholder="Busca un profesor" name = "q" value = "{{search_term}}"/>
+                            </div>
+                            <button type="submit" class="btn btn-info" id = "btnSearch">Buscar</button>
+                        </form>
+                    </div>
+                {% endif %}
             </div>
         </div>
     </nav>

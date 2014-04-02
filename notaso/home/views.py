@@ -14,6 +14,7 @@ def home(request):
         'universities': universities[:5],
         'recent_comments': Comment.objects.all().exclude
         (body__exact='').order_by('-created_at')[:5],
+        'navbarSearchShow': True
     }
 
     return render(request, "home.html", data)
