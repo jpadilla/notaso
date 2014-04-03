@@ -25,7 +25,8 @@ class SearchView(ListView):
         context.update({
             'universities': universities[:20],
             'departments': departments[:20],
-            'search_term': self.request.GET.get('q', '')
+            'search_term': self.request.GET.get('q', ''),
+            'navbarSearchShow': True
         })
 
         return context
