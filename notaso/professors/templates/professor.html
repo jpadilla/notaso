@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %} 
 {% load users_extras %}
+{% load graph_creation %}
 {% block title %} 
     {{specified_professor.first_name|capfirst}} {{specified_professor.last_name|capfirst}} | Notaso 
 {% endblock %} 
@@ -40,8 +41,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="col-md-5 pull-left">
-                <img id = "graph" src="http://chart.apis.google.com/chart?cht=lc&chs=450x200&chd=t:{{specified_professor.score}}&chds=1,5&chm=B,0fa8db,0,0,0&chco=0fa8db">
-                
+                {%graph comments%}
                 <div class="fb-share-button pull-left" data-href="http://www.notaso.com/professors/{{specified_professor.slug}}" data-type="button"></div>
                 
                 <a id = "twitter" href="https://twitter.com/share" class="twitter-share-button pull-right" data-lang="en" data-count="none"></a>
