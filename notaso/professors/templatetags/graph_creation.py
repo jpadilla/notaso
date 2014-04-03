@@ -15,11 +15,9 @@ def graph(comments):
     sum_workload = 0
     sum_difficulty = 0
     count_comment = comments.count()
-    print "count: ", count_comment
     for c in comments:
         scores.append(float(c.responsibility-1+c.personality-1 +
                        c.workload-1+c.difficulty-1)*10)
-    print scores
     chart = Sparkline(scores)
     chart.color('0077CC')
     chart.size(450,250)
