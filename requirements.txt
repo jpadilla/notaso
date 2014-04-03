@@ -1,6 +1,8 @@
 Django==1.6.2
+GChartWrapper==0.9
 South==0.8.4
 Werkzeug==0.9.4
+argparse==1.2.1
 boto==2.27.0
 dj-database-url==0.3.0
 django-allauth==0.16.1
