@@ -26,13 +26,13 @@ class Comment(models.Model):
 def recalculate_score(sender, **kwargs):
     c = kwargs['instance']
 
-    if c.responsibility and c.personality and c.workload and c.difficulty:
+    if c.responsibility > 0 and c.personality and c.workload and c.difficulty:
         comments = Comment.objects.filter(
             professor=c.professor.id,
             responsibility__isnull=False,
             personality__isnull=False,
             workload__isnull=False,
-            difficulty__isnull=False)
+            difficulty__isnull=False).exclude(responsibility=0, personality=0, workload=0, difficulty=0)
 
         comments_count = 0
         sum_responsibility = 0
