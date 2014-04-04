@@ -39,19 +39,27 @@
 </script>
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-10 col-md-offset-2">
             <div class="col-md-5 pull-left">
                 {%graph comments%}
                 <div class="fb-share-button pull-left" data-href="http://www.notaso.com/professors/{{specified_professor.slug}}" data-type="button"></div>
                 
                 <a id = "twitter" href="https://twitter.com/share" class="twitter-share-button pull-right" data-lang="en" data-count="none"></a>
             </div>
-            <div class="col-md-4 pull-right percent col-xs-12">
+            <div class="col-md-5 pull-right percent col-xs-12">
                 <h3>Promedio:</h3>
                 <p class = "professor-percent">{{specified_professor.get_percent|stringformat:".2f"}}%
                 </p>
                 <div class = "details">
                     <h4>Detalles:</h4>
+                    <div class="professor-details">
+                        <span class="glyphicon glyphicon-comment"></span>
+                        <span class="count">{{comments.count}} Comentarios</span>
+                    </div>
+                    <div class="professor-details">
+                        <span class="glyphicon glyphicon-check"></span>
+                        <span class="count">{{rates}} Evaluaciones</span>
+                    </div>
                     <div class="grade{{responsability}}sml professor-details">
                         <p>Responsabilidad</p>
                     </div>
@@ -69,7 +77,7 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div class="display-reactions container">
     <div class="row">
         <div class = "col-md-8 col-md-offset-2">
             <h2>Comentarios</h2> 

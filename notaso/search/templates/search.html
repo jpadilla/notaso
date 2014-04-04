@@ -2,57 +2,7 @@
 {% load static %}
 {% load users_extras %}
 {% block title %}Notaso | Busqueda{% endblock %}
-{% block navbar %}
-    <nav class="navbar navbar-default navbar-fixed-top m-top-for-nav" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/"><img id = "brand_image" class="img-responsive" alt="Responsive image" src= "{% static "img/notaso-200x37.png" %}"/></a>
-            </div>
 
-            <div class="collapse navbar-collapse" id = "myNavbar">
-                <div class = "navbar-right">
-                    <ul class="nav navbar-nav">
-                        {% if user.is_authenticated %}
-                            <li><a href="/professors/create">Crear Profesor</a></li>
-                        {% endif %}
-                        <li><a href="/universities">Universidades</a>
-                    </ul>
-                        {% if user.is_authenticated %}
-                        <ul id="logout" class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                {% if user.socialaccount_set.all %}
-                                 <img src="{{ user.socialaccount_set.all.0.get_avatar_url }}" class="brand profile-pic-nav" width="20" height="20" class="pull-left">
-                                 {% else %}
-                                <img src="{{ user|gravatar_url:user.email }}" class="brand profile-pic-nav" width="20" height="20" class="pull-left">
-                                {% endif %}
-                                {{ user.email }}<b class="caret"></b></a>
-                              <ul class="dropdown-menu">
-                                <li><a href="/accounts/logout">Logout</a></li>
-                              </ul>
-                            </li>
-                        </ul>
-                        {% else %}
-                        <ul class="nav navbar-nav navbar-form navbar-right">
-                            <a href="/accounts/login">
-                                <button type="button" class="btn btn-primary" id = "loginBtn" >Login</button>
-                            </a>
-                            <a href="/accounts/signup">
-                                <button type="button" class="btn btn-default" id = "signUpBtn">Registrarse</button>
-                            </a>
-                        </ul>
-                        {% endif %}
-                </div>
-            </div>
-        </div>
-    </nav>
-{% endblock %}
 {% block content %}
 <div class="container">
     <div class = "row">
