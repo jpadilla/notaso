@@ -466,6 +466,9 @@ input[type="radio"]{
     .jumbotron.heading-style h2 {
         font-size: 24px;
     }
+    .history-graph img{
+        width: 100%;
+    }
 }
 
 /* sm */

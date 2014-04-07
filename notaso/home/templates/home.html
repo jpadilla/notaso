@@ -79,7 +79,7 @@
                                 {% else %}
                                     <img src="{{ rc.created_by|gravatar_url:rc.created_by.email }}" width="35" height="35" class="pull-left">
                                 {% endif %}
-                                <a class="home-table-name">{{rc|truncatechars:30}}</a>
+                                <a href="/professors/{{rc.professor.slug}}" class="home-table-name">{{rc|truncatechars:30}}</a>
                                 <br>
                                 <a class="home-table-city text-muted">
                                     {% if rc.is_anonymous %} Anónimo {% else %} {{rc.created_by.get_full_name|capfirst}} {% endif %}</a>
