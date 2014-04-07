@@ -23,7 +23,7 @@ def specific_professor_view(request, professors_slug):
         'comments': Comment.objects.filter(professor=professor.id)
         .exclude(body__exact=''),
         'rates': Comment.objects.filter(professor=professor.id,
-        responsibility__isnull=False).count(),
+        responsibility__gt=0).count(),
         'grade': professor.get_grade(),
         'responsability': professor.get_responsibility(),
         'personality': professor.get_personality(),
