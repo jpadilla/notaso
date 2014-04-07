@@ -85,36 +85,35 @@
             {% for c in comments %}
                 {% if c.created_by.socialaccount_set.all and not c.is_anonymous %}
                     <div class = "col-md-1">
-                    <img src="{{ c.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35">
+                        <img src="{{ c.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35">
                     </div>
                     <span class = "created-by">
                         <h4 class = "submited-by">{{ c.created_by.first_name|capfirst }} {{ c.created_by.last_name|capfirst }}</h4>
-                    <p>{{ c.created_at }}</p>
-                    <p>{{ c.body }}</p>
                     </span>
-
-                    <hr>
                 {% elif c.is_anonymous %}
                     <div class = "col-md-1">
                         <img src="{{ c.created_by|gravatar_url:"retro" }}" width="35" height="35" class="pull-left">
                     </div>
-                        <h4 class = "submited-by">Anónimo</h4>
-                        <p>{{ c.created_at }}</p>
-                        <p>{{ c.body }}</p>
-                        <hr>
+                    <h4 class = "submited-by">Anónimo</h4>
                 {% else %}
                     <div class = "col-md-1">
                         <img src="{{ c.created_by|gravatar_url:c.created_by.email }}" width="35" height="35" class="pull-left">
                     </div>
-                        <span class = "created-by">
-                            <h4 class = "submited-by">{{ c.created_by.first_name }} {{c.created_by.last_name}}</h4>
-                        </span>
-                        <p>{{ c.created_at }}</p>
-                        <p>{{ c.body }}</p>
-
-                        <hr>
+                    <span class = "created-by">
+                        <h4 class = "submited-by">{{ c.created_by.first_name }} {{c.created_by.last_name}}</h4>
+                    </span>
                 {% endif %}
+             
+                <p>{{ c.created_at }}</p>
+                {% if c.body|length >= 1000 %}
+                    <p class="show">{{ c.body|truncatechars:1000 }} <a class="showMore">leer más</a></p>
+                    <p class="hide">{{ c.body }} <a class="showLess">leer menos</a></p>
+                {% else %}
+                    <p>{{ c.body }}</p>
+                {% endif%}
+                <hr>
             {% endfor %}
+
             {% if user.is_authenticated %}
                 <div id = "comment">
                     <div class = "form-group">
@@ -218,4 +217,18 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block extra_bottom %}
+    <script>
+        $(document).ready(function(){
+            $(".showMore").click(function(){
+                $(this).parent().removeClass('show').addClass('hide').next().removeClass('hide').addClass('show');
+            })
+     
+            $(".showLess").click(function(){
+                $(this).parent().removeClass('show').addClass('hide').prev().removeClass('hide').addClass('show');
+            });
+        });
+    </script>
 {% endblock %}
