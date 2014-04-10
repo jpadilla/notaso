@@ -86,20 +86,20 @@
             <div class="awesome-shadow"></div>
             <div class = "row">
                 <div class = "col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
-                    <a href="https://www.facebook.com/notaso" data-toggle="tooltip" data-placement="top" title="Facebook">
-                        <i class = "footerIcons fa fa-facebook"></i>
+                    <a href="https://www.facebook.com/notaso">
+                        <i class = "footerIcons fa fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></i>
                     </a>
-                    <a href="https://twitter.com/notaso" data-toggle="tooltip" data-placement="top" title="Twitter">
-                        <i class = "footerIcons fa fa-twitter"></i>
+                    <a href="https://twitter.com/notaso">
+                        <i class = "footerIcons fa fa-twitter" data-toggle="tooltip" data-placement="top" title="Twitter"></i>
                     </a>
-                    <a href="https://github.com/jpadilla/notaso" data-toggle="tooltip" data-placement="top" title="GitHub">
-                        <i class = "footerIcons fa fa-github"></i>
+                    <a href="https://github.com/jpadilla/notaso">
+                        <i class = "footerIcons fa fa-github" data-toggle="tooltip" data-placement="top" title="GitHub"></i>
                     </a>
-                    <a href="/legal/" data-toggle="tooltip" data-placement="top" title="Legal">
-                        <i class = "footerIcons fa fa-legal"></i>
+                    <a href="/legal/">
+                        <i class = "footerIcons fa fa-legal" data-toggle="tooltip" data-placement="top" title="Legal"></i>
                     </a>
-                    <a href="#" data-toggle="tooltip" data-placement="top" title="Preguntas">
-                        <i class = "footerIcons fa fa-question"></i>
+                    <a href="#">
+                        <i class = "footerIcons fa fa-question" data-toggle="tooltip" data-placement="top" title="Preguntas"></i>
                     </a>
                 </div>
             </div>
@@ -108,6 +108,7 @@
     {% block js %}
         <script src="{% static "js/jquery-2.1.0.js"%}"></script>
         <script src="{% static "js/bootstrap.min.js"%}"></script>
+        <script>$("[data-toggle=tooltip]").tooltip();</script>
     {% endblock %}
     {% block extra_bottom %}{% endblock %}
 </body>
