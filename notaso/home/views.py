@@ -9,8 +9,11 @@ def home(request):
     universities = University.objects.all()
     universities = list(universities)
     universities.sort(key=lambda x: x.get_grade())
+
+    professors = Professor.objects.filter(score__gt=0).order_by('-score')
+
     data = {
-        'professors': Professor.objects.all().order_by('-score')[:5],
+        'professors': professors[:5],
         'universities': universities[:5],
         'recent_comments': Comment.objects.all().exclude
         (body__exact='').order_by('-created_at')[:5],
