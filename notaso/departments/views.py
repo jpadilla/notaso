@@ -10,8 +10,8 @@ def department_view(request, slug, department_slug):
     uni = get_object_or_404(University, slug=slug)
     department = get_object_or_404(Department, slug=department_slug)
     professors = Professor.objects.filter(
-        university=uni,
-        department=department).order_by('score')
+        university=uni, department=department, score__gt=0).order_by('score')
+
     data = {
         'university': uni,
         'department': department,
@@ -25,7 +25,8 @@ def department_view(request, slug, department_slug):
             professor__in=Professor.objects.filter(
                 university=uni,
                 department=department)).exclude(
-        body__exact='').order_by('-created_at')[:5]
+            body__exact='').order_by('-created_at')[:5]
 
     }
+
     return render(request, 'department.html', data)
