@@ -23,7 +23,7 @@ def graph(professor):
 
     chart = Sparkline(scores, encoding='text')
     chart.color('0077CC')
-    chart.size(450, 250)
+    chart.size(450, 262)
     chart.marker('B', 'E6F2FA', 0, 0, 0)
     chart.line(1, 0, 0)
     chart.axes('y')
