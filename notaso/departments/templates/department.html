@@ -76,7 +76,7 @@
                                 {% else %}
                                     <img src="{{ recent_comment.created_by|gravatar_url:recent_comment.created_by.email }}" width="35" height="35" class="pull-left">
                                 {% endif %}
-                                <a class="home-table-name">{{recent_comment|truncatechars:30}}</a>
+                                <a href="/professors/{{recent_comment.professor.slug}}" class="home-table-name">{{recent_comment|truncatechars:30}}</a>
                                 <br>
                                 <a class="home-table-city text-muted">
                                     {% if recent_comment.is_anonymous %} Anónimo {% else %} {{recent_comment.created_by.get_full_name}} {% endif %}</a>
