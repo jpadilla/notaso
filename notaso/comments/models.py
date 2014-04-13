@@ -20,7 +20,7 @@ class Comment(models.Model):
     difficulty = models.IntegerField(null=True)
 
     def __unicode__(self):
-        return self.body
+        return self.created_at
 
 
 def recalculate_score(sender, **kwargs):
@@ -32,7 +32,8 @@ def recalculate_score(sender, **kwargs):
             responsibility__isnull=False,
             personality__isnull=False,
             workload__isnull=False,
-            difficulty__isnull=False).exclude(responsibility=0, personality=0, workload=0, difficulty=0)
+            difficulty__isnull=False).exclude(responsibility=0, personality=0,
+                                              workload=0, difficulty=0)
 
         comments_count = 0
         sum_responsibility = 0
@@ -47,15 +48,15 @@ def recalculate_score(sender, **kwargs):
             sum_difficulty += c.difficulty
             comments_count += 1
 
-        score = float((sum_responsibility+sum_personality +
-                       sum_workload+sum_difficulty))/(comments_count*20)
+        score = float((sum_responsibility + sum_personality +
+                       sum_workload + sum_difficulty)) / (comments_count * 20)
 
         p = get_object_or_404(Professor, pk=c.professor.id)
         p.score = score
-        p.responsibility = float(sum_responsibility)/(comments_count*5)
-        p.personality = float(sum_personality)/(comments_count*5)
-        p.workload = float(sum_workload)/(comments_count*5)
-        p.difficulty = float(sum_difficulty)/(comments_count*5)
+        p.responsibility = float(sum_responsibility) / (comments_count * 5)
+        p.personality = float(sum_personality) / (comments_count * 5)
+        p.workload = float(sum_workload) / (comments_count * 5)
+        p.difficulty = float(sum_difficulty) / (comments_count * 5)
 
         p.save()
 
