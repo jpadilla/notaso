@@ -20,7 +20,7 @@ class Comment(models.Model):
     difficulty = models.IntegerField(null=True)
 
     def __unicode__(self):
-        return self.created_at
+        return self.body
 
 
 def recalculate_score(sender, **kwargs):
