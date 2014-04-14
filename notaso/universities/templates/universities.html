@@ -19,7 +19,7 @@
 				{% if universities.emblem %}
 					<li>
 						<div class = "col-md-3 thumbnail spaces">
-							<a href = "{{universities.slug}}">
+							<a href = "{% url 'universities:specified_university' universities.slug %}">
 									<img src = "{{universities.emblem.url}}" height = "180px" width = "100%">
 								<div>
 									<p>{{universities.name}}</p>
