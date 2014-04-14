@@ -35,10 +35,10 @@
                 <div class = "navbar-right">
                     <ul class="nav navbar-nav">
                         {% if user.is_authenticated %}
-                        <li><a href="/professors/create">Crear Profesor</a>
+                        <li><a href="{% url 'professors:create_professor' %}">Crear Profesor</a>
                         </li>
                         {% endif %}
-                        <li><a href="/universities">Universidades</a>
+                        <li><a href="{% url 'universities:universities' %}">Universidades</a>
                     </ul>
                     {% if user.is_authenticated %}
                         <ul class="nav navbar-nav navbar-right">
@@ -109,6 +109,7 @@
         <script src="{% static "js/jquery-2.1.0.js"%}"></script>
         <script src="{% static "js/bootstrap.min.js"%}"></script>
         <script>$("[data-toggle=tooltip]").tooltip();</script>
+        <script>$("[data-toggle=popover]").popover();</script>
     {% endblock %}
     {% block extra_bottom %}{% endblock %}
 </body>

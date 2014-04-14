@@ -12,5 +12,5 @@ urlpatterns = patterns(
         views.specific_university_view, name='specified_university'),
 
     url(r'^(?P<slug>[-_\w]+)/',
-        include('notaso.departments.urls', namespace='departments')),
+        include('notaso.departments.urls')),
 )

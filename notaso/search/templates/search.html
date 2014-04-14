@@ -30,10 +30,10 @@
                     <ul>
                     {% if object_list %}
                         {% for prof in object_list %}
-                            <a href="/professors/{{prof.slug}}"><h4>{{ prof.first_name|capfirst }} {{ prof.last_name|capfirst }}</h4></a>
-                            <li><a id = "uni-search" href="/universities/{{prof.university.slug}}">{{ prof.university }}</a> 
+                            <a href="{% url 'professors:specified_professor' prof.slug %}"><h4>{{ prof.first_name|capfirst }} {{ prof.last_name|capfirst }}</h4></a>
+                            <li><a id = "uni-search" href="{% url 'universities:specified_university' prof.university.slug %} ">{{ prof.university }}</a> 
                                 <span class="label label-danger department pull-right hidden-xs">
-                                    <a href="/universities/{{prof.university.slug}}/{{prof.department.slug}}">
+                                    <a href="{% url 'universities:specified_department' prof.university.slug prof.department.slug %}">
                                         {{prof.department}}
                                     </a>
                                 </span>
@@ -44,7 +44,7 @@
                         {% if user.is_authenticated %}
                         <div class = "result-not-found">
                             <h4>El profesor que ha buscado no se encuentra.</h4>
-                            <a href="/professors/create"><button type = "button" class = "btn btn-success btn-lg btn-block">Crear Profesor</button></a>
+                            <a href="{% url 'professors:create_professor'%}"><button type = "button" class = "btn btn-success btn-lg btn-block">Crear Profesor</button></a>
                         </div>
                         {% else %}
                         <div class = "result-not-found">
