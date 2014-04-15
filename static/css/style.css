@@ -457,6 +457,9 @@ input[type="radio"]{
 .count{
     margin-left: 10px;
 }
+.comment h3{
+    margin-top: 15px;
+}
 /* xs */
 @media (min-width: 0px) and (max-width: 767px) {
     .jumbotron.heading-style h2 {
