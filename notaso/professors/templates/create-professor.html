@@ -1,29 +1,123 @@
-{% extends 'base.html' %}
-{% block title %}Crea tu profesor | Notaso {% endblock %}
-{% block header %}
+{% extends 'base.html' %} {% block title %}Crea tu profesor | Notaso {% endblock %} {% block header %}
 <div class="jumbotron heading-style">
     <div class="container">
         <div class="row">
-        	<div class = "col-md-12 col-xs-12">
-            	<h1>Crea a tu profesor</h1>
-            	<p>Conoces a tus profesores antes de entrar al salón</p>
-        	</div>
+            <div class="col-md-12 col-xs-12">
+                <h1>Crea a tu profesor</h1>
+                <p>Conoces a tus profesores antes de entrar al salón</p>
+            </div>
         </div>
     </div>
 </div>
-{% endblock %} 
-{% block content %}
-<div class = "container">
-	<div class = "row">
-		<div class = "form-group">
-			<div class = "col-md-6 col-md-offset-3 col-xs-12">
-				<form action="/professors/create/" method = "POST" role = "form" enctype="multipart/form-data">
-					{% csrf_token %}
-					{{form.as_p}}
-					<input class = "btn btn-success btn-lg pull-right" type="submit" name="crear" value="Crear">
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+{% endblock %} {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-12 col-xs-12">
+                <form action="/professors/create/" method="POST" role="form" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <span class="col-md-5">
+                        {{form.as_p}}
+                    </span>
+                    <span class="col-md-6 col-md-offset-1 comment">
+                        <h3>Comparte tu opinión</h3>
+                        <textarea name="body" class="form-control" rows="5"></textarea>
+                        <div>
+                            <br>
+                            <input type="checkbox" id="id_is_anonymous" if="collapseOne" name="is_anonymous">
+                            <label for="id_is_anonymous">Enviar anónimamente</label>
+                        </div>
+                        <span class="col-xs-12 rates">
+                            <span class="col-md-6 col-xs-12">
+                                <p>Responsabilidad</p>
+                                <span class="btn-group btn-group-lg" data-toggle="buttons">
+                                    <label for="id_responsibility" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Súper responsable" data-container="body">
+                                        <input id="id_responsibility" type="radio" name="responsibility" value="5" />A
+                                    </label>
+                                    <label for="id_responsibility" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Responsable" data-container="body">
+                                        <input id="id_responsibility" type="radio" name="responsibility" value="4" />B
+                                    </label>
+                                    <label for="id_responsibility" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Regular" data-container="body">
+                                        <input id="id_responsibility" type="radio" name="responsibility" value="3" />C
+                                    </label>
+                                    <label for="id_responsibility" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Irresponsable" data-container="body">
+                                        <input id="id_responsibility" type="radio" name="responsibility" value="2" />D
+                                    </label>
+                                    <label for="id_responsibility" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Súper irresponsable" data-container="body">
+                                        <input id="id_responsibility" type="radio" name="responsibility" value="1" />F
+                                    </label>
+                                </span>
+                            </span>
+                            <span class="col-md-6 col-xs-12">
+                                <p>Cantidad de trabajo</p>
+                                <span class="btn-group btn-group-lg" data-toggle="buttons">
+                                    <label for="id_workload" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Nada" data-container="body">
+                                        <input id="id_workload" type="radio" name="workload" value="1" />1
+                                    </label>
+                                    <label for="id_workload" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Poco" data-container="body">
+                                        <input id="id_workload" type="radio" name="workload" value="2" />2
+                                    </label>
+                                    <label for="id_workload" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Regular" data-container="body">
+                                        <input id="id_workload" type="radio" name="workload" value="3" />3
+                                    </label>
+                                    <label for="id_workload" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Mucho" data-container="body">
+                                        <input id="id_workload" type="radio" name="workload" value="4" />4
+                                    </label>
+                                    <label for="id_workload" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Demaciado" data-container="body">
+                                        <input id="id_workload" type="radio" name="workload" value="5" />5
+                                    </label>
+                                </span>
+                            </span>
+                            <span class="col-md-6 col-xs-12">
+                                <p>Personalidad</p>
+                                <span class="btn-group btn-group-lg" data-toggle="buttons">
+                                    <label for="id_personality" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Excelente" data-container="body">
+                                        <input id="id_personality" type="radio" name="personality" value="5" />A
+                                    </label>
+                                    <label for="id_personality" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Buena" data-container="body">
+                                        <input id="id_personality" type="radio" name="personality" value="4" />B
+                                    </label>
+                                    <label for="id_personality" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Regular" data-container="body">
+                                        <input id="id_personality" type="radio" name="personality" value="3" />C
+                                    </label>
+                                    <label for="id_personality" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Malo" data-container="body">
+                                        <input id="id_personality" type="radio" name="personality" value="2" />D
+                                    </label>
+                                    <label for="id_personality" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Pésimo" data-container="body">
+                                        <input id="id_personality" type="radio" name="personality" value="1" />F
+                                    </label>
+                                </span>
+                            </span>
+                            <span class="col-md-6 col-xs-12">
+                                <p>
+                                    Dificultad
+                                </p>
+                                <span class="btn-group btn-group-lg" data-toggle="buttons">
+                                    <label for="id_difficulty" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Súper facil" data-container="body">
+                                        <input id="id_difficulty" type="radio" name="difficulty" value="1" />1
+                                    </label>
+                                    <label for="id_difficulty" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Facil" data-container="body">
+                                        <input id="id_difficulty" type="radio" name="difficulty" value="2" />2
+                                    </label>
+                                    <label for="id_difficulty" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Regular" data-container="body">
+                                        <input id="id_difficulty" type="radio" name="difficulty" value="3" />3
+                                    </label>
+                                    <label for="id_difficulty" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Dificil" data-container="body">
+                                        <input id="id_difficulty" type="radio" name="difficulty" value="4" />4
+                                    </label>
+                                    <label for="id_difficulty" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Súper dificil" data-container="body">
+                                        <input id="id_difficulty" type="radio" name="difficulty" value="5" />5
+                                    </label>
+                                </span>
+                            </span>
+                            <div class="col-md-12">
+                            	<input class="btn btn-success btn-lg btn-block" type="submit" name="crear" value="Crear y Evaluar">
+                            </div>
+                    	</span>
+                	</span>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

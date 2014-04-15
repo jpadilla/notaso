@@ -23,7 +23,7 @@ def specific_professor_view(request, professors_slug):
         'comments': Comment.objects.filter(professor=professor.id)
         .exclude(body__exact=''),
         'rates': Comment.objects.filter(professor=professor.id,
-        responsibility__gt=0).count(),
+                                        responsibility__gt=0).count(),
         'grade': professor.get_grade(),
         'responsability': professor.get_responsibility(),
         'personality': professor.get_personality(),
@@ -40,6 +40,7 @@ def create_professor_view(request):
         form = AddProfessorForm(request.POST)
         if form.is_valid():
             professor_info = form.save_form(request)
+            specific_professor_view(request, professor_info.slug)
             return HttpResponseRedirect('/professors/%s' % professor_info.slug)
     else:
         form = AddProfessorForm()

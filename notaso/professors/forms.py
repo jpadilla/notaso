@@ -6,10 +6,7 @@ from .models import Professor
 class AddProfessorForm(forms.ModelForm):
     class Meta:
         model = Professor
-        fields = ['first_name',
-                  'last_name',
-                  'gender',
-                  'university',
+        fields = ['first_name', 'last_name', 'gender', 'university',
                   'department']
         widgets = {
             'first_name': forms.TextInput(attrs={'class': 'form-control'}),
