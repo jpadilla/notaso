@@ -4,15 +4,18 @@ from .models import Professor
 
 
 class AddProfessorForm(forms.ModelForm):
-    responsibility = forms.IntegerField(required=True, min_value=0,
-                                        max_value=5, widget=forms.HiddenInput()
-                                        )
-    personality = forms.IntegerField(required=True, min_value=0, max_value=5,
-                                     widget=forms.HiddenInput())
-    workload = forms.IntegerField(required=True, min_value=0, max_value=5,
-                                  widget=forms.HiddenInput())
-    difficulty = forms.IntegerField(required=True, min_value=0, max_value=5,
-                                    widget=forms.HiddenInput())
+    responsibility = forms.IntegerField(
+        required=True, min_value=0,
+        max_value=5, widget=forms.HiddenInput())
+    personality = forms.IntegerField(
+        required=True, min_value=0,
+        max_value=5, widget=forms.HiddenInput())
+    workload = forms.IntegerField(
+        required=True, min_value=0,
+        max_value=5, widget=forms.HiddenInput())
+    difficulty = forms.IntegerField(
+        required=True, min_value=0,
+        max_value=5, widget=forms.HiddenInput())
 
     class Meta:
         model = Professor

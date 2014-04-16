@@ -1,12 +1,13 @@
 Django==1.6.2
-South==0.8.4
 GChartWrapper==0.8
+South==0.8.4
 Werkzeug==0.9.4
-argparse==1.1
+argparse==1.2.1
 boto==2.27.0
 dj-database-url==0.3.0
 django-allauth==0.16.1
 django-autoslug==1.7.2
+django-braces==1.4.0
 django-configurations==0.8
 django-debug-toolbar==1.0.1
 django-dotenv==1.2

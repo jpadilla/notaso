@@ -1,23 +1,28 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView
 
 from ..professors.models import Professor
 from ..universities.models import University
 from ..comments.models import Comment
 
 
-def home(request):
-    universities = University.objects.all()
-    universities = list(universities)
-    universities.sort(key=lambda x: x.get_grade())
+class HomeView(TemplateView):
+    template_name = 'home.html'
 
-    professors = Professor.objects.filter(score__gt=0).order_by('-score')
+    def get_context_data(self, **kwargs):
+        if 'view' not in kwargs:
+            kwargs['view'] = self
 
-    data = {
-        'professors': professors[:5],
-        'universities': universities[:5],
-        'recent_comments': Comment.objects.all().exclude
-        (body__exact='').order_by('-created_at')[:5],
-        'navbarSearchShow': True
-    }
+        universities = University.objects.all()
+        universities = list(universities)
+        universities.sort(key=lambda x: x.get_grade())
 
-    return render(request, "home.html", data)
+        professors = Professor.objects.filter(score__gt=0).order_by('-score')
+
+        comments = Comment.objects.all().exclude(
+            body__exact='').order_by('-created_at')
+
+        kwargs['professors'] = professors[:5]
+        kwargs['universities'] = universities[:5]
+        kwargs['recent_comments'] = comments[:5]
+        kwargs['navbarSearchShow'] = True
+        return kwargs

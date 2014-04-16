@@ -1,5 +1,5 @@
 from django.db.models import Count
-from django.shortcuts import render, get_object_or_404
+from django.views.generic import TemplateView, DetailView
 
 from ..departments.models import Department
 from ..professors.models import Professor
@@ -8,34 +8,36 @@ from ..comments.models import Comment
 from .models import University
 
 
-def universities_view(request):
-    universities = University.objects.all().annotate(
-        Count('professor')).order_by('-professor__count', '-emblem')
+class UniversitiesView(TemplateView):
+    template_name = 'universities.html'
 
-    data = {
-        'universities': universities
-    }
+    def get_context_data(self, **kwargs):
+        if 'view' not in kwargs:
+            kwargs['view'] = self
+        kwargs['universities'] = University.objects.all().annotate(
+            Count('professor')).order_by('-professor__count', '-emblem')
+        return kwargs
 
-    return render(request, "universities.html", data)
 
+class UniversityView(DetailView):
+    model = University
+    template_name = 'university.html'
 
-def specific_university_view(request, slug):
-    university = get_object_or_404(University, slug=slug)
+    def get_context_data(self, **kwargs):
+        if 'view' not in kwargs:
+            kwargs['view'] = self
 
-    professors = Professor.objects.filter(
-        university=university, score__gt=0).select_related('university')
+        professors = Professor.objects.filter(
+            university=self.object,
+            score__gt=0).select_related('university')
+        comments = Comment.objects.filter(
+            professor__in=professors).select_related(
+                'created_by').exclude(body__exact='')
 
-    comments = Comment.objects.filter(
-        professor__in=professors).select_related(
-        'created_by').exclude(body__exact='')
-
-    data = {
-        'specified_university': university,
-        'departments': Department.objects.all(),
-        'hi_professors': professors.order_by('-score')[:5],
-        'grade': university.get_grade(),
-        'low_professors': professors.order_by('score')[:5],
-        'recent_comments': comments.order_by('-created_at')[:5]
-    }
-
-    return render(request, "university.html", data)
+        kwargs['specified_university'] = self.object
+        kwargs['grade'] = self.object.get_grade()
+        kwargs['departments'] = Department.objects.all()
+        kwargs['hi_professors'] = professors.order_by('-score')[:5]
+        kwargs['low_professors'] = professors.order_by('score')[:5]
+        kwargs['recent_comments'] = comments.order_by('-created_at')[:5]
+        return kwargs
