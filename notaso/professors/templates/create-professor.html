@@ -17,7 +17,60 @@
                 <form action="/professors/create/" method="POST" role="form" enctype="multipart/form-data">
                     {% csrf_token %}
                     <span class="col-md-5">
-                        {{form.as_p}}
+                        <p class="create-header">
+                            {% if form.first_name.errors %}
+                                <div class = "alert alert-danger alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    {{form.first_name.errors}}
+                                </div>
+                            {% endif %}
+                            <strong>{{form.first_name.label}}</strong>
+                            {{form.first_name}}
+                        </p>
+                        <br>
+                        <p>
+                            {% if form.last_name.errors %}
+                                <div class = "alert alert-danger alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    {{form.last_name.errors}}
+                                </div>
+                            {% endif %}
+                            <strong>{{form.last_name.label}}</strong>
+                            {{form.last_name}}
+                        </p>
+                        <br>
+                        <p>
+                            {% if form.gender.errors %}
+                                <div class = "alert alert-danger alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    {{form.gender.errors}}
+                                </div>
+                            {% endif %}
+                            <strong>{{form.gender.label}}</strong>
+                            {{form.gender}}
+                        </p>
+                        <br>
+                        <p>
+                            {% if form.university.errors %}
+                                <div class = "alert alert-danger alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    {{form.university.errors}}
+                                </div>
+                            {% endif %}
+                            <strong>{{form.university.label}}</strong>
+                            {{form.university}}
+                        </p>
+                        <br>
+                        <p>
+                            {% if form.department.errors %}
+                                <div class = "alert alert-danger alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                    {{form.department.errors}}
+                                </div>
+                            {% endif %}
+                            <strong>{{form.department.label}}</strong>
+                            {{form.department}}
+                        </p>
                     </span>
                     <span class="col-md-6 col-md-offset-1 comment">
                         <h3>Comparte tu opinión</h3>
