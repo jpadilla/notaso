@@ -457,8 +457,9 @@ input[type="radio"]{
 .count{
     margin-left: 10px;
 }
-.comment h3{
-    margin-top: 15px;
+.comment p{
+    font-weight: bolder;
+    margin-bottom: 0;
 }
 /* xs */
 @media (min-width: 0px) and (max-width: 767px) {
