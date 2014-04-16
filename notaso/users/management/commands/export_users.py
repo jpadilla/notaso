@@ -9,6 +9,6 @@ class Command(BaseCommand):
         users = User.objects.all().values(
             'first_name', 'last_name', 'email')
         for u in users:
-            print str(unicode(u['first_name']).encode("UTF-8"))
-            +","+str(unicode(u['last_name']).encode("UTF-8"))
-            +","+str(unicode(u['email']).encode("UTF-8"))
+            print unicode(u['first_name']).encode("UTF-8")
+            +' , ' + unicode(u['last_name']).encode("UTF-8")
+            +' , ' + unicode(u['email']).encode("UTF-8")
