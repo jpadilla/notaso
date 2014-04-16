@@ -29,6 +29,12 @@
                         </div>
                         <span class="col-xs-12 rates">
                             <span class="col-md-6 col-xs-12">
+                                {% if form.responsibility.errors %}
+                                    <div class = "alert alert-danger alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                        {{form.responsibility.errors}}
+                                    </div>
+                                {% endif %}
                                 <p>Responsabilidad</p>
                                 <span class="btn-group btn-group-lg" data-toggle="buttons">
                                     <label for="id_responsibility" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Súper responsable" data-container="body">
@@ -49,6 +55,12 @@
                                 </span>
                             </span>
                             <span class="col-md-6 col-xs-12">
+                                {% if form.workload.errors %}
+                                    <div class = "alert alert-danger alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                        {{form.workload.errors}}
+                                    </div>
+                                {% endif %}
                                 <p>Cantidad de trabajo</p>
                                 <span class="btn-group btn-group-lg" data-toggle="buttons">
                                     <label for="id_workload" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Nada" data-container="body">
@@ -69,6 +81,12 @@
                                 </span>
                             </span>
                             <span class="col-md-6 col-xs-12">
+                                {% if form.personality.errors %}
+                                    <div class = "alert alert-danger alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                        {{form.personality.errors}}
+                                    </div>
+                                {% endif %}
                                 <p>Personalidad</p>
                                 <span class="btn-group btn-group-lg" data-toggle="buttons">
                                     <label for="id_personality" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Excelente" data-container="body">
@@ -89,6 +107,12 @@
                                 </span>
                             </span>
                             <span class="col-md-6 col-xs-12">
+                                {% if form.difficulty.errors %}
+                                    <div class = "alert alert-danger alert-dismissable">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                        {{form.difficulty.errors}}
+                                    </div>
+                                {% endif %}
                                 <p>
                                     Dificultad
                                 </p>
