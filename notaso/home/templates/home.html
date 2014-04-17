@@ -73,7 +73,7 @@
                             {% for rc in recent_comments %}
                             <li class="clearfix">
                             {% if rc.created_by.socialaccount_set.all and not rc.is_anonymous %}
-                                <img src="{{ rc.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35" class="pull-left">
+                                <img src="{{ rc.created_by|avatar_https:rc.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35" class="pull-left">
                                 {% elif rc.is_anonymous %}
                                     <img src="{{ rc.created_by|gravatar_url:"retro" }}" width="35" height="35" class="pull-left">
                                 {% else %}
