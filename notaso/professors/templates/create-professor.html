@@ -73,8 +73,14 @@
                         </p>
                     </span>
                     <span class="col-md-6 col-md-offset-1 comment">
+                        {% if form.body.errors %}
+                            <div class = "alert alert-danger alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                {{form.body.errors}}
+                            </div>
+                        {% endif %}
                         <p>Comparte tu opinión</p>
-                        <textarea name="body" class="form-control" rows="7"></textarea>
+                        {{form.body}}
                         <div>
                             <br>
                             <input type="checkbox" id="id_is_anonymous" if="collapseOne" name="is_anonymous">
