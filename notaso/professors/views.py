@@ -1,9 +1,8 @@
-from django.shortcuts import render, get_object_or_404
-from django.core.urlresolvers import reverse
-from django.contrib.auth.decorators import login_required
-from django.http import HttpResponseRedirect
-from django.views.generic import DetailView
+from django.shortcuts import get_object_or_404, redirect
+from django.views.generic import DetailView, FormView
 from django.views.generic.edit import FormMixin
+
+from braces.views import LoginRequiredMixin
 
 from ..comments.forms import AddCommentForm
 from ..comments.models import Comment
@@ -16,11 +15,6 @@ class ProfessorView(FormMixin, DetailView):
     slug_url_kwarg = 'professors_slug'
     form_class = AddCommentForm
     template_name = 'professor.html'
-
-    def get_success_url(self):
-        return reverse(
-            'professors:specified_professor',
-            kwargs={'professors_slug': self.object.slug})
 
     def get_context_data(self, **kwargs):
         if 'view' not in kwargs:
@@ -44,7 +38,9 @@ class ProfessorView(FormMixin, DetailView):
     def form_valid(self, form):
         if self.request.user.is_authenticated:
             form.save_form(self.request, self.object.slug)
-        return HttpResponseRedirect(self.get_success_url())
+        return redirect(
+            'professors:specified_professor',
+            professors_slug=self.object.slug)
 
     def post(self, request, *args, **kwargs):
         self.object = self.get_object()
@@ -54,43 +50,13 @@ class ProfessorView(FormMixin, DetailView):
         else:
             return self.form_invalid(form)
 
-# same as previous CBV
-def specific_professor_view(request, professors_slug):
-    professor = get_object_or_404(Professor, slug=professors_slug)
-    form = AddCommentForm(request.POST or None)
 
-    if request.user.is_authenticated and form.is_valid():
-        form.save_form(request, professors_slug)
-        return HttpResponseRedirect('/professors/%s' % professors_slug)
+class CreateProfessorView(LoginRequiredMixin, FormView):
+    form_class = AddProfessorForm
+    template_name = 'create-professor.html'
 
-    data = {
-        'specified_professor': professor,
-        'comment_form': form,
-        'comments': Comment.objects.filter(professor=professor.id)
-        .exclude(body__exact=''),
-        'rates': Comment.objects.filter(professor=professor.id,
-                                        responsibility__gt=0).count(),
-        'grade': professor.get_grade(),
-        'responsability': professor.get_responsibility(),
-        'personality': professor.get_personality(),
-        'workload': professor.get_workload(),
-        'difficulty': professor.get_difficulty()
-    }
-
-    return render(request, 'professor.html', data)
-
-
-@login_required(login_url='/login/')
-def create_professor_view(request):
-    if request.POST:
-        form = AddProfessorForm(request.POST)
-        if form.is_valid():
-            professor_info = form.save_form(request)
-            specific_professor_view(request, professor_info.slug)
-            return HttpResponseRedirect('/professors/%s' % professor_info.slug)
-    else:
-        form = AddProfessorForm()
-    data = {
-        'form': form
-    }
-    return render(request, 'create-professor.html', data)
+    def form_valid(self, form):
+        prof = form.save_form(self.request)
+        return redirect(
+            'professors:specified_professor',
+            professors_slug=prof.slug)
