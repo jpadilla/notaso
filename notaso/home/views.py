@@ -19,7 +19,7 @@ class HomeView(TemplateView):
         professors = Professor.objects.filter(score__gt=0).order_by('-score')
 
         comments = Comment.objects.all().exclude(
-            body__exact='').order_by('-created_at')
+            body__exact='').order_by('-created_at', '-id')
 
         kwargs['professors'] = professors[:5]
         kwargs['universities'] = universities[:5]

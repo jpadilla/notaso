@@ -45,7 +45,7 @@
                             <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     {% if user.socialaccount_set.all %}
-                                         <img src="{{ user.socialaccount_set.all.0.get_avatar_url }}" class="brand profile-pic-nav" width="20" height="20" class="pull-left">
+                                         <img src="{{ user|avatar_https:user.socialaccount_set.all.0.get_avatar_url }}" class="brand profile-pic-nav" width="20" height="20" class="pull-left">
                                     {% else %}
                                         <img src="{{ user|gravatar_url:user.email }}" class="brand profile-pic-nav" width="20" height="20" class="pull-left">
                                     {% endif %}
