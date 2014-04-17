@@ -19,4 +19,5 @@ def gravatar_url(instance, email):
 
 @register.filter(name='avatar_https')
 def avatar_https(instance, url):
-    return url.replace("http", "https", 1)
+    url = url.replace("http", "https", 1)
+    return url.replace("httpss", "https", 1)
