@@ -25,7 +25,8 @@ class ProfessorView(FormMixin, DetailView):
             slug=self.object.slug)
         kwargs['specified_professor'] = professor
         kwargs['comments'] = Comment.objects.filter(
-            professor=professor.id).exclude(body__exact='')
+            professor=professor.id).exclude(
+                body__exact='').order_by('-created_at', '-id')
         kwargs['rates'] = Comment.objects.filter(
             professor=professor.id, responsibility__gt=0).count()
         kwargs['grade'] = professor.get_grade()

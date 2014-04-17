@@ -32,7 +32,8 @@ class UniversityView(DetailView):
             score__gt=0).select_related('university')
         comments = Comment.objects.filter(
             professor__in=professors).select_related(
-                'created_by').exclude(body__exact='')
+                'created_by').exclude(
+                    body__exact='').order_by('-created_at', '-id')
 
         kwargs['specified_university'] = self.object
         kwargs['grade'] = self.object.get_grade()
