@@ -36,21 +36,20 @@ class AddProfessorForm(forms.Form):
         label="Last name",
         widget=forms.TextInput(attrs={'class': 'form-control'}))
     gender = forms.ChoiceField(
-        label="Gender",        
+        label="Gender",
         choices=GENDER_CHOICES,
         widget=forms.Select(attrs={'class': 'form-control'}))
     university = forms.ModelChoiceField(
-        label="University",        
+        label="University",
         queryset=University.objects.all(),
         widget=forms.Select(attrs={'class': 'form-control'}),
         empty_label="-----------")
     department = forms.ModelChoiceField(
-        label="Department",        
+        label="Department",
         queryset=Department.objects.all(),
         widget=forms.Select(attrs={'class': 'form-control'}),
         empty_label="-----------")
-    body = forms.CharField(
-        label="Comparte tu opinion",
+    body = forms.CharField(required=False, label="Comparte tu opinion",
         widget=forms.Textarea(attrs={'class': 'form-control', 'rows': '7'}))
     is_anonymous = forms.BooleanField(
         required=False,
@@ -68,7 +67,7 @@ class AddProfessorForm(forms.Form):
         p.save()
         self.save_comment_form(request, p)
         return p
-    
+
     def save_comment_form(self, request, prof):
         c = Comment()
         c.body = self.cleaned_data['body']
