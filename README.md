@@ -16,6 +16,10 @@ Si tienes una idea de como mejorar esta plataforma o si has encontrado algún er
 
 Aquí un [vídeo](http://www.youtube.com/watch?v=TJlYiMp8FuY) que explica como crear "issues". Recuerda que primero necesitas [crear una cuenta de GitHub](https://github.com/join), es gratis.
 
+## Developers
+
+Este proyecto no sería posible sin la colaboración de otros developers que han donado su tiempo para crear esta aplicación. Si  encuentras un error por favor crea un [issue](https://github.com/jpadilla/notaso/issues) y si puedes arreglarlo te invitamos a hacer y someter un pull request.
+
 ### Para correr el proyecto
 
 Debes tener instalado **Python 2.7** en tu máquina. También es recomendado que crees un [virtualenv](http://www.virtualenv.org/) para el proyecto pero no es un requisito.
@@ -62,3 +66,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Donaciones
+
+100% de las donaciones hechas irán a pagar los gastos de hosting y mantenimiento de la plataforma que en este momento son **$20.00 USD mensual**. Pronosticamos que en poco tiempo este número debe subir así que por eso estamos apuntando a asegurar $40.00 mensual. La idea es que la comunidad que se beneficia del proyecto pueda financiar los gastos recurrentes.
+
+[![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/jpadilla/)
+
+[![Donate Bitcoins](http://i.imgur.com/bMKkFH4.png)](https://coinbase.com/checkouts/171d3ea1bc0e16c33a095dc44b0e15c9)
+
