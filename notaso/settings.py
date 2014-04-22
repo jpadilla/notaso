@@ -15,7 +15,8 @@ class Common(Configuration):
     TEMPLATE_DEBUG = values.BooleanValue(DEBUG)
 
     ALLOWED_HOSTS = [
-        'notaso.herokuapp.com'
+        'notaso.herokuapp.com',
+        'notaso.com'
     ]
 
     # Application definition
