@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-{% load static %} 
+{% load static %}
 {% load users_extras %}
 {% load graph_creation %}
-{% block title %} 
-    {{specified_professor.first_name|capfirst}} {{specified_professor.last_name|capfirst}} | Notaso 
-{% endblock %} 
+{% block title %}
+    {{specified_professor.first_name|capfirst}} {{specified_professor.last_name|capfirst}} | Notaso
+{% endblock %}
 {% block header %}
 <div class="jumbotron heading-style">
     <div class="container">
@@ -14,7 +14,7 @@
                 <p>
                     <a id="p-profile-uni" href="{% url 'universities:specified_university' specified_professor.university.slug %}">
                         {{specified_professor.university}}
-                    </a> 
+                    </a>
                     <span class="label label-danger department">
                         <a href="{% url 'universities:specified_department' specified_professor.university.slug specified_professor.department.slug %}">{{specified_professor.department}}
                         </a>
@@ -24,7 +24,7 @@
         </div>
     </div>
 </div>
-{% endblock %} 
+{% endblock %}
 {% block content %}
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -42,10 +42,10 @@
         <div class="col-md-10 col-md-offset-2">
             <div class="col-md-5 pull-left">
                 <span class="history-graph">
-                    {% graph specified_professor %}
+                    <img src="{% graph specified_professor %}" alt="">
                 </span>
                 <div class="fb-share-button pull-left" data-href="http://www.notaso.com/professors/{{specified_professor.slug}}" data-type="button"></div>
-                
+
                 <a id = "twitter" href="https://twitter.com/share" class="twitter-share-button pull-right" data-lang="en" data-count="none"></a>
             </div>
             <div class="col-md-5 pull-right percent col-xs-12">
@@ -82,7 +82,7 @@
 <div class="display-reactions container">
     <div class="row">
         <div class = "col-md-8 col-md-offset-2">
-            <h2>Comentarios</h2> 
+            <h2>Comentarios</h2>
             <hr>
             {% for c in comments %}
                 {% if c.created_by.socialaccount_set.all and not c.is_anonymous %}
@@ -105,7 +105,7 @@
                         <h4 class = "submited-by">{{ c.created_by.first_name }} {{c.created_by.last_name}}</h4>
                     </span>
                 {% endif %}
-             
+
                 <p>{{ c.created_at }}</p>
                 {% if c.body|length >= 1000 %}
                     <p class="show">{{ c.body|truncatechars:1000 }} <a class="showMore">leer más</a></p>
@@ -122,7 +122,7 @@
                         <form action="" role = "form" method="POST">
                             {% csrf_token %}
                             <div class = "col-md-10 col-md-offset-1">
-                                <h3>Comparte tu opinión</h3> 
+                                <h3>Comparte tu opinión</h3>
                                 <textarea name="body" class = "form-control" rows="10"></textarea>
                                 <div>
                                     <br>
@@ -168,7 +168,7 @@
                                         </label>
                                         <label for = "id_workload" class = "btn btn-default" data-toggle="tooltip" data-placement="top" title="Demaciado" data-container="body">
                                             <input id = "id_workload"type="radio" name="workload" value="5" />5
-                                        </label>  
+                                        </label>
                                     </span>
                                 </div>
                                 <div class = "col-md-5 col-xs-12"><p>Personalidad</p>
@@ -189,7 +189,7 @@
                                             <input id = "id_personality" type="radio" name="personality" value="1" />F
                                         </label>
                                     </span>
-                                </div> 
+                                </div>
                                 <div class = "col-md-5 col-xs-12">
                                     <p>
                                         Dificultad
@@ -230,7 +230,7 @@
             $(".showMore").click(function(){
                 $(this).parent().removeClass('show').addClass('hide').next().removeClass('hide').addClass('show');
             })
-     
+
             $(".showLess").click(function(){
                 $(this).parent().removeClass('show').addClass('hide').prev().removeClass('hide').addClass('show');
             });
