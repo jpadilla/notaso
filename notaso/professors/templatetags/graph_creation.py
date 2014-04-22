@@ -1,8 +1,11 @@
 from django import template
-from GChartWrapper import *
-# http://code.google.com/apis/chart/#sparkline
+from django.conf import settings
+
+from GChartWrapper import Sparkline
+from camo import CamoClient
 
 from ...comments.models import Comment
+
 
 register = template.Library()
 
@@ -27,4 +30,11 @@ def graph(professor):
     chart.marker('B', 'E6F2FA', 0, 0, 0)
     chart.line(1, 0, 0)
     chart.axes('y')
-    return chart.img()
+
+    if not settings.DEBUG:
+        client = CamoClient(settings.CAMO_URL, key=settings.CAMO_KEY)
+        url = client.image_url(chart.url)
+    else:
+        url = chart.url
+
+    return url

@@ -144,6 +144,9 @@ class Common(Configuration):
     EMAIL_PORT = values.IntegerValue()
     EMAIL_USE_TLS = values.BooleanValue(False)
 
+    CAMO_URL = values.Value(environ_prefix=None)
+    CAMO_KEY = values.Value(environ_prefix=None)
+
 
 class Development(Common):
     DEBUG = True
