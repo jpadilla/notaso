@@ -120,8 +120,13 @@
     {% block js %}
         <script src="{% static "js/jquery-2.1.0.js"%}"></script>
         <script src="{% static "js/bootstrap.min.js"%}"></script>
-        <script>$("[data-toggle=tooltip]").tooltip();</script>
-        <script>$("[data-toggle=popover]").popover();</script>
+        <script>
+        $(document).ready(function(){
+            $("[data-toggle=tooltip]").tooltip();
+
+            $("[data-toggle=popover]").popover();
+        });
+        </script>
     {% endblock %}
     {% block extra_bottom %}{% endblock %}
 </body>
