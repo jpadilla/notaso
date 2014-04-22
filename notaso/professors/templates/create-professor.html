@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% block title %}Crea tu profesor | Notaso {% endblock %} {% block header %}
+{% extends 'base.html' %}
+{% block title %}Crea tu profesor | Notaso {% endblock %} 
+{% block header %}
 <div class="jumbotron heading-style">
     <div class="container">
         <div class="row">
@@ -9,7 +11,8 @@
         </div>
     </div>
 </div>
-{% endblock %} {% block content %}
+{% endblock %} 
+{% block content %}
 <div class="container">
     <div class="row">
         <div class="form-group">
@@ -86,7 +89,7 @@
                             <input type="checkbox" id="id_is_anonymous" if="collapseOne" name="is_anonymous">
                             <label for="id_is_anonymous">Enviar anónimamente</label>
                         </div>
-                        <span class="col-xs-12 rates">
+                        <div class="col-xs-12 rates">
                             <span class="col-md-6 col-xs-12">
                                 {% if form.responsibility.errors %}
                                     <div class = "alert alert-danger alert-dismissable">
@@ -193,11 +196,9 @@
                                     </label>
                                 </span>
                             </span>
-                            <div class="col-md-12">
-                            	<input class="btn btn-success btn-lg btn-block" type="submit" name="crear" value="Crear y Evaluar">
-                            </div>
-                    	</span>
-                	</span>
+                    	</span> 
+                	</div>
+                    <input class="btn btn-success btn-lg center-block col-xs-11 col-md-12" type="submit" name="crear" value="Crear y Evaluar">
                 </form>
                 </div>
             </div>
