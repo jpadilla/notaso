@@ -1,10 +1,8 @@
 from django.conf.urls import patterns, url
 
-from . import views
+from .views import SettingsView
 
 urlpatterns = patterns(
     '',
-    url(r'^signup/$', views.register, name='signup'),
-    url(r'^login/$', views.login, name='login'),
-    url(r'^logout/$', views.logout, name='logout'),
+    url(r'^settings/$', SettingsView.as_view(), name='settings'),
 )
