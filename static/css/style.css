@@ -482,3 +482,7 @@ input[type="radio"]{
 /* lg */
 @media (min-width: 1200px) {
 }
+/* Settings */
+.wrap-settings {
+    margin-top: 80px;
+}

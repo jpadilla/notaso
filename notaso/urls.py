@@ -13,6 +13,7 @@ urlpatterns = patterns(
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^accounts/', include('allauth.urls')),
+    url(r'^accounts/', include('notaso.users.urls')),
 
     url(r'^', include('notaso.home.urls', namespace='home')),
 

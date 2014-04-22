@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load users_extras %}
+{% block title %}Settings | Notaso{% endblock %}
+{% block content %}
+    <div class="container wrap-settings">
+        <div class="row">
+            <div class="col-sm-3">
+                {% if user.socialaccount_set.all %}
+                     <img src="{{ user|avatar_https:user.socialaccount_set.all.0.get_avatar_url }}" class="img-responsive img-thumbnail">
+                {% else %}
+                    <img src="{{ user|gravatar_url:user.email }}s=240" class="img-responsive img-thumbnail">
+                {% endif %}
+                <br>
+                <br>
+                <p class="text-muted">Para modificar tu foto de perfil debes hacerlo en <a href="http://gravatar.com">gravatar.com</a></p>
+            </div>
+            <div class="col-sm-9">
+                <h4>Editar Perfil</h4>
+                
+            </div>
+        </div>
+    </div>
+{% endblock content %}
