@@ -1,5 +1,7 @@
 from django.views.generic import FormView
 from django.core.urlresolvers import reverse
+from django.shortcuts import redirect
+from django.contrib import messages
 
 from braces.views import LoginRequiredMixin
 
@@ -13,7 +15,15 @@ class SettingsView(LoginRequiredMixin, FormView):
     def get_success_url(self):
         return reverse('settings')
 
-    def get_context_data(self, **kwargs):
-        if 'view' not in kwargs:
-            kwargs['view'] = self
-        return kwargs
+    def get_initial(self):
+        initial = {
+            'first_name': self.request.user.first_name,
+            'last_name': self.request.user.last_name,
+            'email': self.request.user.email,
+        }
+        return initial
+
+    def form_valid(self, form):
+        form.save_form(self.request.user)
+        messages.success(self.request, 'Perfil actualizado.')
+        return redirect(self.get_success_url())
