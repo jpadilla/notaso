@@ -23,9 +23,10 @@ class ProfessorView(FormMixin, DetailView):
         professor = get_object_or_404(
             Professor,
             slug=self.object.slug)
+            
         kwargs['user_rates'] = Comment.objects.filter(
-            created_by=self.request.user, professor=professor.id,
-            responsibility__gt=0).count()
+                created_by=self.request.user, professor=professor.id,
+                responsibility__gt=0).count()
         kwargs['specified_professor'] = professor
         kwargs['comments'] = Comment.objects.filter(
             professor=professor.id).exclude(
