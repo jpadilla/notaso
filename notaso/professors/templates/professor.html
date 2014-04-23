@@ -131,7 +131,8 @@
                                     <label for = "id_is_anonymous"> Enviar comentario anónimamente</label>
                                 </div>
                             </div>
-                            <div class = "col-md-12 col-md-offset-1 col-xs-12 rates">
+                            <div class = "col-md-12 col-md-offset-1 col-xs-12 rates" id="rates_form">
+                            {% if user_rates == 0%}
                                 <div class = "col-md-5 col-xs-12"><p>Responsabilidad</p>
                                     <span class = "btn-group btn-group-lg" data-toggle="buttons">
 
@@ -212,6 +213,9 @@
                                         </label>
                                     </span>
                                 </div>
+                                {% else %}
+                                    <p>Usted ya ha realizado una evaluacion de este profesor.</p>
+                                {% endif %}
                             </div>
                         </form>
                     </div>
@@ -234,6 +238,9 @@
             $(".showLess").click(function(){
                 $(this).parent().removeClass('show').addClass('hide').prev().removeClass('hide').addClass('show');
             });
+
+            $('#rates_form').attr('disabled', 'disabled');
+            $('#fieldId').removeAttr('disabled');
         });
     </script>
 {% endblock %}
