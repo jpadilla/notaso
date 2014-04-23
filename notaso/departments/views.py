@@ -19,12 +19,14 @@ class DepartmentView(TemplateView):
         professors = Professor.objects.filter(
             university=uni,
             department=department, score__gt=0)
+        all_professors = Professor.objects.filter(
+            university=uni, department=department)
         comments = Comment.objects.filter(professor__in=professors).exclude(
             body__exact='').order_by('-created_at', '-id')
 
         kwargs['university'] = uni
         kwargs['department'] = department
-        kwargs['professors'] = professors.order_by('first_name')
+        kwargs['professors'] = all_professors.order_by('first_name')
         kwargs['hi_professors'] = professors.order_by('score').reverse()[:5]
         kwargs['low_professors'] = professors.order_by('score')[:5]
         kwargs['recent_comments'] = comments[:5]
