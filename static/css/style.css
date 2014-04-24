@@ -309,7 +309,7 @@ li {
     padding-right: 0;
     padding-left: 0;
 }
-input[type="radio"]{
+span > label > input[type="radio"]{
     display:none;
 }
 #rate_dificulty input[type="radio"]:checked + label{
@@ -485,4 +485,10 @@ input[type="radio"]{
 /* Settings */
 .wrap-settings {
     margin-top: 80px;
+}
+.email-settings-wrapper {
+    margin-top: 80px;
+}
+.primary-email {
+    font-weight: 700;
 }

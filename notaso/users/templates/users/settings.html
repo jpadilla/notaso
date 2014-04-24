@@ -50,18 +50,6 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group  col-sm-12">
-                            {% if form.email.errors %}
-                                <div class = "alert alert-danger alert-dismissable">
-                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                    {{form.email.errors}}
-                                </div>
-                             {% endif %}
-                            <label for="id_email">Email:</label>
-                            <input id="id_email" class="form-control" name="email" type="email" value="{{ user.email }}">
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <input type="submit" class="btn btn-lg btn-primary" value="Guardar">

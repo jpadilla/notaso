@@ -13,14 +13,12 @@ urlpatterns = patterns(
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^accounts/', include('allauth.urls')),
-    url(r'^accounts/', include('notaso.users.urls')),
+    url(r'^accounts/', include('notaso.users.urls', namespace='users')),
 
     url(r'^', include('notaso.home.urls', namespace='home')),
 
     url(r'^universities/',
         include('notaso.universities.urls', namespace='universities')),
-
-    url(r'^', include('notaso.users.urls', namespace='users')),
 
     url(r'^professors/',
         include('notaso.professors.urls', namespace='professors')),
