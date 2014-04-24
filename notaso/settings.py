@@ -16,7 +16,7 @@ class Common(Configuration):
 
     ALLOWED_HOSTS = [
         'notaso.herokuapp.com',
-        'www.notaso.com'
+        'www.notaso.com',
         'notaso.com',
     ]
 
