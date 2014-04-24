@@ -13,7 +13,7 @@ class SettingsView(LoginRequiredMixin, FormView):
     form_class = SettingsForm
 
     def get_success_url(self):
-        return reverse('settings')
+        return reverse('users:settings')
 
     def get_initial(self):
         initial = {
