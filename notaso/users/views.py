@@ -15,11 +15,16 @@ class SettingsView(LoginRequiredMixin, FormView):
     def get_success_url(self):
         return reverse('users:settings')
 
+    def get_context_data(self, **kwargs):
+        if 'view' not in kwargs:
+            kwargs['view'] = self
+        print dir(self.request.user.socialaccount_set.get)
+        return kwargs
+
     def get_initial(self):
         initial = {
             'first_name': self.request.user.first_name,
             'last_name': self.request.user.last_name,
-            'email': self.request.user.email,
         }
         return initial
 

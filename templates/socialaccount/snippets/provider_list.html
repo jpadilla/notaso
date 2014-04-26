@@ -12,8 +12,8 @@
 {% endfor %}
 {% endif %}
 <li>
-  <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}" 
-     href="{% provider_login_url provider.id process=process %}">{{provider.name}}</a>
+  <a title="{{provider.name}}" class="login-social button {{provider.id}}" style="margin: 0 10px;"
+     href="{% provider_login_url provider.id process=process %}">{{provider.name}}
+    </a>
 </li>
 {% endfor %}
-
