@@ -47,7 +47,7 @@
                 <div class = "navbar-right">
                     <ul class="nav navbar-nav">
                         {% if user.is_authenticated %}
-                        <li><a href="{% url 'professors:create_professor' %}">Crear Profesor</a>
+                        <li><a href="{% url 'professors:create_professor' %}">Añadir Profesor</a>
                         </li>
                         {% endif %}
                         <li><a href="{% url 'universities:universities' %}">Universidades</a>
