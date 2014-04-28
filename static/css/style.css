@@ -469,6 +469,22 @@ span > label > input[type="radio"]{
     .history-graph img{
         width: 100%;
     }
+    #add-professor{
+        font-size: 24px;
+    }
+    .search input.search-text:focus{
+        background-color: white;
+        width:100%;
+        border-color: #66afe9;
+    }
+    .footerIcons {
+        font-size: 26px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
 }
 
 /* sm */
