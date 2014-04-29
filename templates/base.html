@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://notaso.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Notaso{% endblock %}</title>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -13,8 +14,14 @@
     <link rel="stylesheet" href="{% static "css/bootstrap.min.css"%}">
     <link rel="shortcut icon" type="image/png" href="{%static "img/favicon.ico"%}"/>
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css"%}">
+    <meta property="og: site_name" content="Notaso"/>
+    <meta property="og:type" content="blog"/>
 
-    {% block extra_head %}{% endblock %}
+    {% block extra_head %}
+        <meta property="og: title" content="Notaso"/>
+        <meta property="og: image" content=""{% static "img/notaso-200x37.png" %}""/>
+        <meta property="og: url" content="https://notaso.com"/>
+    {% endblock %}
 
     <!-- Google Analytics -->
     <script>
