@@ -16,10 +16,11 @@
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css"%}">
     <meta property="og: site_name" content="Notaso"/>
     <meta property="og:type" content="blog"/>
+    <meta property="og:description" content="Ayuda a tus compañeros a elegir los mejores profesores. Comenta tu experiencia, evalua a tu profesor y si no lo encuentras añádelo."/>
 
     {% block extra_head %}
         <meta property="og: title" content="Notaso"/>
-        <meta property="og: image" content=""{% static "img/notaso-200x37.png" %}""/>
+        <meta property="og: image" content="{% static "img/notaso-200x37.png" %}"/>
         <meta property="og: url" content="https://notaso.com"/>
     {% endblock %}
 
