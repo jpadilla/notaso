@@ -48,11 +48,11 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img id = "brand_image" class="img-responsive" alt="Responsive image" src="{% static "img/notaso-200x37.png" %}"/></a>
+                <a class="navbar-brand" href="/"><img id="brand_image" class="img-responsive" alt="Responsive image" src="{% static "img/notaso-200x37.png" %}"/></a>
             </div>
 
-            <div class="collapse navbar-collapse" id = "myNavbar">
-                <div class = "navbar-right">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <div class="navbar-right">
                     <ul class="nav navbar-nav">
                         {% if user.is_authenticated %}
                         <li><a href="{% url 'professors:create_professor' %}">Añadir Profesor</a>
@@ -85,18 +85,18 @@
                         </ul>
                     {% else %}
                         <ul class="nav navbar-nav navbar-form navbar-right">
-                            <a href="/accounts/login" class="btn btn-primary" id = "loginBtn" >Login</a>
-                            <a href="/accounts/signup" class="btn btn-default" id = "signUpBtn">Registrarse</a>
+                            <a href="/accounts/login" class="btn btn-primary" id="loginBtn" >Login</a>
+                            <a href="/accounts/signup" class="btn btn-default" id="signUpBtn">Registrarse</a>
                         </ul>
                     {% endif %}
                 </div>
                 {% if navbarSearchShow != True %}
-                    <div class = "search navbar-right">
-                        <form action = "/search" class="navbar-form navbar-left" role="form" method = "GET">
+                    <div class="search navbar-right">
+                        <form action="/search" class="navbar-form navbar-left" role="form" method="GET">
                             <div class="form-group">
-                                <input class="search-text form-control box-shadow" type="text" placeholder="Busca un profesor" name = "q" value = "{{search_term}}"/>
+                                <input class="search-text form-control box-shadow" type="text" placeholder="Busca un profesor" name="q" value="{{search_term}}"/>
                             </div>
-                            <button type="submit" class="btn btn-info" id = "btnSearch">Buscar</button>
+                            <button type="submit" class="btn btn-info" id="btnSearch">Buscar</button>
                         </form>
                     </div>
                 {% endif %}
@@ -109,24 +109,24 @@
     {% block extra_body %}
     {% endblock %}
     {% block footer %}
-        <div class = "container">
+        <div class="container">
             <div class="awesome-shadow"></div>
-            <div class = "row">
-                <div class = "col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
                     <a href="https://www.facebook.com/notaso">
-                        <i class = "footerIcons fa fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></i>
+                        <i class="footerIcons fa fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></i>
                     </a>
                     <a href="https://twitter.com/notaso">
-                        <i class = "footerIcons fa fa-twitter" data-toggle="tooltip" data-placement="top" title="Twitter"></i>
+                        <i class="footerIcons fa fa-twitter" data-toggle="tooltip" data-placement="top" title="Twitter"></i>
                     </a>
                     <a href="https://github.com/jpadilla/notaso">
-                        <i class = "footerIcons fa fa-github" data-toggle="tooltip" data-placement="top" title="GitHub"></i>
+                        <i class="footerIcons fa fa-github" data-toggle="tooltip" data-placement="top" title="GitHub"></i>
                     </a>
                     <a href="/legal/">
-                        <i class = "footerIcons fa fa-legal" data-toggle="tooltip" data-placement="top" title="Legal"></i>
+                        <i class="footerIcons fa fa-legal" data-toggle="tooltip" data-placement="top" title="Legal"></i>
                     </a>
                     <a href="#">
-                        <i class = "footerIcons fa fa-question" data-toggle="tooltip" data-placement="top" title="Preguntas"></i>
+                        <i class="footerIcons fa fa-question" data-toggle="tooltip" data-placement="top" title="Preguntas"></i>
                     </a>
                 </div>
             </div>
