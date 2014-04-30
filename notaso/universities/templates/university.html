@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% load department_extras %}
 {% load users_extras %}
+{% block extra_head %}
+    <meta property="og:title" content="Notaso | {{specified_university.name}}, {{specified_university.city}}"/>
+    <meta property="og:url" content="https://notaso.com/universities/{{specified_university.slug}}"/>
+{% endblock %}
 {% block header %}
 <div class="jumbotron heading-style">
     <div class="container">
