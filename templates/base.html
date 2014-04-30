@@ -72,7 +72,14 @@
                                     {{ user.first_name }} {{ user.last_name }}<b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="/accounts/logout">Logout</a></li>
+                                    <li>
+                                        <a href="{% url 'users:settings' %}">
+                                        <span class="glyphicon glyphicon-cog"> </span> Configuracion</a>
+                                    </li>
+                                    <li>
+                                        <a href="/accounts/logout">
+                                        <span class="glyphicon glyphicon-log-out"> </span> Logout</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>

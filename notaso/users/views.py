@@ -18,7 +18,6 @@ class SettingsView(LoginRequiredMixin, FormView):
     def get_context_data(self, **kwargs):
         if 'view' not in kwargs:
             kwargs['view'] = self
-        print dir(self.request.user.socialaccount_set.get)
         return kwargs
 
     def get_initial(self):
