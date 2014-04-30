@@ -2,6 +2,10 @@
 {% load static %}
 {% load users_extras %}
 {% load graph_creation %}
+{% block extra_head %}
+    <meta property="og:title" content="Notaso | {{specified_professor.first_name|capfirst}} {{specified_professor.last_name|capfirst}}"/>
+    <meta property="og:url" content="https://notaso.com/professors/{{specified_professor.slug}}"/>
+{% endblock %}
 {% block title %}
     {{specified_professor.first_name|capfirst}} {{specified_professor.last_name|capfirst}} | Notaso
 {% endblock %}
