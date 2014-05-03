@@ -57,6 +57,7 @@ class AddCommentForm(forms.ModelForm):
                 if data.get(field):
                     rating_set = True
 
+            for field in fields:
                 if rating_set:
                     self.fields[field].required = True
                     self.fields['body'].required = False
