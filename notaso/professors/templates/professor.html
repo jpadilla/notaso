@@ -60,11 +60,11 @@
                     <h4>Detalles:</h4>
                     <div class="professor-details">
                         <span class="glyphicon glyphicon-comment"></span>
-                        <span class="count">{{comments.count}} Comentarios</span>
+                        <span class="count">{{ paginator.count }} Comentario{{ paginator.count|pluralize }}</span>
                     </div>
                     <div class="professor-details">
                         <span class="glyphicon glyphicon-check"></span>
-                        <span class="count">{{rates}} Evaluaciones</span>
+                        <span class="count">{{rates}} Evaluacion{{ rates|pluralize:"es" }}</span>
                     </div>
                     <div class="grade{{responsability}}sml professor-details">
                         <p>Responsabilidad</p>
@@ -86,39 +86,67 @@
 <div class="display-reactions container">
     <div class="row">
         <div class = "col-md-8 col-md-offset-2">
-            <h2>Comentarios</h2>
+            <h2 id="comment-header">Comentario{{ comments|pluralize}}</h2>
             <hr>
-            {% for c in comments %}
-                {% if c.created_by.socialaccount_set.all and not c.is_anonymous %}
-                    <div class = "col-md-1">
-                        <img src="{{ c.created_by|avatar_https:c.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35">
-                    </div>
-                    <span class = "created-by">
-                        <h4 class = "submited-by">{{ c.created_by.first_name|capfirst }} {{ c.created_by.last_name|capfirst }}</h4>
-                    </span>
-                {% elif c.is_anonymous %}
-                    <div class = "col-md-1">
-                        <img src="{{ c.created_by|gravatar_url:"retro" }}" width="35" height="35" class="pull-left">
-                    </div>
-                    <h4 class = "submited-by">Anónimo</h4>
-                {% else %}
-                    <div class = "col-md-1">
-                        <img src="{{ c.created_by|gravatar_url:c.created_by.email }}" width="35" height="35" class="pull-left">
-                    </div>
-                    <span class = "created-by">
-                        <h4 class = "submited-by">{{ c.created_by.first_name }} {{c.created_by.last_name}}</h4>
-                    </span>
-                {% endif %}
+            <div id="comment-section">
+                {% for c in comments %}
+                    {% if c.created_by.socialaccount_set.all and not c.is_anonymous %}
+                        <div class = "col-md-1">
+                            <img src="{{ c.created_by|avatar_https:c.created_by.socialaccount_set.all.0.get_avatar_url }}" width="35" height="35">
+                        </div>
+                        <span class = "created-by">
+                            <h4 class = "submited-by">{{ c.created_by.first_name|capfirst }} {{ c.created_by.last_name|capfirst }}</h4>
+                        </span>
+                    {% elif c.is_anonymous %}
+                        <div class = "col-md-1">
+                            <img src="{{ c.created_by|gravatar_url:"retro" }}" width="35" height="35" class="pull-left">
+                        </div>
+                        <h4 class = "submited-by">Anónimo</h4>
+                    {% else %}
+                        <div class = "col-md-1">
+                            <img src="{{ c.created_by|gravatar_url:c.created_by.email }}" width="35" height="35" class="pull-left">
+                        </div>
+                        <span class = "created-by">
+                            <h4 class = "submited-by">{{ c.created_by.first_name }} {{c.created_by.last_name}}</h4>
+                        </span>
+                    {% endif %}
 
-                <p>{{ c.created_at }}</p>
-                {% if c.body|length >= 1000 %}
-                    <p class="show">{{ c.body|truncatechars:1000 }} <a class="showMore">leer más</a></p>
-                    <p class="hide">{{ c.body }} <a class="showLess">leer menos</a></p>
-                {% else %}
-                    <p>{{ c.body }}</p>
-                {% endif%}
-                <hr>
-            {% endfor %}
+                    <p>{{ c.created_at }}</p>
+                    {% if c.body|length >= 1000 %}
+                        <p class="show">{{ c.body|truncatechars:1000 }} <a class="showMore cursor-pointer">leer más</a></p>
+                        <p class="hide">{{ c.body }} <a class="showLess cursor-pointer">leer menos</a></p>
+                    {% else %}
+                        <p>{{ c.body }}</p>
+                    {% endif%}
+                    <hr>
+                {% endfor %}
+
+                {% if comments.has_other_pages %}
+                    <p>{{ comments.end_index }} de {{ paginator.count }} comentarios.</p>
+                    <div class="text-center">
+                        <ul class="pagination">
+                            {% if comments.previous_page_number|add:"-1" >= 1 %}
+                                <li><a onclick="commentAjax({{ comments.previous_page_number|add:"-1" }});">{{ comments.previous_page_number|add:"-1" }}</a></li>
+                            {% endif %}
+
+                            {% if comments.has_previous %}
+                                <li><a onclick="commentAjax({{ comments.previous_page_number }});">{{ comments.previous_page_number }}</a></li>
+                            {% endif %}
+
+                            <li class="active"><a>{{ comments.number }}</a></li>
+
+                            {% if comments.has_next %}
+                                <li><a onclick="commentAjax({{ comments.next_page_number }});">{{ comments.next_page_number }}</a></li>
+                            {% endif %}
+
+
+                            {% if comments.next_page_number|add:"1" <= paginator.num_pages %}
+                                <li><a onclick="commentAjax({{ comments.next_page_number|add:"1" }});">{{ comments.next_page_number|add:"1" }}</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                {% endif %}
+            </div>
 
             {% if user.is_authenticated %}
                 <div id = "comment">
@@ -246,5 +274,26 @@
             $('#rates_form').attr('disabled', 'disabled');
             $('#fieldId').removeAttr('disabled');
         });
+
+        function commentAjax(page){
+            $.ajax({
+                type: 'GET',
+                data: {'page': page},
+            })
+            .done(function(data) {
+                var comments = $(data).find('#comment-section').html()
+                $("#comment-section").html(comments);
+                $('html, body').animate({
+                    scrollTop: $("#comment-header").offset().top - 60
+                }, 300);
+            })
+            .fail(function() {
+                console.log("error");
+            })
+            .always(function() {
+                console.log("complete");
+            });
+        }
+        
     </script>
 {% endblock %}

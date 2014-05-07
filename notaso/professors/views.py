@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404, redirect
 from django.views.generic import DetailView, FormView
 from django.views.generic.edit import FormMixin
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from braces.views import LoginRequiredMixin
 
@@ -8,7 +9,6 @@ from ..comments.forms import AddCommentForm
 from ..comments.models import Comment
 from .models import Professor
 from .forms import AddProfessorForm
-
 
 class ProfessorView(FormMixin, DetailView):
     model = Professor
@@ -24,15 +24,29 @@ class ProfessorView(FormMixin, DetailView):
             Professor,
             slug=self.object.slug)
 
+        comments_list = Comment.objects.filter(
+            professor=professor.id).exclude(
+            body__exact='').order_by('-created_at', '-id')
+        paginator = Paginator(comments_list, 10)
+
+        page = self.request.GET.get('page')
+        try:
+            comments = paginator.page(page)
+        except PageNotAnInteger:
+            comments = paginator.page(1)
+        except EmptyPage:
+            comments = paginator.page(paginator.num_pages)
+
+        print comments
+
         print self.request.user.id
         kwargs['user_rates'] = Comment.objects.filter(
             created_by=self.request.user.id, professor=professor,
             responsibility__gt=0).count()
 
         kwargs['specified_professor'] = professor
-        kwargs['comments'] = Comment.objects.filter(
-            professor=professor.id).exclude(
-            body__exact='').order_by('-created_at', '-id')
+        kwargs['comments'] = comments
+        kwargs['paginator'] = paginator
         kwargs['rates'] = Comment.objects.filter(
             professor=professor.id, responsibility__gt=0).count()
         kwargs['grade'] = professor.get_grade()
