@@ -2,6 +2,8 @@ from django.db import models
 from django.conf import settings
 
 from autoslug import AutoSlugField
+from djorm_pgfulltext.models import SearchManager
+from djorm_pgfulltext.fields import VectorField
 
 
 def populate_professor_slug(instance):
@@ -29,6 +31,15 @@ class Professor(models.Model):
     personality = models.FloatField(editable=False, default=0)
     workload = models.FloatField(editable=False, default=0)
     difficulty = models.FloatField(editable=False, default=0)
+
+    search_index = VectorField()
+
+    objects = SearchManager(
+        fields=('first_name', 'last_name'),
+        config = 'pg_catalog.spanish',
+        search_field = 'search_index',
+        auto_update_search_field = True
+    )
 
     def __unicode__(self):
         return u'%s %s' % (self.first_name, self.last_name)

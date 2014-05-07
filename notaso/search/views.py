@@ -22,13 +22,8 @@ class SearchView(ListView):
         search_term = self.request.GET.get('q')
 
         if search_term:
-            qs = Professor.objects.all()
             for term in search_term.split():
-                qs = qs.filter(
-                    Q(first_name__istartswith=term) |
-                    Q(first_name__icontains=term) |
-                    Q(last_name__istartswith=term) |
-                    Q(last_name__icontains=term))
+                qs = Professor.objects.search(term, raw=True)
             return qs
 
         return queryset[:10]
