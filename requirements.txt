@@ -30,3 +30,4 @@ six==1.6.1
 sqlparse==0.1.11
 tablib==0.9.11
 wsgiref==0.1.2
+raven>=3

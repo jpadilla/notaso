@@ -42,6 +42,7 @@ class Common(Configuration):
         'allauth.socialaccount.providers.twitter',
         'djangosecure',
         'import_export',
+        'raven.contrib.django.raven_compat',
 
         # Apps
         'notaso.home',
