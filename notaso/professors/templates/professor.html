@@ -88,6 +88,7 @@
         <div class = "col-md-8 col-md-offset-2">
             <h2 id="comment-header">Comentario{{ comments|pluralize}}</h2>
             <hr>
+
             <div id="comment-section">
                 {% for c in comments %}
                     {% if c.created_by.socialaccount_set.all and not c.is_anonymous %}
@@ -125,23 +126,30 @@
                     <p>{{ comments.end_index }} de {{ paginator.count }} comentarios.</p>
                     <div class="text-center">
                         <ul class="pagination">
+                            {% if comments.previous_page_number >= 1 %}
+                                <li><a class="pagination-click" data-page="{{ comments.previous_page_number }}">&laquo;</a></li>
+                            {% endif %}
+
                             {% if comments.previous_page_number|add:"-1" >= 1 %}
-                                <li><a onclick="commentAjax({{ comments.previous_page_number|add:"-1" }});">{{ comments.previous_page_number|add:"-1" }}</a></li>
+                                <li><a class="pagination-click" data-page="{{ comments.previous_page_number|add:"-1" }}">{{ comments.previous_page_number|add:"-1" }}</a></li>
                             {% endif %}
 
                             {% if comments.has_previous %}
-                                <li><a onclick="commentAjax({{ comments.previous_page_number }});">{{ comments.previous_page_number }}</a></li>
+                                <li><a class="pagination-click" data-page="{{ comments.previous_page_number }}">{{ comments.previous_page_number }}</a></li>
                             {% endif %}
 
                             <li class="active"><a>{{ comments.number }}</a></li>
 
                             {% if comments.has_next %}
-                                <li><a onclick="commentAjax({{ comments.next_page_number }});">{{ comments.next_page_number }}</a></li>
+                                <li><a class="pagination-click" data-page="{{ comments.next_page_number }}">{{ comments.next_page_number }}</a></li>
                             {% endif %}
 
-
                             {% if comments.next_page_number|add:"1" <= paginator.num_pages %}
-                                <li><a onclick="commentAjax({{ comments.next_page_number|add:"1" }});">{{ comments.next_page_number|add:"1" }}</a></li>
+                                <li><a class="pagination-click" data-page="{{ comments.next_page_number|add:"1" }}">{{ comments.next_page_number|add:"1" }}</a></li>
+                            {% endif %}
+
+                            {% if comments.next_page_number <= paginator.num_pages %}
+                                <li><a class="pagination-click" data-page="{{ comments.next_page_number }}">&raquo;</a></li>
                             {% endif %}
                         </ul>
                     </div>
@@ -273,27 +281,30 @@
 
             $('#rates_form').attr('disabled', 'disabled');
             $('#fieldId').removeAttr('disabled');
-        });
 
-        function commentAjax(page){
-            $.ajax({
-                type: 'GET',
-                data: {'page': page},
-            })
-            .done(function(data) {
-                var comments = $(data).find('#comment-section').html()
-                $("#comment-section").html(comments);
-                $('html, body').animate({
-                    scrollTop: $("#comment-header").offset().top - 60
-                }, 300);
-            })
-            .fail(function() {
-                console.log("error");
-            })
-            .always(function() {
-                console.log("complete");
-            });
-        }
-        
+            $(".pagination-click").click(commentAjax);
+
+            function commentAjax(){
+                var page = $(this).data('page');
+                $.ajax({
+                    type: 'GET',
+                    data: {'page': page},
+                })
+                .done(function(data) {
+                    var comments = $(data).find('#comment-section').html()
+                    $("#comment-section").html(comments);
+                    $('html, body').animate({
+                        scrollTop: $("#comment-header").offset().top - 60
+                    }, 500);
+                    $('.pagination-click').bind('click', commentAjax);
+                })
+                .fail(function() {
+                    console.log("error");
+                })
+                .always(function() {
+                    console.log("complete");
+                });
+            };
+        });
     </script>
 {% endblock %}

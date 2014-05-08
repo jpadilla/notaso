@@ -37,9 +37,6 @@ class ProfessorView(FormMixin, DetailView):
         except EmptyPage:
             comments = paginator.page(paginator.num_pages)
 
-        print comments
-
-        print self.request.user.id
         kwargs['user_rates'] = Comment.objects.filter(
             created_by=self.request.user.id, professor=professor,
             responsibility__gt=0).count()
