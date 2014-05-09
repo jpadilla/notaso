@@ -36,9 +36,9 @@ class Professor(models.Model):
 
     objects = SearchManager(
         fields=('first_name', 'last_name'),
-        config = 'pg_catalog.spanish',
-        search_field = 'search_index',
-        auto_update_search_field = True
+        config='pg_catalog.spanish',
+        search_field='search_index',
+        auto_update_search_field=True
     )
 
     def __unicode__(self):
