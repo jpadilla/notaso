@@ -1,4 +1,4 @@
-Django==1.6.3
+Django==1.6.5
 GChartWrapper==0.8
 South==0.8.4
 Werkzeug==0.9.4
