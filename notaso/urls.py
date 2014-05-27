@@ -2,8 +2,6 @@ from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView
 
 from django.contrib import admin
-
-
 admin.autodiscover()
 
 urlpatterns = patterns(
@@ -28,5 +26,11 @@ urlpatterns = patterns(
     # Static pages
 
     url(r'^legal/$', TemplateView.as_view(
-        template_name='static/legal.html'), name='legal')
+        template_name='static/legal.html'), name='legal'),
+
+    # Rest api
+    url(r'^api/', include('notaso.restapi.urls')),
+
+    # Rest api Doc
+    url(r'^docs/', include('rest_framework_swagger.urls')),
 )

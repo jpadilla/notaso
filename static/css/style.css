@@ -522,3 +522,6 @@ span > label > input[type="radio"]{
 .alert-error .alert-link {
   color: #843534;
 }
+.cursor-pointer, .pagination > li{
+    cursor: pointer;
+}
