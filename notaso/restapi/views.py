@@ -171,9 +171,8 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
                         'professors_count': query.count(university_id),
                         'rates': query.get_grade(university_id)}
                 else:
-                    query.extra_info =
-                    {'info': 'No extra information in this' +
-                     'university department.'}
+                    query.extra_info = {'info': 'No extra information' +
+                                        'in this university department.'}
         else:
             for i, query in enumerate(queryset):
                 query.extra_info = {}
@@ -204,9 +203,8 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
                     'professors_count': department.count(university_id),
                     'rates': department.get_grade(university_id)}
             else:
-                department.extra_info =
-                {'info': 'No extra information in this' +
-                 'university department.'}
+                department.extra_info = {'info': 'No extra information' +
+                                         'in this university department.'}
         else:
             department.extra_info = {}
         serializer = serializers.DepartmentSerializer(
