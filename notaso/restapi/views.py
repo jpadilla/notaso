@@ -137,8 +137,11 @@ class ProfessorViewSet(viewsets.ReadOnlyModelViewSet):
                             'personality': comment.personality,
                             'workload': comment.workload}
                     values.insert(i, data)
-            professor.user_comments = {'total_comments': len(comments),
-                                       'entries': values}
+                professor.user_comments = {'total_comments': len(comments),
+                                           'entries': values}
+            else:
+                professor.user_comments = {'total_comments': len(comments),
+                                           'info': 'No comments values.'}
         serializer = serializers.ProfessorRetrieveSerializer(professor)
         return Response(serializer.data)
 
@@ -165,7 +168,7 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
             for i, query in enumerate(queryset):
                 if query.count(university_id) is not 0:
                     query.extra_info = {
-                        'university': university_id,
+                        'university_id': university_id,
                         'professors_count': query.count(university_id),
                         'rates': query.get_grade(university_id)}
                 else:
