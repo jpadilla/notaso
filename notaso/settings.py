@@ -43,6 +43,8 @@ class Common(Configuration):
         'djangosecure',
         'import_export',
         'raven.contrib.django.raven_compat',
+        'rest_framework',
+        'rest_framework_swagger',
 
         # Apps
         'notaso.home',
@@ -63,6 +65,36 @@ class Common(Configuration):
         'django.contrib.messages.middleware.MessageMiddleware',
         'django.middleware.clickjacking.XFrameOptionsMiddleware',
     )
+
+    # Rest Framework Settings
+    REST_FRAMEWORK = {
+        'DEFAULT_MODEL_SERIALIZER_CLASS':
+        'rest_framework.serializers.HyperlinkedModelSerializer',
+
+        # 'DEFAULT_PERMISSION_CLASSES': (
+        #     'rest_framework.permissions.IsAuthenticated',
+        # ),
+        'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.AllowAny',
+        )
+    }
+
+    # Swagger Rest Framework Doc Settings
+    SWAGGER_SETTINGS = {
+        "exclude_namespaces": [],
+        "api_version": '0.1',
+        "api_path": "/",
+        "enabled_methods": [
+            'get',
+            # 'post',
+            # 'put',
+            # 'patch',
+            # 'delete'
+        ],
+        "api_key": '',
+        "is_authenticated": False,
+        "is_superuser": False,
+    }
 
     ROOT_URLCONF = 'notaso.urls'
 
