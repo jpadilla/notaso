@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import get_object_or_404
 
 from ..departments.models import Department
 from ..professors.models import Professor
@@ -15,19 +15,23 @@ from notaso.restapi import serializers
 
 # Rest Api University ViewSet
 class UniversityViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = University.objects.all()
+    queryset = University.objects.all().order_by('-emblem')
     serializer_class = serializers.UniversityListSerializer
 
-    def list(self, request):
+    def list(self, request, *args, **kwargs):
         '''
         Get list of all the universities in notaso.
         '''
-        queryset = University.objects.all().order_by('-emblem')
-        for university in queryset:
+        for university in self.queryset:
             university.grade = university.get_grade()
             university.professors_count = university.count()
-        serializer = serializers.UniversityListSerializer(
-            queryset, context={'request': request}, many=True)
+
+        # Switch between paginated or standard style responses
+        page = self.paginate_queryset(self.queryset)
+        if page is not None:
+            serializer = self.get_pagination_serializer(page)
+        else:
+            serializer = self.get_serializer(self.queryset, many=True)
         return Response(serializer.data)
 
     def retrieve(self, request, pk=None):
@@ -86,15 +90,6 @@ class ProfessorViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Professor.objects.all()
     serializer_class = serializers.ProfessorListSerializer
 
-    def list(self, request):
-        '''
-        Get list of all the professors in notaso.
-        '''
-        professor = Professor.objects.all()
-        serializer = serializers.ProfessorListSerializer(
-            professor, context={'request': request}, many=True)
-        return Response(serializer.data)
-
     def retrieve(self, request, pk=None):
         '''
         Retrieve a professor by id.
@@ -147,7 +142,7 @@ class ProfessorViewSet(viewsets.ReadOnlyModelViewSet):
 
 # Rest Api Department ViewSet
 class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Department.objects.all().order_by('first_name', 'last_name')
+    queryset = Department.objects.all()
     serializer_class = serializers.DepartmentSerializer
 
     def list(self, request):
@@ -161,10 +156,9 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
         Example of how to use it:
         - www.notaso.com/api/universities/?university_id=1
         '''
-        queryset = Department.objects.all()
         if request.GET.get('university_id'):
             university_id = request.GET.get('university_id')
-            for i, query in enumerate(queryset):
+            for i, query in enumerate(self.queryset):
                 if query.count(university_id) is not 0:
                     query.extra_info = {
                         'university_id': university_id,
@@ -174,11 +168,15 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
                     query.extra_info = {'info': 'No extra information' +
                                         'in this university department.'}
         else:
-            for i, query in enumerate(queryset):
+            for i, query in enumerate(self.queryset):
                 query.extra_info = {}
 
-        serializer = serializers.DepartmentSerializer(
-            queryset, context={'request': request}, many=True)
+        # Switch between paginated or standard style responses
+        page = self.paginate_queryset(self.queryset)
+        if page is not None:
+            serializer = self.get_pagination_serializer(page)
+        else:
+            serializer = self.get_serializer(self.queryset, many=True)
         return Response(serializer.data)
 
     def retrieve(self, request, pk=None):
