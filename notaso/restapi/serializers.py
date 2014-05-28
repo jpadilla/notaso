@@ -1,9 +1,7 @@
-from django.forms import widgets
 from rest_framework import serializers
 
 from ..professors.models import Professor
 from ..universities.models import University
-from ..comments.models import Comment
 from ..departments.models import Department
 
 

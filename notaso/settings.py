@@ -76,7 +76,8 @@ class Common(Configuration):
         # ),
         'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
-        )
+        ),
+        'PAGINATE_BY': 25,
     }
 
     # Swagger Rest Framework Doc Settings
