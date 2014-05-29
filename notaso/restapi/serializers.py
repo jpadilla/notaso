@@ -77,4 +77,4 @@ class SearchSerializer(serializers.ModelSerializer):
     class Meta:
         model = Professor
         fields = ('id', 'first_name', 'last_name', 'gender', 'university_name',
-                  'department_name', 'slug')
+                  'department_name', 'score', 'slug')
