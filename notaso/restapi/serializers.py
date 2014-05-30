@@ -7,8 +7,8 @@ from ..departments.models import Department
 
 # University Serializers
 class UniversityListSerializer(serializers.HyperlinkedModelSerializer):
-    grade = serializers.Field(source='grade')
-    professors_count = serializers.Field(source='professors_count')
+    grade = serializers.Field(source='get_grade')
+    professors_count = serializers.Field(source='count')
 
     class Meta:
         model = University
