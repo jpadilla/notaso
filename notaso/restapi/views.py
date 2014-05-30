@@ -18,22 +18,6 @@ class UniversityViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = University.objects.all().order_by('-emblem')
     serializer_class = serializers.UniversityListSerializer
 
-    def list(self, request, *args, **kwargs):
-        '''
-        Get list of all the universities in notaso.
-        '''
-        for university in self.queryset:
-            university.grade = university.get_grade()
-            university.professors_count = university.count()
-
-        # Switch between paginated or standard style responses
-        page = self.paginate_queryset(self.queryset)
-        if page is not None:
-            serializer = self.get_pagination_serializer(page)
-        else:
-            serializer = self.get_serializer(self.queryset, many=True)
-        return Response(serializer.data)
-
     def retrieve(self, request, pk=None):
         '''
         Retrieve a university by id.
@@ -225,17 +209,18 @@ class SearchViewSet(viewsets.ReadOnlyModelViewSet):
         Example of how to use it:
         - www.notaso.com/api/search?q={keyword}
         '''
-        queryset = Professor.objects.all().order_by('first_name', 'last_name')
         search_term = request.GET.get('q')
         if search_term:
             print search_term
             for term in search_term.split():
                 qs = Professor.objects.search(term, raw=True)
-                serializer = serializers.SearchSerializer(
-                    qs, context={'request': request}, many=True)
-            return Response(serializer.data)
         else:
-            queryset[:10]
-            serializer = serializers.SearchSerializer(
-                queryset, context={'request': request}, many=True)
-            return Response(serializer.data)
+            qs = self.queryset[:10]
+
+        # Switch between paginated or standard style responses
+        page = self.paginate_queryset(qs)
+        if page is not None:
+            serializer = self.get_pagination_serializer(page)
+        else:
+            serializer = self.get_serializer(self.queryset, many=True)
+        return Response(serializer.data)
