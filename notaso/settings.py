@@ -80,6 +80,11 @@ class Common(Configuration):
         'rest_framework.permissions.AllowAny',
         ),
         'PAGINATE_BY': 25,
+
+        'DEFAULT_RENDERER_CLASSES': (
+            'rest_framework.renderers.UnicodeJSONRenderer',
+            'rest_framework.renderers.BrowsableAPIRenderer',
+        )
     }
 
     # Swagger Rest Framework Doc Settings
