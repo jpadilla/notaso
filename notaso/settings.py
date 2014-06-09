@@ -45,6 +45,7 @@ class Common(Configuration):
         'raven.contrib.django.raven_compat',
         'rest_framework',
         'rest_framework_swagger',
+        'corsheaders',
 
         # Apps
         'notaso.home',
@@ -59,6 +60,7 @@ class Common(Configuration):
     MIDDLEWARE_CLASSES = (
         'djangosecure.middleware.SecurityMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware',
+        'corsheaders.middleware.CorsMiddleware',
         'django.middleware.common.CommonMiddleware',
         'django.middleware.csrf.CsrfViewMiddleware',
         'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -183,6 +185,9 @@ class Common(Configuration):
 
     CAMO_URL = values.Value(environ_prefix=None)
     CAMO_KEY = values.Value(environ_prefix=None)
+
+    # CORS settings
+    CORS_ORIGIN_ALLOW_ALL = False
 
 
 class Development(Common):
