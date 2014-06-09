@@ -102,7 +102,7 @@
                 <a href="{% url 'professors:specified_professor' p.slug %}">
 	        	  <div class="professor-slip clearfix">
 	            	  <span class="grade{{p.get_grade}}lrg pull-left"></span>
-	            	  <p class="pull-left"><b>{{ p.get_full_name }}</b></p>
+	            	  <p class="pull-left"><b>{{ p.get_full_name|truncatechars:27 }}</b></p>
 	               </div>
                 </a>
 	        </div>
