@@ -211,7 +211,6 @@ class SearchViewSet(viewsets.ReadOnlyModelViewSet):
         '''
         search_term = request.GET.get('q')
         if search_term:
-            print search_term
             for term in search_term.split():
                 qs = Professor.objects.search(term, raw=True)
         else:
