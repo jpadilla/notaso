@@ -14,11 +14,11 @@ class Common(Configuration):
 
     TEMPLATE_DEBUG = values.BooleanValue(DEBUG)
 
-    ALLOWED_HOSTS = [
+    ALLOWED_HOSTS = values.ListValue([
         'notaso.herokuapp.com',
         'www.notaso.com',
         'notaso.com',
-    ]
+    ])
 
     # Application definition
     INSTALLED_APPS = (
