@@ -5,7 +5,7 @@ Werkzeug==0.9.4
 argparse==1.2.1
 boto==2.27.0
 camo-client==0.1.0
-diff-match-patch==20110725.1
+diff-match-patch==20121119
 dj-database-url==0.3.0
 django-allauth==0.19.0
 django-autoslug==1.7.2
@@ -15,7 +15,7 @@ django-cors-headers==0.12
 django-debug-toolbar==1.1
 django-dotenv==1.2
 django-extensions==1.5.0
-django-import-export==0.2.2
+django-import-export==0.2.6
 django-rest-swagger==0.1.14
 django-secure==1.0
 django-storages==1.1.8
@@ -33,5 +33,5 @@ requests==2.5.1
 requests-oauthlib==0.4.2
 six==1.9.0
 sqlparse==0.1.11
-tablib==0.9.11
+tablib==0.10.0
 wsgiref==0.1.2
