@@ -1,0 +1,15 @@
+db:
+  build: ./docker-db-setup
+  volumes:
+   - /var/lib/postgres
+web:
+  build: .
+  command: python manage.py runserver 0.0.0.0:8000
+  environment:
+   - DATABASE_URL=postgresql://postgres:postgres@db:5432/<notaso></notaso>
+  volumes:
+   - .:/app
+  ports:
+   - 8000:8000
+  links:
+   - db

@@ -40,9 +40,7 @@ class Common(Configuration):
         'allauth.socialaccount',
         'allauth.socialaccount.providers.facebook',
         'allauth.socialaccount.providers.twitter',
-        'djangosecure',
         'import_export',
-        'raven.contrib.django.raven_compat',
         'rest_framework',
         'rest_framework_swagger',
         'corsheaders',
@@ -214,6 +212,11 @@ class Development(Common):
 
 class Production(Common):
     DEBUG_TOOLBAR_PATCH_SETTINGS = False
+
+    INSTALLED_APPS = Common.INSTALLED_APPS + (
+        'djangosecure',
+        'raven.contrib.django.raven_compat',
+    )
 
     # django-secure settings
     PROTOCOL = 'https'
