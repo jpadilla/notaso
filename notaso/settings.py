@@ -14,11 +14,7 @@ class Common(Configuration):
 
     TEMPLATE_DEBUG = values.BooleanValue(DEBUG)
 
-    ALLOWED_HOSTS = values.ListValue([
-        'notaso.herokuapp.com',
-        'www.notaso.com',
-        'notaso.com',
-    ])
+    ALLOWED_HOSTS = ['*']
 
     # Application definition
     INSTALLED_APPS = (
@@ -192,6 +188,8 @@ class Common(Configuration):
     # CORS settings
     CORS_ORIGIN_ALLOW_ALL = False
 
+    DEBUG_TOOLBAR_PATCH_SETTINGS = values.BooleanValue(False)
+
 
 class Development(Common):
     DEBUG = True
@@ -211,8 +209,6 @@ class Development(Common):
 
 
 class Production(Common):
-    DEBUG_TOOLBAR_PATCH_SETTINGS = False
-
     INSTALLED_APPS = Common.INSTALLED_APPS + (
         'djangosecure',
         'raven.contrib.django.raven_compat',
