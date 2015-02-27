@@ -5,26 +5,21 @@ db:
 app:
   build: .
   command: gunicorn -b "0.0.0.0:8000" -w 3 notaso.wsgi 
-  environment:
-   - SECRET_KEY=$(/dev/urandom | tr -dc 'a-zA-Z0-9-_!@#$%^&*()_+{}|:<>?=' | fold -w 35 | head -n 1)
-   - AWS_ACCESS_KEY_ID
-   - AWS_SECRET_ACCESS_KEY
-   - AWS_STORAGE_BUCKET_NAME
-   - DATABASE_URL=postgresql://postgres:postgres@db:5432/notaso
-   - ENVIRONMENT=PRODUCTION
+  env_file:
+   - .docker-env
   volumes_from:
     - data   
   links:
    - db
   ports:
-   - 8000:8000
+   - "8000:8000"
 web:
   image: nginx:latest
   volumes_from:
    - data
   ports:
-   - 80:80
-   - 443:443
+   - "80:80"
+   - "443:443"
 data:
   image: busybox:latest
   volumes:
