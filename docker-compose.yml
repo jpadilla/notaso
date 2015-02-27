@@ -1,0 +1,29 @@
+db:
+  build: ./docker-db-setup
+  volumes_from:
+   - data
+app:
+  build: .
+  command: gunicorn -b "0.0.0.0:8000" -w 3 notaso.wsgi 
+  env_file:
+   - .docker-env
+  volumes_from:
+    - data   
+  links:
+   - db
+  ports:
+   - "8000:8000"
+web:
+  image: nginx:latest
+  volumes_from:
+   - data
+  ports:
+   - "80:80"
+   - "443:443"
+data:
+  image: busybox:latest
+  volumes:
+   - .:/app
+   - /var/lib/postgres
+   - nginx/ssl-certs/:/etc/nginx/keys/
+   - nginx/webapp.conf:/etc/nginx/conf.d/default.conf

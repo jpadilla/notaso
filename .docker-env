@@ -1,0 +1,6 @@
+- SECRET_KEY=$(/dev/urandom | tr -dc 'a-zA-Z0-9-_!@#$%^&*()_+{}|:<>?=' | fold -w 35 | head -n 1)
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- AWS_STORAGE_BUCKET_NAME
+- DATABASE_URL=postgresql://postgres:postgres@db:5432/notaso
+- ENVIRONMENT=PRODUCTION
