@@ -12,7 +12,7 @@ class Comment(models.Model):
 
     body = models.TextField()
     created_at = models.DateField(auto_now=False, auto_now_add=False)
-    is_anonymous = models.BooleanField()
+    is_anonymous = models.BooleanField(default=False)
 
     responsibility = models.IntegerField(null=True)
     personality = models.IntegerField(null=True)

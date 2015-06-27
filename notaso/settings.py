@@ -31,7 +31,6 @@ class Common(Configuration):
         'django.contrib.sites',
 
         # Third Party
-        'south',
         'debug_toolbar',
         'django_extensions',
         'storages',
