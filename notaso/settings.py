@@ -14,11 +14,7 @@ class Common(Configuration):
 
     TEMPLATE_DEBUG = values.BooleanValue(DEBUG)
 
-    ALLOWED_HOSTS = [
-        'notaso.herokuapp.com',
-        'www.notaso.com',
-        'notaso.com',
-    ]
+    ALLOWED_HOSTS = values.ListValue([])
 
     # Application definition
     INSTALLED_APPS = (
@@ -71,14 +67,12 @@ class Common(Configuration):
     # Rest Framework Settings
     REST_FRAMEWORK = {
         'DEFAULT_MODEL_SERIALIZER_CLASS':
-        'rest_framework.serializers.HyperlinkedModelSerializer',
+            'rest_framework.serializers.HyperlinkedModelSerializer',
 
-        # 'DEFAULT_PERMISSION_CLASSES': (
-        #     'rest_framework.permissions.IsAuthenticated',
-        # ),
         'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.AllowAny',
+            'rest_framework.permissions.AllowAny',
         ),
+
         'PAGINATE_BY': 25,
 
         'DEFAULT_RENDERER_CLASSES': (
@@ -89,19 +83,15 @@ class Common(Configuration):
 
     # Swagger Rest Framework Doc Settings
     SWAGGER_SETTINGS = {
-        "exclude_namespaces": [],
-        "api_version": '0.1',
-        "api_path": "/",
-        "enabled_methods": [
+        'exclude_namespaces': [],
+        'api_version': '0.1',
+        'api_path': '/',
+        'enabled_methods': [
             'get',
-            # 'post',
-            # 'put',
-            # 'patch',
-            # 'delete'
         ],
-        "api_key": '',
-        "is_authenticated": False,
-        "is_superuser": False,
+        'api_key': '',
+        'is_authenticated': False,
+        'is_superuser': False,
     }
 
     ROOT_URLCONF = 'notaso.urls'
@@ -139,26 +129,26 @@ class Common(Configuration):
     )
 
     TEMPLATE_CONTEXT_PROCESSORS = (
-        "django.contrib.auth.context_processors.auth",
-        "django.core.context_processors.debug",
-        "django.core.context_processors.i18n",
-        "django.core.context_processors.media",
-        "django.core.context_processors.static",
-        "django.core.context_processors.tz",
-        "django.contrib.messages.context_processors.messages",
-        "django.core.context_processors.request",
+        'django.contrib.auth.context_processors.auth',
+        'django.core.context_processors.debug',
+        'django.core.context_processors.i18n',
+        'django.core.context_processors.media',
+        'django.core.context_processors.static',
+        'django.core.context_processors.tz',
+        'django.contrib.messages.context_processors.messages',
+        'django.core.context_processors.request',
 
         # allauth specific context processors
-        "allauth.account.context_processors.account",
-        "allauth.socialaccount.context_processors.socialaccount",
+        'allauth.account.context_processors.account',
+        'allauth.socialaccount.context_processors.socialaccount',
     )
 
     AUTHENTICATION_BACKENDS = (
         # Needed to login by username in Django admin, regardless of `allauth`
-        "django.contrib.auth.backends.ModelBackend",
+        'django.contrib.auth.backends.ModelBackend',
 
         # `allauth` specific authentication methods, such as login by e-mail
-        "allauth.account.auth_backends.AuthenticationBackend",
+        'allauth.account.auth_backends.AuthenticationBackend',
     )
 
     SITE_ID = 1
@@ -168,16 +158,16 @@ class Common(Configuration):
     # auth and allauth settings
     LOGIN_REDIRECT_URL = '/'
     LOGIN_URL = '/accounts/login/'
-    ACCOUNT_EMAIL_VERIFICATION = "none"
+    ACCOUNT_EMAIL_VERIFICATION = 'none'
     ACCOUNT_EMAIL_SUBJECT_PREFIX = '[Notaso] '
     ACCOUNT_LOGOUT_ON_GET = True
     ACCOUNT_EMAIL_REQUIRED = True
     ACCOUNT_CONFIRM_EMAIL_ON_GET = True
     ACCOUNT_LOGOUT_REDIRECT_URL = LOGIN_URL
     ACCOUNT_USERNAME_BLACKLIST = ['admin']
-    ACCOUNT_USER_MODEL_USERNAME_FIELD = "email"
+    ACCOUNT_USER_MODEL_USERNAME_FIELD = 'email'
     ACCOUNT_SIGNUP_FORM_CLASS = 'notaso.users.forms.SignupForm'
-    ACCOUNT_AUTHENTICATION_METHOD = "email"
+    ACCOUNT_AUTHENTICATION_METHOD = 'email'
     ACCOUNT_USERNAME_REQUIRED = False
 
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
