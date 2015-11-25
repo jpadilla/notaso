@@ -522,3 +522,8 @@ span > label > input[type="radio"]{
 .alert-error .alert-link {
   color: #843534;
 }
+.error-text{
+    font-size: 150px;
+    line-height: 150px;
+    font-weight: 700;
+}

@@ -7,8 +7,9 @@ from ..departments.models import Department
 
 # University Serializers
 class UniversityListSerializer(serializers.HyperlinkedModelSerializer):
-    grade = serializers.Field(source='get_grade')
-    professors_count = serializers.Field(source='count')
+    grade = serializers.ReadOnlyField(source='get_grade')
+    professors_count = serializers.ReadOnlyField(source='count')
+    emblem = serializers.ImageField(use_url=False)
 
     class Meta:
         model = University
@@ -17,10 +18,11 @@ class UniversityListSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class UniversityRetrieveSerializer(serializers.ModelSerializer):
-    grade = serializers.Field(source='grade')
-    professors_count = serializers.Field(source='professors_count')
-    departments = serializers.Field(source='departments')
-    extra_info = serializers.Field(source='extra_info')
+    grade = serializers.ReadOnlyField()
+    professors_count = serializers.ReadOnlyField()
+    departments = serializers.ReadOnlyField()
+    extra_info = serializers.ReadOnlyField()
+    emblem = serializers.ImageField(use_url=False)
 
     class Meta:
         model = University
@@ -32,8 +34,8 @@ class UniversityRetrieveSerializer(serializers.ModelSerializer):
 
 # Professors Serializers
 class ProfessorListSerializer(serializers.HyperlinkedModelSerializer):
-    university_name = serializers.RelatedField(source='university')
-    department_name = serializers.RelatedField(source='department')
+    university_name = serializers.StringRelatedField(source='university')
+    department_name = serializers.StringRelatedField(source='department')
 
     class Meta:
         model = Professor
@@ -42,16 +44,15 @@ class ProfessorListSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class ProfessorRetrieveSerializer(serializers.ModelSerializer):
-    grade = serializers.Field(source='grade')
-    total_rates = serializers.Field(source='total_rates')
-    responsability = serializers.Field(source='responsability')
-    personality = serializers.Field(source='personality')
-    difficulty = serializers.Field(source='difficulty')
-    workload = serializers.Field(source='workload')
-    total_comments = serializers.Field(source='total_comments')
-    user_comments = serializers.Field(source='user_comments')
-    university_name = serializers.RelatedField(source='university')
-    department_name = serializers.RelatedField(source='department')
+    grade = serializers.ReadOnlyField()
+    total_rates = serializers.ReadOnlyField()
+    responsability = serializers.ReadOnlyField()
+    personality = serializers.ReadOnlyField()
+    difficulty = serializers.ReadOnlyField()
+    workload = serializers.ReadOnlyField()
+    user_comments = serializers.ReadOnlyField()
+    university_name = serializers.StringRelatedField(source='university')
+    department_name = serializers.StringRelatedField(source='department')
 
     class Meta:
         model = Professor
@@ -62,7 +63,7 @@ class ProfessorRetrieveSerializer(serializers.ModelSerializer):
 
 
 class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
-    extra_info = serializers.Field(source='extra_info')
+    extra_info = serializers.ReadOnlyField()
 
     class Meta:
         model = Department
@@ -71,8 +72,8 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
 
 # Search Serializer
 class SearchSerializer(serializers.ModelSerializer):
-    university_name = serializers.RelatedField(source='university')
-    department_name = serializers.RelatedField(source='department')
+    university_name = serializers.StringRelatedField(source='university')
+    department_name = serializers.StringRelatedField(source='department')
 
     class Meta:
         model = Professor

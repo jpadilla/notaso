@@ -15,6 +15,7 @@ urlpatterns = router.urls
 #rest api urls
 urlpatterns += patterns(
     '',
+
     url(r'^$', 'api_root'),
     url(r'^api-auth/', include('rest_framework.urls',
         namespace='rest_framework')),
