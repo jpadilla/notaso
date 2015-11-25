@@ -66,7 +66,8 @@ class Common(Configuration):
 
     # Rest Framework Settings
     REST_FRAMEWORK = {
-        'DEFAULT_FILTER_BACKENDS': ('rest_framework.filters.DjangoFilterBackend',),
+        'DEFAULT_FILTER_BACKENDS':
+        ('rest_framework.filters.DjangoFilterBackend',),
         'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
         ),
@@ -75,7 +76,7 @@ class Common(Configuration):
             'rest_framework.renderers.BrowsableAPIRenderer',
         ),
         'DEFAULT_PAGINATION_CLASS':
-            'rest_framework.pagination.LimitOffsetPagination',
+        'rest_framework.pagination.LimitOffsetPagination',
         'PAGE_SIZE': 25,
     }
 

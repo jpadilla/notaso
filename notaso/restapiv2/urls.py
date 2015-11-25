@@ -11,7 +11,8 @@ router.register(r'departments', views.DepartmentViewSet)
 
 urlpatterns = router.urls
 
-urlpatterns += patterns('',
+urlpatterns += patterns(
+    '',
     url(r'^auth/$', include('rest_framework.urls',
                             namespace='rest_framework')),
 )

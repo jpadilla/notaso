@@ -25,7 +25,6 @@ class UniversityListSerializer(serializers.HyperlinkedModelSerializer):
         }
 
 
-
 class UniversityRetrieveSerializer(serializers.ModelSerializer):
     grade = serializers.ReadOnlyField(source='get_grade')
     professors_count = serializers.ReadOnlyField(source='count')
