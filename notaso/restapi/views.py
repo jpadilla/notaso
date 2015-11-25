@@ -142,6 +142,7 @@ class ProfessorViewSet(viewsets.ReadOnlyModelViewSet):
 class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Department.objects.all()
     serializer_class = serializers.DepartmentSerializer
+    page_size = 0
 
     def list(self, request):
         '''
@@ -166,10 +167,10 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
                     query.extra_info = {'info': 'No extra information' +
                                         ' in this university department.'}
 
-        # Switch between paginated or standard style responses
         page = self.paginate_queryset(self.queryset)
         if page is not None:
-            serializer = self.get_pagination_serializer(page)
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
         else:
             serializer = self.get_serializer(self.queryset, many=True)
         return Response(serializer.data)
@@ -228,9 +229,10 @@ class SearchViewSet(viewsets.ReadOnlyModelViewSet):
             qs = self.queryset[:10]
 
         # Switch between paginated or standard style responses
-        page = self.paginate_queryset(qs)
+        page = self.paginate_queryset(self.queryset)
         if page is not None:
-            serializer = self.get_pagination_serializer(page)
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
         else:
             serializer = self.get_serializer(self.queryset, many=True)
         return Response(serializer.data)

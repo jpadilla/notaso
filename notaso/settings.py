@@ -70,14 +70,16 @@ class Common(Configuration):
         'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
         ),
-        'page_size': 25,
         'DEFAULT_MODEL_SERIALIZER_CLASS':
             'rest_framework.serializers.HyperlinkedModelSerializer',
 
         'DEFAULT_RENDERER_CLASSES': (
             'rest_framework.renderers.JSONRenderer',
             'rest_framework.renderers.BrowsableAPIRenderer',
-        )
+        ),
+        'DEFAULT_PAGINATION_CLASS':
+            'rest_framework.pagination.LimitOffsetPagination',
+        'PAGE_SIZE': 25,
     }
 
     # Swagger Rest Framework Doc Settings
