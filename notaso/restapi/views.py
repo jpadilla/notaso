@@ -42,10 +42,7 @@ class UniversityViewSet(viewsets.ReadOnlyModelViewSet):
             values = []
             for i, comment in enumerate(comments):
                 if comment.is_anonymous is False:
-                    userData = {'name': '%s %s' %
-                                (comment.created_by.first_name,
-                                comment.created_by.last_name)
-                                }
+                    userData = {'name': comment.created_by.get_full_name()}
                 else:
                     userData = {'name': "Anonymous"}
 
@@ -115,10 +112,7 @@ class ProfessorViewSet(viewsets.ReadOnlyModelViewSet):
                 values = []
                 for i, comment in enumerate(comments):
                     if comment.is_anonymous is False:
-                        userData = {'name': '%s %s' %
-                                    (comment.created_by.first_name,
-                                    comment.created_by.last_name)
-                                    }
+                        userData = {'name': comment.created_by.get_full_name()}
                     else:
                         userData = {'name': "Anonymous"}
                     data = {'name': userData['name'], 'body': comment.body,

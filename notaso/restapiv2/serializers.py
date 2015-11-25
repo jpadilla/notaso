@@ -1,4 +1,3 @@
-from django.utils.encoding import force_text
 from django.shortcuts import get_object_or_404
 
 from rest_framework import serializers
@@ -91,7 +90,7 @@ class DepartmentSerializer(serializers.HyperlinkedModelSerializer):
     professors_count = serializers.SerializerMethodField()
 
     def get_professors_count(self, department):
-        university = self.context.get("university")
+        university = self.context.get('university')
         professor = Professor.objects.filter(department=department)
 
         if university:
@@ -116,7 +115,7 @@ class DepartmentRetrieveSerializer(serializers.ModelSerializer):
     professors = serializers.SerializerMethodField()
 
     def get_professors_count(self, department):
-        university = self.context.get("university")
+        university = self.context.get('university')
         professor = Professor.objects.filter(department=department)
         if university:
             queryset = professor.filter(university=university).count()
@@ -126,7 +125,7 @@ class DepartmentRetrieveSerializer(serializers.ModelSerializer):
         return queryset
 
     def get_professors(self, department):
-        university = self.context.get("university")
+        university = self.context.get('university')
         professor = Professor.objects.filter(department=department)
         request = self.context.get('request', None)
 
@@ -208,11 +207,9 @@ class CommentSerializer(serializers.ModelSerializer):
 
     def get_created_by(self, comment):
         if comment.is_anonymous is True:
-            return "Anonimo"
+            return 'Anonimo'
         else:
-            name = "%s %s" % (comment.created_by.first_name,
-                              comment.created_by.last_name)
-            return force_text(name)
+            return comment.created_by.get_full_name()
 
     class Meta:
         model = Comment

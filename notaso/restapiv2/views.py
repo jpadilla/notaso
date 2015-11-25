@@ -1,4 +1,3 @@
-import django_filters
 from django.shortcuts import get_object_or_404
 
 from ..departments.models import Department
@@ -10,6 +9,8 @@ from rest_framework import filters
 from rest_framework.viewsets import ReadOnlyModelViewSet
 from rest_framework.response import Response
 
+from .filters import ProfessorFilter
+from .filters import UniversityFilter
 from .serializers import UniversityListSerializer
 from .serializers import UniversityRetrieveSerializer
 from .serializers import ProfessorListSerializer
@@ -17,17 +18,8 @@ from .serializers import ProfessorRetrieveSerializer
 from .serializers import DepartmentSerializer
 
 
-class UniversityFilter(django_filters.FilterSet):
-    """
-    Filter by Univesity city
-    """
-    class Meta:
-        model = University
-        fields = ['name', 'city']
-
-
 class UniversityViewSet(ReadOnlyModelViewSet):
-    """
+    '''
     ### 1. Search Values
     > Search university by name keyword
 
@@ -71,7 +63,7 @@ class UniversityViewSet(ReadOnlyModelViewSet):
         *  #####Department slug: [?department=ciencias-de-computadora](?department=ciencias-de-computadora)
 
     ---
-    """
+    '''
     queryset = University.objects.all()
     serializer_class = UniversityListSerializer
     filter_backends = (filters.OrderingFilter, filters.SearchFilter,
@@ -88,23 +80,8 @@ class UniversityViewSet(ReadOnlyModelViewSet):
         return Response(serializer.data)
 
 
-class ProfessorFilter(django_filters.FilterSet):
-    """
-    Filter professors by university name,
-    university city, department and score.
-    """
-    university_name = django_filters.CharFilter(name="university__name")
-    university_city = django_filters.CharFilter(name="university__city")
-    department = django_filters.CharFilter(name="department__name")
-
-    class Meta:
-        model = Professor
-        fields = ['university_name', 'university_city',
-                  'department', 'gender', 'score']
-
-
 class ProfessorViewSet(ReadOnlyModelViewSet):
-    """
+    '''
     ### 1. Search Values
     > Search professors by name keywords
 
@@ -147,7 +124,7 @@ class ProfessorViewSet(ReadOnlyModelViewSet):
         *  #####Filter by score: [?score=90](?score=90)
 
     ---
-    """
+    '''
     queryset = Professor.objects.all()
     serializer_class = ProfessorListSerializer
     filter_backends = (filters.OrderingFilter, filters.SearchFilter,
@@ -166,7 +143,7 @@ class ProfessorViewSet(ReadOnlyModelViewSet):
 
 
 class DepartmentViewSet(ReadOnlyModelViewSet):
-    """
+    '''
     ### 1. Search Values
     > Search departments by name keywords
 
@@ -190,7 +167,7 @@ class DepartmentViewSet(ReadOnlyModelViewSet):
      * #####Multiple ordering: [?ordering=id,name](?ordering=id,name)
 
     ---
-    """
+    '''
     queryset = Department.objects.all()
     serializer_class = DepartmentSerializer
     filter_backends = (filters.OrderingFilter, filters.SearchFilter,
