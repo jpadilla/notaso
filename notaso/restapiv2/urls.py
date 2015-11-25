@@ -4,15 +4,14 @@ from rest_framework.routers import DefaultRouter
 
 from . import views
 
-routerv2 = DefaultRouter()
-routerv2.register(r'universities', views.UniversityViewSet)
-routerv2.register(r'professors', views.ProfessorViewSet)
-routerv2.register(r'departments', views.DepartmentViewSet)
+router = DefaultRouter()
+router.register(r'universities', views.UniversityViewSet)
+router.register(r'professors', views.ProfessorViewSet)
+router.register(r'departments', views.DepartmentViewSet)
 
+urlpatterns = router.urls
 
-urlpatterns = patterns('',
-    url(r'^', include(routerv2.urls)),
-
+urlpatterns += patterns('',
     url(r'^auth/$', include('rest_framework.urls',
                             namespace='rest_framework')),
 )

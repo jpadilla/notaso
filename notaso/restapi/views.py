@@ -136,7 +136,6 @@ class ProfessorViewSet(viewsets.ReadOnlyModelViewSet):
 class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Department.objects.all()
     serializer_class = serializers.DepartmentSerializer
-    page_size = 0
 
     def list(self, request):
         '''
