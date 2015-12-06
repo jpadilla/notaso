@@ -66,10 +66,11 @@ class Common(Configuration):
 
     # Rest Framework Settings
     REST_FRAMEWORK = {
-        'DEFAULT_FILTER_BACKENDS':
-        ('rest_framework.filters.DjangoFilterBackend',),
+        'DEFAULT_FILTER_BACKENDS': (
+            'rest_framework.filters.DjangoFilterBackend',
+        ),
         'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.AllowAny',
+            'rest_framework.permissions.AllowAny',
         ),
         'DEFAULT_RENDERER_CLASSES': (
             'rest_framework.renderers.JSONRenderer',

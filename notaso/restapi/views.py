@@ -5,11 +5,11 @@ from ..professors.models import Professor
 from ..comments.models import Comment
 from ..universities.models import University
 
-#rest api imports
+# rest api imports
 from rest_framework import viewsets
 from rest_framework.response import Response
 
-#Serializer
+# Serializer
 from notaso.restapi import serializers
 
 

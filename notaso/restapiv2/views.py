@@ -2,7 +2,6 @@ from django.shortcuts import get_object_or_404
 
 from ..departments.models import Department
 from ..professors.models import Professor
-from ..comments.models import Comment
 from ..universities.models import University
 
 from rest_framework import filters

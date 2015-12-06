@@ -6,7 +6,6 @@ from ..professors.models import Professor
 from ..universities.models import University
 from ..departments.models import Department
 from ..comments.models import Comment
-from ..users.models import User
 
 
 class UniversityListSerializer(serializers.HyperlinkedModelSerializer):
