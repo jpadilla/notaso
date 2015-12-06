@@ -66,25 +66,24 @@ class Common(Configuration):
 
     # Rest Framework Settings
     REST_FRAMEWORK = {
-        'DEFAULT_MODEL_SERIALIZER_CLASS':
-            'rest_framework.serializers.HyperlinkedModelSerializer',
-
+        'DEFAULT_FILTER_BACKENDS':
+        ('rest_framework.filters.DjangoFilterBackend',),
         'DEFAULT_PERMISSION_CLASSES': (
-            'rest_framework.permissions.AllowAny',
+        'rest_framework.permissions.AllowAny',
         ),
-
-        'PAGINATE_BY': 25,
-
         'DEFAULT_RENDERER_CLASSES': (
-            'rest_framework.renderers.UnicodeJSONRenderer',
+            'rest_framework.renderers.JSONRenderer',
             'rest_framework.renderers.BrowsableAPIRenderer',
-        )
+        ),
+        'DEFAULT_PAGINATION_CLASS':
+        'rest_framework.pagination.LimitOffsetPagination',
+        'PAGE_SIZE': 25,
     }
 
     # Swagger Rest Framework Doc Settings
     SWAGGER_SETTINGS = {
         'exclude_namespaces': [],
-        'api_version': '0.1',
+        'api_version': '2.0',
         'api_path': '/',
         'enabled_methods': [
             'get',

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load users_extras %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div id="home-searchform" class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+            <form action = "/search" role="form" method = "GET">
+                <div class="col-md-10 col-xs-8">
+                        <input type="text" name = "q" value = "{{search_term}}" class="form-control input-lg" placeholder="Busca un profesor">
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    <input type = "submit" class="btn btn-default btn-lg" value = "Buscar">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="home-banner">
+    <h2>Conoce a tus profesores antes de llegar al salón.</h2>
+    <h4>Notaso te ayuda a decidir que clase tomar y que profesor es mejor.</h4>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-xs-12 text-center">
+            <h1 class="error-text">404</h1>
+            <h1 class="">Página no encontrada</h1><br>
+            <p>Parece que ha surgido un error con la página que estabas buscando.</p>
+            <br/>
+            <a class="btn btn-primary" href="{% url 'home:index' %}"><i class="fa fa-angle-left"></i> Ir a la página principal</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

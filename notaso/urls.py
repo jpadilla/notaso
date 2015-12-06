@@ -30,6 +30,7 @@ urlpatterns = patterns(
 
     # Rest api
     url(r'^api/', include('notaso.restapi.urls')),
+    url(r'^api/v2/', include('notaso.restapiv2.urls')),
 
     # Rest api Doc
     url(r'^docs/', include('rest_framework_swagger.urls')),

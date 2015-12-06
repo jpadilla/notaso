@@ -42,9 +42,10 @@ class UniversityViewSet(viewsets.ReadOnlyModelViewSet):
             values = []
             for i, comment in enumerate(comments):
                 if comment.is_anonymous is False:
-                    userData = {'name': comment.created_by.get_full_name}
+                    userData = {'name': comment.created_by.get_full_name()}
                 else:
                     userData = {'name': "Anonymous"}
+
                 data = {'name': userData['name'],
                         'body': comment.body,
                         'is_anonymous': comment.is_anonymous,
@@ -54,9 +55,16 @@ class UniversityViewSet(viewsets.ReadOnlyModelViewSet):
                         'personality': comment.personality,
                         'workload': comment.workload}
                 values.insert(i, data)
+
+            values_high_professors = serializers.ProfessorListSerializer(
+                professors.order_by('-score')[:5],
+                many=True, context={'request': request})
+            values_low_professors = serializers.ProfessorListSerializer(
+                professors.order_by('score')[:5],
+                many=True, context={'request': request})
             university.extra_info = {
-                'hi_professors': professors.order_by('-score')[:5].values,
-                'low_professors': professors.order_by('score')[:5].values,
+                'hi_professors': values_high_professors.data,
+                'low_professors': values_low_professors.data,
                 'recent_comments': values}
         else:
             university.extra_info = {'hi_professors': [],
@@ -104,7 +112,7 @@ class ProfessorViewSet(viewsets.ReadOnlyModelViewSet):
                 values = []
                 for i, comment in enumerate(comments):
                     if comment.is_anonymous is False:
-                        userData = {'name': comment.created_by.get_full_name}
+                        userData = {'name': comment.created_by.get_full_name()}
                     else:
                         userData = {'name': "Anonymous"}
                     data = {'name': userData['name'], 'body': comment.body,
@@ -150,15 +158,12 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
                         'rates': query.get_grade(university_id)}
                 else:
                     query.extra_info = {'info': 'No extra information' +
-                                        'in this university department.'}
-        else:
-            for i, query in enumerate(self.queryset):
-                query.extra_info = {}
+                                        ' in this university department.'}
 
-        # Switch between paginated or standard style responses
         page = self.paginate_queryset(self.queryset)
         if page is not None:
-            serializer = self.get_pagination_serializer(page)
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
         else:
             serializer = self.get_serializer(self.queryset, many=True)
         return Response(serializer.data)
@@ -186,7 +191,7 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
                     'rates': department.get_grade(university_id)}
             else:
                 department.extra_info = {'info': 'No extra information' +
-                                         'in this university department.'}
+                                         ' in this university department.'}
         else:
             department.extra_info = {}
         serializer = serializers.DepartmentSerializer(
@@ -217,9 +222,10 @@ class SearchViewSet(viewsets.ReadOnlyModelViewSet):
             qs = self.queryset[:10]
 
         # Switch between paginated or standard style responses
-        page = self.paginate_queryset(qs)
+        page = self.paginate_queryset(self.queryset)
         if page is not None:
-            serializer = self.get_pagination_serializer(page)
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
         else:
             serializer = self.get_serializer(self.queryset, many=True)
         return Response(serializer.data)

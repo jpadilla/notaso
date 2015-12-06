@@ -11,11 +11,3 @@ router.register(r'department', views.DepartmentViewSet)
 router.register(r'search', views.SearchViewSet, base_name="search"),
 
 urlpatterns = router.urls
-
-#rest api urls
-urlpatterns += patterns(
-    '',
-    url(r'^$', 'api_root'),
-    url(r'^api-auth/', include('rest_framework.urls',
-        namespace='rest_framework')),
-)
