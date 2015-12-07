@@ -222,7 +222,7 @@ class SearchViewSet(viewsets.ReadOnlyModelViewSet):
             qs = self.queryset[:10]
 
         # Switch between paginated or standard style responses
-        page = self.paginate_queryset(self.queryset)
+        page = self.paginate_queryset(qs)
         if page is not None:
             serializer = self.get_serializer(page, many=True)
             return self.get_paginated_response(serializer.data)
