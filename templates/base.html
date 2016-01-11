@@ -90,16 +90,8 @@
                         </ul>
                     {% endif %}
                 </div>
-                {% if navbarSearchShow != True %}
-                    <div class="search navbar-right">
-                        <form action="/search" class="navbar-form navbar-left" role="form" method="GET">
-                            <div class="form-group">
-                                <input class="search-text form-control box-shadow" type="text" placeholder="Busca un profesor" name="q" value="{{search_term}}"/>
-                            </div>
-                            <button type="submit" class="btn btn-info" id="btnSearch">Buscar</button>
-                        </form>
-                    </div>
-                {% endif %}
+                <div id="react-search" class="search navbar-right">
+                </div>
             </div>
         </div>
     </nav>
@@ -142,6 +134,7 @@
             $("[data-toggle=popover]").popover();
         });
         </script>
+        <script src="{% static "react/build/bundle.js"%}"></script>
     {% endblock %}
     {% block extra_bottom %}{% endblock %}
 </body>

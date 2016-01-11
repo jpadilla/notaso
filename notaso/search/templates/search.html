@@ -4,23 +4,11 @@
 {% block title %}Notaso | Busqueda{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class = "row">
-        <div id="home-searchform" class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-            <form action = "/search" role="form" method = "GET">
-                <div class="col-md-10 col-xs-8">
-                        <input type="text" name = "q" value = "{{search_term}}" class="form-control input-lg" placeholder="Busca un profesor">
-                </div>
-                <div class="col-md-2 col-xs-2">
-                    <input type = "submit" class="btn btn-default btn-lg" value = "Buscar">
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
+<br>
+<br>
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2 search col-xs-12">
+        <div class="col-md-8 col-md-offset-2 col-xs-12">
             <ul class="nav nav-pills nav-stacked col-md-3">
               <li class="active"><a href="#professor" data-toggle="tab">Profesor</a></li>
             </ul>
@@ -31,7 +19,7 @@
                     {% if object_list %}
                         {% for prof in object_list %}
                             <a href="{% url 'professors:specified_professor' prof.slug %}"><h4>{{ prof.first_name|capfirst }} {{ prof.last_name|capfirst }}</h4></a>
-                            <li><a id = "uni-search" href="{% url 'universities:specified_university' prof.university.slug %} ">{{ prof.university }}</a> 
+                            <li><a id = "uni-search" href="{% url 'universities:specified_university' prof.university.slug %} ">{{ prof.university }}</a>
                                 <span class="label label-danger department pull-right hidden-xs">
                                     <a href="{% url 'universities:specified_department' prof.university.slug prof.department.slug %}">
                                         {{prof.department}}

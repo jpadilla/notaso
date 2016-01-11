@@ -85,3 +85,5 @@ fixtures_commands
 old_json
 debug_toolbar
 google-chrome-stable_current_amd64.deb
+node_modules
+build
