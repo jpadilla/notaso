@@ -38,3 +38,7 @@ sqlparse==0.1.11
 tablib==0.9.11
 Werkzeug==0.9.4
 wsgiref==0.1.2
+
+# Required here by heroku-buildpack-python
+cryptography==0.8.2
+cffi==0.9.2
