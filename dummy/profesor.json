@@ -1,0 +1,218 @@
+{
+    "id": 17,
+    "first_name": "Hector",
+    "last_name": "Jose Huyke",
+    "slug": "hector-jose-huyke",
+    "gender": "M",
+    "university": "Universidad de Puerto Rico Mayagüez",
+    "department": "Humanidades",
+    "score": 0.7,
+    "total_rates": 20,
+    "grade": "C",
+    "responsibility": "B",
+    "personality": "B",
+    "difficulty": 1,
+    "workload": 2,
+    "user_comments": [
+        {
+            "created_by": "Anon Imous",
+            "body": "La clase es aburrida. El profesor es pésimo.",
+            "is_anonymous": false,
+            "responsibility": 5,
+            "personality": 1,
+            "workload": 1,
+            "difficulty": 1,
+            "created_at": "28/02/2017 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Preparate para coger al hijueputa de los hp... el tipo le importa mas si tu celular esta apagado que si entendiste el material, clavador corrigiendo y demasiado pendiente a donde carajos te sientas cuando eso es totalmente irrelevante si atiendes o no. Tecnofobo piensa que la tecnologia esta hecha pa joder al ser humano. Retrograda FULL...si lo coges diviertete usando el telegrafo y cosas de hace 3 siglos",
+            "is_anonymous": true,
+            "responsibility": 2,
+            "personality": 1,
+            "workload": 3,
+            "difficulty": 2,
+            "created_at": "09/12/2016 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Cómo Huyke da la clase de filo 3001 o cualquier otra en verano?",
+            "is_anonymous": true,
+            "responsibility": null,
+            "personality": null,
+            "workload": null,
+            "difficulty": null,
+            "created_at": "16/11/2016 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Su manera de evaluar es súper rara y para poder sacar buena nota tienes que partcipar.\r\n\r\nLos trabajos son complicadoss.\r\n\r\nExige mucho tiempo.",
+            "is_anonymous": true,
+            "responsibility": null,
+            "personality": null,
+            "workload": null,
+            "difficulty": null,
+            "created_at": "14/11/2016 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Más de la mitad del semestre fue hablar de Platón. Profe, hay más filósofxs.",
+            "is_anonymous": true,
+            "responsibility": null,
+            "personality": null,
+            "workload": null,
+            "difficulty": null,
+            "created_at": "22/10/2016 00:00"
+        },
+        {
+            "created_by": "Anónimo 1",
+            "body": "Sus clases son complicadas pero si le dedicas tiempo puedes sacar A. Tome dos clases y en ambas saqué A.",
+            "is_anonymous": false,
+            "responsibility": 5,
+            "personality": 5,
+            "workload": 5,
+            "difficulty": 5,
+            "created_at": "03/10/2016 00:00"
+        },
+        {
+            "created_by": "Anónimo Montes",
+            "body": "Excelente profesor, tome el curso de Filosofia de la Tecnologia con el y fue una experiencia muy gratificante. Evalua asistencia y participacion, solo 3 trabajos y un trabajo final. Mientras evites faltar, leas y siempre comentes o preguntes algo te ira bien. No es un miqueo pero vale la pena!",
+            "is_anonymous": false,
+            "responsibility": 5,
+            "personality": 4,
+            "workload": 3,
+            "difficulty": 2,
+            "created_at": "09/08/2016 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Filosofía de la Tecnología: Hay que hacer lecturas antes de cada clase. La asistencia y participación en conjunto valen la mitad de la nota de la clase. No da exámenes, solo ensayos escritos con una estructura definida que no son nada complicado si te pones al día con las lecturas y con la clase. En fin, es un excelente profesor, pro-estudiante y siempre está en la oficina para aclarar dudas. Recomiendo la clase y al profesor porque es bien interesante y te va a hacer cambiar tu pensamiento acerca la tecnología. ",
+            "is_anonymous": true,
+            "responsibility": 5,
+            "personality": 5,
+            "workload": 3,
+            "difficulty": 3,
+            "created_at": "23/05/2016 00:00"
+        },
+        {
+            "created_by": "Roberto Pena",
+            "body": "Tremendo profesor! Es dinamico y no te impone ningún punto de vista. Te hace pensar mucho del tema y hace la clase interesante. De los mejores profesores que tiene el Colegio. Tome dos clases con el, \"Etica Moderna y Contemporánea\" y \"Filosofía de la Tecnología\". Filosofía de la Tecnología la recomiendo FULL. Super buena es clase!",
+            "is_anonymous": false,
+            "responsibility": 5,
+            "personality": 5,
+            "workload": 3,
+            "difficulty": 3,
+            "created_at": "17/05/2016 00:00"
+        },
+        {
+            "created_by": "Anónimo .",
+            "body": "Cuando matricule esta clase tenía mucho mieda ya que nunca había tomado n curso de filosofía pero para mi sorpresa fue excelente profesor, en mi opinión de los mejores en el colegio. Acepta todo punto de vista, anima a que le lleves la contraria para tener una buena discusión del tema. Hay muchas oportunidades para subir la nota como los trabajos opcionales y las horas de oficina. Una clase muy entretenida. No lo recomiendo para aquel que quiera \"miquear\" hay que leer y participar en clase. Definitivamente tomaría otros cursos con el.",
+            "is_anonymous": false,
+            "responsibility": 5,
+            "personality": 5,
+            "workload": 3,
+            "difficulty": 2,
+            "created_at": "15/04/2016 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Mejor profesor de filo en el colegio. Es pro estudiante y te da la oportunidad de subir la nota haciendo trabajos opcionales. Siempre esta en sus horas de oficina para discutir lo que sea y anima a los estudiantes a participar y dar su opinion ",
+            "is_anonymous": true,
+            "responsibility": 5,
+            "personality": 5,
+            "workload": 3,
+            "difficulty": 2,
+            "created_at": "15/04/2016 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Tome ética con el. No estoy de acuerdo con su método de evaluación, si eres de esas personas que no tienes una vida perfecta, que no puedes llegar al salón de clases con puntualidad, te jodiste. \r\n\r\nEl dice que te da un break si lo visitas a su oficina, pero lo que te manda hacer es escribirle ensayos de varias paginas, solo para añadirte 1% del 5% que perdiste. El no acepta escusas, si faltaste, aunque fuese por la muerte de un familiar cercano, creo que a el no le importaría y te mandaría a escribir un ensayo para reponer la nota.  Tu nota en la clase es básicamente tu asistencia, ya que te quita como 5% de la clase por cada vez que faltes, y tres tardanzas (no importa lo mínimo que sean) se convierten en una tardanza.\r\n\r\nYo entiendo que esto esta mal, la evaluación no es asistencia, la evaluación debería medir el nivel de conocimiento de los estudiantes. En su clase, yo saque C, a pesar de que le saque una A en todos los ensayos que nos mando a hacer; participaba y conversaba con el. \r\n\r\nEntiendo que todo esto es parte de su filosofía personal, pero el esta muy mal en ese aspecto. Para mi es como si el tuviera miedo de colgar a las personas que no hablan en su salón de clase, ni reconocen las enseñanzas de la filosofía, pero en vez de colgar a esas personas, el decidió  colgar los que faltaban. Sin embargo, lo que termina haciendo es compensando a los estudiantes que asisten solo por ganar puntos. \r\n\r\nEso de tener que visitar a un profesor a las horas de oficina para pasar una clase no vuela conmigo, y no debería ser un requisito para pasar la clase.\r\n\r\nEn resumen, si quieres pasar la clase, asiste. Aunque te tengas que estacionar en la fucking grama de Área Blanca. ",
+            "is_anonymous": true,
+            "responsibility": 2,
+            "personality": 5,
+            "workload": 4,
+            "difficulty": 4,
+            "created_at": "14/12/2015 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Cogi \"Introduccion a la Etica\" con el y honestamente me ENCANTO. Contrario a lo que otros han escrito, es muy abierto a las opiniones de los demas sin perder perspectiva de lo que se debe plantear respecto a la lectura. Puedo decir con seguridad que la clase me ayudo mucho en mi desarrollo personal. Reflexionas mucho y aprendes a desarrollar buenos argumentos. Y no, no tienes que ser chardonita para cogerla. Soy de Inqu y me la disfrute por igual. Si te gusta leer y pensar: cogela.",
+            "is_anonymous": true,
+            "responsibility": 5,
+            "personality": 5,
+            "workload": 3,
+            "difficulty": 3,
+            "created_at": "06/12/2015 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "malo malo malo",
+            "is_anonymous": true,
+            "responsibility": 5,
+            "personality": 4,
+            "workload": 2,
+            "difficulty": 2,
+            "created_at": "30/11/2015 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Evalúa:\r\n1. Asistencia \r\n2. Participación \r\n3. Tres ensayos\r\n4. Un ensayo final\r\nExcelente profesor, ayuda a sus estudiantes, la clase es bien easy going. ",
+            "is_anonymous": true,
+            "responsibility": 5,
+            "personality": 5,
+            "workload": 4,
+            "difficulty": 3,
+            "created_at": "05/10/2015 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Es un muy buen profesor. Hay unos idiotas diciendo cosas de el, pero es muy bueno. Tomé filosofia de la tecnologia con el y hablamos de cosas super interesantes. Muchas veces te impone puntos de vistas, pero no te va a ir mal si no concuerdas. Solo son tres trabajos en el semestre y sus evaluaciones son considerables. Si vas a su oficina, que de paso es muy accesible, el te va a ayudar. En serio, you should give it a try! ",
+            "is_anonymous": true,
+            "responsibility": 5,
+            "personality": 5,
+            "workload": 5,
+            "difficulty": 4,
+            "created_at": "29/04/2015 00:00"
+        },
+        {
+            "created_by": "Anonima Anonima",
+            "body": "El mejor profesor de filo de todo el colegio. Te vas en un viaje en la clase pero te obliga a pensar y participar. Lo que jode son los trabajos en grupo pero todo lo demas es un amor.",
+            "is_anonymous": false,
+            "responsibility": null,
+            "personality": null,
+            "workload": null,
+            "difficulty": null,
+            "created_at": "29/04/2015 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Excelente profesor. Cogi la clase de filosofía de la tecnología y fue un trip cabron! excelentes discusiones en clase, y un ambiente de mucho respeto. Hay que leer un poco antes de todas las clases pero se puede hacer en 15 minutos. Son solo 3 trabajos en el semestre y el final y ofrece muchas oportunidades para trabajos de bono. Soy de ingeniería y por ahora es mi profesor preferido. No es un mique pero un poco de esfuerzo no mata a nadie. Es muy divertida la clase y lo recomiendo 100% como profesor. Cualquier cosa hablen con el, super pro estudiante! ",
+            "is_anonymous": true,
+            "responsibility": 4,
+            "personality": 5,
+            "workload": 3,
+            "difficulty": 3,
+            "created_at": "27/04/2015 00:00"
+        },
+        {
+            "created_by": "Anonimo",
+            "body": "Es un profesor mediocre. Se cree Filosofía es lo mejor pues que se la meta por el culo. Siempre anda en un viaje peor que los que fuman marihuana en la placita de Chardón. Se cree que humanidades es lo más importante del colegio y eso está incorrecto. Se pasa bebiendo unté que aésta en todo el salón y caminando con las converse más jodidas con un pantalón de vestir y camisa de manga larga. Se cree que su opinión es la unica verdad absoluta y perfecta aunque esté mal. Es medio arrogante y no brega para nada en los trabajos y en reclamaciones. NO cojan clase con él.",
+            "is_anonymous": true,
+            "responsibility": null,
+            "personality": null,
+            "workload": null,
+            "difficulty": null,
+            "created_at": "21/11/2014 00:00"
+        },
+        {
+            "created_by": "Norman Paulino",
+            "body": "El profesor es tremendo. Siempre brega para cualquier cosa, no da mas que tres ensayos (que mas vale que sepas de lo que escribes), y tambien tienes que tener asistencia perfecta. Aparte de todo, su clase es sumamente interesante y el es super pro-estudiante.",
+            "is_anonymous": false,
+            "responsibility": 5,
+            "personality": 5,
+            "workload": 3,
+            "difficulty": 3,
+            "created_at": "06/05/2010 00:00"
+        }
+    ]
+}
