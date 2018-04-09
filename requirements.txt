@@ -25,7 +25,7 @@ gunicorn==18.0
 lxml==3.3.5
 Markdown==2.6.4
 memoize==1.0.0
-newrelic==2.18.1.15
+newrelic==3.2.0.91
 oauthlib==0.6.1
 psycopg2==2.7.4
 python-openid==2.2.5
