@@ -37,6 +37,7 @@ South==0.8.4
 sqlparse==0.1.11
 tablib==0.9.11
 Werkzeug==0.9.4
+whitenoise==2.0.6
 wsgiref==0.1.2
 
 # Required here by heroku-buildpack-python

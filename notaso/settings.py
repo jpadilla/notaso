@@ -119,7 +119,6 @@ class Common(Configuration):
     # https://docs.djangoproject.com/en/1.6/howto/static-files/
     STATIC_ROOT = 'assets'
     STATIC_URL = '/static/'
-
     STATICFILES_DIRS = (
         os.path.join(BASE_DIR, 'static'),
     )
@@ -217,10 +216,7 @@ class Production(Common):
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-    STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-
-    STATIC_URL = 'https://com-notaso-static.s3.amazonaws.com/'
-    MEDIA_URL = STATIC_URL
+    STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
     AWS_PRELOAD_METADATA = True
     AWS_ACCESS_KEY_ID = values.Value(environ_prefix=None)
