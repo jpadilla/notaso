@@ -1,0 +1,26 @@
+version: '3'
+
+volumes:
+  database:
+    external: false
+
+services:
+  database:
+    image: postgres:9.4
+    environment:
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - database:/var/lib/postgresql/data
+
+  web:
+    build: .
+    command: start
+    entrypoint: /app/docker-entrypoint.sh
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    links:
+      - database:database
