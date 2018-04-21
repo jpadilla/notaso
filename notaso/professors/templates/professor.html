@@ -112,10 +112,10 @@
 
                 <p>{{ c.created_at }}</p>
                 {% if c.body|length >= 1000 %}
-                    <p class="show">{{ c.body|truncatechars:1000 }} <a class="showMore">leer más</a></p>
-                    <p class="hide">{{ c.body }} <a class="showLess">leer menos</a></p>
+                    <p class="break-word show">{{ c.body|truncatechars:1000 }} <a class="showMore">leer más</a></p>
+                    <p class="break-word hide">{{ c.body }} <a class="showLess">leer menos</a></p>
                 {% else %}
-                    <p>{{ c.body }}</p>
+                    <p class="break-word">{{ c.body }}</p>
                 {% endif%}
                 <hr>
             {% endfor %}
