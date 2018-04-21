@@ -27,9 +27,18 @@ class UniversityView(DetailView):
         if 'view' not in kwargs:
             kwargs['view'] = self
 
-        professors = Professor.objects.filter(
-            university=self.object,
-            score__gt=0).select_related('university')
+        professors = (
+            Professor.objects.annotate(num_comments=Count('comment'))
+            .select_related('university')
+            .filter(university=self.object, score__gt=0, num_comments__gte=10)
+        )
+
+        if len(professors) == 0:
+            professors = (
+                Professor.objects.select_related('university')
+                .filter(university=self.object, score__gt=0)
+            )
+
         comments = Comment.objects.filter(
             professor__in=professors).select_related(
                 'created_by').exclude(
