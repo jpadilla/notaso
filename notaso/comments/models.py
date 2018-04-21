@@ -22,9 +22,18 @@ class Comment(models.Model):
     def __unicode__(self):
         return self.body
 
+    @property
+    def score(self):
+        return float(
+            self.responsibility
+            + self.personality
+            + self.workload
+            + self.difficulty
+        ) * 5
+
 
 def recalculate_score(sender, **kwargs):
-    c = kwargs['instance']
+    c = kwargs["instance"]
 
     if c.responsibility and c.personality and c.workload and c.difficulty:
         comments = Comment.objects.filter(
@@ -32,8 +41,10 @@ def recalculate_score(sender, **kwargs):
             responsibility__isnull=False,
             personality__isnull=False,
             workload__isnull=False,
-            difficulty__isnull=False).exclude(responsibility=0, personality=0,
-                                              workload=0, difficulty=0)
+            difficulty__isnull=False,
+        ).exclude(
+            responsibility=0, personality=0, workload=0, difficulty=0
+        )
 
         comments_count = 0
         sum_responsibility = 0
@@ -48,8 +59,16 @@ def recalculate_score(sender, **kwargs):
             sum_difficulty += c.difficulty
             comments_count += 1
 
-        score = float((sum_responsibility + sum_personality +
-                       sum_workload + sum_difficulty)) / (comments_count * 20)
+        score = float(
+            (
+                sum_responsibility
+                + sum_personality
+                + sum_workload
+                + sum_difficulty
+            )
+        ) / (
+            comments_count * 20
+        )
 
         p = get_object_or_404(Professor, pk=c.professor.id)
         p.score = score
@@ -59,5 +78,6 @@ def recalculate_score(sender, **kwargs):
         p.difficulty = float(sum_difficulty) / (comments_count * 5)
 
         p.save()
+
 
 post_save.connect(recalculate_score, sender=Comment)
