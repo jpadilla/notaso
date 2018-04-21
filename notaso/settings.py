@@ -177,9 +177,6 @@ class Common(Configuration):
     EMAIL_PORT = values.IntegerValue()
     EMAIL_USE_TLS = values.BooleanValue(False)
 
-    CAMO_URL = values.Value(environ_prefix=None)
-    CAMO_KEY = values.Value(environ_prefix=None)
-
     # CORS settings
     CORS_ORIGIN_ALLOW_ALL = False
 
