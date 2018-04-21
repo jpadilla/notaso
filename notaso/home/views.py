@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView
+from django.db.models import Count
 
 from ..professors.models import Professor
 from ..universities.models import University
@@ -16,7 +17,11 @@ class HomeView(TemplateView):
         universities = list(universities)
         universities.sort(key=lambda x: x.get_grade())
 
-        professors = Professor.objects.filter(score__gt=0).order_by('-score')
+        professors = (
+            Professor.objects.annotate(num_comments=Count('comment'))
+            .filter(score__gt=0, num_comments__gte=10)
+            .order_by('-score')
+        )
 
         comments = Comment.objects.all().exclude(
             body__exact='').order_by('-created_at', '-id')
