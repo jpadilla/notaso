@@ -1,8 +1,7 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
 from .views import SettingsView
 
-urlpatterns = patterns(
-    '',
+urlpatterns = [
     url(r'^settings/$', SettingsView.as_view(), name='settings'),
-)
+]

@@ -28,7 +28,8 @@ Debes tener instalado **Python 2.7** en tu máquina. También es recomendado que
 $ git clone https://github.com/jpadilla/notaso.git
 $ cp .env.example .env
 $ pip install -r requirements.txt
-$ python manage.py syncdb --migrate
+$ python manage.py makemigrations comments departments professors universities users
+$ python manage.py migrate
 $ python manage.py runserver
 ```
 

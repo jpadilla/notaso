@@ -1,11 +1,8 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import include, url
 
 from . import views
 
-urlpatterns = patterns(
-    # Prefix
-    '',
-
+urlpatterns = [
     url(r'^$', views.UniversitiesView.as_view(), name='universities'),
 
     url(r'^(?P<slug>[-_\w]+)/$',
@@ -13,4 +10,5 @@ urlpatterns = patterns(
 
     url(r'^(?P<slug>[-_\w]+)/',
         include('notaso.departments.urls')),
-)
+]
+

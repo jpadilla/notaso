@@ -3,7 +3,7 @@ from django.db import models
 from ..professors.models import Professor
 
 
-def get_upload_file_name(intance, filename):
+def get_upload_file_name(instance, filename):
     return "static/uploaded_files/%s" % (filename)
 
 
