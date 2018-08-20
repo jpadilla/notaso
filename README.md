@@ -26,29 +26,23 @@ Debes tener instalado **Python 2.7** en tu máquina. También es recomendado que
 
 ```bash
 $ git clone https://github.com/jpadilla/notaso.git
-$ cp .env.example .env
-$ pip install -r requirements.txt
-$ python manage.py makemigrations comments departments professors universities users
-$ python manage.py migrate
-$ python manage.py runserver
+$ docker-compose up
 ```
 
-Abre tu browser en [http://localhost:8000/](http://localhost:8000/). 
+Abre tu browser en [http://localhost:8000/](http://localhost:8000/).
 
-Para accesar la sección de administración debes de crear un super usuario.
+Para accesar la sección de administración entra a [http://localhost:8000/admin/](http://localhost:8000/admin/) usando:
 
-```bash
-$ python manage.py createsuperuser
-$ python manage.py runserver
 ```
-
-Luego ve a [http://localhost:8000/admin/](http://localhost:8000/admin/).
+Email: jpueblo@example.com
+Password: abc1234567890
+```
 
 ## License
 
 All of "Notaso" is licensed under the MIT license.
 
-Copyright (c) 2010-2014 José Padilla
+Copyright (c) 2010-2018 José Padilla
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

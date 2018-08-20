@@ -1,0 +1,281 @@
+[{
+  "model": "departments.department",
+  "fields": {
+      "slug": "administracion-de-empresas",
+      "name": "Administraci\u00f3n de Empresas"
+  },
+  "pk": 1
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "arquitectura",
+      "name": "Arquitectura"
+  },
+  "pk": 2
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "arte",
+      "name": "Arte"
+  },
+  "pk": 3
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "biologia",
+      "name": "Biolog\u00eda"
+  },
+  "pk": 4
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "biomedica",
+      "name": "Biom\u00e9dica"
+  },
+  "pk": 5
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ciencias-agricolas",
+      "name": "Ciencias Agr\u00edcolas"
+  },
+  "pk": 6
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ciencias-biologicas",
+      "name": "Ciencias Biol\u00f3gicas"
+  },
+  "pk": 7
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ciencias-de-computadora",
+      "name": "Ciencias de Computadora"
+  },
+  "pk": 8
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ciencias-medicas",
+      "name": "Ciencias M\u00e9dicas"
+  },
+  "pk": 9
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ciencias-politicas",
+      "name": "Ciencias Pol\u00edticas"
+  },
+  "pk": 10
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ciencias-sociales",
+      "name": "Ciencias Sociales"
+  },
+  "pk": 11
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ciencias-y-tecnologia",
+      "name": "Ciencias y Tecnolog\u00eda"
+  },
+  "pk": 12
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "comunicacion",
+      "name": "Comunicaci\u00f3n"
+  },
+  "pk": 13
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "economia",
+      "name": "Econom\u00eda"
+  },
+  "pk": 14
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "educacion",
+      "name": "Educaci\u00f3n"
+  },
+  "pk": 15
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "educacion-continua",
+      "name": "Educaci\u00f3n Cont\u00ednua"
+  },
+  "pk": 16
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "educacion-fisica",
+      "name": "Educaci\u00f3n F\u00edsica"
+  },
+  "pk": 17
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "enfermeria",
+      "name": "Enfermer\u00eda"
+  },
+  "pk": 18
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "espanol",
+      "name": "Espa\u00f1ol"
+  },
+  "pk": 19
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "estudios-generales",
+      "name": "Estudios Generales"
+  },
+  "pk": 20
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "fisica",
+      "name": "F\u00edsica"
+  },
+  "pk": 21
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "frances",
+      "name": "Frances"
+  },
+  "pk": 22
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "geologia",
+      "name": "Geolog\u00eda"
+  },
+  "pk": 23
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "horticultura",
+      "name": "Horticultura"
+  },
+  "pk": 24
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "humanidades",
+      "name": "Humanidades"
+  },
+  "pk": 25
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ingenieria-civil",
+      "name": "Ingenier\u00eda Civil"
+  },
+  "pk": 26
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ingenieria-de-computadoras",
+      "name": "Ingenier\u00eda de Computadoras"
+  },
+  "pk": 27
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ingenieria-electrica",
+      "name": "Ingenier\u00eda El\u00e9ctrica"
+  },
+  "pk": 28
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ingenieria-general",
+      "name": "Ingenier\u00eda General"
+  },
+  "pk": 29
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ingenieria-industrial",
+      "name": "Ingenier\u00eda Industrial"
+  },
+  "pk": 30
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ingenieria-mecanica",
+      "name": "Ingenier\u00eda Mec\u00e1nica"
+  },
+  "pk": 31
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ingenieria-quimica",
+      "name": "Ingenier\u00eda Qu\u00edmica"
+  },
+  "pk": 32
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "ingles",
+      "name": "Ingl\u00e9s"
+  },
+  "pk": 33
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "matematicas",
+      "name": "Matem\u00e1ticas"
+  },
+  "pk": 34
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "musica",
+      "name": "M\u00fasica"
+  },
+  "pk": 35
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "psicologia",
+      "name": "Psicolog\u00eda"
+  },
+  "pk": 36
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "quimica",
+      "name": "Qu\u00edmica"
+  },
+  "pk": 37
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "otro",
+      "name": "Otro"
+  },
+  "pk": 38
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "electronica",
+      "name": "Electr\u00f3nica"
+  },
+  "pk": 39
+}, {
+  "model": "departments.department",
+  "fields": {
+      "slug": "sistemas-de-oficina",
+      "name": "Sistemas de Oficina"
+  },
+  "pk": 40
+}]

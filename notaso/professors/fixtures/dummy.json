@@ -1,0 +1,171 @@
+[{
+  "pk": 1,
+  "model": "professors.professor",
+  "fields": {
+      "slug": "patricia-gonzalez",
+      "department": 37,
+      "personality": 1,
+      "score": 0.8,
+      "gender": "F",
+      "first_name": "Patricia",
+      "responsibility": 0.8,
+      "difficulty": 0.6,
+      "created_by": 1,
+      "workload": 0.8,
+      "last_name": "Gonzalez",
+      "university": 51
+  }
+}, {
+  "pk": 2,
+  "model": "professors.professor",
+  "fields": {
+      "slug": "raul-cotto-serrano",
+      "department": 11,
+      "personality": 0.966666666666667,
+      "score": 0.808333333333333,
+      "gender": "M",
+      "first_name": "Raul",
+      "responsibility": 1,
+      "difficulty": 0.6,
+      "created_by": 1,
+      "workload": 0.666666666666667,
+      "last_name": "Cotto Serrano",
+      "university": 51
+  }
+}, {
+  "pk": 3,
+  "model": "professors.professor",
+  "fields": {
+      "slug": "gabriela-sifre",
+      "department": 11,
+      "personality": 0.666666666666667,
+      "score": 0.6,
+      "gender": "F",
+      "first_name": "Gabriela",
+      "responsibility": 0.666666666666667,
+      "difficulty": 0.5,
+      "created_by": 1,
+      "workload": 0.566666666666667,
+      "last_name": "Sifre",
+      "university": 86
+  }
+}, {
+  "pk": 4,
+  "model": "professors.professor",
+  "fields": {
+      "slug": "virgen-ramos",
+      "department": 11,
+      "personality": 0.9,
+      "score": 0.6,
+      "gender": "F",
+      "first_name": "Virgen",
+      "responsibility": 1,
+      "difficulty": 0.2,
+      "created_by": 1,
+      "workload": 0.3,
+      "last_name": "Ramos",
+      "university": 86
+  }
+}, {
+  "pk": 5,
+  "model": "professors.professor",
+  "fields": {
+      "slug": "domingo-perez",
+      "department": 25,
+      "personality": 0.55,
+      "score": 0.6125,
+      "gender": "M",
+      "first_name": "Domingo",
+      "responsibility": 0.55,
+      "difficulty": 0.7,
+      "created_by": 1,
+      "workload": 0.65,
+      "last_name": "Pérez",
+      "university": 86
+  }
+}, {
+  "pk": 6,
+  "model": "professors.professor",
+  "fields": {
+      "slug": "hector-vientos",
+      "department": 11,
+      "personality": 0.712,
+      "score": 0.65,
+      "gender": "M",
+      "first_name": "Héctor",
+      "responsibility": 0.72,
+      "difficulty": 0.576,
+      "created_by": 1,
+      "workload": 0.592,
+      "last_name": "Vientós",
+      "university": 86
+  }
+}, {
+  "pk": 7,
+  "model": "professors.professor",
+  "fields": {
+      "slug": "gloria-valedon",
+      "department": 25,
+      "personality": 0.966666666666667,
+      "score": 0.825,
+      "gender": "F",
+      "first_name": "Gloria",
+      "responsibility": 0.933333333333333,
+      "difficulty": 0.733333333333333,
+      "created_by": 1,
+      "workload": 0.666666666666667,
+      "last_name": "Valedón",
+      "university": 86
+  }
+}, {
+  "pk": 8,
+  "model": "professors.professor",
+  "fields": {
+      "slug": "filia-garcia",
+      "department": 7,
+      "personality": 0.8,
+      "score": 0.8,
+      "gender": "F",
+      "first_name": "Filia",
+      "responsibility": 1,
+      "difficulty": 0.4,
+      "created_by": 1,
+      "workload": 1,
+      "last_name": "García",
+      "university": 86
+  }
+}, {
+  "pk": 9,
+  "model": "professors.professor",
+  "fields": {
+      "slug": "manuel-muniz",
+      "department": 38,
+      "personality": 0.2,
+      "score": 0.483333333333333,
+      "gender": "M",
+      "first_name": "Manuel",
+      "responsibility": 0.666666666666667,
+      "difficulty": 0.4,
+      "created_by": 1,
+      "workload": 0.666666666666667,
+      "last_name": "Muñiz",
+      "university": 86
+  }
+}, {
+  "pk": 10,
+  "model": "professors.professor",
+  "fields": {
+      "slug": "maria-lazaro",
+      "department": 4,
+      "personality": 0.95,
+      "score": 0.65,
+      "gender": "F",
+      "first_name": "María",
+      "responsibility": 0.9,
+      "difficulty": 0.3,
+      "created_by": 1,
+      "workload": 0.45,
+      "last_name": "Lázaro",
+      "university": 86
+  }
+}]

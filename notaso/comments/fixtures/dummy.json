@@ -1,0 +1,281 @@
+[{
+  "model": "comments.comment",
+  "pk": 1,
+  "fields": {
+      "difficulty": 3,
+      "created_by": 1,
+      "created_at": "2010-05-05",
+      "body": "Ella es super chilling y de verdad considerando que la clase es quimica organica casi no da asignaciones y tampoco da muchos quizes. No corrige muy rapido pero brega un monton; eso si corrige los examenes bien. ",
+      "is_anonymous": false,
+      "responsibility": 4,
+      "personality": 5,
+      "professor": 1,
+      "workload": 4
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 2,
+  "fields": {
+      "difficulty": 3,
+      "created_by": 1,
+      "created_at": "2010-05-05",
+      "body": "Estuve en 5 clases con este profesor en mi tiempo en la UPR-RP",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 5,
+      "professor": 2,
+      "workload": 2
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 3,
+  "fields": {
+      "difficulty": 3,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "Excelente profesora !!!",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 5,
+      "professor": 3,
+      "workload": 4
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 4,
+  "fields": {
+      "difficulty": 1,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "Lo \u00fanico bueno que tiene es que es din\u00e1mica, no te vas a aburrir pero tampoco vas a entender nada de lo que  \"explica\". Los examenes son horribles, por m\u00e1s y m\u00e1s que estudies y pienses que estas preparados nunca vas a saber que esperar. No la recomiendo.",
+      "is_anonymous": true,
+      "responsibility": 5,
+      "personality": 4,
+      "professor": 4,
+      "workload": 1
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 5,
+  "fields": {
+      "difficulty": 4,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "El profe es buena gente y super c\u00f3mico, los examenes son relativamente f\u00e1cil y si estudias de los \"notes\" de la case saldras super.",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 5,
+      "professor": 5,
+      "workload": 4
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 6,
+  "fields": {
+      "difficulty": 1,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "Ok, el profe es sumamente buena gente y vas a aprender como ni te imaginas, eso si, da bastante trabajo y es bastante fuerte corrigiendo y siempre pone expectativas altas de todos sus estudiantes pero si le dedicas tiempo a la clase saldras bien; no es f\u00e1cil pero en mi opini\u00f3n vale la pena, es excelente profesor con una inteligencia y un conocimiento asombrante. Lo recomiendo a ojos cerrados (pero no es el tipo de profesor que a todo el mundo le gusta). ",
+      "is_anonymous": true,
+      "responsibility": 5,
+      "personality": 5,
+      "professor": 6,
+      "workload": 1
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 7,
+  "fields": {
+      "difficulty": 4,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "Oral Communication (ING 117) - Es excelente profesora, se nota que le encanta lo que hace, es fuerte con las presentaciones pero te ayuda a que se te vaya el miedo de hablar en p\u00fablico, las presentaciones se graban y luego las ven cuando todos terminan de presentar. ",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 5,
+      "professor": 7,
+      "workload": 5
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 8,
+  "fields": {
+      "difficulty": 2,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "(BIO 101) Es bien buena gente y explica super bien pero los examenes son dif\u00edciles !!!! No puedes faltar ni un d\u00eda, overall la recomiendo pero tienes que dedicarle tiempo a la clase. Los laboratorios son bastante divertidos !!!",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 4,
+      "professor": 8,
+      "workload": 5
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 9,
+  "fields": {
+      "difficulty": 3,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "El profeor da muchas de las clases de Sistemas de Justicia. Sabe muchisimo pero no es muy buena gente que digamos. No tiene \u00e1nimo ninguno en la clase, lo que haces es sentarse a leer del libro, es sumamente aburrido; sin embargo los trabajos son dificiles y los ex\u00e1menes son complicados ya que el no sabe explicar (lo poco que explica en realidad) !!!! ",
+      "is_anonymous": true,
+      "responsibility": 4,
+      "personality": 1,
+      "professor": 9,
+      "workload": 3
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 10,
+  "fields": {
+      "difficulty": 1,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "La profe es bien din\u00e1mica y usualmente cae bien pero tambien se escuchan cosas negativas de ella; es a discriminaci\u00f3n de la persona. Mi experiencia con ella fue bastante buena, eso si, es bien fuerte, los examenes son dif\u00edciles y ella a veces explica demasiado rapido, pero por lo general es buena. ",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 4,
+      "professor": 10,
+      "workload": 3
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 11,
+  "fields": {
+      "difficulty": 1,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "Excelente profesora !!! Explica super bien y tiene mucha paciencia para bregar con los estudiantes !!! La recomiendo a ojos cerrados !!!",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 5,
+      "professor": 1,
+      "workload": 2
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 12,
+  "fields": {
+      "difficulty": 2,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "Es super buena !!! Explica super bien y da buenos repasos para los examenes, siempre esta dispuesta a ayudarte con cualquier duda en su horario de oficina !! Excelente ! ",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 5,
+      "professor": 2,
+      "workload": 2
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 13,
+  "fields": {
+      "difficulty": 1,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "les voy a dar un bulletlist de pq es un CABRON\r\r- Da un proyecto de investigacion de 50 paginas, en un grupo de 2 personas, 25 paginas cada uno, El te decia el tema.\r- Al final del semestre tienes q hacer una presentacion de tu investigacion, basicamente tienes q defender todo lo q escribiste pq el va a refutar todo lo q escribiste solo para asegurarse q sabes lo q dices. Aunque sea tu opinion te va a tirar su opinion como la q tiene q ser.\r- Es cierto NO DA EXAMENES... OJO... el examen q da es un examen en grupo en el cual la mitad de la clase mas uno o sea, 6 de 10 tienen q contestar correctamente, consiste de preguntas q se saca del escroto y tienen muy poco q ver con los textos asignados. Si no contesta mas de la mayoria TODOS tienen F, y viceversa. \r- Es un come mierda y aprovecha cualquier oportunidad q tenga pa meterte un ejemplo q incluya su BMW y como odia los mercedes y no quiere tener hijos, entre otras cosas (es demasiado para elaborarlo en un bullet)\r- Su primer trabajo es una lectura bien pussy aburrida de como 40 paginas, luego de leerla tienes q resumirla... el espera q el RESUMEN sean mas de 10 paginas con un formato estupido q no explica bn.\r- Dice q si no faltas pasas con C... I guess q eso es una razon para algunos tomarla con el. Pero el muy mamag\u00fcebazo nunca pasa lista por lo tanto no sabe un carajo, solo pasaba lista al momento de entregar trabajos, que fue como 3 veces en todo el fuckin semestre.\r- El siempre llega tarde pero q se joda pq la clase del empieza con un tema explicito relacionado a las ciencias sociales y rapido se convierte en una critica a el machismo y los BMW y todos sus come mierderias con los alcaldes, gobernadores, etc.\r- El primer dia te vas a sentir bn cangri pq se da un guille kbron de q tiene maestria en q se yo q bicho, 2 doctorados y un pos doctorado, tiene publicado como 3 libros y mama mucho huevo.\r- Si eres nena, y eres linda PERFECT preparate para una labia estupida, probablemente pases no por tus comentarios inteligentes pero mas pq el es un PENDEJO y la tiene contra los hombres, cualquier ignorancia dicha por una nena en la clase era cute, comentarios sabios de parte de los nenes eran refutados y crucificados. \r- El huele pega no me ense\u00f1o un carajo de las ciencias sociales ya q cualquier discusion de los filosofos kant, marx, rousseau, platon o aristotoles se convertia en una batalla de el contra el mundo, como el manipula a el mundo pq el es el mas q mea y todos somos pendejos. \r- ahhhhhhh\r\rEn fin, no es imposible.... saque A... tengo un pipi y me gustan los audi's.\r\rMi recomendacion: antes de clase estudiense los filosofos q dije arriba y mas y todos sus pensamientos tal vez asi cuando el discuta toda esa baba ustedes pueden tratar de contestar preguntas o elaborar lo q el dice si no es q se envuelve con alguna boberia. Eso tal vez los hara resaltar en la clase al igual q no, si resaltas tendras buena participacion, y aparentemente si tienes buena participacion sales bien. Si te tiras algo BN cabron de inteligente como q WOAH ps el te lo va a mamar y te dira q tienes A asegura'.\r\rEN CONCLUSION eviten pasar malos ratos, escojan otro profesor, este cabron siempre tiene un cupo cabron y por eso siempre caen los pobres desdichados pero arreglenselas, hablen con otros profes, hagan cuanta fila puedan pa' cambiarse no se arriesgen. :P\r\rEspero q mi bulletlist les haya abierto el camino o por lo menos les habra los ojos como una advertencia a lo q viene.",
+      "is_anonymous": true,
+      "responsibility": 5,
+      "personality": 1,
+      "professor": 3,
+      "workload": 3
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 14,
+  "fields": {
+      "difficulty": 3,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "Te da las preguntas q vienen en el examen con una semana de anticipacion. No son facil pero tienes break para hacerlas en grupo y prepararte bn kbron :D \nno falta casi y brega al 100 con los estudiantes, si te va mal puedes hacer trabajo extra credito :) ",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 4,
+      "professor": 4,
+      "workload": 3
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 15,
+  "fields": {
+      "difficulty": 1,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "El cree en la metaf\u00edsica. \"As\u00ed que cuidado papa\"",
+      "is_anonymous": true,
+      "responsibility": 5,
+      "personality": 3,
+      "professor": 5,
+      "workload": 1
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 16,
+  "fields": {
+      "difficulty": 3,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "El profesor es tremendo. Siempre brega para cualquier cosa, no da mas que tres ensayos (que mas vale que sepas de lo que escribes), y tambien tienes que tener asistencia perfecta. Aparte de todo, su clase es sumamente interesante y el es super pro-estudiante.",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 5,
+      "professor": 6,
+      "workload": 3
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 17,
+  "fields": {
+      "difficulty": 3,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "Ya me colge el semestre pasado con el idiota de Suni Puma, este tipo (Suazo) en verdad es mucho mejor que la mayoria de el departamento de MATE en el Colegio. El te da par de trabajos y asignaciones con ganas, pero te ayudan a practicar y te suben la nota. En verdad que puede mejorar, pero comparandolo con el resto de el departamento es mucho mejor.",
+      "is_anonymous": false,
+      "responsibility": 4,
+      "personality": 5,
+      "professor": 7,
+      "workload": 1
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 18,
+  "fields": {
+      "difficulty": 3,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "La profesora parece que la sacaron de Kinder. Yo me imagino que explica super bien, pero la Quimica me aburre mas que el..... Es super pro-estudiante, y estoy pasando aunque no se que rayos estan dando en la clase pq me kedo dormido de el aburrimiento.",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 5,
+      "professor": 8,
+      "workload": 4
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 19,
+  "fields": {
+      "difficulty": 3,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "El profe es super bueno y es un tripeo coger Aleman con el. El unico problema es que coger un lenguaje es una idea terrible. Si eres prepa haciendo tu matricula de segundo semestre, no la cogas ni aunque te pagen porque te vas a odiar a ti mismo si no terminas dandote de baja. Pero el profe se lleva una A de mi parte.",
+      "is_anonymous": false,
+      "responsibility": 5,
+      "personality": 5,
+      "professor": 9,
+      "workload": 2
+  }
+}, {
+  "model": "comments.comment",
+  "pk": 20,
+  "fields": {
+      "difficulty": 5,
+      "created_by": 1,
+      "created_at": "2010-05-06",
+      "body": "La mejor desicion de mi vida. Te copias como una bestia y ni se da cuenta. En el lab normalmente se copia todo tambien, y nunca te quita mas de .2 puntos. La mejor.",
+      "is_anonymous": false,
+      "responsibility": 3,
+      "personality": 4,
+      "professor": 10,
+      "workload": 4
+  }
+}]
