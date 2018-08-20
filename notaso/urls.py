@@ -2,7 +2,8 @@ from django.conf.urls import include, url
 from django.views.generic import TemplateView
 from django.contrib import admin
 
-admin.autodiscover()
+from rest_framework_swagger.views import get_swagger_view
+schema_view = get_swagger_view(title='notaso api')
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -30,5 +31,5 @@ urlpatterns = [
     url(r'^api/v2/', include('notaso.restapiv2.urls')),
 
     # Rest api Doc
-    url(r'^docs/', include('rest_framework_swagger.urls')),
+    url(r'^docs/', schema_view),
 ]

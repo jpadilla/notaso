@@ -1,9 +1,8 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
 from . import views
 
-urlpatterns = patterns(
-    '',
+urlpatterns = [
     url(
         r'^create/$',
         views.CreateProfessorView.as_view(),
@@ -14,4 +13,4 @@ urlpatterns = patterns(
         views.ProfessorView.as_view(),
         name='specified_professor'
     ),
-)
+]

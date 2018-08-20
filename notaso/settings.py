@@ -12,8 +12,6 @@ class Common(Configuration):
 
     DEBUG = values.BooleanValue(False)
 
-    TEMPLATE_DEBUG = values.BooleanValue(DEBUG)
-
     ALLOWED_HOSTS = values.ListValue([])
 
     # Application definition
@@ -27,7 +25,6 @@ class Common(Configuration):
         'django.contrib.sites',
 
         # Third Party
-        'south',
         'debug_toolbar',
         'django_extensions',
         'storages',
@@ -56,6 +53,7 @@ class Common(Configuration):
     MIDDLEWARE_CLASSES = (
         'djangosecure.middleware.SecurityMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware',
+        'debug_toolbar.middleware.DebugToolbarMiddleware',
         'corsheaders.middleware.CorsMiddleware',
         'django.middleware.common.CommonMiddleware',
         'django.middleware.csrf.CsrfViewMiddleware',
@@ -77,7 +75,7 @@ class Common(Configuration):
             'rest_framework.renderers.BrowsableAPIRenderer',
         ),
         'DEFAULT_PAGINATION_CLASS':
-        'rest_framework.pagination.LimitOffsetPagination',
+            'rest_framework.pagination.LimitOffsetPagination',
         'PAGE_SIZE': 25,
     }
 
@@ -123,24 +121,26 @@ class Common(Configuration):
         os.path.join(BASE_DIR, 'static'),
     )
 
-    TEMPLATE_DIRS = (
-        os.path.join(BASE_DIR, 'templates'),
-    )
-
-    TEMPLATE_CONTEXT_PROCESSORS = (
-        'django.contrib.auth.context_processors.auth',
-        'django.core.context_processors.debug',
-        'django.core.context_processors.i18n',
-        'django.core.context_processors.media',
-        'django.core.context_processors.static',
-        'django.core.context_processors.tz',
-        'django.contrib.messages.context_processors.messages',
-        'django.core.context_processors.request',
-
-        # allauth specific context processors
-        'allauth.account.context_processors.account',
-        'allauth.socialaccount.context_processors.socialaccount',
-    )
+    TEMPLATES = [
+        {
+            'BACKEND': 'django.template.backends.django.DjangoTemplates',
+            'DIRS': [os.path.join(BASE_DIR, 'templates')],
+            'APP_DIRS': True,
+            'OPTIONS': {
+                'debug': values.BooleanValue(DEBUG),
+                'context_processors': [
+                    'django.contrib.auth.context_processors.auth',
+                    'django.template.context_processors.debug',
+                    'django.template.context_processors.i18n',
+                    'django.template.context_processors.media',
+                    'django.template.context_processors.static',
+                    'django.template.context_processors.tz',
+                    'django.contrib.messages.context_processors.messages',
+                    'django.template.context_processors.request',
+                ],
+            },
+        },
+    ]
 
     AUTHENTICATION_BACKENDS = (
         # Needed to login by username in Django admin, regardless of `allauth`
@@ -164,7 +164,7 @@ class Common(Configuration):
     ACCOUNT_CONFIRM_EMAIL_ON_GET = True
     ACCOUNT_LOGOUT_REDIRECT_URL = LOGIN_URL
     ACCOUNT_USERNAME_BLACKLIST = ['admin']
-    ACCOUNT_USER_MODEL_USERNAME_FIELD = 'email'
+    ACCOUNT_USER_MODEL_USERNAME_FIELD = None
     ACCOUNT_SIGNUP_FORM_CLASS = 'notaso.users.forms.SignupForm'
     ACCOUNT_AUTHENTICATION_METHOD = 'email'
     ACCOUNT_USERNAME_REQUIRED = False
@@ -183,8 +183,6 @@ class Common(Configuration):
 
 class Development(Common):
     DEBUG = True
-
-    TEMPLATE_DEBUG = DEBUG
 
     PROTOCOL = 'http'
 
