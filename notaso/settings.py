@@ -98,8 +98,7 @@ class Common(Configuration):
 
     # Database
     # https://docs.djangoproject.com/en/dev/ref/settings/#databases
-    DATABASES = values.DatabaseURLValue(
-        'sqlite:///{}'.format(os.path.join(BASE_DIR, 'storage.sqlite3')))
+    DATABASES = values.DatabaseURLValue()
 
     # Internationalization
     # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -193,6 +192,10 @@ class Development(Common):
         'default': {
             'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
         }
+    }
+
+    DEBUG_TOOLBAR_CONFIG = {
+        'SHOW_TOOLBAR_CALLBACK': lambda request: True,
     }
 
 
