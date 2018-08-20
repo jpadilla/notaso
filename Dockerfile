@@ -11,11 +11,17 @@ RUN apk add --no-cache \
   libxml2-dev \
   libxslt-dev
 
+RUN pip install pipenv
+
 WORKDIR /app/
 
+COPY Pipfile Pipfile.lock /app/
+
 # Install application requirements
-COPY requirements.txt /app/
-RUN pip install -r requirements.txt
+RUN pip install pipenv && \
+    pipenv install --deploy --system && \
+    pip uninstall -y pipenv && \
+    rm -rf /root/.cache
 
 # Bundle app source
 COPY . /app/
