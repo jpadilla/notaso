@@ -1,25 +1,22 @@
 from django.shortcuts import get_object_or_404
 
-from ..departments.models import Department
-from ..professors.models import Professor
-from ..comments.models import Comment
-from ..universities.models import University
-
-# rest api imports
+from notaso.restapi import serializers
 from rest_framework import viewsets
 from rest_framework.response import Response
 
-# Serializer
-from notaso.restapi import serializers
+from ..comments.models import Comment
+from ..departments.models import Department
+from ..professors.models import Professor
+from ..universities.models import University
 
 
 # Rest Api University ViewSet
 class UniversityViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = University.objects.all().order_by('-emblem')
+    queryset = University.objects.all().order_by("-emblem")
     serializer_class = serializers.UniversityListSerializer
 
     def retrieve(self, request, pk=None):
-        '''
+        """
         Retrieve a university by id.
 
         Optional parameters:
@@ -29,47 +26,59 @@ class UniversityViewSet(viewsets.ReadOnlyModelViewSet):
 
         Example of how to use it:
         - www.notaso.com/api/universities/1?extra_info=true
-        '''
+        """
         queryset = University.objects.all()
         university = get_object_or_404(queryset, pk=pk)
         professors = Professor.objects.filter(
-            university=university,
-            score__gt=0).select_related('university')
-        comments = Comment.objects.filter(
-            professor__in=professors).select_related('created_by').exclude(
-                body__exact='').order_by('-created_at', '-id')[:5]
-        if request.GET.get('extra_info') == "true":
+            university=university, score__gt=0
+        ).select_related("university")
+        comments = (
+            Comment.objects.filter(professor__in=professors)
+            .select_related("created_by")
+            .exclude(body__exact="")
+            .order_by("-created_at", "-id")[:5]
+        )
+        if request.GET.get("extra_info") == "true":
             values = []
             for i, comment in enumerate(comments):
                 if comment.is_anonymous is False:
-                    userData = {'name': comment.created_by.get_full_name()}
+                    userData = {"name": comment.created_by.get_full_name()}
                 else:
-                    userData = {'name': "Anonymous"}
+                    userData = {"name": "Anonymous"}
 
-                data = {'name': userData['name'],
-                        'body': comment.body,
-                        'is_anonymous': comment.is_anonymous,
-                        'created_at': comment.created_at,
-                        'difficulty': comment.difficulty,
-                        'responsibility': comment.responsibility,
-                        'personality': comment.personality,
-                        'workload': comment.workload}
+                data = {
+                    "name": userData["name"],
+                    "body": comment.body,
+                    "is_anonymous": comment.is_anonymous,
+                    "created_at": comment.created_at,
+                    "difficulty": comment.difficulty,
+                    "responsibility": comment.responsibility,
+                    "personality": comment.personality,
+                    "workload": comment.workload,
+                }
                 values.insert(i, data)
 
             values_high_professors = serializers.ProfessorListSerializer(
-                professors.order_by('-score')[:5],
-                many=True, context={'request': request})
+                professors.order_by("-score")[:5],
+                many=True,
+                context={"request": request},
+            )
             values_low_professors = serializers.ProfessorListSerializer(
-                professors.order_by('score')[:5],
-                many=True, context={'request': request})
+                professors.order_by("score")[:5],
+                many=True,
+                context={"request": request},
+            )
             university.extra_info = {
-                'hi_professors': values_high_professors.data,
-                'low_professors': values_low_professors.data,
-                'recent_comments': values}
+                "hi_professors": values_high_professors.data,
+                "low_professors": values_low_professors.data,
+                "recent_comments": values,
+            }
         else:
-            university.extra_info = {'hi_professors': [],
-                                     'low_professors': [],
-                                     'recent_comments': []}
+            university.extra_info = {
+                "hi_professors": [],
+                "low_professors": [],
+                "recent_comments": [],
+            }
         university.professors_count = university.count()
         university.grade = university.get_grade()
         university.departments = Department.objects.all().values
@@ -83,7 +92,7 @@ class ProfessorViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = serializers.ProfessorListSerializer
 
     def retrieve(self, request, pk=None):
-        '''
+        """
         Retrieve a professor by id.
 
 
@@ -93,41 +102,51 @@ class ProfessorViewSet(viewsets.ReadOnlyModelViewSet):
 
         Example of how to use it:
         - www.notaso.com/api/universities/1?comments=true
-        '''
+        """
         professor = Professor.objects.get(pk=pk)
         # professor = get_object_or_404(queryset, pk=pk)
         professor.grade = professor.get_grade()
         professor.total_rates = Comment.objects.filter(
-            professor=professor.id, responsibility__gt=0).count()
+            professor=professor.id, responsibility__gt=0
+        ).count()
         professor.responsability = professor.get_responsibility()
         professor.personality = professor.get_personality()
         professor.workload = professor.get_workload()
         professor.difficulty = professor.get_difficulty()
         professor.user_comments = []
-        if request.GET.get('comments') == "true":
-            comments = Comment.objects.filter(
-                professor=professor.id).exclude(
-                    body__exact='').order_by('-created_at', '-id')
+        if request.GET.get("comments") == "true":
+            comments = (
+                Comment.objects.filter(professor=professor.id)
+                .exclude(body__exact="")
+                .order_by("-created_at", "-id")
+            )
             if len(comments) != 0:
                 values = []
                 for i, comment in enumerate(comments):
                     if comment.is_anonymous is False:
-                        userData = {'name': comment.created_by.get_full_name()}
+                        userData = {"name": comment.created_by.get_full_name()}
                     else:
-                        userData = {'name': "Anonymous"}
-                    data = {'name': userData['name'], 'body': comment.body,
-                            'is_anonymous': comment.is_anonymous,
-                            'created_at': comment.created_at,
-                            'difficulty': comment.difficulty,
-                            'responsibility': comment.responsibility,
-                            'personality': comment.personality,
-                            'workload': comment.workload}
+                        userData = {"name": "Anonymous"}
+                    data = {
+                        "name": userData["name"],
+                        "body": comment.body,
+                        "is_anonymous": comment.is_anonymous,
+                        "created_at": comment.created_at,
+                        "difficulty": comment.difficulty,
+                        "responsibility": comment.responsibility,
+                        "personality": comment.personality,
+                        "workload": comment.workload,
+                    }
                     values.insert(i, data)
-                professor.user_comments = {'total_comments': len(comments),
-                                           'entries': values}
+                professor.user_comments = {
+                    "total_comments": len(comments),
+                    "entries": values,
+                }
             else:
-                professor.user_comments = {'total_comments': len(comments),
-                                           'info': 'No comments values.'}
+                professor.user_comments = {
+                    "total_comments": len(comments),
+                    "info": "No comments values.",
+                }
         serializer = serializers.ProfessorRetrieveSerializer(professor)
         return Response(serializer.data)
 
@@ -138,7 +157,7 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = serializers.DepartmentSerializer
 
     def list(self, request):
-        '''
+        """
         Get list of all the departments in notaso.
 
         Optional parameters:
@@ -147,18 +166,21 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
 
         Example of how to use it:
         - www.notaso.com/api/universities/?university_id=1
-        '''
-        if request.GET.get('university_id'):
-            university_id = request.GET.get('university_id')
+        """
+        if request.GET.get("university_id"):
+            university_id = request.GET.get("university_id")
             for i, query in enumerate(self.queryset):
                 if query.count(university_id) is not 0:
                     query.extra_info = {
-                        'university_id': university_id,
-                        'professors_count': query.count(university_id),
-                        'rates': query.get_grade(university_id)}
+                        "university_id": university_id,
+                        "professors_count": query.count(university_id),
+                        "rates": query.get_grade(university_id),
+                    }
                 else:
-                    query.extra_info = {'info': 'No extra information' +
-                                        ' in this university department.'}
+                    query.extra_info = {
+                        "info": "No extra information"
+                        + " in this university department."
+                    }
 
         page = self.paginate_queryset(self.queryset)
         if page is not None:
@@ -169,7 +191,7 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
         return Response(serializer.data)
 
     def retrieve(self, request, pk=None):
-        '''
+        """
         Get a department by id.
 
         Optional parameters:
@@ -179,33 +201,36 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
 
         Example of how to use it:
         - www.notaso.com/api/universities/1?university_id=1
-        '''
+        """
         queryset = Department.objects.all()
         department = get_object_or_404(queryset, pk=pk)
-        if request.GET.get('university_id'):
-            university_id = request.GET.get('university_id')
+        if request.GET.get("university_id"):
+            university_id = request.GET.get("university_id")
             if department.count(university_id) is not 0:
                 department.extra_info = {
-                    'university': university_id,
-                    'professors_count': department.count(university_id),
-                    'rates': department.get_grade(university_id)}
+                    "university": university_id,
+                    "professors_count": department.count(university_id),
+                    "rates": department.get_grade(university_id),
+                }
             else:
-                department.extra_info = {'info': 'No extra information' +
-                                         ' in this university department.'}
+                department.extra_info = {
+                    "info": "No extra information" + " in this university department."
+                }
         else:
             department.extra_info = {}
         serializer = serializers.DepartmentSerializer(
-            department, context={'request': request})
+            department, context={"request": request}
+        )
         return Response(serializer.data)
 
 
 # Rest Api Search ViewSet
 class SearchViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Professor.objects.all().order_by('first_name', 'last_name')
+    queryset = Professor.objects.all().order_by("first_name", "last_name")
     serializer_class = serializers.SearchSerializer
 
     def list(self, request):
-        '''
+        """
         Search a professor by keyword.
 
         Optional parameters:
@@ -213,8 +238,8 @@ class SearchViewSet(viewsets.ReadOnlyModelViewSet):
 
         Example of how to use it:
         - www.notaso.com/api/search?q={keyword}
-        '''
-        search_term = request.GET.get('q')
+        """
+        search_term = request.GET.get("q")
         if search_term:
             for term in search_term.split():
                 qs = Professor.objects.search(term, raw=True)

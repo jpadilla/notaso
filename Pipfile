@@ -36,6 +36,7 @@ MarkupSafe = "==1.0"
 Werkzeug = "==0.9.4"
 
 [dev-packages]
+pre-commit = "*"
 
 [requires]
 python_version = "2.7"

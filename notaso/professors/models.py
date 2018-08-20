@@ -1,9 +1,9 @@
-from django.db import models
 from django.conf import settings
+from django.db import models
 
 from autoslug import AutoSlugField
-from djorm_pgfulltext.models import SearchManager
 from djorm_pgfulltext.fields import VectorField
+from djorm_pgfulltext.models import SearchManager
 
 
 def populate_professor_slug(instance):
@@ -11,18 +11,15 @@ def populate_professor_slug(instance):
 
 
 class Professor(models.Model):
-    MALE = 'M'
-    FEMALE = 'F'
-    GENDER_CHOICES = (
-        (MALE, 'Male'),
-        (FEMALE, 'Female'),
-    )
+    MALE = "M"
+    FEMALE = "F"
+    GENDER_CHOICES = ((MALE, "Male"), (FEMALE, "Female"))
 
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=75)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
-    university = models.ForeignKey('universities.University')
-    department = models.ForeignKey('departments.Department')
+    university = models.ForeignKey("universities.University")
+    department = models.ForeignKey("departments.Department")
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL)
     slug = AutoSlugField(populate_from=populate_professor_slug, unique=True)
 
@@ -35,66 +32,66 @@ class Professor(models.Model):
     search_index = VectorField()
 
     objects = SearchManager(
-        fields=('first_name', 'last_name'),
-        config='pg_catalog.spanish',
-        search_field='search_index',
-        auto_update_search_field=True
+        fields=("first_name", "last_name"),
+        config="pg_catalog.spanish",
+        search_field="search_index",
+        auto_update_search_field=True,
     )
 
     def __unicode__(self):
-        return u'%s %s' % (self.first_name, self.last_name)
+        return u"%s %s" % (self.first_name, self.last_name)
 
     def get_full_name(self):
-        full_name = '%s %s' % (self.first_name, self.last_name)
+        full_name = "%s %s" % (self.first_name, self.last_name)
         return full_name
 
     def save(self, *args, **kwargs):
         super(Professor, self).save(*args, **kwargs)
 
     def get_percent(self):
-        return self.score*100
+        return self.score * 100
 
     def get_grade(instance):
         percent = instance.get_percent()
         if percent >= 90:
-            return 'A'
+            return "A"
         elif percent >= 80:
-            return 'B'
+            return "B"
         elif percent >= 70:
-            return 'C'
+            return "C"
         elif percent >= 60:
-            return 'D'
+            return "D"
         else:
-            return 'F'
+            return "F"
 
     def get_responsibility(self):
-        percent = self.responsibility*100
+        percent = self.responsibility * 100
         if percent >= 90:
-            return 'A'
+            return "A"
         elif percent >= 80:
-            return 'B'
+            return "B"
         elif percent >= 70:
-            return 'C'
+            return "C"
         elif percent >= 60:
-            return 'D'
+            return "D"
         else:
-            return 'F'
+            return "F"
 
     def get_personality(self):
-        percent = self.personality*100
+        percent = self.personality * 100
         if percent >= 90:
-            return 'A'
+            return "A"
         elif percent >= 80:
-            return 'B'
+            return "B"
         elif percent >= 70:
-            return 'C'
+            return "C"
         elif percent >= 60:
-            return 'D'
+            return "D"
         else:
-            return 'F'
+            return "F"
 
     def get_workload(self):
-        percent = self.workload*100
+        percent = self.workload * 100
         if percent >= 90:
             return 5
         elif percent >= 80:
@@ -107,7 +104,7 @@ class Professor(models.Model):
             return 1
 
     def get_difficulty(self):
-        percent = self.difficulty*100
+        percent = self.difficulty * 100
         if percent >= 90:
             return 5
         elif percent >= 80:

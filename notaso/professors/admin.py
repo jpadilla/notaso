@@ -4,8 +4,14 @@ from .models import Professor
 
 
 class ProfessorAdmin(admin.ModelAdmin):
-    list_display = ('__unicode__', 'gender', 'university', 'department',)
-    search_fields = ['first_name', 'last_name', 'university__name',
-                     'department__name', 'university__city']
+    list_display = ("__unicode__", "gender", "university", "department")
+    search_fields = [
+        "first_name",
+        "last_name",
+        "university__name",
+        "department__name",
+        "university__city",
+    ]
+
 
 admin.site.register(Professor, ProfessorAdmin)
