@@ -1,0 +1,640 @@
+[{
+  "model": "universities.university",
+  "pk": 43,
+  "fields": {
+      "city": "Mayag\u00fcez",
+      "slug": "urpm",
+      "name": "Universidad de Puerto Rico",
+      "emblem": "static/uploaded_files/uprm.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 44,
+  "fields": {
+      "city": "Ponce",
+      "slug": "uprp",
+      "name": "Universidad de Puerto Rico",
+      "emblem": "static/uploaded_files/uprp.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 45,
+  "fields": {
+      "city": "Bayam\u00f3n",
+      "slug": "uprb",
+      "name": "Universidad de Puerto Rico",
+      "emblem": "static/uploaded_files/uprb.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 46,
+  "fields": {
+      "city": "Metro",
+      "slug": "inter-metro",
+      "name": "Universidad Interamericana",
+      "emblem": "static/uploaded_files/inter.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 47,
+  "fields": {
+      "city": "Bayam\u00f3n",
+      "slug": "inter-bayamon",
+      "name": "Universidad Interamericana",
+      "emblem": "static/uploaded_files/inter.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 49,
+  "fields": {
+      "city": "Utuado",
+      "slug": "upru",
+      "name": "Universidad de Puerto Rico",
+      "emblem": "static/uploaded_files/upru.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 50,
+  "fields": {
+      "city": "Aguadilla",
+      "slug": "uprag",
+      "name": "Universidad de Puerto Rico",
+      "emblem": "static/uploaded_files/upraguadilla.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 51,
+  "fields": {
+      "city": "R\u00edo Piedras",
+      "slug": "uprrp",
+      "name": "Universidad de Puerto Rico",
+      "emblem": "static/uploaded_files/uprrp.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 52,
+  "fields": {
+      "city": "Arecibo",
+      "slug": "upra",
+      "name": "Universidad de Puerto Rico",
+      "emblem": "static/uploaded_files/upra.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 53,
+  "fields": {
+      "city": "Carolina",
+      "slug": "uprca",
+      "name": "Universidad de Puerto Rico",
+      "emblem": "static/uploaded_files/uprcarolina.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 54,
+  "fields": {
+      "city": "Humacao",
+      "slug": "uprh",
+      "name": "Universidad de Puerto Rico",
+      "emblem": "static/uploaded_files/uprh.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 55,
+  "fields": {
+      "city": "Cayey",
+      "slug": "uprc",
+      "name": "Universidad de Puerto Rico",
+      "emblem": "static/uploaded_files/uprcayey.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 56,
+  "fields": {
+      "city": "Ciencias M\u00e9dicas",
+      "slug": "uprrcm",
+      "name": "Universidad de Puerto Rico",
+      "emblem": "static/uploaded_files/uprcm.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 57,
+  "fields": {
+      "city": "Guaynabo",
+      "slug": "phoenix",
+      "name": "University of Phoenix",
+      "emblem": "static/uploaded_files/phoenix.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 58,
+  "fields": {
+      "city": "Hato Rey",
+      "slug": "pupr",
+      "name": "Universidad Polit\u00e9cnica",
+      "emblem": "static/uploaded_files/pupr.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 59,
+  "fields": {
+      "city": "Gurabo",
+      "slug": "ut",
+      "name": "Universidad del Turabo",
+      "emblem": "static/uploaded_files/turabo.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 60,
+  "fields": {
+      "city": "Aguadilla",
+      "slug": "inter-aguadilla",
+      "name": "Universidad Interamericana",
+      "emblem": "static/uploaded_files/inter.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 61,
+  "fields": {
+      "city": "Arecibo",
+      "slug": "inter-arecibo",
+      "name": "Universidad Interamericana",
+      "emblem": "static/uploaded_files/inter.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 62,
+  "fields": {
+      "city": "Barranquitas",
+      "slug": "inter-barranquitas",
+      "name": "Universidad Interamericana",
+      "emblem": "static/uploaded_files/inter.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 63,
+  "fields": {
+      "city": "Fajardo",
+      "slug": "inter-fajardo",
+      "name": "Universidad Interamericana",
+      "emblem": "static/uploaded_files/inter.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 64,
+  "fields": {
+      "city": "Guayama",
+      "slug": "inter-guayama",
+      "name": "Universidad Interamericana",
+      "emblem": "static/uploaded_files/inter.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 65,
+  "fields": {
+      "city": "Ponce",
+      "slug": "inter-ponce",
+      "name": "Universidad Interamericana",
+      "emblem": "static/uploaded_files/inter.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 66,
+  "fields": {
+      "city": "San Germ\u00e1n",
+      "slug": "inter-san-german",
+      "name": "Universidad Interamericana",
+      "emblem": "static/uploaded_files/inter.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 67,
+  "fields": {
+      "city": "Caguas",
+      "slug": "columbia-co-caguas",
+      "name": "Columbia College",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 68,
+  "fields": {
+      "city": "Yauco",
+      "slug": "columbia-co-yauco",
+      "name": "Columbia College",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 69,
+  "fields": {
+      "city": "Bayam\u00f3n",
+      "slug": "caribbean-bayamon",
+      "name": "Caribbean University",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 70,
+  "fields": {
+      "city": "Carolina",
+      "slug": "caribbean-carolina",
+      "name": "Caribbean University",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 71,
+  "fields": {
+      "city": "Ponce",
+      "slug": "caribbean-ponce",
+      "name": "Caribbean University",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 72,
+  "fields": {
+      "city": "Vega Baja",
+      "slug": "caribbean-vega-baja",
+      "name": "Caribbean University",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 73,
+  "fields": {
+      "city": "Bayam\u00f3n",
+      "slug": "auprb",
+      "name": "American University",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 74,
+  "fields": {
+      "city": "Manat\u00ed",
+      "slug": "auprm",
+      "name": "American University",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 75,
+  "fields": {
+      "city": "Bayam\u00f3n",
+      "slug": "ucb",
+      "name": "Universidad Central",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 76,
+  "fields": {
+      "city": "Guaynabo",
+      "slug": "atlantic",
+      "name": "Atlantic College",
+      "emblem": "static/uploaded_files/atlanticcollege.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 77,
+  "fields": {
+      "city": "Ponce",
+      "slug": "pucpr-ponce",
+      "name": "Universidad Cat\u00f3lica",
+      "emblem": "static/uploaded_files/pucpr.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 78,
+  "fields": {
+      "city": "Mayaguez",
+      "slug": "pucpr-mayaguez",
+      "name": "Universidad Cat\u00f3lica",
+      "emblem": "static/uploaded_files/pucpr.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 79,
+  "fields": {
+      "city": "Arecibo",
+      "slug": "pucpr-arecibo",
+      "name": "Universidad Cat\u00f3lica",
+      "emblem": "static/uploaded_files/pucpr.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 80,
+  "fields": {
+      "city": "Bayam\u00f3n",
+      "slug": "accaribe-bayamon",
+      "name": "Universidad Central del Caribe",
+      "emblem": "static/uploaded_files/ucb.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 81,
+  "fields": {
+      "city": "Carolina",
+      "slug": "une",
+      "name": "Universidad del Este",
+      "emblem": "static/uploaded_files/une.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 82,
+  "fields": {
+      "city": "Cupey",
+      "slug": "umet",
+      "name": "Universidad Metropolitana (UMET)",
+      "emblem": "static/uploaded_files/umet.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 83,
+  "fields": {
+      "city": "Ponce",
+      "slug": "psm",
+      "name": "Escuela de Medicina de Ponce",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 84,
+  "fields": {
+      "city": "San Juan",
+      "slug": "eap",
+      "name": "Escuela de Artes Pl\u00e1sticas de Puerto Rico",
+      "emblem": "static/uploaded_files/eapr.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 85,
+  "fields": {
+      "city": "San Juan",
+      "slug": "cunisanjuan",
+      "name": "Colegio Universitario de San Juan",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 86,
+  "fields": {
+      "city": "San Juan",
+      "slug": "sagrado",
+      "name": "Universidad del Sagrado Coraz\u00f3n",
+      "emblem": "static/uploaded_files/usc.png"
+  }
+}, {
+  "model": "universities.university",
+  "pk": 87,
+  "fields": {
+      "city": "Arecibo",
+      "slug": "icprjc-arecibo",
+      "name": "Icpr Junior College",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 88,
+  "fields": {
+      "city": "Hato Rey",
+      "slug": "icprjc-hato-rey",
+      "name": "Icpr Junior College",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 89,
+  "fields": {
+      "city": "Mayaguez",
+      "slug": "icprjc-mayaguez",
+      "name": "Icpr Junior College",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 90,
+  "fields": {
+      "city": "San Juan",
+      "slug": "cem-san-juan",
+      "name": "Centro de Estudios Multidisciplinarios",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 91,
+  "fields": {
+      "city": "Humacao",
+      "slug": "cem-humacao",
+      "name": "Centro de Estudios Multidisciplinarios",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 92,
+  "fields": {
+      "city": "Rio Piedras",
+      "slug": "itec-rio-piedras",
+      "name": "Instituto Tecnologico de Puerto Rico",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 93,
+  "fields": {
+      "city": "Guayama",
+      "slug": "itec-rio-guayama",
+      "name": "Instituto Tecnologico de Puerto Rico",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 94,
+  "fields": {
+      "city": "Manati",
+      "slug": "itec-manati",
+      "name": "Instituto Tecnologico de Puerto Rico",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 95,
+  "fields": {
+      "city": "Ponce",
+      "slug": "itec-ponce",
+      "name": "Instituto Tecnologico de Puerto Rico",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 96,
+  "fields": {
+      "city": "San Juan",
+      "slug": "cambridge-college",
+      "name": "Cambridge College",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 97,
+  "fields": {
+      "city": "Escuela de Derecho",
+      "slug": "uprlaw",
+      "name": "Universidad de Puerto Rico",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 100,
+  "fields": {
+      "city": "Ponce",
+      "slug": "popac",
+      "name": "Ponce Paramedical College",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 101,
+  "fields": {
+      "city": "Hato Rey",
+      "slug": "edp-hato-rey",
+      "name": "EDP College",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 102,
+  "fields": {
+      "city": "San Sebasti\u00e1n",
+      "slug": "edp-san-sebastian",
+      "name": "EDP College",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 103,
+  "fields": {
+      "city": "Bayam\u00f3n",
+      "slug": "nuc",
+      "name": "National University College",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 104,
+  "fields": {
+      "city": "San Juan",
+      "slug": "ibanca-san-juan",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 105,
+  "fields": {
+      "city": "Ponce",
+      "slug": "ibanca-ponce",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 106,
+  "fields": {
+      "city": "Mayag\u00fcez",
+      "slug": "ibanca-mayaguez",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 107,
+  "fields": {
+      "city": "Caguas",
+      "slug": "ibanca-caguas",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 108,
+  "fields": {
+      "city": "Manat\u00ed",
+      "slug": "ibanca-manati",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 109,
+  "fields": {
+      "city": "Cayey",
+      "slug": "ibanca-cayey",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 110,
+  "fields": {
+      "city": "Fajardo",
+      "slug": "ibanca-fajardo",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 111,
+  "fields": {
+      "city": "Guayama",
+      "slug": "ibanca-guayama",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 112,
+  "fields": {
+      "city": "Humacao",
+      "slug": "ibanca-humacao",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 113,
+  "fields": {
+      "city": "Rio Piedras",
+      "slug": "ibanca-rio-piedras",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 114,
+  "fields": {
+      "city": "Arecibo",
+      "slug": "ibanca-arecibo",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 115,
+  "fields": {
+      "city": "Bayam\u00f3n",
+      "slug": "ibanca-bayamon",
+      "name": "Instituto de Banca y Comercio",
+      "emblem": ""
+  }
+}, {
+  "model": "universities.university",
+  "pk": 116,
+  "fields": {
+      "city": "San Juan",
+      "slug": "ucasj",
+      "name": "Universidad Carlos Albizu",
+      "emblem": "static/uploaded_files/ucasj.png"
+  }
+}]

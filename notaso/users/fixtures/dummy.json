@@ -1,0 +1,13 @@
+[{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+      "password": "pbkdf2_sha256$36000$nQmi1RHXkxtM$wLJEFsVaXDQ0uxEDsR30j72A4N8g0sHcXPLTvdlz4DM=",
+      "last_login": null,
+      "email": "jpueblo@example.com",
+      "first_name": "Juan",
+      "last_name": "Pueblo",
+      "is_admin": true,
+      "is_active": true
+  }
+}]
