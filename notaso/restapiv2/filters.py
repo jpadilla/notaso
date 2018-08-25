@@ -5,24 +5,25 @@ from ..universities.models import University
 
 
 class UniversityFilter(django_filters.FilterSet):
-    '''
+    """
     Filter by Univesity city
-    '''
+    """
+
     class Meta:
         model = University
-        fields = ['name', 'city']
+        fields = ["name", "city"]
 
 
 class ProfessorFilter(django_filters.FilterSet):
-    '''
+    """
     Filter professors by university name,
     university city, department and score.
-    '''
-    university_name = django_filters.CharFilter(name='university__name')
-    university_city = django_filters.CharFilter(name='university__city')
-    department = django_filters.CharFilter(name='department__name')
+    """
+
+    university_name = django_filters.CharFilter(name="university__name")
+    university_city = django_filters.CharFilter(name="university__city")
+    department = django_filters.CharFilter(name="department__name")
 
     class Meta:
         model = Professor
-        fields = ['university_name', 'university_city',
-                  'department', 'gender', 'score']
+        fields = ["university_name", "university_city", "department", "gender", "score"]

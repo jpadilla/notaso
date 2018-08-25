@@ -7,19 +7,20 @@ from ..professors.models import Professor
 
 class Department(models.Model):
     name = models.CharField(max_length=30)
-    slug = AutoSlugField(populate_from='name', unique=True)
+    slug = AutoSlugField(populate_from="name", unique=True)
 
     def __unicode__(self):
         return self.name
 
     def count(self, university):
         return Professor.objects.filter(
-            department=self.id,
-            university=university).count()
+            department=self.id, university=university
+        ).count()
 
     def get_grade(instance, university):
         professors = Professor.objects.filter(
-            university=university, department=instance)
+            university=university, department=instance
+        )
         count = 0
         percent = 0
         for p in professors:
@@ -32,12 +33,12 @@ class Department(models.Model):
             percent = percent / count
 
         if percent >= 90:
-            return 'A'
+            return "A"
         elif percent >= 80:
-            return 'B'
+            return "B"
         elif percent >= 70:
-            return 'C'
+            return "C"
         elif percent >= 60:
-            return 'D'
+            return "D"
         else:
-            return 'F'
+            return "F"

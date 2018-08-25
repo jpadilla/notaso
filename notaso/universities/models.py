@@ -14,7 +14,7 @@ class University(models.Model):
     slug = models.SlugField(null=False)
 
     def __unicode__(self):
-        return u'%s %s' % (self.name, self.city)
+        return u"%s %s" % (self.name, self.city)
 
     def save(self, *args, **kwargs):
         self.slug = self.slug.lower()
@@ -34,15 +34,15 @@ class University(models.Model):
         if count == 0:
             percent = 0
         else:
-            percent = percent/count
+            percent = percent / count
 
         if percent >= 90:
-            return 'A'
+            return "A"
         elif percent >= 80:
-            return 'B'
+            return "B"
         elif percent >= 70:
-            return 'C'
+            return "C"
         elif percent >= 60:
-            return 'D'
+            return "D"
         else:
-            return 'F'
+            return "F"

@@ -1,24 +1,24 @@
 from django.shortcuts import get_object_or_404
 
+from rest_framework import filters
+from rest_framework.response import Response
+from rest_framework.viewsets import ReadOnlyModelViewSet
+
 from ..departments.models import Department
 from ..professors.models import Professor
 from ..universities.models import University
-
-from rest_framework import filters
-from rest_framework.viewsets import ReadOnlyModelViewSet
-from rest_framework.response import Response
-
-from .filters import ProfessorFilter
-from .filters import UniversityFilter
-from .serializers import UniversityListSerializer
-from .serializers import UniversityRetrieveSerializer
-from .serializers import ProfessorListSerializer
-from .serializers import ProfessorRetrieveSerializer
-from .serializers import DepartmentSerializer
+from .filters import ProfessorFilter, UniversityFilter
+from .serializers import (
+    DepartmentSerializer,
+    ProfessorListSerializer,
+    ProfessorRetrieveSerializer,
+    UniversityListSerializer,
+    UniversityRetrieveSerializer,
+)
 
 
 class UniversityViewSet(ReadOnlyModelViewSet):
-    '''
+    """
     ### 1. Search Values
     > Search university by name keyword
 
@@ -62,25 +62,30 @@ class UniversityViewSet(ReadOnlyModelViewSet):
         *  #####Department slug: [?department=ciencias-de-computadora](?department=ciencias-de-computadora)
 
     ---
-    '''
+    """
+
     queryset = University.objects.all()
     serializer_class = UniversityListSerializer
-    filter_backends = (filters.OrderingFilter, filters.SearchFilter,
-                       filters.DjangoFilterBackend)
-    ordering_fields = ('id', 'name', 'city')
-    search_fields = ('name',)
+    filter_backends = (
+        filters.OrderingFilter,
+        filters.SearchFilter,
+        filters.DjangoFilterBackend,
+    )
+    ordering_fields = ("id", "name", "city")
+    search_fields = ("name",)
     filter_class = UniversityFilter
-    lookup_field = 'slug'
+    lookup_field = "slug"
 
     def retrieve(self, request, slug=None):
         university = get_object_or_404(University, slug=slug)
-        serializer = UniversityRetrieveSerializer(university,
-                                                  context={'request': request})
+        serializer = UniversityRetrieveSerializer(
+            university, context={"request": request}
+        )
         return Response(serializer.data)
 
 
 class ProfessorViewSet(ReadOnlyModelViewSet):
-    '''
+    """
     ### 1. Search Values
     > Search professors by name keywords
 
@@ -123,17 +128,27 @@ class ProfessorViewSet(ReadOnlyModelViewSet):
         *  #####Filter by score: [?score=90](?score=90)
 
     ---
-    '''
+    """
+
     queryset = Professor.objects.all()
     serializer_class = ProfessorListSerializer
-    filter_backends = (filters.OrderingFilter, filters.SearchFilter,
-                       filters.DjangoFilterBackend)
-    ordering_fields = ('id', 'first_name', 'last_name', 'score',
-                       'university__name', 'university__city',
-                       'department__name')
-    search_fields = ('first_name', 'last_name')
+    filter_backends = (
+        filters.OrderingFilter,
+        filters.SearchFilter,
+        filters.DjangoFilterBackend,
+    )
+    ordering_fields = (
+        "id",
+        "first_name",
+        "last_name",
+        "score",
+        "university__name",
+        "university__city",
+        "department__name",
+    )
+    search_fields = ("first_name", "last_name")
     filter_class = ProfessorFilter
-    lookup_field = 'slug'
+    lookup_field = "slug"
 
     def retrieve(self, request, slug=None):
         professor = get_object_or_404(self.queryset, slug=slug)
@@ -142,7 +157,7 @@ class ProfessorViewSet(ReadOnlyModelViewSet):
 
 
 class DepartmentViewSet(ReadOnlyModelViewSet):
-    '''
+    """
     ### 1. Search Values
     > Search departments by name keywords
 
@@ -166,11 +181,15 @@ class DepartmentViewSet(ReadOnlyModelViewSet):
      * #####Multiple ordering: [?ordering=id,name](?ordering=id,name)
 
     ---
-    '''
+    """
+
     queryset = Department.objects.all()
     serializer_class = DepartmentSerializer
-    filter_backends = (filters.OrderingFilter, filters.SearchFilter,
-                       filters.DjangoFilterBackend)
-    ordering_fields = ('id', 'name')
-    search_fields = ('name',)
-    lookup_field = 'slug'
+    filter_backends = (
+        filters.OrderingFilter,
+        filters.SearchFilter,
+        filters.DjangoFilterBackend,
+    )
+    ordering_fields = ("id", "name")
+    search_fields = ("name",)
+    lookup_field = "slug"

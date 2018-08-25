@@ -8,16 +8,21 @@ from .models import Comment
 
 
 class AddCommentForm(forms.ModelForm):
-    responsibility = forms.IntegerField(required=False,
-                                        min_value=0, max_value=5)
+    responsibility = forms.IntegerField(required=False, min_value=0, max_value=5)
     personality = forms.IntegerField(required=False, min_value=0, max_value=5)
     workload = forms.IntegerField(required=False, min_value=0, max_value=5)
     difficulty = forms.IntegerField(required=False, min_value=0, max_value=5)
 
     class Meta:
         model = Comment
-        fields = ['body', 'is_anonymous', 'responsibility', 'personality',
-                  'workload', 'difficulty']
+        fields = [
+            "body",
+            "is_anonymous",
+            "responsibility",
+            "personality",
+            "workload",
+            "difficulty",
+        ]
 
     def save_form(self, request, prof_slug):
         c = self.save(commit=False)
@@ -51,7 +56,7 @@ class AddCommentForm(forms.ModelForm):
         if data:
             rating_set = False
 
-            fields = ['responsibility', 'personality', 'workload', 'difficulty']
+            fields = ["responsibility", "personality", "workload", "difficulty"]
 
             for field in fields:
                 if data.get(field):
@@ -60,4 +65,4 @@ class AddCommentForm(forms.ModelForm):
             for field in fields:
                 if rating_set:
                     self.fields[field].required = True
-                    self.fields['body'].required = False
+                    self.fields["body"].required = False

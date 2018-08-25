@@ -1,5 +1,5 @@
-from django.db import models
 from django.conf import settings
+from django.db import models
 from django.db.models.signals import post_save
 from django.shortcuts import get_object_or_404
 
@@ -24,12 +24,12 @@ class Comment(models.Model):
 
     @property
     def score(self):
-        return float(
-            self.responsibility
-            + self.personality
-            + self.workload
-            + self.difficulty
-        ) * 5
+        return (
+            float(
+                self.responsibility + self.personality + self.workload + self.difficulty
+            )
+            * 5
+        )
 
 
 def recalculate_score(sender, **kwargs):
@@ -42,9 +42,7 @@ def recalculate_score(sender, **kwargs):
             personality__isnull=False,
             workload__isnull=False,
             difficulty__isnull=False,
-        ).exclude(
-            responsibility=0, personality=0, workload=0, difficulty=0
-        )
+        ).exclude(responsibility=0, personality=0, workload=0, difficulty=0)
 
         comments_count = 0
         sum_responsibility = 0
@@ -60,15 +58,8 @@ def recalculate_score(sender, **kwargs):
             comments_count += 1
 
         score = float(
-            (
-                sum_responsibility
-                + sum_personality
-                + sum_workload
-                + sum_difficulty
-            )
-        ) / (
-            comments_count * 20
-        )
+            (sum_responsibility + sum_personality + sum_workload + sum_difficulty)
+        ) / (comments_count * 20)
 
         p = get_object_or_404(Professor, pk=c.professor.id)
         p.score = score

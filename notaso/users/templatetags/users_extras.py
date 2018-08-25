@@ -1,5 +1,5 @@
-import urllib
 import hashlib
+import urllib
 
 from django import template
 from django.conf import settings
@@ -7,17 +7,16 @@ from django.conf import settings
 register = template.Library()
 
 
-@register.filter(name='gravatar_url')
+@register.filter(name="gravatar_url")
 def gravatar_url(instance, email):
     size = 40
     hash = hashlib.md5(email.lower()).hexdigest()
-    params = urllib.urlencode({'d': "retro", 's': str(size)})
+    params = urllib.urlencode({"d": "retro", "s": str(size)})
 
-    return "{}://www.gravatar.com/avatar/{}?".format(
-        settings.PROTOCOL, hash, params)
+    return "{}://www.gravatar.com/avatar/{}?".format(settings.PROTOCOL, hash, params)
 
 
-@register.filter(name='avatar_https')
+@register.filter(name="avatar_https")
 def avatar_https(instance, url):
     url = url.replace("http", "https", 1)
     return url.replace("httpss", "https", 1)
