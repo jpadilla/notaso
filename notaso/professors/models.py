@@ -1,7 +1,7 @@
 from django.conf import settings
-from django.db import models
-from django.contrib.postgres.search import SearchVectorField
 from django.contrib.postgres.indexes import GinIndex
+from django.contrib.postgres.search import SearchVectorField
+from django.db import models
 
 from autoslug import AutoSlugField
 
