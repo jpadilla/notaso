@@ -13,12 +13,6 @@ import notaso.professors.models
 
 
 class Migration(migrations.Migration):
-
-    replaces = [
-        (b"professors", "0001_initial"),
-        (b"professors", "0002_auto_20180825_2204"),
-    ]
-
     initial = True
 
     dependencies = [
