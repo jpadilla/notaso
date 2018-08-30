@@ -1,9 +1,9 @@
 from django.conf import settings
+from django.contrib.postgres.indexes import GinIndex
+from django.contrib.postgres.search import SearchVectorField
 from django.db import models
 
 from autoslug import AutoSlugField
-from djorm_pgfulltext.fields import VectorField
-from djorm_pgfulltext.models import SearchManager
 
 
 def populate_professor_slug(instance):
@@ -29,14 +29,10 @@ class Professor(models.Model):
     workload = models.FloatField(editable=False, default=0)
     difficulty = models.FloatField(editable=False, default=0)
 
-    search_index = VectorField()
+    search_index = SearchVectorField(null=True, editable=False)
 
-    objects = SearchManager(
-        fields=("first_name", "last_name"),
-        config="pg_catalog.spanish",
-        search_field="search_index",
-        auto_update_search_field=True,
-    )
+    class Meta:
+        indexes = [GinIndex(fields=["search_index"])]
 
     def __unicode__(self):
         return u"%s %s" % (self.first_name, self.last_name)
