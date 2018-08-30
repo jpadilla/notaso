@@ -32,7 +32,6 @@ class Common(Configuration):
         "allauth.socialaccount",
         "allauth.socialaccount.providers.facebook",
         "allauth.socialaccount.providers.twitter",
-        "djangosecure",
         "import_export",
         "raven.contrib.django.raven_compat",
         "rest_framework",
@@ -48,8 +47,8 @@ class Common(Configuration):
         "notaso.search",
     )
 
-    MIDDLEWARE_CLASSES = (
-        "djangosecure.middleware.SecurityMiddleware",
+    MIDDLEWARE = [
+        "django.middleware.security.SecurityMiddleware",
         "django.contrib.sessions.middleware.SessionMiddleware",
         "debug_toolbar.middleware.DebugToolbarMiddleware",
         "corsheaders.middleware.CorsMiddleware",
@@ -58,11 +57,13 @@ class Common(Configuration):
         "django.contrib.auth.middleware.AuthenticationMiddleware",
         "django.contrib.messages.middleware.MessageMiddleware",
         "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    )
+    ]
 
     # Rest Framework Settings
     REST_FRAMEWORK = {
-        "DEFAULT_FILTER_BACKENDS": ("rest_framework.filters.DjangoFilterBackend",),
+        "DEFAULT_FILTER_BACKENDS": (
+            "django_filters.rest_framework.DjangoFilterBackend",
+        ),
         "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.AllowAny",),
         "DEFAULT_RENDERER_CLASSES": (
             "rest_framework.renderers.JSONRenderer",

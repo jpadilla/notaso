@@ -20,8 +20,6 @@ class SearchView(ListView):
         search_term = self.request.GET.get("q")
 
         if search_term:
-            for term in search_term.split():
-                qs = Professor.objects.search(term, raw=True)
-            return qs
+            return Professor.objects.filter(search_index=search_term)
 
         return queryset[:10]

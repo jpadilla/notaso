@@ -48,7 +48,7 @@ class User(AbstractBaseUser):
     def get_short_name(self):
         return self.first_name
 
-    def __unicode__(self):
+    def __str__(self):
         return self.email
 
     def has_perm(self, perm, obj=None):

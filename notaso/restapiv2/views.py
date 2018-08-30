@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404
 
+from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
 from rest_framework.response import Response
 from rest_framework.viewsets import ReadOnlyModelViewSet
@@ -69,11 +70,11 @@ class UniversityViewSet(ReadOnlyModelViewSet):
     filter_backends = (
         filters.OrderingFilter,
         filters.SearchFilter,
-        filters.DjangoFilterBackend,
+        DjangoFilterBackend,
     )
     ordering_fields = ("id", "name", "city")
     search_fields = ("name",)
-    filter_class = UniversityFilter
+    filterset_class = UniversityFilter
     lookup_field = "slug"
 
     def retrieve(self, request, slug=None):
@@ -135,7 +136,7 @@ class ProfessorViewSet(ReadOnlyModelViewSet):
     filter_backends = (
         filters.OrderingFilter,
         filters.SearchFilter,
-        filters.DjangoFilterBackend,
+        DjangoFilterBackend,
     )
     ordering_fields = (
         "id",
@@ -147,7 +148,7 @@ class ProfessorViewSet(ReadOnlyModelViewSet):
         "department__name",
     )
     search_fields = ("first_name", "last_name")
-    filter_class = ProfessorFilter
+    filterset_class = ProfessorFilter
     lookup_field = "slug"
 
     def retrieve(self, request, slug=None):
@@ -188,7 +189,7 @@ class DepartmentViewSet(ReadOnlyModelViewSet):
     filter_backends = (
         filters.OrderingFilter,
         filters.SearchFilter,
-        filters.DjangoFilterBackend,
+        DjangoFilterBackend,
     )
     ordering_fields = ("id", "name")
     search_fields = ("name",)

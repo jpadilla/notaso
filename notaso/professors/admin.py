@@ -4,7 +4,7 @@ from .models import Professor
 
 
 class ProfessorAdmin(admin.ModelAdmin):
-    list_display = ("__unicode__", "gender", "university", "department")
+    list_display = ("__str__", "gender", "university", "department")
     search_fields = [
         "first_name",
         "last_name",

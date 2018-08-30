@@ -18,9 +18,9 @@ class Professor(models.Model):
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=75)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
-    university = models.ForeignKey("universities.University")
-    department = models.ForeignKey("departments.Department")
-    created_by = models.ForeignKey(settings.AUTH_USER_MODEL)
+    university = models.ForeignKey("universities.University", on_delete=models.CASCADE)
+    department = models.ForeignKey("departments.Department", on_delete=models.CASCADE)
+    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     slug = AutoSlugField(populate_from=populate_professor_slug, unique=True)
 
     score = models.FloatField(editable=False, default=0)
@@ -34,8 +34,8 @@ class Professor(models.Model):
     class Meta:
         indexes = [GinIndex(fields=["search_index"])]
 
-    def __unicode__(self):
-        return u"%s %s" % (self.first_name, self.last_name)
+    def __str__(self):
+        return f"{self.first_name} {self.last_name}"
 
     def get_full_name(self):
         full_name = "%s %s" % (self.first_name, self.last_name)

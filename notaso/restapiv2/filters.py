@@ -20,9 +20,9 @@ class ProfessorFilter(django_filters.FilterSet):
     university city, department and score.
     """
 
-    university_name = django_filters.CharFilter(name="university__name")
-    university_city = django_filters.CharFilter(name="university__city")
-    department = django_filters.CharFilter(name="department__name")
+    university_name = django_filters.CharFilter(field_name="university__name")
+    university_city = django_filters.CharFilter(field_name="university__city")
+    department = django_filters.CharFilter(field_name="department__name")
 
     class Meta:
         model = Professor
