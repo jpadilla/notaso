@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
             field=model_utils.fields.AutoCreatedField(
                 default=django.utils.timezone.now,
                 editable=False,
-                verbose_name="created_at",
+                verbose_name="created",
             ),
         ),
         migrations.AddField(
@@ -28,7 +28,7 @@ class Migration(migrations.Migration):
             field=model_utils.fields.AutoLastModifiedField(
                 default=django.utils.timezone.now,
                 editable=False,
-                verbose_name="modified_at",
+                verbose_name="modified",
             ),
         ),
     ]
