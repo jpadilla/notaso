@@ -36,8 +36,8 @@ class User(AbstractBaseUser):
     is_admin = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
 
-    created = AutoCreatedField(_("created"))
-    modified = AutoLastModifiedField(_("modified"))
+    created_at = AutoCreatedField(_("created"))
+    modified_at = AutoLastModifiedField(_("modified"))
 
     objects = MyUserManager()
 
