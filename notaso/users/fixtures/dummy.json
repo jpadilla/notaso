@@ -2,12 +2,14 @@
   "model": "users.user",
   "pk": 1,
   "fields": {
-      "password": "pbkdf2_sha256$36000$nQmi1RHXkxtM$wLJEFsVaXDQ0uxEDsR30j72A4N8g0sHcXPLTvdlz4DM=",
+      "password": "password",
       "last_login": null,
       "email": "jpueblo@example.com",
       "first_name": "Juan",
       "last_name": "Pueblo",
       "is_admin": true,
-      "is_active": true
+      "is_active": true,
+      "created_at": "2018-02-15 11:31:15.099956+00:00",
+      "modified_at": "2018-03-24 20:28:11.099956+00:00"
   }
 }]

@@ -2,8 +2,6 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
-from model_utils.fields import AutoCreatedField, AutoLastModifiedField
-
 
 class MyUserManager(BaseUserManager):
     def create_user(self, email, first_name, last_name, password=None):
@@ -36,8 +34,8 @@ class User(AbstractBaseUser):
     is_admin = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
 
-    created_at = AutoCreatedField(_("created"))
-    modified_at = AutoLastModifiedField(_("modified"))
+    created_at = models.DateTimeField(_("created at"), auto_now_add=True)
+    modified_at = models.DateTimeField(_("modified at"), auto_now=True)
 
     objects = MyUserManager()
 
