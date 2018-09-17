@@ -1,8 +1,9 @@
-from braces.views import LoginRequiredMixin
 from django.contrib import messages
 from django.core.urlresolvers import reverse
 from django.shortcuts import redirect
 from django.views.generic import FormView
+
+from braces.views import LoginRequiredMixin
 
 from .forms import SettingsForm
 
