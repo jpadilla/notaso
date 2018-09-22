@@ -374,9 +374,9 @@
         },
         "openpyxl": {
             "hashes": [
-                "sha256:0f391b0035d7c98f25aad539726e8efc77eea250ff1a120ea7d264c03a16f5fe"
+                "sha256:04091e034911a0afc531c3a15e5ae0b1b6a43654dbf63c187f47d20cdfefac1c"
             ],
-            "version": "==2.5.5"
+            "version": "==2.5.6"
         },
         "psycopg2-binary": {
             "hashes": [
@@ -575,10 +575,10 @@
         },
         "cached-property": {
             "hashes": [
-                "sha256:630fdbf0f4ac7d371aa866016eba1c3ac43e9032246748d4994e67cb05f99bc4",
-                "sha256:f1f9028757dc40b4cb0fd2234bd7b61a302d7b84c683cb8c2c529238a24b8938"
+                "sha256:3a026f1a54135677e7da5ce819b0c690f156f37976f3e30c5430740725203d7f",
+                "sha256:9217a59f14a5682da7c4b8829deadbfc194ac22e9908ccf7c8820234e80a1504"
             ],
-            "version": "==1.4.3"
+            "version": "==1.5.1"
         },
         "cfgv": {
             "hashes": [
@@ -589,10 +589,10 @@
         },
         "identify": {
             "hashes": [
-                "sha256:49845e70fc6b1ec3694ab930a2c558912d7de24548eebcd448f65567dc757c43",
-                "sha256:68daab16a3db364fa204591f97dc40bfffd1a7739f27788a4895b4d8fd3516e5"
+                "sha256:6aa415d0ce7cb358dfa38844338057067533ffe4973b1c9bc33c5e8e4e54ec92",
+                "sha256:ac6ae37088cb87da931fc681d1e13da46bf2e06c344dc1d49b18b2f6cd5aa140"
             ],
-            "version": "==1.1.4"
+            "version": "==1.1.5"
         },
         "nodeenv": {
             "hashes": [
@@ -602,11 +602,11 @@
         },
         "pre-commit": {
             "hashes": [
-                "sha256:c1472b0d73e27a5697a477f77a4973c708da4fc433cc89648e8612c8cd623b87",
-                "sha256:ec206de6fbcbd9381ff3169f9975571fb2efa99794c328518a5f0c06ae0b49c5"
+                "sha256:18ef2892ff6b6518945bc7dcf423e3c969033a4ca132b6a1ae0d52eb2e51ea27",
+                "sha256:88d59872610a7069d937b6868632ba534187bda58c4665de12b25c8c549ddd0e"
             ],
             "index": "pypi",
-            "version": "==1.10.5"
+            "version": "==1.11.0"
         },
         "pyyaml": {
             "hashes": [
@@ -627,9 +627,10 @@
         },
         "toml": {
             "hashes": [
-                "sha256:8e86bd6ce8cc11b9620cb637466453d94f5d57ad86f17e98a98d1f73e3baab2d"
+                "sha256:380178cde50a6a79f9d2cf6f42a62a5174febe5eea4126fe4038785f1d888d42",
+                "sha256:a7901919d3e4f92ffba7ff40a9d697e35bbbc8a8049fe8da742f34c83606d957"
             ],
-            "version": "==0.9.4"
+            "version": "==0.9.6"
         },
         "virtualenv": {
             "hashes": [

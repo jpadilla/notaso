@@ -14,7 +14,15 @@ class UserAdmin(ImportExportModelAdmin, UserAdmin):
     form = UserChangeForm
     add_form = UserCreationForm
 
-    list_display = ("email", "first_name", "last_name", "is_active", "is_admin")
+    list_display = (
+        "email",
+        "first_name",
+        "last_name",
+        "is_active",
+        "is_admin",
+        "created_at",
+        "modified_at",
+    )
     list_filter = ("is_admin", "is_active")
     fieldsets = (
         (None, {"fields": ("email", "password")}),
