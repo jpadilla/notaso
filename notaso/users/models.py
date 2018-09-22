@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
 
 
 class MyUserManager(BaseUserManager):
@@ -32,6 +33,9 @@ class User(AbstractBaseUser):
     last_name = models.CharField(max_length=30)
     is_admin = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
+
+    created_at = models.DateTimeField(_("created at"), auto_now_add=True)
+    modified_at = models.DateTimeField(_("modified at"), auto_now=True)
 
     objects = MyUserManager()
 
