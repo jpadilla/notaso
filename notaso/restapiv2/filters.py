@@ -6,7 +6,7 @@ from ..universities.models import University
 
 class UniversityFilter(django_filters.FilterSet):
     """
-    Filter by Univesity city
+    Filter by University city
     """
 
     class Meta:
