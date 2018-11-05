@@ -1,8 +1,7 @@
+from braces.views import LoginRequiredMixin
 from django.shortcuts import get_object_or_404, redirect
 from django.views.generic import DetailView, FormView
 from django.views.generic.edit import FormMixin
-
-from braces.views import LoginRequiredMixin
 
 from ..comments.forms import AddCommentForm
 from ..comments.models import Comment
