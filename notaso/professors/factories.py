@@ -21,10 +21,3 @@ class ProfessorFactory(DjangoModelFactory):
     university = factory.SubFactory(UniversityFactory)
     department = factory.SubFactory(DepartmentFactory)
     created_by = factory.SubFactory(UserFactory)
-    # slug = AutoSlugField(populate_from=populate_professor_slug, unique=True)
-
-    score = random.random()
-    responsibility = random.random()
-    personality = random.random()
-    workload = random.random()
-    difficulty = random.random()

@@ -11,10 +11,11 @@ class DepartmentFactory(DjangoModelFactory):
 
     name = random.choice(
         (
-            "Mathematics",
-            "Computer Science",
-            "Social Science",
-            "Civil Engineering",
-            "Biology",
+            "Matemática",
+            "Ciencias de Cómputos",
+            "Ciencias Sociales",
+            "Ingeniería Civil",
+            "Biología",
+            "Literatura" "Química",
         )
     )

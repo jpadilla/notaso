@@ -20,7 +20,7 @@ class CommentFactory(DjangoModelFactory):
         "paragraph", nb_sentences=4, variable_nb_sentences=True, ext_word_list=None
     )
     created_at = factory.Faker("date_between", start_date="-4y", end_date="today")
-    is_anonymous = factory.Faker("boolean", chance_of_getting_true=50)
+    is_anonymous = factory.Faker("boolean", chance_of_getting_true=75)
 
     responsibility = random.randint(1, 5)
     personality = random.randint(1, 5)

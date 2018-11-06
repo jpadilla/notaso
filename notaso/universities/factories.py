@@ -1,5 +1,4 @@
 import factory
-
 from factory.django import DjangoModelFactory, FileField
 
 from .models import University
