@@ -1,5 +1,6 @@
-from autoslug import AutoSlugField
 from django.db import models
+
+from autoslug import AutoSlugField
 
 from ..professors.models import Professor
 

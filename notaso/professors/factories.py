@@ -2,7 +2,6 @@ import random
 
 import factory
 from factory.django import DjangoModelFactory
-
 from notaso.departments.factories import DepartmentFactory
 from notaso.universities.factories import UniversityFactory
 from notaso.users.factories import UserFactory
