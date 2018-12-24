@@ -5,8 +5,9 @@ from __future__ import unicode_literals
 import datetime
 
 import django.utils.timezone
-import pytz
 from django.db import migrations, models
+
+import pytz
 
 utc = pytz.utc
 
