@@ -38,8 +38,7 @@ class Professor(models.Model):
         return f"{self.first_name} {self.last_name}"
 
     def get_full_name(self):
-        full_name = "%s %s" % (self.first_name, self.last_name)
-        return full_name
+        return f"{self.first_name} {self.last_name}"
 
     def save(self, *args, **kwargs):
         super(Professor, self).save(*args, **kwargs)

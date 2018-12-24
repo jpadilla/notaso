@@ -4,7 +4,7 @@ from ..professors.models import Professor
 
 
 def get_upload_file_name(instance, filename):
-    return "static/uploaded_files/%s" % (filename)
+    return f"static/uploaded_files/{filename}"
 
 
 class University(models.Model):

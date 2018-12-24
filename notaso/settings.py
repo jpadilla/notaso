@@ -203,3 +203,4 @@ class Production(Common):
     AWS_ACCESS_KEY_ID = values.Value(environ_prefix=None)
     AWS_SECRET_ACCESS_KEY = values.Value(environ_prefix=None)
     AWS_STORAGE_BUCKET_NAME = values.Value(environ_prefix=None)
+    AWS_DEFAULT_ACL = values.Value(environ_prefix=None)
