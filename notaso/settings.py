@@ -144,7 +144,7 @@ class Common(Configuration):
     # auth and allauth settings
     LOGIN_REDIRECT_URL = "/"
     LOGIN_URL = "/accounts/login/"
-    ACCOUNT_EMAIL_VERIFICATION = "none"
+    ACCOUNT_EMAIL_VERIFICATION = "mandatory"
     ACCOUNT_EMAIL_SUBJECT_PREFIX = "[Notaso] "
     ACCOUNT_LOGOUT_ON_GET = True
     ACCOUNT_EMAIL_REQUIRED = True

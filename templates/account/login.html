@@ -10,7 +10,7 @@
         </div>
     </div>
 </div>
-{% endblock %} 
+{% endblock %}
 {% block content %}
 <div class="container">
     <div class="row">
@@ -18,7 +18,7 @@
             <ul class="col-md-10 col-md-offset-2 col-xs-12">
             {% if socialaccount.providers  %}
             <div class = "col-md-5 col-xs-12">
-                
+
                 <p class="text-center lead">Favor de hacer login con algunas de sus cuentas existentes
                 de Facebook o Twitter. También se puede registrar <a href="{{ signup_url }}">aqui.</a></p>
 
@@ -32,7 +32,7 @@
                     </div>
                     <br>
                 </div>
-            {% else %}    
+            {% else %}
                 <p>If you have not created an account yet, then please
                 <a href="{{ signup_url }}">sign up</a> first.</p>
             {% endif %}
@@ -42,12 +42,10 @@
             <p class="text-center lead">Si tiene una cuenta de {{site.name}}, puede hacer login:</p>
                 <form method="POST" action="" class="horizontal-form" role="form">{% csrf_token %}
                     <div>
-                        {% if form.login.errors %}
+                        {% if form.non_field_errors %}
                             <div class = "alert alert-danger alert-dismissable">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            {{form.login.errors}}</div>
-                        </div>
-
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>{{form.non_field_errors}}</div>
+                            </div>
                         {% endif %}
                         <div class="form-group">
                                 <label for="id_login">Email:</label>
@@ -72,7 +70,7 @@
                                   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                                   {% endif %}
                                   <button class="btn btn-primary btn-lg pull-right" type="submit">Login</button>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                 </form>
