@@ -45,6 +45,7 @@ class Common(Configuration):
         "notaso.departments",
         "notaso.comments",
         "notaso.search",
+        "notaso.utils"
     )
 
     MIDDLEWARE = [
