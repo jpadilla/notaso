@@ -34,6 +34,8 @@ boto3 = "==1.10.45"
 
 [dev-packages]
 pre-commit = "*"
+black = "*"
+isort = "*"
 
 [requires]
 python_version = "3.7"
