@@ -49,6 +49,7 @@ class Common(Configuration):
 
     MIDDLEWARE = [
         "django.middleware.security.SecurityMiddleware",
+        "whitenoise.middleware.WhiteNoiseMiddleware",
         "django.contrib.sessions.middleware.SessionMiddleware",
         "debug_toolbar.middleware.DebugToolbarMiddleware",
         "corsheaders.middleware.CorsMiddleware",
@@ -196,8 +197,8 @@ class Production(Common):
     SECURE_BROWSER_XSS_FILTER = True
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
-    DEFAULT_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
-    STATICFILES_STORAGE = "whitenoise.django.GzipManifestStaticFilesStorage"
+    DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
     AWS_PRELOAD_METADATA = True
     AWS_ACCESS_KEY_ID = values.Value(environ_prefix=None)
