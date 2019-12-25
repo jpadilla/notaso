@@ -15,23 +15,31 @@ sys.exit(0)
 END
 }
 
-if [ "$1" = 'start' ]; then
-  until postgres_ready; do
+ until postgres_ready; do
     >&2 echo "==> Waiting for Postgres..."
     sleep 1
   done
 
-  echo "==> Running migrations..."
-  python manage.py collectstatic --noinput
-  python manage.py migrate
-  python manage.py loaddata notaso/universities/fixtures/initial.json
-  python manage.py loaddata notaso/departments/fixtures/initial.json
-  python manage.py loaddata notaso/users/fixtures/dummy.json
-  python manage.py loaddata notaso/professors/fixtures/dummy.json
-  python manage.py loaddata notaso/comments/fixtures/dummy.json
 
-  echo "==> Running dev server..."
-  python manage.py runserver 0.0.0.0:8000
-else
+case "$1" in
+  "dev_start")
+    echo "==> Running migrations..."
+    python manage.py collectstatic --noinput
+    python manage.py migrate
+    python manage.py loaddata notaso/universities/fixtures/initial.json
+    python manage.py loaddata notaso/departments/fixtures/initial.json
+    python manage.py loaddata notaso/users/fixtures/dummy.json
+    python manage.py loaddata notaso/professors/fixtures/dummy.json
+    python manage.py loaddata notaso/comments/fixtures/dummy.json
+
+    echo "==> Running dev server..."
+    python manage.py runserver 0.0.0.0:8000
+    ;;
+  
+  "tests")
+    python manage.py test
+    ;;
+  *)
   exec "$@"
-fi
+  ;;
+esac
