@@ -36,6 +36,7 @@ boto3 = "==1.10.45"
 pre-commit = "*"
 black = "*"
 isort = "*"
+flake8 = "*"
 
 [requires]
 python_version = "3.7"

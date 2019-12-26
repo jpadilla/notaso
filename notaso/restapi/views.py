@@ -170,7 +170,7 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
         if request.GET.get("university_id"):
             university_id = request.GET.get("university_id")
             for i, query in enumerate(self.queryset):
-                if query.count(university_id) is not 0:
+                if query.count(university_id) != 0:
                     query.extra_info = {
                         "university_id": university_id,
                         "professors_count": query.count(university_id),
@@ -206,7 +206,7 @@ class DepartmentViewSet(viewsets.ReadOnlyModelViewSet):
         department = get_object_or_404(queryset, pk=pk)
         if request.GET.get("university_id"):
             university_id = request.GET.get("university_id")
-            if department.count(university_id) is not 0:
+            if department.count(university_id) != 0:
                 department.extra_info = {
                     "university": university_id,
                     "professors_count": department.count(university_id),
