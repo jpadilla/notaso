@@ -5,9 +5,11 @@ python: "3.7"
 
 services:
   - docker
-  
 install:
   - pip install black isort flake8
+
+before_script:
+  - echo "DATABASE_URL=postgres://postgres:password@database/postgres" > .env
 
 script:
   - black --check .
