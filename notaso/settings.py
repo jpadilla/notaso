@@ -32,7 +32,6 @@ class Common(Configuration):
         "allauth.socialaccount",
         "allauth.socialaccount.providers.facebook",
         "allauth.socialaccount.providers.twitter",
-        "djangosecure",
         "import_export",
         "raven.contrib.django.raven_compat",
         "rest_framework",
@@ -48,8 +47,9 @@ class Common(Configuration):
         "notaso.search",
     )
 
-    MIDDLEWARE_CLASSES = (
-        "djangosecure.middleware.SecurityMiddleware",
+    MIDDLEWARE = [
+        "django.middleware.security.SecurityMiddleware",
+        "whitenoise.middleware.WhiteNoiseMiddleware",
         "django.contrib.sessions.middleware.SessionMiddleware",
         "debug_toolbar.middleware.DebugToolbarMiddleware",
         "corsheaders.middleware.CorsMiddleware",
@@ -58,11 +58,13 @@ class Common(Configuration):
         "django.contrib.auth.middleware.AuthenticationMiddleware",
         "django.contrib.messages.middleware.MessageMiddleware",
         "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    )
+    ]
 
     # Rest Framework Settings
     REST_FRAMEWORK = {
-        "DEFAULT_FILTER_BACKENDS": ("rest_framework.filters.DjangoFilterBackend",),
+        "DEFAULT_FILTER_BACKENDS": (
+            "django_filters.rest_framework.DjangoFilterBackend",
+        ),
         "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.AllowAny",),
         "DEFAULT_RENDERER_CLASSES": (
             "rest_framework.renderers.JSONRenderer",
@@ -195,10 +197,11 @@ class Production(Common):
     SECURE_BROWSER_XSS_FILTER = True
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
-    DEFAULT_FILE_STORAGE = "storages.backends.s3boto.S3BotoStorage"
-    STATICFILES_STORAGE = "whitenoise.django.GzipManifestStaticFilesStorage"
+    DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
     AWS_PRELOAD_METADATA = True
     AWS_ACCESS_KEY_ID = values.Value(environ_prefix=None)
     AWS_SECRET_ACCESS_KEY = values.Value(environ_prefix=None)
     AWS_STORAGE_BUCKET_NAME = values.Value(environ_prefix=None)
+    AWS_DEFAULT_ACL = values.Value(environ_prefix=None)

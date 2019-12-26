@@ -7,8 +7,8 @@ from ..professors.models import Professor
 
 
 class Comment(models.Model):
-    created_by = models.ForeignKey(settings.AUTH_USER_MODEL)
-    professor = models.ForeignKey(Professor)
+    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    professor = models.ForeignKey(Professor, on_delete=models.CASCADE)
 
     body = models.TextField()
     created_at = models.DateField(auto_now=False, auto_now_add=False)
@@ -19,7 +19,7 @@ class Comment(models.Model):
     workload = models.IntegerField(null=True)
     difficulty = models.IntegerField(null=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.body
 
     @property

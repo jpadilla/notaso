@@ -22,8 +22,9 @@ services:
     build: .
     command: start
     entrypoint: /app/docker-entrypoint.sh
-    env_file:
-      - .env
+    environment: 
+      - SECRET_KEY=dont-tell-eve
+      - DATABASE_URL=postgres://postgres:password@database/postgres
     volumes:
       - .:/app
     ports:

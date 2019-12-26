@@ -4,7 +4,7 @@ from ..professors.models import Professor
 
 
 def get_upload_file_name(instance, filename):
-    return "static/uploaded_files/%s" % (filename)
+    return f"static/uploaded_files/{filename}"
 
 
 class University(models.Model):
@@ -13,8 +13,8 @@ class University(models.Model):
     emblem = models.FileField(upload_to=get_upload_file_name)
     slug = models.SlugField(null=False)
 
-    def __unicode__(self):
-        return u"%s %s" % (self.name, self.city)
+    def __str__(self):
+        return f"{self.name} {self.city}"
 
     def save(self, *args, **kwargs):
         self.slug = self.slug.lower()

@@ -1,11 +1,9 @@
-from django.conf.urls import url
+from django.urls import path
 
 from .views import DepartmentView
 
 urlpatterns = [
-    url(
-        r"^(?P<department_slug>[-_\w]+)/$",
-        DepartmentView.as_view(),
-        name="specified_department",
+    path(
+        "<slug:department_slug>/", DepartmentView.as_view(), name="specified_department"
     )
 ]

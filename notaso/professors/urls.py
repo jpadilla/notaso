@@ -1,11 +1,13 @@
-from django.conf.urls import url
+from django.urls import path
 
 from . import views
 
+app_name = "professors"
+
 urlpatterns = [
-    url(r"^create/$", views.CreateProfessorView.as_view(), name="create_professor"),
-    url(
-        r"^(?P<professors_slug>[-\w]+)/$",
+    path("create/", views.CreateProfessorView.as_view(), name="create_professor"),
+    path(
+        "<slug:professors_slug>/",
         views.ProfessorView.as_view(),
         name="specified_professor",
     ),

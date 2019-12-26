@@ -1,6 +1,5 @@
-from django.db import models
-
 from autoslug import AutoSlugField
+from django.db import models
 
 from ..professors.models import Professor
 
@@ -9,7 +8,7 @@ class Department(models.Model):
     name = models.CharField(max_length=30)
     slug = AutoSlugField(populate_from="name", unique=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
     def count(self, university):

@@ -1,4 +1,4 @@
-FROM python:2.7-alpine3.7
+FROM python:3.7-alpine3.8
 
 ENV LANG en_US.utf8
 
@@ -6,10 +6,9 @@ ENV LANG en_US.utf8
 RUN apk add --no-cache --virtual .build-deps build-base
 
 RUN apk add --no-cache \
+  git \
   postgresql-dev \
-  libffi-dev \
-  libxml2-dev \
-  libxslt-dev
+  libffi-dev
 
 RUN pip install pipenv
 
