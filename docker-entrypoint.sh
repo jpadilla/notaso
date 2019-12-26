@@ -22,7 +22,7 @@ END
 
 
 case "$1" in
-  "dev_start")
+  "start")
     echo "==> Running migrations..."
     python manage.py collectstatic --noinput
     python manage.py migrate

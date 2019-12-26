@@ -8,9 +8,6 @@ services:
 install:
   - pip install black isort flake8
 
-before_script:
-  - echo "DATABASE_URL=postgres://postgres:password@database/postgres\nSECRET_KEY=dont-tell-eve" > .env
-
 script:
   - black --check .
   - isort --recursive --check-only --diff
