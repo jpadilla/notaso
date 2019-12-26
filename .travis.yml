@@ -1,13 +1,11 @@
-language: minimal
+language: python
+sudo: required
+dist: xenial
+python: "3.7"
 
 services:
   - docker
-
-
-before_install:
-  - python3 -m venv venv/
-  - source venv/bin/activate
-
+  
 install:
   - pip install black isort flake8
 
