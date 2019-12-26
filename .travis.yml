@@ -1,7 +1,7 @@
-language: python
-sudo: required
-dist: xenial
-python: "3.7"
+language: minimal
+
+services:
+  - docker
 
 install:
   - pip install black isort flake8
@@ -10,3 +10,4 @@ script:
   - black --check .
   - isort --recursive --check-only --diff
   - flake8
+  - ./run-tests.sh
